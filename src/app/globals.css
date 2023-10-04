@@ -3,3 +3,8 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.chess-bg {
+	background-image: url('../../public/block.svg'); /* Assurez-vous que le chemin est correct */
+	background-repeat: repeat;
+}

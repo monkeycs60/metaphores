@@ -1,7 +1,6 @@
 import NavBar from '@/components/layout/NavBar';
 import './globals.css';
 import type { Metadata } from 'next';
-import { Inter } from 'next/font/google';
 
 export const metadata: Metadata = {
 	title: 'Métaphore coaching',
@@ -15,10 +14,11 @@ export default function RootLayout({
 }) {
 	return (
 		<html lang='en'>
-			<body
-				className={'min-h-screen w-screen bg-white font-inter text-base'}>
-				<NavBar />
-				{children}
+			<body className={'w-screen bg-white font-inter text-base'}>
+				<div className='flex min-h-screen flex-col'>
+					<NavBar />
+					{children}
+				</div>
 			</body>
 		</html>
 	);

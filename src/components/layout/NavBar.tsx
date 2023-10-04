@@ -57,14 +57,14 @@ const components: { title: string; href: string; description: string }[] = [
 
 const NavBar = () => {
 	return (
-		<div className='flex items-center justify-center gap-12 p-4'>
+		<div className='sticky m-auto flex h-[150px] w-3/4 items-center justify-between gap-12 p-6 '>
 			<Link href='/'>
 				<Image
 					src='/logo-svg.svg'
 					alt='Logo'
 					width={627}
 					height={205}
-					className='w-[200px]'
+					className='w-[360px]'
 				/>
 			</Link>
 			<NavigationMenu>
@@ -132,8 +132,11 @@ const NavBar = () => {
 				</NavigationMenuList>
 			</NavigationMenu>
 			<div className='flex gap-4'>
+				<Button className='ml-auto' variant={'outline'}>
+					{' '}
+					Contact{' '}
+				</Button>
 				<Button className='ml-auto'> Réserver </Button>
-				<Button className='ml-auto'> Reserver </Button>
 			</div>
 		</div>
 	);

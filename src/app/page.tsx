@@ -1,11 +1,10 @@
-import Image from 'next/image';
+import Hero from '@/components/home/Hero';
+import { Minus } from 'lucide-react';
 
 export default function Home() {
 	return (
-		<main>
-			<div>
-				<h1>Chris</h1>
-			</div>
+		<main className='flex flex-1 items-center justify-center '>
+			<Hero />
 		</main>
 	);
 }
