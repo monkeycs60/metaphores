@@ -18,6 +18,7 @@ module.exports = {
 		fontFamily: {
 			inter: ['Inter', 'sans-serif'],
 			caveat: ['Caveat', 'cursive'],
+			yeseva: ['Yeseva One', 'cursive'],
 		},
 		extend: {
 			colors: {
