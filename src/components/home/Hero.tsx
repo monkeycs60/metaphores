@@ -1,73 +1,109 @@
+'use client';
+
 import React from 'react';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
 
 const Hero = () => {
 	return (
-		<div className=' relative flex h-full w-full max-w-[100vw] flex-col items-center'>
-			<Image
-				src='/shapes/medium-rectangle-black.svg'
-				alt='Chess'
-				width={200}
-				height={130}
-				className='absolute left-[75%] top-[20%] w-[130px] rotate-[40deg]'
-			/>
-			<Image
-				src='/shapes/half-circle-full-orange.svg'
-				alt='Chess'
-				width={50}
-				height={100}
-				className='absolute bottom-[-20%] left-[70%] w-[50px] rotate-[10deg]'
-			/>
-			<Image
-				src='/shapes/light-square-orange.svg'
-				alt='Chess'
-				width={50}
-				height={50}
-				className='absolute left-1/2 top-[0px] w-[80px] rotate-[0deg]'
-			/>
-			<Image
-				src='/shapes/light-square-black.svg'
-				alt='Chess'
-				width={50}
-				height={50}
-				className='absolute left-1/4 top-1/3 w-[80px] rotate-[120deg]'
-			/>
-			<Image
-				src='/shapes/full-circle-black.svg'
-				alt='Chess'
-				width={50}
-				height={100}
-				className='absolute bottom-[0%] left-1/4 z-10 w-[80px] rotate-[120deg]'
-			/>
-			<Image
-				src='/shapes/full-rectangle-orange.svg'
-				alt='Chess'
-				width={180}
-				height={60}
-				className='absolute bottom-[-2%] left-[22%] w-[80px] rotate-[120deg]'
-			/>
-			<Image
-				src='/shapes/full-circle-light-black.svg'
-				alt='Chess'
-				width={50}
-				height={100}
-				className='absolute bottom-[10%] left-[60%] w-[80px] rotate-[120deg]'
-			/>
-			<Image
-				src='/shapes/full-square-black.svg'
-				alt='Chess'
-				width={100}
-				height={100}
-				className='absolute bottom-[-20%] left-[50%] w-[80px] rotate-[80deg]'
-			/>
-			<Image
-				src='/shapes/full-circle-orange.svg'
-				alt='Chess'
-				width={50}
-				height={100}
-				className='absolute left-[70%] top-[-50%] w-[80px] rotate-[120deg]'
-			/>
+		<div className='relative flex h-[calc(100vh-150px)] w-full flex-col items-center justify-center'>
+			<motion.div
+				className=''
+				initial={{ opacity: 0 }}
+				animate={{ opacity: 1 }}>
+				<Image
+					src='/shapes/full-square-orange.svg'
+					alt='Chess'
+					width={180}
+					height={60}
+					className='absolute left-[-5%] top-[-10%] w-[150px] rotate-45 2xl:left-[-10%] 2xl:w-[200px] 3xl:left-[-7%] '
+				/>
+			</motion.div>
+			<motion.div
+				className=''
+				initial={{ opacity: 0 }}
+				animate={{ opacity: 1 }}>
+				<Image
+					src='/elcamino.png'
+					alt='Chess'
+					width={2169}
+					height={1531}
+					className='absolute left-[70%] top-[15%] w-[300px] 2xl:w-[400px] 3xl:left-[65%] 3xl:w-[600px]'
+				/>
+			</motion.div>
+			<motion.div
+				className=''
+				initial={{ opacity: 0 }}
+				animate={{ opacity: 1 }}>
+				<Image
+					src='/shapes/full-circle-light-black.svg'
+					alt='Chess'
+					width={50}
+					height={100}
+					className='absolute bottom-[22%] left-[43%] w-[60px] rotate-[120deg] 3xl:left-[43%]'
+				/>
+			</motion.div>
+			<motion.div
+				className=''
+				initial={{ opacity: 0 }}
+				animate={{ opacity: 1 }}>
+				<Image
+					src='/shapes/full-circle-light-orange.svg'
+					alt='Chess'
+					width={50}
+					height={100}
+					className='absolute bottom-[21%] left-[40%]  w-[80px] rotate-[120deg] 3xl:left-[40%]'
+				/>
+			</motion.div>
+			<motion.div
+				className=''
+				initial={{ opacity: 0 }}
+				animate={{ opacity: 1 }}>
+				<Image
+					src='/shapes/full-circle-black.svg'
+					alt='Chess'
+					width={50}
+					height={100}
+					className='absolute bottom-[20%] left-[37%] w-[90px] rotate-[120deg] 3xl:left-[37%]'
+				/>
+			</motion.div>
+			<motion.div
+				className=''
+				initial={{ opacity: 0 }}
+				animate={{ opacity: 1 }}>
+				<Image
+					src='/shapes/full-circle-orange.svg'
+					alt='Chess'
+					width={50}
+					height={100}
+					className='absolute bottom-[19%] left-[33%] w-[110px] rotate-[120deg] 3xl:left-[34%]'
+				/>
+			</motion.div>
+
+			<motion.div
+				className=''
+				initial={{ opacity: 0 }}
+				animate={{ opacity: 1 }}>
+				<Image
+					src='/shapes/half-circle-full-orange.svg'
+					alt='Chess'
+					width={50}
+					height={100}
+					className='absolute right-[0%] top-[10%] w-[60px] rotate-[180deg]'
+				/>
+			</motion.div>
+			<motion.div
+				className=''
+				initial={{ opacity: 0 }}
+				animate={{ opacity: 1 }}>
+				<Image
+					src='/shapes/half-circle-black.svg'
+					alt='Chess'
+					width={50}
+					height={100}
+					className='absolute bottom-[10%] left-[0%] w-[80px] rotate-[0deg]'
+				/>
+			</motion.div>
 			<div className='flex w-[90%] flex-col items-center justify-center gap-24 text-center'>
 				<div className='flex w-full justify-start px-[10%] text-start font-caveat text-4xl'>
 					<h3>

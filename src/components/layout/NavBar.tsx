@@ -41,11 +41,11 @@ const NavBar = () => {
 							)}
 						</span>
 						<div
-							className={`absolute h-24 w-[300px] flex-col items-start justify-center  ${
+							className={`absolute z-10 h-24 w-[300px] flex-col items-start justify-center  ${
 								isOpen ? 'flex' : 'hidden'
 							}`}>
 							<ul
-								className={`flex w-[300px] translate-y-[60px] flex-col items-start justify-center gap-6 border-[2px] border-black bg-slate-200 p-3 text-secondaryOne ${
+								className={`z-10 flex w-[300px] translate-y-[60px] flex-col items-start justify-center gap-6 border-[2px] border-black bg-slate-200 p-3 text-secondaryOne ${
 									isOpen ? 'block' : 'hidden'
 								}`}>
 								<li>

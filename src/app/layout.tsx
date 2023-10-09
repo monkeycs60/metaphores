@@ -13,9 +13,12 @@ export default function RootLayout({
 	children: React.ReactNode;
 }) {
 	return (
-		<html lang='en'>
-			<body className={'w-screen bg-white font-inter text-base'}>
-				<div className='flex min-h-screen flex-col'>
+		<html lang='fr'>
+			<body
+				className={
+					'w-screen overflow-x-hidden bg-white font-inter text-base'
+				}>
+				<div className='w-full'>
 					<NavBar />
 					{children}
 				</div>
