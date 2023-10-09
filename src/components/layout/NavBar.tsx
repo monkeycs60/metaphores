@@ -9,7 +9,7 @@ import { ChevronDown, ChevronUp } from 'lucide-react';
 const NavBar = () => {
 	const [isOpen, setIsOpen] = useState(false);
 	return (
-		<div className='sticky m-auto flex h-[150px] w-[85%] items-center justify-between gap-12 p-6 '>
+		<div className='sticky m-auto flex h-[150px] w-[85%] items-center justify-between gap-12 p-6 font-inter '>
 			<Link href='/'>
 				<Image
 					src='/logo-svg.svg'
@@ -21,8 +21,13 @@ const NavBar = () => {
 			</Link>
 			<nav>
 				<ul className='flex gap-8 uppercase'>
-					<li>Accueil</li>
-					<li>A propos</li>
+					<li>
+						<Link href='/'>Accueil</Link>
+					</li>
+					<li>
+						<Link href='/about'>A propos</Link>
+					</li>
+
 					<li
 						className='relative flex cursor-pointer gap-1'
 						onMouseEnter={() => setIsOpen(true)}
@@ -35,20 +40,32 @@ const NavBar = () => {
 								<ChevronUp className='rotate-180 transition-all duration-300 ease-in-out' />
 							)}
 						</span>
-						<ul
-							className={`absolute -bottom-28 flex h-24 w-[300px] flex-col items-center justify-center gap-2 bg-red-300 text-secondaryOne ${
-								isOpen ? 'block' : 'hidden'
+						<div
+							className={`absolute h-24 w-[300px] flex-col items-start justify-center  ${
+								isOpen ? 'flex' : 'hidden'
 							}`}>
-							<li>Sous-menu 3</li>
-							<li>Sous-menu 4</li>
-						</ul>
+							<ul
+								className={`flex w-[300px] translate-y-[60px] flex-col items-start justify-center gap-6 border-[2px] border-black bg-slate-200 p-3 text-secondaryOne ${
+									isOpen ? 'block' : 'hidden'
+								}`}>
+								<li>
+									<Link href='/coaching/individuel'>Individuel</Link>
+								</li>
+								<li>
+									<Link href='/coaching/equipe'>Equipe</Link>
+								</li>
+								<li>
+									<Link href='/coaching/entreprise'>Entreprise</Link>
+								</li>
+							</ul>
+						</div>
 					</li>
 					<li>Déontologie</li>
 					<li>Tarifs</li>
 				</ul>
 			</nav>
 
-			<div className='flex gap-4'>
+			<div className='flex gap-4 text-3xl'>
 				<Button className='ml-auto' variant={'outline'}>
 					{' '}
 					Contact{' '}
