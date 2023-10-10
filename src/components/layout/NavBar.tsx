@@ -12,10 +12,10 @@ const NavBar = () => {
 		<div className='sticky m-auto flex h-[150px] w-[85%] items-center justify-between gap-12 p-6 font-inter '>
 			<Link href='/'>
 				<Image
-					src='/logo-svg.svg'
+					src='/logo-meta-transformed.png'
 					alt='Logo'
-					width={627}
-					height={205}
+					width={831}
+					height={232}
 					className='w-[260px]'
 				/>
 			</Link>
