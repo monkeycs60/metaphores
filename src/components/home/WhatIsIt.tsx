@@ -2,7 +2,7 @@ import React from 'react';
 
 const WhatIsIt = () => {
 	return (
-		<div className='flex h-screen items-center bg-blue-400 '>
+		<div className='m-auto flex h-screen w-[90%] items-center justify-center bg-blue-400'>
 			<div className='h-[500px] w-[40%] bg-red-300 p-12'>
 				<h2>Changer les possibles</h2>
 				<div>

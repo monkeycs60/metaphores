@@ -9,7 +9,7 @@ import { ChevronDown, ChevronUp } from 'lucide-react';
 const NavBar = () => {
 	const [isOpen, setIsOpen] = useState(false);
 	return (
-		<div className='sticky m-auto flex h-[150px] w-[85%] items-center justify-between gap-12 p-6 font-inter '>
+		<div className='sticky m-auto flex h-[150px] w-[90%] items-center justify-between gap-12 p-6 font-inter '>
 			<Link href='/'>
 				<Image
 					src='/logo-meta-transformed.png'
@@ -20,7 +20,7 @@ const NavBar = () => {
 				/>
 			</Link>
 			<nav>
-				<ul className='flex gap-8 uppercase'>
+				<ul className='flex gap-10 text-xl 3xl:gap-12 3xl:text-2xl '>
 					<li>
 						<Link href='/'>Accueil</Link>
 					</li>
@@ -29,7 +29,7 @@ const NavBar = () => {
 					</li>
 
 					<li
-						className='relative flex cursor-pointer gap-1'
+						className='relative flex cursor-pointer items-center gap-2'
 						onMouseEnter={() => setIsOpen(true)}
 						onMouseLeave={() => setIsOpen(false)}>
 						<span>Le coaching</span>
@@ -65,12 +65,15 @@ const NavBar = () => {
 				</ul>
 			</nav>
 
-			<div className='flex gap-4 text-3xl'>
-				<Button className='ml-auto' variant={'outline'}>
+			<div className='mr-[3vw] flex gap-6 text-3xl 3xl:mr-[1vw]'>
+				<Button className='ml-auto' variant={'outline'} size={'lg'}>
 					{' '}
 					Contact{' '}
 				</Button>
-				<Button className='ml-auto'> Réserver </Button>
+				<Button className='ml-auto' size={'lg'}>
+					{' '}
+					Réserver{' '}
+				</Button>
 			</div>
 		</div>
 	);
