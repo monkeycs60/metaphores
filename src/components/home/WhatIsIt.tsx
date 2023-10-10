@@ -6,13 +6,6 @@ import { ArrowUpRight } from 'lucide-react';
 const WhatIsIt = () => {
 	return (
 		<div className='relative m-auto mb-[15vh] flex h-[600px] w-[86%] justify-center gap-12'>
-			<Image
-				src='/shapes/full-square-black.svg'
-				alt='Chess'
-				width={100}
-				height={100}
-				className='absolute bottom-[70px] left-[55%] z-10 w-[70px] rotate-45'
-			/>
 			<div className='relative flex flex-1 flex-col items-center justify-center gap-6 3xl:justify-start'>
 				<Image
 					src='/chess-miror.png'
