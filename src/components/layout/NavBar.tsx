@@ -20,7 +20,7 @@ const NavBar = () => {
 				/>
 			</Link>
 			<nav>
-				<ul className='flex gap-10 text-xl 3xl:gap-12 3xl:text-2xl '>
+				<ul className='flex gap-10 text-xl 3xl:gap-12 3xl:text-xl '>
 					<li>
 						<Link href='/'>Accueil</Link>
 					</li>

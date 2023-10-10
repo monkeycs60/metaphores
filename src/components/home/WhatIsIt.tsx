@@ -1,28 +1,41 @@
 import Image from 'next/image';
 import React from 'react';
 import { Button } from '../ui/button';
+import { ArrowUpRight } from 'lucide-react';
 
 const WhatIsIt = () => {
 	return (
-		<div className='m-auto my-[10vh] flex h-[600px] w-[86%] justify-center gap-12'>
-			<div className='flex flex-1 flex-col items-center justify-center gap-6 3xl:justify-start'>
+		<div className='relative m-auto mb-[15vh] flex h-[600px] w-[86%] justify-center gap-12'>
+			<Image
+				src='/shapes/full-square-black.svg'
+				alt='Chess'
+				width={100}
+				height={100}
+				className='absolute bottom-[70px] left-[55%] z-10 w-[70px] rotate-45'
+			/>
+			<div className='relative flex flex-1 flex-col items-center justify-center gap-6 3xl:justify-start'>
 				<Image
 					src='/chess-miror.png'
 					alt='Chess'
 					width={642}
 					height={446}
-					className='w-[25vw] '
+					className='z-10 w-[25vw]'
 				/>
 				<p className='translate-x-[-50%] font-caveat text-4xl text-secondaryOne'>
-					Celui qui sait demander est{' '}
-					<span className='bg-secondaryOne px-2 text-whiteOne'>
-						{' '}
-						libre
-					</span>
+					Trouver du{' '}
+					<span className='bg-secondaryOne px-2 text-whiteOne'>sens</span>{' '}
+					et en donner
 				</p>
+				<Image
+					src='/shapes/zwig-orange-circle.png'
+					alt='Chess'
+					width={239}
+					height={238}
+					className='absolute right-[120px] top-[70px] w-[200px] 3xl:right-[170px] 3xl:top-[0px] '
+				/>
 			</div>
-			<div className='flex h-[600px] w-[40%] flex-col'>
-				<div className='m-auto flex w-[500px] flex-col gap-10 bg-primaryOne/40 p-10'>
+			<div className='z-20 flex h-[600px] w-[40%] flex-col'>
+				<div className='z-20 m-auto flex w-[550px] flex-col gap-10 bg-primaryOne/40 p-14 shadow-lg shadow-secondaryOne/50 hover:bg-primaryOne/50'>
 					<div className='flex flex-col gap-3'>
 						<h2 className='font-caveat text-5xl font-bold'>
 							Changer les possibles
@@ -33,7 +46,7 @@ const WhatIsIt = () => {
 						<h3 className='font-inter text-xl'>
 							Métaphore coaching, pour quoi ?
 						</h3>
-						<div>
+						<div className='flex flex-col gap-3'>
 							<p>
 								Nous créons ensemble un chemin personnalisé pour
 								atteindre votre objectif final en prenant en compte
@@ -46,7 +59,12 @@ const WhatIsIt = () => {
 							</p>
 						</div>
 					</div>
-					<Button size={'md'}>En savoir plus</Button>
+					<Button
+						size={'md'}
+						className='flex items-center justify-center gap-2'>
+						{' '}
+						<span>Ma vision du coaching</span> <ArrowUpRight />
+					</Button>
 				</div>
 			</div>
 		</div>
