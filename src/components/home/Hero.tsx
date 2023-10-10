@@ -12,18 +12,6 @@ const Hero = () => {
 				initial={{ opacity: 0 }}
 				animate={{ opacity: 1 }}>
 				<Image
-					src='/shapes/full-square-orange.svg'
-					alt='Chess'
-					width={180}
-					height={60}
-					className='absolute left-[-5%] top-[-10%] w-[150px] rotate-45 2xl:left-[-10%] 2xl:w-[200px] 3xl:left-[-7%] '
-				/>
-			</motion.div>
-			<motion.div
-				className=''
-				initial={{ opacity: 0 }}
-				animate={{ opacity: 1 }}>
-				<Image
 					src='/elcamino.png'
 					alt='Chess'
 					width={2169}
@@ -108,9 +96,9 @@ const Hero = () => {
 				<div className='flex w-full justify-start px-[10%] text-start font-caveat text-4xl'>
 					<h3>
 						<span className='border-[1px] border-secondaryOne px-2 text-primaryOne '>
-							Accompagner
+							Développer
 						</span>{' '}
-						votre cheminement
+						votre potentiel
 					</h3>
 				</div>
 				<div className='z-10 flex flex-col items-center justify-center gap-3 font-yeseva'>
@@ -121,12 +109,12 @@ const Hero = () => {
 						<h2>Coaching</h2>
 					</div>
 				</div>
-				<div className='relative flex w-full items-center justify-end font-caveat text-4xl'>
+				<div className='relative flex w-full items-center justify-end pr-24 font-caveat text-4xl'>
 					<h3>
 						<span className='  bg-primaryOne px-2 text-secondaryOne'>
-							Développer
+							Accompagner
 						</span>{' '}
-						votre potentiel
+						votre cheminement
 					</h3>
 				</div>
 			</div>
