@@ -16,11 +16,11 @@ const NavBar = () => {
 					alt='Logo'
 					width={831}
 					height={232}
-					className='w-[260px]'
+					className='w-[210px] 2xl:w-[260px]'
 				/>
 			</Link>
 			<nav>
-				<ul className='flex gap-10 text-xl 3xl:gap-12 3xl:text-xl '>
+				<ul className='flex gap-10 text-base 2xl:text-xl 3xl:gap-12 3xl:text-xl '>
 					<li>
 						<Link href='/'>Accueil</Link>
 					</li>
@@ -65,7 +65,7 @@ const NavBar = () => {
 				</ul>
 			</nav>
 
-			<div className='mr-[3vw] flex gap-6 text-3xl 3xl:mr-[1vw]'>
+			<div className='mr-[3vw] flex gap-6 text-base 2xl:text-3xl 3xl:mr-[1vw]'>
 				<Button className='ml-auto' variant={'outline'} size={'lg'}>
 					{' '}
 					Contact{' '}

@@ -7,7 +7,7 @@ const WhatIsIt = () => {
 	return (
 		<div className='relative m-auto flex w-[75%] justify-around gap-12'>
 			<div className='z-20 flex h-[600px] flex-col'>
-				<div className='z-20 m-auto flex w-[550px] flex-col gap-10 bg-primaryOne/30 p-10 shadow-lg shadow-secondaryOne/50 hover:bg-primaryOne/50'>
+				<div className='z-20 m-auto flex w-[550px] flex-col gap-10 bg-primaryOne/20 p-10 shadow-lg shadow-secondaryOne/50 hover:bg-primaryOne/50'>
 					<div className='flex flex-col gap-3'>
 						<h2 className='font-caveat text-4xl font-bold 3xl:text-5xl'>
 							Changer les possibles
@@ -16,7 +16,7 @@ const WhatIsIt = () => {
 					</div>
 					<div className='flex flex-col gap-4'>
 						<h3 className='font-inter text-xl'>
-							Métaphore coaching, c'est quoi ?
+							Métaphore coaching, pour quoi ?
 						</h3>
 						<div className='flex flex-col gap-3'>
 							<p>

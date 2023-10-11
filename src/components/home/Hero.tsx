@@ -55,7 +55,7 @@ const Hero = () => {
 					className='absolute bottom-[23%] left-[0%] w-[140px] rotate-[0deg]'
 				/>
 			</div>
-			<div className='mt-[15vh] flex w-[65%] flex-col items-center justify-center gap-36 text-center 3xl:mt-[20vh] 3xl:w-[60%]'>
+			<div className='mt-[5vh] flex w-[65%] flex-col items-center justify-center gap-36 text-center 2xl:mt-[15vh] 3xl:mt-[20vh] 3xl:w-[60%]'>
 				<div className='flex w-full justify-start px-[7vw] text-start font-caveat text-4xl'>
 					<h3>
 						<span className=' bg-primaryOne px-2 text-secondaryOne'>
@@ -65,8 +65,10 @@ const Hero = () => {
 					</h3>
 				</div>
 				<div className='z-10 flex flex-col items-center justify-center gap-3 font-yeseva'>
-					<h1 className='text-6xl 3xl:text-7xl'>Métaphore Coaching</h1>
-					<div className='flex items-center gap-4 text-4xl 3xl:text-5xl'>
+					<h1 className='text-5xl 2xl:text-6xl 3xl:text-7xl'>
+						Métaphore Coaching
+					</h1>
+					<div className='flex items-center gap-4 text-3xl 2xl:text-4xl 3xl:text-5xl'>
 						<h2>Formation</h2>
 						<div className='h-6 w-[3px] bg-black'></div>
 						<h2>Coaching</h2>
