@@ -9,7 +9,7 @@ const WhatIsIt = () => {
 			<div className='z-20 flex h-[600px] flex-col'>
 				<div className='z-20 m-auto flex w-[550px] flex-col gap-10 bg-primaryOne/30 p-10 shadow-lg shadow-secondaryOne/50 hover:bg-primaryOne/50'>
 					<div className='flex flex-col gap-3'>
-						<h2 className='font-caveat text-5xl font-bold'>
+						<h2 className='font-caveat text-4xl font-bold 3xl:text-5xl'>
 							Changer les possibles
 						</h2>
 						<div className='h-[1px] w-full bg-secondaryOne/50'></div>
@@ -45,9 +45,9 @@ const WhatIsIt = () => {
 					alt='Chess'
 					width={642}
 					height={446}
-					className='z-10 w-[20vw]'
+					className='z-10 w-[20vw] 3xl:w-[20vw]'
 				/>
-				<p className='translate-x-[-50%] font-caveat text-4xl text-secondaryOne'>
+				<p className='translate-x-[-20%] font-caveat text-4xl text-secondaryOne 3xl:translate-x-[-50%]'>
 					Trouver du{' '}
 					<span className='bg-secondaryOne px-2 text-whiteOne'>sens</span>{' '}
 					et en donner
@@ -57,7 +57,7 @@ const WhatIsIt = () => {
 					alt='Chess'
 					width={239}
 					height={238}
-					className='absolute right-[120px] top-[70px] w-[200px] 3xl:right-[-100px] 3xl:top-[50px] '
+					className='absolute right-[-100px] top-[50px] w-[200px]'
 				/>
 			</div>
 		</div>

@@ -7,33 +7,27 @@ const WhoAmI = () => {
 		<div className='containerBordureBrisee relative m-auto flex h-[60%] w-screen justify-center'>
 			<div className='flex w-[75%] items-center justify-around gap-12 '>
 				<Image
-					src='/shapes/full-circle-light-orange.svg'
+					src='/shapes/full-circle-light-black.svg'
 					alt='Chess'
 					width={100}
 					height={100}
-					className='absolute right-[-9vw] top-[25%] w-[250px] rotate-90 '
+					className='absolute right-[-7%] top-[25%] w-[250px] 3xl:right-[-4%]'
 				/>
 				<Image
 					src='/shapes/full-circle-black.svg'
 					alt='Chess'
 					width={100}
 					height={100}
-					className='absolute right-[1vw] top-[50%] w-[70px] rotate-90 3xl:right-[-1vw]'
+					className='absolute right-[3%] top-[50%] w-[70px] rotate-90'
 				/>
-				<Image
-					src='/shapes/cross-orange-circle.png'
-					alt='Chess'
-					width={50}
-					height={50}
-					className='absolute left-[-5%] top-[220px] w-[60px]'
-				/>
+
 				<div className='relative flex flex-col items-center justify-center gap-6 3xl:justify-start'>
 					<Image
 						src='/chris-profile-light.svg'
 						alt='Chess'
 						width={789}
 						height={1080}
-						className='z-10 w-[25vw] 3xl:w-[17vw]'
+						className='z-10 w-[18vw] 3xl:w-[16vw]'
 					/>
 					<p className='translate-x-[0%] font-caveat text-4xl text-whiteOne'>
 						Celui qui sait demander est{' '}
@@ -45,7 +39,7 @@ const WhoAmI = () => {
 				<div className='z-20 flex h-[600px] flex-col'>
 					<div className='z-20 m-auto flex w-[600px] flex-col gap-10 bg-whiteOne/90 p-10 shadow-lg shadow-secondaryOne/40 hover:bg-whiteOne/40'>
 						<div className='flex flex-col gap-3'>
-							<h2 className='font-caveat text-5xl font-bold'>
+							<h2 className='font-caveat text-4xl font-bold 3xl:text-5xl'>
 								Se redécouvrir
 							</h2>
 							<div className='h-[1px] w-full bg-secondaryOne/50'></div>
