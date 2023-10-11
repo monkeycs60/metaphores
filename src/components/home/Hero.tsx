@@ -5,8 +5,10 @@ import { ChevronsDown } from 'lucide-react';
 const Hero = () => {
 	return (
 		<div className='relative flex h-[calc(100vh-150px)]   flex-col items-start text-secondaryOne'>
-			<div className='absolute bottom-[5vh] left-1/2 bg-primaryOne px-4 py-3'>
-				<ChevronsDown className='h-[50px] w-[50px] text-whiteOne ' />
+			<div
+				className='absolute bottom-[5vh] left-1/2 -translate-x-1/2 bg-primaryOne px-3 py-2 3xl:px-4 
+			3xl:py-3  '>
+				<ChevronsDown className='h-[40px] w-[40px] text-whiteOne 3xl:h-[50px] 3xl:w-[50px] ' />
 			</div>
 			<div className='absolute left-[55%] top-[15%] z-10 3xl:left-[53%]'>
 				<Image

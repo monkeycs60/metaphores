@@ -21,3 +21,11 @@
 .highlighted {
 	background-color: #f07f5e;
 }
+
+.containerBordureBrisee {
+	background-color: #f07f5e;
+	border-top-left-radius: 20% 80%;
+	border-top-right-radius: 50% 20%;
+	border-bottom-right-radius: 20% 50%;
+	border-bottom-left-radius: 50% 20%;
+}

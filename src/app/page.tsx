@@ -6,8 +6,10 @@ export default function Home() {
 	return (
 		<>
 			<Hero />
-			<WhatIsIt />
-			<WhoAmI />
+			<div className='my-[5vh] flex h-screen flex-col gap-12'>
+				<WhatIsIt />
+				<WhoAmI />
+			</div>
 		</>
 	);
 }
