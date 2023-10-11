@@ -27,7 +27,7 @@ const WhoAmI = () => {
 				className='absolute left-[-5%] top-[220px] w-[60px]'
 			/>
 			<div className='z-20 flex h-[600px] w-[40%] flex-col'>
-				<div className='z-20 m-auto flex w-[550px] flex-col gap-10 bg-secondaryOne/20 p-14 shadow-lg shadow-secondaryOne/30 hover:bg-secondaryOne/40'>
+				<div className='z-20 m-auto flex w-[550px] flex-col gap-10 bg-secondaryOne/10 p-14 shadow-lg shadow-secondaryOne/20 hover:bg-secondaryOne/40'>
 					<div className='flex flex-col gap-3'>
 						<h2 className='font-caveat text-5xl font-bold'>
 							Se redécouvrir
