@@ -6,18 +6,18 @@ const WhoAmI = () => {
 	return (
 		<div className='relative m-auto my-[10vh] flex h-[600px] w-[86%] justify-center gap-12'>
 			<Image
-				src='/shapes/light-square-orange.svg'
-				alt='Chess'
-				width={180}
-				height={60}
-				className='absolute right-[-9vw] top-[25%] w-[200px] rotate-90 '
-			/>
-			<Image
-				src='/shapes/full-square-black.svg'
+				src='/shapes/full-circle-light-orange.svg'
 				alt='Chess'
 				width={100}
 				height={100}
-				className='absolute right-[-2vw] top-[50%] w-[90px] rotate-90 '
+				className='absolute right-[-9vw] top-[25%] w-[250px] rotate-90 '
+			/>
+			<Image
+				src='/shapes/full-circle-black.svg'
+				alt='Chess'
+				width={100}
+				height={100}
+				className='absolute right-[1vw] top-[50%] w-[70px] rotate-90 3xl:right-[-1vw]'
 			/>
 			<Image
 				src='/shapes/cross-orange-circle.png'
