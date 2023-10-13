@@ -24,7 +24,8 @@ module.exports = {
 			colors: {
 				whiteOne: '#FFFDF9',
 				primaryOne: '#FFBA08',
-				secondaryOne: '#B4D6E6',
+				secondaryOne: '#66C61C',
+				thirdOne: '#F07F5E',
 				blackOne: '#0D0630',
 				border: 'hsl(var(--border))',
 				input: 'hsl(var(--input))',

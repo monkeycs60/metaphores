@@ -49,7 +49,7 @@ const WhatIsIt = () => {
 				/>
 				<p className='translate-x-[-20%] font-caveat text-4xl text-blackOne 3xl:translate-x-[-50%]'>
 					Trouver du{' '}
-					<span className='bg-blackOne px-2 text-whiteOne'>sens</span> et
+					<span className='bg-thirdOne px-2 text-whiteOne'>sens</span> et
 					en donner
 				</p>
 				<Image
