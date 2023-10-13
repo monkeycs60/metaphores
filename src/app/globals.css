@@ -23,7 +23,8 @@
 }
 
 .containerBordureBrisee {
-	background-color: #F46036;
+	/* background-color: #ffb9083b; */
+	background-color: #B4D6E6;
 	border-top-left-radius: 20% 80%;
 	border-top-right-radius: 50% 20%;
 	border-bottom-right-radius: 20% 50%;

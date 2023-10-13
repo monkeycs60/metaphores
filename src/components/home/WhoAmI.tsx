@@ -29,11 +29,9 @@ const WhoAmI = () => {
 						height={1080}
 						className='z-10 w-[18vw] 3xl:w-[16vw]'
 					/>
-					<p className='translate-x-[0%] font-caveat text-4xl text-whiteOne'>
+					<p className='translate-x-[0%] font-caveat text-4xl text-blackOne'>
 						Celui qui sait demander est{' '}
-						<span className='bg-secondaryOne px-2 text-whiteOne'>
-							libre
-						</span>{' '}
+						<span className='bg-secondary px-2 text-whiteOne'>libre</span>{' '}
 					</p>
 				</div>
 				<div className='z-20 flex h-[600px] flex-col'>
@@ -42,7 +40,7 @@ const WhoAmI = () => {
 							<h2 className='font-caveat text-4xl font-bold 3xl:text-5xl'>
 								Se redécouvrir
 							</h2>
-							<div className='h-[1px] w-full bg-primaryOne/50'></div>
+							<div className='h-[1px] w-full bg-secondaryOne'></div>
 						</div>
 						<div className='flex flex-col gap-4'>
 							<h3 className='font-inter text-xl'>Qui suis-je ?</h3>
@@ -64,7 +62,7 @@ const WhoAmI = () => {
 						<Button
 							size={'md'}
 							variant={'secondary'}
-							className='flex items-center bg-primaryOne justify-center gap-2'>
+							className='flex items-center justify-center gap-2 bg-primaryOne'>
 							{' '}
 							<span>Mon parcours</span> <ArrowUpRight />
 						</Button>

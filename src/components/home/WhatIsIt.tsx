@@ -7,7 +7,7 @@ const WhatIsIt = () => {
 	return (
 		<div className='relative m-auto flex w-[75%] justify-around gap-12'>
 			<div className='z-20 flex h-[600px] flex-col'>
-				<div className='z-20 m-auto flex w-[550px] flex-col gap-10 bg-secondaryOne/20 p-10 shadow-lg shadow-blackOne/50 hover:bg-secondaryOne/30'>
+				<div className='z-20 m-auto flex w-[550px] flex-col gap-10 bg-primaryOne/20 p-10 shadow-lg shadow-blackOne/50 hover:bg-primaryOne/30'>
 					<div className='flex flex-col gap-3'>
 						<h2 className='font-caveat text-4xl font-bold 3xl:text-5xl'>
 							Changer les possibles
@@ -33,7 +33,7 @@ const WhatIsIt = () => {
 					</div>
 					<Button
 						size={'md'}
-						className='flex items-center justify-center gap-2 bg-secondaryOne'>
+						className='flex items-center justify-center gap-2 bg-primaryOne'>
 						{' '}
 						<span>Ma vision du coaching</span> <ArrowUpRight />
 					</Button>
@@ -49,7 +49,7 @@ const WhatIsIt = () => {
 				/>
 				<p className='translate-x-[-20%] font-caveat text-4xl text-blackOne 3xl:translate-x-[-50%]'>
 					Trouver du{' '}
-					<span className='bg-primaryOne px-2 text-whiteOne'>sens</span> et
+					<span className='bg-blackOne px-2 text-whiteOne'>sens</span> et
 					en donner
 				</p>
 				<Image

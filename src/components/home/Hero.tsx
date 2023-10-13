@@ -4,7 +4,7 @@ import { ChevronsDown } from 'lucide-react';
 
 const Hero = () => {
 	return (
-		<div className='relative flex h-[calc(100vh-150px)]   flex-col items-start text-secondaryOne'>
+		<div className='relative flex h-[calc(100vh-150px)] flex-col items-start text-secondaryOne'>
 			<div
 				className='absolute bottom-[5vh] left-1/2 -translate-x-1/2 bg-primaryOne px-3 py-2 3xl:px-4 
 			3xl:py-3  '>
@@ -20,7 +20,7 @@ const Hero = () => {
 				/>
 				<div className='relative flex w-full items-center pl-6 font-caveat text-4xl'>
 					<h3 className='text-blackOne'>
-						<span className='px-2 text-secondaryOne '>Accompagner</span>{' '}
+						<span className='bg-secondaryOne px-2 '>Accompagner</span>{' '}
 						votre cheminement
 					</h3>
 				</div>
@@ -28,7 +28,7 @@ const Hero = () => {
 
 			<div className='absolute left-[80%] top-[32%] 3xl:left-[83%] 3xl:top-[35%]'>
 				<Image
-					src='/shapes/full-circle-orange.svg'
+					src='/shapes/yellow-circle.svg'
 					alt='Chess'
 					width={100}
 					height={100}
@@ -37,7 +37,7 @@ const Hero = () => {
 			</div>
 			<div className=''>
 				<Image
-					src='/shapes/green-circle.svg'
+					src='/shapes/blue-circle.svg'
 					alt='Chess'
 					width={50}
 					height={100}
@@ -56,8 +56,8 @@ const Hero = () => {
 			<div className='mt-[5vh] flex w-[65%] flex-col items-center justify-center gap-36 text-center 2xl:mt-[15vh] 3xl:mt-[20vh] 3xl:w-[60%]'>
 				<div className='flex w-full justify-start px-[7vw] text-start font-caveat text-4xl text-blackOne'>
 					<h3>
-						<span className='  px-2 text-primaryOne'>Développer</span>{' '}
-						votre potentiel
+						<span className='  bg-primaryOne px-2'>Développer</span> votre
+						potentiel
 					</h3>
 				</div>
 				<div className='z-10 flex flex-col items-center justify-center gap-3 font-yeseva text-blackOne'>

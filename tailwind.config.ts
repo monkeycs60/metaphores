@@ -22,10 +22,10 @@ module.exports = {
 		},
 		extend: {
 			colors: {
-				whiteOne: '#FFE9F3',
+				whiteOne: '#FFFDF9',
 				primaryOne: '#FFBA08',
-				secondaryOne: '#66C61C',
-				blackOne: '#262626',
+				secondaryOne: '#B4D6E6',
+				blackOne: '#0D0630',
 				border: 'hsl(var(--border))',
 				input: 'hsl(var(--input))',
 				ring: 'hsl(var(--ring))',
