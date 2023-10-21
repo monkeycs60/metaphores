@@ -1,5 +1,6 @@
 import ForWhom from '@/components/home/ForWhom';
 import Hero from '@/components/home/Hero';
+import Pillars from '@/components/home/Pillars';
 import WhatIsIt from '@/components/home/WhatIsIt';
 import WhoAmI from '@/components/home/WhoAmI';
 
@@ -11,6 +12,7 @@ export default function Home() {
 				<WhatIsIt />
 				<WhoAmI />
 				<ForWhom />
+				<Pillars />
 			</div>
 		</>
 	);
