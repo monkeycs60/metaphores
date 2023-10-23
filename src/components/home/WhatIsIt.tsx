@@ -5,8 +5,8 @@ import { ArrowUpRight } from 'lucide-react';
 
 const WhatIsIt = () => {
 	return (
-		<div className='relative m-auto flex w-[75%] justify-around gap-12'>
-			<div className='z-20 flex h-[600px] flex-col'>
+		<div className='relative m-auto mt-8 flex w-[75%] justify-around gap-12'>
+			<div className='z-20 flex  flex-col'>
 				<div className='z-20 m-auto flex w-[550px] flex-col gap-10 bg-primaryOne/20 p-10 shadow-lg shadow-blackOne/50 hover:bg-primaryOne/30'>
 					<div className='flex flex-col gap-3'>
 						<h2 className='font-caveat text-4xl font-bold 3xl:text-5xl'>
