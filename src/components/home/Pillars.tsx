@@ -51,8 +51,8 @@ const Pillars = () => {
 						</div>
 						<h3 className='text-lg font-bold'>Liberté et autonomie</h3>
 						<p className='h-[80px] '>
-							Protéger votre identité et le contenu des échanges pour un
-							environnement sûr et serein.
+							Vous avez le pouvoir de décision à chaque étape,
+							garantissant votre indépendance.
 						</p>
 					</div>
 					<div className='flex w-1/4 flex-col items-center gap-4 p-6 text-center'>

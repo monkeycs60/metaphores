@@ -27,7 +27,7 @@ const WhoAmI = () => {
 						alt='Chess'
 						width={789}
 						height={1080}
-						className='z-10 w-[18vw] 3xl:w-[16vw]'
+						className='z-10 w-[23vw] 3xl:w-[16vw]'
 					/>
 					<p className='translate-x-[0%] font-caveat text-4xl text-blackOne'>
 						Celui qui sait demander est{' '}
@@ -35,7 +35,7 @@ const WhoAmI = () => {
 					</p>
 				</div>
 				<div className='z-20 flex h-[600px] flex-col'>
-					<div className='z-20 m-auto flex w-[600px] flex-col gap-10 bg-whiteOne p-10 text-blackOne shadow-lg shadow-blackOne/40 hover:bg-whiteOne/90'>
+					<div className='z-20 m-auto flex w-[600px] flex-col gap-10 bg-whiteOne p-10 text-blackOne shadow-lg shadow-blackOne/40 hover:bg-slate-200'>
 						<div className='flex flex-col gap-3'>
 							<h2 className='font-caveat text-4xl font-bold 3xl:text-5xl'>
 								Se redécouvrir
@@ -61,7 +61,6 @@ const WhoAmI = () => {
 						</div>
 						<Button
 							size={'md'}
-							variant={'secondary'}
 							className='flex items-center justify-center gap-2 bg-primaryOne'>
 							{' '}
 							<span>Mon parcours</span> <ArrowUpRight />
