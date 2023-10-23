@@ -11,56 +11,44 @@ const Pillars = () => {
 					Les piliers de Métaphore Coaching
 				</h2>
 				<div className='flex w-full bg-white'>
-					<div className='flex w-1/4 flex-col items-center justify-between gap-4 bg-primaryOne/5 p-4 text-center'>
-						<Image
-							src='/lock.svg'
-							width={60}
-							height={74}
-							alt='pilier 1'
-						/>
-						<h3>Confidentialité assurée</h3>
-						<p>
+					<div className='flex w-1/4 flex-col items-center gap-4 bg-primaryOne/5 p-6 text-center'>
+						<div className='relative h-[60px] w-[60px]'>
+							<Image src='/lock.svg' fill alt='pilier 1' />
+						</div>
+						<h3 className='text-lg font-bold'>Confidentialité assurée</h3>
+						<p className='h-[80px] '>
 							Protéger votre identité et le contenu des échanges pour un
 							environnement sûr et serein.
 						</p>
 					</div>
-					<div className='flex w-1/4 flex-col items-center justify-between gap-4 p-4 text-center'>
-						<Image
-							src='/loupe.svg'
-							width={60}
-							height={74}
-							alt='pilier 2'
-						/>
-						<h3>Transparence totale</h3>
-						<p>
+					<div className='flex w-1/4 flex-col items-center gap-4 p-6 text-center'>
+						<div className='relative h-[60px] w-[60px]'>
+							<Image src='/loupe.svg' fill alt='pilier 2' />
+						</div>
+						<h3 className='text-lg font-bold'>Transparence totale</h3>
+						<p className='h-[80px] '>
 							Clarifier chaque étape pour votre tranquillité et votre
 							pleine compréhension.
 						</p>
 					</div>
-					<div className='flex w-1/4 flex-col items-center justify-center gap-4 bg-primaryOne/5 p-4 text-center'>
-						<Image
-							src='/dove.svg'
-							width={60}
-							height={74}
-							alt='pilier 3'
-						/>
-						<h3>Liberté et autonomie</h3>
-						<p>
+					<div className='flex w-1/4 flex-col items-center gap-4 bg-primaryOne/5 p-6 text-center'>
+						<div className='relative h-[60px] w-[60px]'>
+							<Image src='/dove.svg' fill alt='pilier 3' />
+						</div>
+						<h3 className='text-lg font-bold'>Liberté et autonomie</h3>
+						<p className='h-[80px] '>
 							Protéger votre identité et le contenu des échanges pour un
 							environnement sûr et serein.
 						</p>
 					</div>
-					<div className='flex w-1/4 flex-col items-center justify-center gap-4 text-center'>
-						<Image
-							src='/target.svg'
-							width={60}
-							height={74}
-							alt='pilier 4'
-						/>
-						<h3>Confidentialité assurée</h3>
-						<p>
-							Protéger votre identité et le contenu des échanges pour un
-							environnement sûr et serein.
+					<div className='flex w-1/4 flex-col items-center gap-4 p-6 text-center'>
+						<div className='relative h-[60px] w-[60px]'>
+							<Image src='/target.svg' fill alt='pilier 4' />
+						</div>
+						<h3 className='text-lg font-bold'>Précision et dynamisme</h3>
+						<p className='h-[80px] '>
+							Approcher chaque problème avec exactitude pour un
+							accompagnement optimal.
 						</p>
 					</div>
 				</div>
@@ -68,7 +56,7 @@ const Pillars = () => {
 					size={'md'}
 					className='m-auto flex w-1/3 items-center justify-center gap-2 bg-primaryOne'>
 					{' '}
-					<span>Ma vision du coaching</span> <ArrowUpRight />
+					<span>En savoir plus</span> <ArrowUpRight />
 				</Button>
 			</div>
 		</div>
