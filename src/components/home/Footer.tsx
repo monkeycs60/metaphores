@@ -32,7 +32,7 @@ const Footer = () => {
 							</div>
 						</div>
 						<div className='flex flex-col gap-4'>
-							<h4 className='text-lg font-bold uppercase'>Extérieur</h4>
+							<h4 className='text-lg font-bold uppercase'>A l'Extérieur</h4>
 							<div className='flex flex-col gap-1'>
 								<span>Dans un lieu neutre</span>
 								<span>Dans vos locaux</span>
@@ -40,7 +40,7 @@ const Footer = () => {
 							</div>
 						</div>
 						<div className='flex flex-col gap-4'>
-							<h4 className='text-lg font-bold uppercase'>Visio</h4>
+							<h4 className='text-lg font-bold uppercase'>En Visio</h4>
 							<div className='flex flex-col gap-1'>
 								<span>En distanciel</span>
 							</div>
