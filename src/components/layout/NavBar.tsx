@@ -3,8 +3,10 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { Button } from '../ui/button';
-import { useState } from 'react';
 import { ChevronDown, ChevronUp } from 'lucide-react';
+import { Menu, Transition } from '@headlessui/react';
+import { Fragment, useEffect, useRef, useState } from 'react';
+
 
 const NavBar = () => {
 	const [isOpen, setIsOpen] = useState(false);

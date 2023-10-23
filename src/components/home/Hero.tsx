@@ -18,7 +18,7 @@ const Hero = () => {
 					height={1531}
 					className='w-[30vw] 3xl:w-[35vw]'
 				/>
-				<div className='relative flex w-full items-center pl-6 font-caveat text-4xl'>
+				<div className='relative flex w-full items-center pl-6 font-caveat text-5xl'>
 					<h3 className='text-blackOne'>
 						<span className='bg-secondaryOne px-2 '>Accompagner</span>{' '}
 						votre cheminement
@@ -54,14 +54,14 @@ const Hero = () => {
 				/>
 			</div>
 			<div className='mt-[5vh] flex w-[65%] flex-col items-center justify-center gap-36 text-center 2xl:mt-[15vh] 3xl:mt-[20vh] 3xl:w-[60%]'>
-				<div className='flex w-full justify-start px-[7vw] text-start font-caveat text-4xl text-blackOne'>
+				<div className='flex w-full justify-start px-[7vw] text-start font-caveat text-5xl text-blackOne'>
 					<h3>
 						<span className='  bg-primaryOne px-2'>Développer</span> votre
 						potentiel
 					</h3>
 				</div>
 				<div className='z-10 flex flex-col items-center justify-center gap-3 font-yeseva text-blackOne'>
-					<h1 className='text-5xl 2xl:text-6xl 3xl:text-7xl'>
+					<h1 className='text-5xl 2xl:text-7xl 3xl:text-7xl'>
 						Métaphore Coaching
 					</h1>
 					<div className='flex items-center gap-4 text-3xl 2xl:text-4xl 3xl:text-5xl'>
