@@ -4,7 +4,7 @@ import { ChevronsDown } from 'lucide-react';
 
 const Hero = () => {
 	return (
-		<div className='relative flex h-[calc(100vh-150px)]   flex-col items-start text-secondaryOne'>
+		<div className='relative flex h-[calc(100vh-150px)] flex-col items-start text-secondaryOne'>
 			<div
 				className='absolute bottom-[5vh] left-1/2 -translate-x-1/2 bg-primaryOne px-3 py-2 3xl:px-4 
 			3xl:py-3  '>
@@ -18,11 +18,9 @@ const Hero = () => {
 					height={1531}
 					className='w-[30vw] 3xl:w-[35vw]'
 				/>
-				<div className='relative flex w-full items-center pl-6 font-caveat text-4xl'>
-					<h3>
-						<span className='border-[1px] border-secondaryOne px-2 text-primaryOne '>
-							Accompagner
-						</span>{' '}
+				<div className='relative flex w-full items-center pl-6 font-caveat text-5xl'>
+					<h3 className='text-blackOne'>
+						<span className='bg-secondaryOne px-2 '>Accompagner</span>{' '}
 						votre cheminement
 					</h3>
 				</div>
@@ -30,7 +28,7 @@ const Hero = () => {
 
 			<div className='absolute left-[80%] top-[32%] 3xl:left-[83%] 3xl:top-[35%]'>
 				<Image
-					src='/shapes/full-circle-orange.svg'
+					src='/shapes/yellow-circle.svg'
 					alt='Chess'
 					width={100}
 					height={100}
@@ -39,7 +37,7 @@ const Hero = () => {
 			</div>
 			<div className=''>
 				<Image
-					src='/shapes/full-circle-black.svg'
+					src='/shapes/blue-circle.svg'
 					alt='Chess'
 					width={50}
 					height={100}
@@ -48,7 +46,7 @@ const Hero = () => {
 			</div>
 			<div className=''>
 				<Image
-					src='/shapes/half-circle-orange.svg'
+					src='/shapes/half-circle-black.svg'
 					alt='Chess'
 					width={50}
 					height={100}
@@ -56,16 +54,14 @@ const Hero = () => {
 				/>
 			</div>
 			<div className='mt-[5vh] flex w-[65%] flex-col items-center justify-center gap-36 text-center 2xl:mt-[15vh] 3xl:mt-[20vh] 3xl:w-[60%]'>
-				<div className='flex w-full justify-start px-[7vw] text-start font-caveat text-4xl'>
+				<div className='flex w-full justify-start px-[7vw] text-start font-caveat text-5xl text-blackOne'>
 					<h3>
-						<span className=' bg-primaryOne px-2 text-secondaryOne'>
-							Développer
-						</span>{' '}
-						votre potentiel
+						<span className='  bg-primaryOne px-2'>Développer</span> votre
+						potentiel
 					</h3>
 				</div>
-				<div className='z-10 flex flex-col items-center justify-center gap-3 font-yeseva'>
-					<h1 className='text-5xl 2xl:text-6xl 3xl:text-7xl'>
+				<div className='z-10 flex flex-col items-center justify-center gap-3 font-yeseva text-blackOne'>
+					<h1 className='text-5xl 2xl:text-7xl 3xl:text-7xl'>
 						Métaphore Coaching
 					</h1>
 					<div className='flex items-center gap-4 text-3xl 2xl:text-4xl 3xl:text-5xl'>

@@ -22,22 +22,17 @@ module.exports = {
 		},
 		extend: {
 			colors: {
-				primaryOne: '#F07F5E',
-				secondaryOne: '#0D0630',
-				whiteOne: '#FFF5EF',
-				// blackOne: '#1C110A',
-				// primaryTwo: '#F07F5E',
-				// secondaryTwo: '#0D0630',
-				// tercaryTwo: '#84A59D',
-				// whiteTwo: '#FFDAC6',
-				// blackTwo: '#050505',
+				whiteOne: '#FFFDF9',
+				primaryOne: '#FFBA08',
+				secondaryOne: '#B4D6E6',
+				blackOne: '#0D0630',
 				border: 'hsl(var(--border))',
 				input: 'hsl(var(--input))',
 				ring: 'hsl(var(--ring))',
 				background: 'hsl(var(--background))',
 				foreground: 'hsl(var(--foreground))',
 				primary: {
-					DEFAULT: '#F07F5E',
+					DEFAULT: '#FFBA08',
 					foreground: 'hsl(var(--primary-foreground))',
 				},
 				secondary: {
