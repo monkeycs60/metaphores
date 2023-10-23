@@ -6,6 +6,20 @@ import { ArrowUpRight } from 'lucide-react';
 const Pillars = () => {
 	return (
 		<div className='relative flex w-full '>
+			<Image
+				src='/blackOne-circle.svg'
+				alt='black circle'
+				className='absolute left-6 w-[150px] '
+				width={223}
+				height={262}
+			/>
+			<Image
+				src='/yellowCircle.svg'
+				alt='yellow circle'
+				className='absolute bottom-[-60px] right-[-10px] w-[150px] '
+				width={100}
+				height={100}
+			/>
 			<div className='m-auto flex w-3/4 flex-col gap-[60px]'>
 				<h2 className='text-center text-2xl font-bold'>
 					Les piliers de Métaphore Coaching

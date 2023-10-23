@@ -33,10 +33,9 @@ const ForWhom = () => {
 				<div className='m-auto flex w-full translate-y-[-10vh] flex-col justify-center gap-4'>
 					<div className='m-auto flex w-[82%] justify-end'>
 						<p className='font-caveat text-4xl'>
-							Changer les{' '}
-							<span className='bg-blackOne px-2 text-white'>
-								possibles
-							</span>
+							Qui mieux que{' '}
+							<span className='bg-blackOne px-2 text-white'>vous</span>
+							connaît vos solutions
 						</p>
 					</div>
 					<div className='flex w-full justify-center gap-4'>

@@ -5,6 +5,13 @@ import React from 'react';
 const Contact = () => {
 	return (
 		<div className='relative flex w-full '>
+			<Image
+				src='/twoCircles.svg'
+				alt='two circles'
+				className='absolute bottom-0 left-6 w-[170px] rotate-180 '
+				width={219}
+				height={215}
+			/>
 			<div className='m-auto flex w-3/4 flex-col gap-[60px]'>
 				<h2 className='text-center text-2xl font-bold'>Contactez-nous</h2>
 				<div className='flex justify-between'>
