@@ -22,12 +22,12 @@ const Testimonies = () => {
 		}
 	};
 	return (
-		<div className='containerBordureBriseeTwo relative flex h-[50vh] w-full flex-col items-center gap-6 pt-12 '>
+		<div className='containerBordureBriseeTwo relative flex h-[50vh] w-full flex-col items-center gap-6 pt-12 3xl:h-[36vh] '>
 			<div>
 				<h2 className='text-center text-2xl font-bold'>Témoignages</h2>
 			</div>
 			<div className='flex flex-col items-center gap-4'>
-				<div className='flex w-full px-[300px] '>
+				<div className='flex w-full px-[300px] 3xl:px-[400px] '>
 					<Image src='/quote.svg' alt='quote' width={80} height={42} />
 				</div>
 				<div className=' flex h-[170px] w-[45%] translate-x-[-50px] flex-col gap-6'>

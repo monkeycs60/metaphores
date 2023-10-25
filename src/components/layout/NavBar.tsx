@@ -14,10 +14,10 @@ const NavBar = () => {
 		<div className='sticky m-auto flex h-[150px] w-[90%] items-center justify-between gap-12 p-6 font-inter '>
 			<Link href='/'>
 				<Image
-					src='/logo-meta-transformed.png'
+					src='/logo-metaphore-final.png'
 					alt='Logo'
-					width={831}
-					height={232}
+					width={894}
+					height={279}
 					className='w-[210px] 2xl:w-[260px]'
 				/>
 			</Link>

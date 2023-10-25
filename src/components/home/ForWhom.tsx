@@ -20,7 +20,7 @@ const ForWhom = () => {
 				className='absolute right-[20px] top-[200px] w-[200px]'
 			/>
 			<div className='m-auto w-3/4 font-inter'>
-				<div className='flex h-[300px] w-[30vw] flex-col gap-8 bg-primaryOne/20 p-16 2xl:w-[600px]'>
+				<div className='flex h-[300px] w-[30vw] flex-col gap-8 bg-primaryOne/20 p-16 shadow-lg shadow-blackOne/40 2xl:w-[600px] 3xl:h-[350px]'>
 					<div className='flex flex-col gap-3 text-2xl font-bold'>
 						<h2>Un coaching pour qui ?</h2>
 						<div className='h-[1px] w-full bg-blackOne '></div>
@@ -36,7 +36,7 @@ const ForWhom = () => {
 						<p className='font-caveat text-4xl'>
 							Qui mieux que{' '}
 							<span className='bg-blackOne px-2 text-white'>vous</span>
-							connaît vos solutions
+							connaît vos solutions ?
 						</p>
 					</div>
 					<div className='flex w-full justify-center gap-4'>
@@ -47,7 +47,7 @@ const ForWhom = () => {
 								alt='coaching individuel'
 								className='object-cover'
 							/>
-							<div className='absolute bottom-4 left-1/2 z-20 flex h-[60px] w-[40%] -translate-x-1/2 cursor-pointer items-center justify-center bg-primaryOne/70 p-2 text-white'>
+							<div className='absolute bottom-4 left-1/2 z-20 flex h-[60px] w-[40%] -translate-x-1/2 cursor-pointer items-center justify-center bg-primaryOne p-2 font-semibold text-blackOne outline-double hover:bg-blackOne hover:text-primaryOne 2xl:bottom-7 3xl:bottom-12 3xl:text-lg '>
 								<Link href={'/coaching/#individuel'}>Individuel</Link>
 							</div>
 						</div>
@@ -58,7 +58,7 @@ const ForWhom = () => {
 								alt='coaching individuel'
 								className='object-cover'
 							/>
-							<div className='absolute bottom-4 left-1/2 z-20 flex h-[60px] w-[40%] -translate-x-1/2 cursor-pointer items-center justify-center bg-primaryOne/70 p-2 text-white'>
+							<div className='absolute bottom-4 left-1/2 z-20 flex h-[60px] w-[40%] -translate-x-1/2 cursor-pointer items-center justify-center bg-primaryOne p-2 font-semibold text-blackOne outline-double hover:bg-blackOne hover:text-primaryOne 2xl:bottom-7 3xl:bottom-12 3xl:text-lg '>
 								<Link href={'/coaching/#collectif'}>Collectif</Link>
 							</div>
 						</div>
@@ -69,7 +69,7 @@ const ForWhom = () => {
 								alt='coaching individuel'
 								className='object-cover'
 							/>
-							<div className='absolute bottom-4 left-1/2 z-20 flex h-[60px] w-[40%] -translate-x-1/2 cursor-pointer items-center justify-center bg-primaryOne/70 p-2 text-white'>
+							<div className='absolute bottom-4 left-1/2 z-20 flex h-[60px] w-[40%] -translate-x-1/2 cursor-pointer items-center justify-center bg-primaryOne p-2 font-semibold text-blackOne outline-double hover:bg-blackOne hover:text-primaryOne 2xl:bottom-7 3xl:bottom-12 3xl:text-lg '>
 								<Link href={'/coaching/#entreprise'}>Entreprise</Link>
 							</div>
 						</div>

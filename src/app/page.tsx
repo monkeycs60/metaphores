@@ -11,15 +11,15 @@ export default function Home() {
 	return (
 		<>
 			<Hero />
-			<div className='flex flex-col gap-20 2xl:gap-24 3xl:my-[5vh] 3xl:gap-20'>
+			<div className='flex flex-col gap-20 2xl:gap-24 3xl:my-[5vh] 3xl:gap-[160px] '>
 				<WhatIsIt />
 				<WhoAmI />
 				<ForWhom />
 				<Pillars />
 				<Testimonies />
 				<Contact />
-				<Footer />
 			</div>
+			<Footer />
 		</>
 	);
 }

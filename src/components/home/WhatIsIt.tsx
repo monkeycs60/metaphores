@@ -53,7 +53,7 @@ const WhatIsIt = () => {
 						alt='Chess'
 						width={642}
 						height={446}
-						className='z-10 w-[30vw] 3xl:w-[20vw]'
+						className='z-10 w-[30vw] 3xl:w-[25vw]'
 					/>
 					<p className='translate-x-[-20%] font-caveat text-4xl text-blackOne 3xl:translate-x-[-50%]'>
 						Trouver du{' '}

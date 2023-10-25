@@ -27,7 +27,7 @@ const WhoAmI = () => {
 						alt='Chess'
 						width={789}
 						height={1080}
-						className='z-10 w-[23vw] 3xl:w-[16vw]'
+						className='z-10 w-[23vw] 3xl:w-[17vw]'
 					/>
 					<p className='translate-x-[0%] font-caveat text-4xl text-blackOne'>
 						Celui qui sait demander est{' '}
