@@ -47,7 +47,7 @@ const Testimonies = () => {
 						width={60}
 						height={20}
 						onClick={previousImage}
-						className='cursor-pointer'
+						className='cursor-pointer hover:text-primaryOne '
 					/>
 					<Image
 						src='/arrow-right.svg'
@@ -55,7 +55,7 @@ const Testimonies = () => {
 						width={60}
 						height={20}
 						onClick={nextImage}
-						className='cursor-pointer'
+						className='cursor-pointer hover:text-primaryOne '
 					/>
 				</div>
 			</div>
