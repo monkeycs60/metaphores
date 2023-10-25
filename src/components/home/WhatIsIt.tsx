@@ -15,7 +15,7 @@ const WhatIsIt = () => {
 			/>
 			<div className='relative m-auto mt-8 flex w-[75%] justify-around gap-12'>
 				<div className='z-20 flex  flex-col'>
-					<div className='z-20 m-auto flex w-[600px] flex-col gap-10 bg-primaryOne/20 p-10 shadow-lg shadow-blackOne/50 hover:bg-primaryOne/30'>
+					<div className='z-20 m-auto flex w-[500px] flex-col gap-8 bg-primaryOne/20 p-7 shadow-lg shadow-blackOne/50 hover:bg-primaryOne/30 2xl:w-[600px] 2xl:gap-10 2xl:p-10'>
 						<div className='flex flex-col gap-3'>
 							<h2 className='font-caveat text-4xl font-bold 3xl:text-5xl'>
 								Changer les possibles
@@ -53,7 +53,7 @@ const WhatIsIt = () => {
 						alt='Chess'
 						width={642}
 						height={446}
-						className='z-10 w-[30vw] 3xl:w-[25vw]'
+						className='z-10 w-[25vw] 2xl:w-[30vw] 3xl:w-[25vw]'
 					/>
 					<p className='translate-x-[-20%] font-caveat text-4xl text-blackOne 3xl:translate-x-[-50%]'>
 						Trouver du{' '}

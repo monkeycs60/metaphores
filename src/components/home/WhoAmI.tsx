@@ -35,7 +35,7 @@ const WhoAmI = () => {
 					</p>
 				</div>
 				<div className='z-20 flex h-[600px] flex-col'>
-					<div className='z-20 m-auto flex w-[600px] flex-col gap-10 bg-whiteOne p-10 text-blackOne shadow-lg shadow-blackOne/40 hover:bg-slate-200'>
+					<div className='z-20 m-auto flex w-[500px] flex-col gap-10 bg-whiteOne p-7 text-blackOne shadow-lg shadow-blackOne/40 hover:bg-slate-200 2xl:w-[600px] 2xl:p-10'>
 						<div className='flex flex-col gap-3'>
 							<h2 className='font-caveat text-4xl font-bold 3xl:text-5xl'>
 								Se redécouvrir
