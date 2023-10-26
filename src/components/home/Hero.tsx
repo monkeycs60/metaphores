@@ -4,7 +4,7 @@ import { ChevronsDown } from 'lucide-react';
 
 const Hero = () => {
 	return (
-		<div className='relative flex h-[calc(100vh-150px)] flex-col items-start text-secondaryOne'>
+		<div className='relative flex h-[calc(100vh-120px)] flex-col items-start text-secondaryOne 2xl:h-[calc(100vh-150px)]'>
 			<div
 				className='absolute bottom-[5vh] left-1/2 -translate-x-1/2 bg-primaryOne px-3 py-2 3xl:px-4 
 			3xl:py-3  '>
