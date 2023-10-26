@@ -36,7 +36,7 @@ const Footer = () => {
 										className='underline'>
 										HOLOM, Maison des praticiens de bien-être
 									</Link>
-									<span>91 Rue Camille Sauvageau, 33800</span>
+									<span>91 rue Camille Sauvageau, 33800</span>
 								</div>
 								<div className='flex justify-center'>
 									<Image
@@ -59,9 +59,9 @@ const Footer = () => {
 										href={'https://smoosbordeaux.com/'}
 										target='_blank'
 										className='underline'>
-										Smoös, Espace de Co-Therapeuting -
+										Smoös, Espace de Co-Therapeuting
 									</Link>
-									<span> 137 Cour de l'Yser, 33800</span>
+									<span> 137 cour de l'Yser, 33800</span>
 								</div>
 								<div className='flex items-center justify-center'>
 									<Image

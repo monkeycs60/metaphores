@@ -3,13 +3,9 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { Button } from '../ui/button';
-import { ChevronDown, ChevronUp } from 'lucide-react';
-import { Menu, Transition } from '@headlessui/react';
-import { Fragment, useEffect, useRef, useState } from 'react';
 import CustomNavigationMenu from '../ui/CustomNavigationMenu';
 
 const NavBar = () => {
-	const [isOpen, setIsOpen] = useState(false);
 	return (
 		<div className='sticky z-[60] m-auto flex h-[150px] w-[90%] items-center justify-between gap-12 p-6 font-inter '>
 			<Link href='/'>
