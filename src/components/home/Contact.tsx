@@ -12,13 +12,13 @@ const Contact = () => {
 				width={219}
 				height={215}
 			/>
-			<div className='m-auto flex w-3/4 flex-col gap-[80px]'>
+			<div className='m-auto flex w-[85%] flex-col gap-[80px] 2xl:w-3/4'>
 				<h2 className='flex justify-center  text-2xl font-bold'>
 					Contactez-nous
 				</h2>
 				<div className='m-auto flex w-3/4 justify-between'>
-					<div className='flex h-[150px] w-1/3 flex-col items-center gap-8'>
-						<h3 className='text-lg font-bold uppercase'>
+					<div className='flex h-[120px] w-1/3 flex-col items-center gap-8 2xl:h-[150px]'>
+						<h3 className='text-base font-bold uppercase 2xl:text-lg'>
 							Réseaux sociaux
 						</h3>
 						<div className='flex h-[50px] justify-between gap-6'>
@@ -28,6 +28,7 @@ const Contact = () => {
 									alt='instagram'
 									width={35}
 									height={35}
+									className='h-[30px] w-[30px] 2xl:h-[35px] 2xl:w-[35px] '
 								/>
 							</Link>
 							<Link
@@ -39,36 +40,45 @@ const Contact = () => {
 									alt='linkedin'
 									width={35}
 									height={35}
+									className='h-[30px] w-[30px] 2xl:h-[35px] 2xl:w-[35px] '
 								/>
 							</Link>
 						</div>
 					</div>
 					<div className='w-[2px] bg-primaryOne '></div>
-					<div className='flex h-[150px] w-1/3 flex-col items-center justify-between gap-6'>
-						<h3 className='text-lg font-bold uppercase'>Téléphone</h3>
+					<div className='flex h-[120px] w-1/3 flex-col items-center justify-between gap-6 2xl:h-[150px]'>
+						<h3 className='text-base font-bold uppercase 2xl:text-lg'>
+							Téléphone
+						</h3>
 						<div className='flex h-[50px] items-center justify-between'>
 							<Image
 								src='/phone.svg'
 								alt='instagram'
 								width={40}
 								height={40}
+								className='h-[30px] w-[30px] 2xl:h-[40px] 2xl:w-[40px] '
 							/>
 						</div>
-						<p className='text-lg'>06 72 71 61 60</p>
+						<p className='text-base 2xl:text-lg'>06 72 71 61 60</p>
 					</div>
 					<div className='w-[2px] bg-primaryOne '></div>
 
-					<div className='flex h-[150px] w-1/3 flex-col items-center justify-between gap-6'>
-						<h3 className='text-lg font-bold uppercase'>Email</h3>
+					<div className='flex h-[120px] w-1/3 flex-col items-center justify-between gap-6 2xl:h-[150px]'>
+						<h3 className='text-base font-bold uppercase 2xl:text-lg'>
+							Email
+						</h3>
 						<div className='flex h-[50px] items-center justify-between'>
 							<Image
 								src='/mail.svg'
 								alt='instagram'
 								width={40}
 								height={40}
+								className='h-[30px] w-[30px] 2xl:h-[40px] 2xl:w-[40px] '
 							/>
 						</div>
-						<p className='text-lg'>metaphorecoaching@gmail.com</p>
+						<p className='text-base 2xl:text-lg'>
+							metaphorecoaching@gmail.com
+						</p>
 					</div>
 				</div>
 			</div>

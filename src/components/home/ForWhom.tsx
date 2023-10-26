@@ -20,7 +20,7 @@ const ForWhom = () => {
 				className='absolute right-[20px] top-[200px] w-[200px]'
 			/>
 			<div className='m-auto w-3/4 font-inter'>
-				<div className='flex h-[300px] w-[30vw] flex-col gap-8 bg-primaryOne/20 p-16 shadow-lg shadow-blackOne/40 2xl:w-[600px] 3xl:h-[350px]'>
+				<div className='flex h-[300px] w-[450px] flex-col gap-8 bg-primaryOne/20 p-16 shadow-lg shadow-blackOne/40 2xl:h-[300px] 2xl:w-[600px] 3xl:h-[350px]'>
 					<div className='flex flex-col gap-3 text-2xl font-bold'>
 						<h2>Un coaching pour qui ?</h2>
 						<div className='h-[1px] w-full bg-blackOne '></div>
@@ -33,14 +33,14 @@ const ForWhom = () => {
 				</div>
 				<div className='m-auto mt-[-10vh] flex w-full flex-col justify-center gap-4'>
 					<div className='m-auto flex w-[82%] translate-y-[-30px] justify-end '>
-						<p className='font-caveat text-4xl'>
+						<p className='font-caveat text-3xl 2xl:text-4xl'>
 							Qui mieux que{' '}
 							<span className='bg-blackOne px-2 text-white'>vous</span>
 							connaît vos solutions ?
 						</p>
 					</div>
 					<div className='flex w-full justify-center gap-4'>
-						<div className='relative h-[20vh] w-[20vw] 2xl:h-[27vh] 2xl:w-[22vw]'>
+						<div className='relative h-[27vh] w-[22vw]'>
 							<Image
 								src='/individuel.png'
 								fill
@@ -51,7 +51,7 @@ const ForWhom = () => {
 								<Link href={'/coaching/#individuel'}>Individuel</Link>
 							</div>
 						</div>
-						<div className='relative h-[20vh] w-[20vw]  2xl:h-[27vh] 2xl:w-[22vw]'>
+						<div className='relative h-[27vh] w-[22vw]'>
 							<Image
 								src='/collectif.png'
 								fill
@@ -62,7 +62,7 @@ const ForWhom = () => {
 								<Link href={'/coaching/#collectif'}>Collectif</Link>
 							</div>
 						</div>
-						<div className='relative h-[20vh] w-[20vw]  2xl:h-[27vh] 2xl:w-[22vw]'>
+						<div className='relative h-[27vh] w-[22vw]'>
 							<Image
 								src='/entreprise.png'
 								fill

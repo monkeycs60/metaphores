@@ -26,41 +26,41 @@ const Pillars = () => {
 				</h2>
 				<div className='flex w-full bg-white'>
 					<div className='flex w-1/4 flex-col items-center gap-4 bg-primaryOne/5 p-6 text-center'>
-						<div className='relative h-[60px] w-[60px]'>
+						<div className='relative h-[45px] w-[45px] 2xl:h-[60px] 2xl:w-[60px]'>
 							<Image src='/lock.svg' fill alt='pilier 1' />
 						</div>
 						<h3 className='text-lg font-bold'>Confidentialité assurée</h3>
-						<p className='h-[80px] '>
+						<p className='h-[80px] text-sm 2xl:text-base'>
 							Protéger votre identité et le contenu des échanges pour un
 							environnement sûr et serein.
 						</p>
 					</div>
 					<div className='flex w-1/4 flex-col items-center gap-4 p-6 text-center'>
-						<div className='relative h-[60px] w-[60px]'>
+						<div className='relative h-[45px] w-[45px] 2xl:h-[60px] 2xl:w-[60px]'>
 							<Image src='/loupe.svg' fill alt='pilier 2' />
 						</div>
 						<h3 className='text-lg font-bold'>Transparence totale</h3>
-						<p className='h-[80px] '>
+						<p className='h-[80px] text-sm 2xl:text-base'>
 							Clarifier chaque étape pour votre tranquillité et votre
 							pleine compréhension.
 						</p>
 					</div>
 					<div className='flex w-1/4 flex-col items-center gap-4 bg-primaryOne/5 p-6 text-center'>
-						<div className='relative h-[60px] w-[60px]'>
+						<div className='relative h-[45px] w-[45px] 2xl:h-[60px] 2xl:w-[60px]'>
 							<Image src='/dove.svg' fill alt='pilier 3' />
 						</div>
 						<h3 className='text-lg font-bold'>Liberté et autonomie</h3>
-						<p className='h-[80px] '>
+						<p className='h-[80px] text-sm 2xl:text-base'>
 							Vous avez le pouvoir de décision à chaque étape,
 							garantissant votre indépendance.
 						</p>
 					</div>
 					<div className='flex w-1/4 flex-col items-center gap-4 p-6 text-center'>
-						<div className='relative h-[60px] w-[60px]'>
+						<div className='relative h-[45px] w-[45px] 2xl:h-[60px] 2xl:w-[60px]'>
 							<Image src='/target.svg' fill alt='pilier 4' />
 						</div>
 						<h3 className='text-lg font-bold'>Précision et dynamisme</h3>
-						<p className='h-[80px] '>
+						<p className='h-[80px] text-sm 2xl:text-base'>
 							Approcher chaque problème avec exactitude pour un
 							accompagnement optimal.
 						</p>

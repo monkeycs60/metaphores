@@ -5,11 +5,11 @@ const Footer = () => {
 	return (
 		<div className='mt-[100px] flex h-auto items-end bg-primaryOne/30 py-16 '>
 			<div className='mx-auto flex h-[70%] w-[100%] justify-center'>
-				<div className='flex w-[400px] flex-col items-center gap-4 3xl:w-[500px]'>
+				<div className='flex w-[350px] flex-col items-center gap-4 2xl:w-[400px] 3xl:w-[500px]'>
 					<Image
 						src='/logo-metaphore-final.png'
 						alt='logo'
-						className='w-[200px] '
+						className='w-[150px] 2xl:w-[200px] '
 						width={894}
 						height={279}
 					/>
@@ -20,14 +20,16 @@ const Footer = () => {
 					</div>
 				</div>
 				<div className='flex w-2/3 flex-col gap-8'>
-					<h3 className='text-lg font-bold uppercase'>
+					<h3 className='font-bold uppercase 2xl:text-lg'>
 						Mes lieux de rendez-vous
 					</h3>
-					<div className='flex w-full  justify-between gap-12'>
+					<div className='flex w-full  justify-between gap-6 2xl:gap-12'>
 						<div className='flex flex-col gap-4'>
-							<h4 className='text-lg font-bold uppercase'>Bordeaux</h4>
+							<h4 className='text-sm font-bold uppercase 2xl:text-lg'>
+								Bordeaux
+							</h4>
 							<div className='flex flex-row-reverse gap-6'>
-								<div className='flex flex-col gap-1'>
+								<div className='flex flex-col gap-1 text-sm 2xl:text-base'>
 									<Link
 										href={'https://www.holom.fr/'}
 										target='_blank'
@@ -48,10 +50,10 @@ const Footer = () => {
 							</div>
 						</div>
 						<div className='flex flex-col gap-4'>
-							<h4 className='invisible text-lg font-bold uppercase'>
+							<h4 className='invisible text-sm font-bold uppercase 2xl:text-lg'>
 								A l'Extérieur
 							</h4>
-							<div className='flex flex-row-reverse items-center gap-6'>
+							<div className='flex flex-row-reverse items-center gap-6 text-sm 2xl:text-base'>
 								<div className='flex flex-col gap-1'>
 									<Link
 										href={'https://smoosbordeaux.com/'}
@@ -73,18 +75,20 @@ const Footer = () => {
 							</div>
 						</div>
 						<div className='flex flex-col gap-4'>
-							<h4 className='text-lg font-bold uppercase'>
+							<h4 className='text-sm font-bold uppercase 2xl:text-lg'>
 								Région bordelaise
 							</h4>
-							<div className='flex flex-col items-center gap-1'>
+							<div className='flex flex-col gap-1 text-sm 2xl:items-center 2xl:text-base'>
 								<span>Dans un lieu neutre</span>
 								<span>Dans vos locaux</span>
 								<span>Coaching nomade</span>
 							</div>
 						</div>
 						<div className='flex flex-col gap-4'>
-							<h4 className='text-lg font-bold uppercase'>En Visio</h4>
-							<div className='flex flex-col gap-1'>
+							<h4 className='text-sm font-bold uppercase 2xl:text-lg'>
+								En <span className='block 2xl:inline'>Visio</span>
+							</h4>
+							<div className='flex flex-col gap-1 text-sm 2xl:text-base'>
 								<span>En distanciel</span>
 							</div>
 						</div>

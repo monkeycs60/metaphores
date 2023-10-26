@@ -29,12 +29,12 @@ const components: { title: string; href: string; description: string }[] = [
 	{
 		title: 'Coaching collectif',
 		href: '/coaching/individuel',
-		description: "Cohésion d'équipe, performance, conflit, développement",
+		description: "Cohésion d'équipe, performance, conflit, développement...",
 	},
 	{
 		title: 'Coaching en entreprise',
 		href: '/coaching/individuel',
-		description: 'Intelligence collective, leadership, évolution.',
+		description: 'Intelligence collective, leadership, évolution...',
 	},
 ];
 
