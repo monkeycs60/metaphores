@@ -9,15 +9,16 @@ import { motion } from 'framer-motion';
 
 const NavBar = () => {
 	const scrollPosition = useScrollPosition();
-	const isScrolled = scrollPosition > 50;
+	const isScrolled = scrollPosition > 60;
 
 	return (
 		<div
-			className={`sticky top-0 z-[60] m-auto  h-[120px]  2xl:h-[150px] ${
-				isScrolled ? 'w-screen bg-white ' : ''
+			className={`sticky top-0 z-[60] m-auto my-[15px] hidden h-[90px] lg:block 2xl:h-[120px] ${
+				isScrolled ? 'w-screen bg-white' : ''
 			}
 		`}>
-			<div className='m-auto flex h-full w-[90%] items-center justify-between gap-12 p-6 font-inter'>
+			<div
+				className={`m-auto flex h-full w-[90%] items-center justify-between gap-12 p-6 font-inter`}>
 				<Link href='/'>
 					<motion.div
 						className='w-[210px] 2xl:w-[260px] '
@@ -31,7 +32,7 @@ const NavBar = () => {
 								opacity: 1,
 							},
 						}}
-						transition={{ duration: 0.9 }}>
+						transition={{ duration: 0.3 }}>
 						{isScrolled ? (
 							<Image
 								src='/m-logo.png'

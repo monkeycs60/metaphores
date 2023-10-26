@@ -23,7 +23,7 @@ const Testimonies = () => {
 		}
 	};
 	return (
-		<div className='containerBordureBriseeTwo relative flex h-[60vh] w-full flex-col items-center gap-6 pt-12 2xl:h-[50vh] 3xl:h-[36vh] '>
+		<div className='containerBordureBriseeTwo relative flex h-[70vh] w-full flex-col items-center gap-6 pt-12 2xl:h-[50vh] 3xl:h-[36vh] '>
 			<div>
 				<h2 className='text-center text-2xl font-bold'>Témoignages</h2>
 			</div>
@@ -51,22 +51,6 @@ const Testimonies = () => {
 						className='h-[45px] w-[45px] cursor-pointer select-none hover:text-primaryOne'
 						onClick={nextImage}
 					/>
-					{/* <Image
-						src='/arrow-left.svg'
-						alt='arrow left'
-						width={60}
-						height={20}
-						onClick={previousImage}
-						className='cursor-pointer hover:text-red-300 '
-					/>
-					<Image
-						src='/arrow-right.svg'
-						alt='arrow left'
-						width={60}
-						height={20}
-						onClick={nextImage}
-						className='cursor-pointer hover:text-primaryOne '
-					/> */}
 				</div>
 			</div>
 		</div>
