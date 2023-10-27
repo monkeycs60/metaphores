@@ -48,12 +48,12 @@ const Footer = () => {
 										alt='holom'
 										width={200}
 										height={200}
-										className='mb-4 w-[40px] lg:w-[50px]'
+										className='w-[40px] lg:mb-4 lg:w-[50px]'
 									/>
 								</div>
 							</div>
-							<div className='flex flex-row-reverse justify-between gap-6 bg-red-300 text-sm lg:hidden lg:items-center 2xl:text-base'>
-								<div className='flex flex-col gap-1'>
+							<div className='flex flex-row-reverse gap-6 text-sm lg:hidden lg:items-center 2xl:text-base'>
+								<div className='flex flex-1 flex-col gap-1 '>
 									<Link
 										href={'https://smoosbordeaux.com/'}
 										target='_blank'
