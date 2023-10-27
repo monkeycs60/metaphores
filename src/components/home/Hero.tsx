@@ -4,11 +4,11 @@ import { ChevronsDown } from 'lucide-react';
 
 const Hero = () => {
 	return (
-		<div className='relative flex h-screen flex-col items-start text-secondaryOne lg:h-[calc(100vh-120px)] 2xl:h-[calc(100vh-150px)]'>
-			<div className='mt-[9vh] flex flex-col-reverse items-center justify-center bg-yellow-400 text-center lg:mt-[5vh] lg:w-[65%] lg:flex-col lg:gap-36 2xl:mt-[15vh] 3xl:mt-[20vh] 3xl:w-[60%]'>
+		<div className='relative flex h-screen flex-col items-start gap-8 text-secondaryOne lg:h-[calc(100vh-120px)] lg:gap-0 2xl:h-[calc(100vh-150px)]'>
+			<div className='mt-[9vh] flex flex-col-reverse items-center justify-center text-center lg:mt-[5vh] lg:w-[65%] lg:flex-col lg:gap-36 2xl:mt-[15vh] 3xl:mt-[20vh] 3xl:w-[60%]'>
 				<div className='flex w-full justify-start px-[7vw] text-start font-caveat text-2xl text-blackOne lg:text-3xl 2xl:text-4xl 3xl:text-5xl'>
-					<h3>
-						<span className='  bg-primaryOne px-2'>Développer</span> votre
+					<h3 className='hidden lg:block'>
+						<span className='bg-primaryOne px-2'>Développer</span> votre
 						potentiel
 					</h3>
 				</div>
@@ -24,11 +24,17 @@ const Hero = () => {
 				</div>
 			</div>
 			<div
-				className='absolute bottom-[5vh] left-1/2 -translate-x-1/2 bg-primaryOne px-3 py-2 3xl:px-4 
+				className='absolute bottom-4 left-1/2 -translate-x-1/2 bg-primaryOne px-3 py-2 lg:bottom-[5vh] 3xl:px-4 
 			3xl:py-3  '>
 				<ChevronsDown className='h-[40px] w-[40px] text-whiteOne 3xl:h-[50px] 3xl:w-[50px] ' />
 			</div>
-			<div className='left-[55%] top-[15%] z-10 bg-red-300 lg:absolute 3xl:left-[53%]'>
+			<div className='left-[55%] top-[15%] z-10 flex flex-col gap-3 lg:absolute lg:block 3xl:left-[53%]'>
+				<div className='flex justify-end pr-6 font-caveat text-2xl text-blackOne'>
+					<h3 className='lg:hidden'>
+						<span className='bg-primaryOne px-2'>Développer</span> votre
+						potentiel
+					</h3>
+				</div>
 				<Image
 					src='/elcamino.png'
 					alt='Chess'
@@ -59,7 +65,7 @@ const Hero = () => {
 					alt='blue circle'
 					width={50}
 					height={100}
-					className='absolute bottom-[23%] left-[2%] z-10 w-[110px] rotate-[120deg]'
+					className='absolute -left-8 top-8 z-10 w-[110px] rotate-[120deg] lg:bottom-[23%] lg:left-[2%]'
 				/>
 			</div>
 			<div className=''>
