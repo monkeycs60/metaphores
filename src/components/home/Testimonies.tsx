@@ -37,7 +37,7 @@ const Testimonies = () => {
 						className='h-[30px] w-[60px] lg:h-[42px] lg:w-[80px] '
 					/>
 				</div>
-				<div className=' flex w-[80%] flex-col gap-6 lg:h-[170px] lg:w-[60%] lg:translate-x-[-50px] 2xl:w-[45%]'>
+				<div className=' flex w-[75%] flex-col gap-6 lg:h-[170px] lg:w-[60%] lg:translate-x-[-50px] 2xl:w-[45%]'>
 					<p className='first-letter:indent-6'>
 						{testimoniesList[testimonyIndex].text}
 					</p>
