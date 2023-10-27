@@ -18,7 +18,7 @@ const WhoAmI = () => {
 					alt='Chess'
 					width={239}
 					height={238}
-					className=' absolute right-[0px] top-[-50px] w-[150px]'
+					className='absolute right-[0px] top-[-50px] w-[150px]'
 				/>
 			</div>
 			<div className='containerBordureBrisee relative m-auto flex w-screen justify-center lg:h-[60%]'>
@@ -28,7 +28,7 @@ const WhoAmI = () => {
 						alt='Chess'
 						width={100}
 						height={100}
-						className='absolute right-[-7%] top-[25%] w-[250px] 3xl:right-[-4%]'
+						className='absolute right-[-7%] top-[25%] hidden w-[250px] lg:block 3xl:right-[-4%]'
 					/>
 					<Image
 						src='/shapes/full-circle-black.svg'
