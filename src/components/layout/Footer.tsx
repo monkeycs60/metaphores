@@ -77,7 +77,7 @@ const Footer = () => {
 							<h4 className='invisible text-sm font-bold uppercase 2xl:text-lg'>
 								A l'Extérieur
 							</h4>
-							<div className='flex flex-row-reverse justify-start gap-6 bg-red-300 text-sm lg:items-center 2xl:text-base'>
+							<div className='flex flex-row-reverse justify-start gap-6 text-sm lg:items-center 2xl:text-base'>
 								<div className='flex flex-col gap-1'>
 									<Link
 										href={'https://smoosbordeaux.com/'}
