@@ -18,6 +18,10 @@ const Footer = () => {
 						<span>|</span>
 						<h4>Coaching</h4>
 					</div>
+					<div className='flex flex-col items-center justify-center text-sm'>
+						<span>06 72 71 61 60</span>
+						<span>metaphorecoaching@gmail.com</span>
+					</div>
 				</div>
 				<div className='flex w-2/3 flex-col gap-8'>
 					<h3 className='font-bold uppercase 2xl:text-lg'>
