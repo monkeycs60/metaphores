@@ -19,7 +19,6 @@ export default function Home() {
 				<Testimonies />
 				<Contact />
 			</div>
-			<Footer />
 		</>
 	);
 }

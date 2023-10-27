@@ -8,7 +8,7 @@ const Contact = () => {
 			<Image
 				src='/twoCircles.svg'
 				alt='two circles'
-				className='absolute bottom-0 left-6 w-[50px] rotate-180 lg:w-[170px] 3xl:w-[250px] '
+				className='absolute left-3 top-6 w-[80px] rotate-180 lg:bottom-0 lg:left-6 lg:w-[170px] 3xl:w-[250px] '
 				width={219}
 				height={215}
 			/>
