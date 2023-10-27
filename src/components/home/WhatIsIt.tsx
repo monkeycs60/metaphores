@@ -11,11 +11,11 @@ const WhatIsIt = () => {
 				alt='Chess'
 				width={239}
 				height={238}
-				className='absolute bottom-[-50px] left-[0px] w-[150px]'
+				className='absolute bottom-[-50px] left-[0px] hidden w-[150px] lg:block'
 			/>
-			<div className='relative m-auto mt-8 flex w-[75%] justify-around gap-12'>
+			<div className='relative m-auto mt-8 flex flex-col-reverse justify-around gap-12 lg:w-[75%] lg:flex-row'>
 				<div className='z-20 flex  flex-col'>
-					<div className='z-20 m-auto flex w-[500px] flex-col gap-8 bg-primaryOne/20 p-7 shadow-lg shadow-blackOne/50 2xl:w-[600px] 2xl:gap-10 2xl:p-10'>
+					<div className='z-20 m-auto flex flex-col gap-8 bg-primaryOne/20 p-7 shadow-lg shadow-blackOne/50 lg:w-[500px] 2xl:w-[600px] 2xl:gap-10 2xl:p-10'>
 						<div className='flex flex-col gap-3'>
 							<h2 className='font-caveat text-4xl font-bold 3xl:text-5xl'>
 								Changer les possibles
@@ -47,15 +47,15 @@ const WhatIsIt = () => {
 						</Button>
 					</div>
 				</div>
-				<div className='relative flex flex-col items-center justify-center gap-6 3xl:justify-center'>
+				<div className='relative hidden flex-col items-center gap-6 lg:flex lg:justify-center 3xl:justify-center'>
 					<Image
 						src='/chess-miror.png'
 						alt='Chess'
 						width={642}
 						height={446}
-						className='z-10 w-[25vw] 2xl:w-[30vw] 3xl:w-[25vw]'
+						className='z-10 lg:w-[25vw] 2xl:w-[30vw] 3xl:w-[25vw]'
 					/>
-					<p className='translate-x-[-20%] font-caveat text-3xl text-blackOne 2xl:text-4xl 3xl:translate-x-[-50%]'>
+					<p className='font-caveat text-2xl text-blackOne lg:translate-x-[-20%] lg:text-3xl 2xl:text-4xl 3xl:translate-x-[-50%]'>
 						Trouver du{' '}
 						<span className='bg-blackOne px-2 text-whiteOne'>sens</span>{' '}
 						et en donner

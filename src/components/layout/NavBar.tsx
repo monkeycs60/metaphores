@@ -59,7 +59,7 @@ const NavBar = () => {
 										alt='Logo'
 										width={894}
 										height={279}
-										className='w-[43px] 2xl:w-[93px]'
+										className='w-[43px] 2xl:w-[53px]'
 									/>
 								) : (
 									<Image

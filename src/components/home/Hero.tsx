@@ -16,7 +16,7 @@ const Hero = () => {
 					<h1 className='text-4xl lg:text-5xl 2xl:text-7xl 3xl:text-7xl'>
 						Métaphore Coaching
 					</h1>
-					<div className='flex items-center gap-4 text-3xl 2xl:text-4xl 3xl:text-5xl'>
+					<div className='flex items-center gap-4 text-2xl lg:text-3xl 2xl:text-4xl 3xl:text-5xl'>
 						<h2>Formation</h2>
 						<div className='h-6 w-[3px] bg-black'></div>
 						<h2>Coaching</h2>
@@ -74,7 +74,7 @@ const Hero = () => {
 					alt='black circle'
 					width={50}
 					height={100}
-					className='absolute bottom-[23%] left-[0%] w-[140px] rotate-[0deg]'
+					className='hidden lg:block absolute bottom-[23%] left-[0%] w-[140px] rotate-[0deg]'
 				/>
 			</div>
 		</div>
