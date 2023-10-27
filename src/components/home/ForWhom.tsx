@@ -10,7 +10,7 @@ const ForWhom = () => {
 				width={569}
 				height={556}
 				alt='yellow empty circle'
-				className='absolute right-0 w-[200px] '
+				className='absolute right-0 w-[100px] lg:w-[200px]'
 			/>
 			<Image
 				src='/discrete-blue-circle.svg'
