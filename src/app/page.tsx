@@ -11,7 +11,7 @@ export default function Home() {
 	return (
 		<>
 			<Hero />
-			<div className='flex flex-col gap-20 2xl:gap-24 3xl:my-[5vh] 3xl:gap-[160px] '>
+			<div className='flex flex-col gap-16 lg:gap-20 2xl:gap-24 3xl:my-[5vh] 3xl:gap-[160px] '>
 				<WhatIsIt />
 				<WhoAmI />
 				<ForWhom />
