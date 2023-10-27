@@ -26,7 +26,7 @@ const NavBar = () => {
 					/>
 				) : (
 					<AlignJustify
-						className='fixed right-4 top-8 z-[100] h-8 w-8 text-secondaryOne lg:hidden'
+						className='fixed right-6 top-8 z-[100] h-8 w-8 text-blackOne lg:hidden'
 						onClick={toggleHamburgerMenu}
 					/>
 				)}
