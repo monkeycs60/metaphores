@@ -26,7 +26,7 @@ const Hero = () => {
 			<div
 				className='absolute bottom-4 left-1/2 -translate-x-1/2 bg-primaryOne px-3 py-2 lg:bottom-[5vh] 3xl:px-4 
 			3xl:py-3  '>
-				<ChevronsDown className='h-[40px] w-[40px] text-whiteOne 3xl:h-[50px] 3xl:w-[50px] ' />
+				<ChevronsDown className='h-[30px] w-[30px] text-whiteOne lg:h-[40px] lg:w-[40px] 3xl:h-[50px] 3xl:w-[50px] ' />
 			</div>
 			<div className='left-[55%] top-[15%] z-10 flex flex-col gap-3 lg:absolute lg:block 3xl:left-[53%]'>
 				<div className='flex justify-end pr-6 font-caveat text-2xl text-blackOne'>
