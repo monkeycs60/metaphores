@@ -23,16 +23,16 @@ const Footer = () => {
 						<span>metaphorecoaching@gmail.com</span>
 					</div>
 				</div>
-				<div className='flex flex-col gap-6 lg:w-2/3 lg:gap-8'>
+				<div className='flex flex-col items-center gap-6 lg:w-2/3 lg:items-start lg:gap-8'>
 					<h3 className='font-bold uppercase 2xl:text-lg'>
 						Mes lieux de rendez-vous
 					</h3>
-					<div className='flex w-full flex-col justify-between gap-6 lg:flex-row 2xl:gap-12'>
-						<div className='flex flex-col gap-4'>
+					<div className='flex w-full flex-col items-center justify-between gap-6 lg:flex-row lg:items-start 2xl:gap-12'>
+						<div className='flex flex-col items-center gap-4 lg:items-start'>
 							<h4 className='text-sm font-bold uppercase 2xl:text-lg'>
 								Bordeaux
 							</h4>
-							<div className='flex flex-row-reverse gap-6'>
+							<div className='flex flex-col-reverse gap-2 lg:flex-row-reverse lg:gap-6'>
 								<div className='flex flex-col gap-1 text-sm 2xl:text-base'>
 									<Link
 										href={'https://www.holom.fr/'}
@@ -52,7 +52,7 @@ const Footer = () => {
 									/>
 								</div>
 							</div>
-							<div className='flex flex-row-reverse gap-6 text-sm lg:hidden lg:items-center 2xl:text-base'>
+							<div className='flex flex-col-reverse gap-2 text-sm lg:hidden lg:flex-row-reverse lg:items-center lg:gap-6 2xl:text-base'>
 								<div className='flex flex-1 flex-col gap-1 '>
 									<Link
 										href={'https://smoosbordeaux.com/'}
@@ -98,7 +98,7 @@ const Footer = () => {
 								</div>
 							</div>
 						</div>
-						<div className='flex flex-col gap-2 lg:gap-4'>
+						<div className='flex flex-col items-center gap-2 lg:items-start lg:gap-4'>
 							<h4 className='text-sm font-bold uppercase 2xl:text-lg'>
 								Région bordelaise
 							</h4>
@@ -108,7 +108,7 @@ const Footer = () => {
 								<span>Coaching nomade</span>
 							</div>
 						</div>
-						<div className='flex flex-col gap-2 lg:gap-4'>
+						<div className='flex flex-col items-center gap-2 lg:items-start lg:gap-4'>
 							<h4 className='text-sm font-bold uppercase 2xl:text-lg'>
 								En <span className='lg:block 2xl:inline'>Visio</span>
 							</h4>

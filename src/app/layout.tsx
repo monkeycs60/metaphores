@@ -17,7 +17,7 @@ export default function RootLayout({
 		<html lang='fr'>
 			<body
 				className={
-					'w-screen overflow-x-hidden bg-white font-inter text-base'
+					'w-[100dvw] overflow-x-hidden bg-white font-inter text-base'
 				}>
 				<div className='w-full'>
 					<NavBar />
