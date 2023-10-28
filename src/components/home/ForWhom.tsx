@@ -20,12 +20,12 @@ const ForWhom = () => {
 				className='absolute right-[20px] top-[200px] hidden w-[200px] lg:block'
 			/>
 			<div className='m-auto font-inter lg:w-3/4'>
-				<div className='flex flex-col gap-8 bg-primaryOne/20 p-10 lg:p-16 shadow-lg shadow-blackOne/40 lg:h-[300px] lg:w-[450px] 2xl:h-[300px] 2xl:w-[600px] 3xl:h-[350px]'>
-					<div className='flex flex-col gap-3 text-2xl font-bold'>
+				<div className='flex flex-col gap-8 bg-primaryOne/20 p-10 shadow-lg shadow-blackOne/40 lg:h-[300px] lg:w-[450px] lg:p-16 2xl:h-[300px] 2xl:w-[600px] 3xl:h-[350px]'>
+					<div className='flex flex-col gap-3 text-xl font-bold lg:text-2xl'>
 						<h2>Un coaching pour qui ?</h2>
 						<div className='h-[1px] w-full bg-blackOne '></div>
 					</div>
-					<p>
+					<p className='text-sm lg:text-base'>
 						Nous offrons un accompagnement sur mesure adapté à vos
 						besoins, que vous soyez un particulier, un groupe ou une
 						entreprise.

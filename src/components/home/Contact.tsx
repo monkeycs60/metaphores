@@ -13,12 +13,12 @@ const Contact = () => {
 				height={215}
 			/>
 			<div className='m-auto flex flex-col gap-[40px] lg:w-[85%] lg:gap-[80px] 2xl:w-3/4'>
-				<h2 className='flex justify-center text-2xl font-bold'>
+				<h2 className='flex justify-center text-xl font-bold lg:text-2xl'>
 					Contactez-nous
 				</h2>
 				<div className='m-auto flex flex-col items-center justify-between gap-4 lg:w-3/4 lg:flex-row lg:items-start lg:gap-0'>
 					<div className='flex flex-col items-center gap-3 lg:h-[120px] lg:w-1/3 lg:gap-8 2xl:h-[150px]'>
-						<h3 className='text-base font-bold uppercase 2xl:text-lg'>
+						<h3 className='text-sm font-bold uppercase lg:text-base 2xl:text-lg'>
 							Réseaux sociaux
 						</h3>
 						<div className='flex h-[50px] justify-between gap-6'>
@@ -47,7 +47,7 @@ const Contact = () => {
 					</div>
 					<div className='h-[2px] w-full bg-primaryOne lg:w-[2px] '></div>
 					<div className='flex flex-col items-center justify-between gap-1 lg:h-[120px] lg:w-1/3 lg:gap-6 2xl:h-[150px]'>
-						<h3 className='text-base font-bold uppercase 2xl:text-lg'>
+						<h3 className='text-sm font-bold uppercase lg:text-base 2xl:text-lg'>
 							Téléphone
 						</h3>
 						<div className='flex h-[50px] items-center justify-between'>
@@ -64,7 +64,7 @@ const Contact = () => {
 					<div className='h-[2px] w-full bg-primaryOne lg:w-[2px] '></div>
 
 					<div className='flex flex-col items-center justify-between gap-1 lg:h-[120px] lg:w-1/3 lg:gap-6 2xl:h-[150px]'>
-						<h3 className='text-base font-bold uppercase 2xl:text-lg'>
+						<h3 className='text-sm font-bold uppercase lg:text-base 2xl:text-lg'>
 							Email
 						</h3>
 						<div className='flex h-[50px] items-center justify-between'>

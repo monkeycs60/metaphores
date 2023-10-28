@@ -17,16 +17,16 @@ const WhatIsIt = () => {
 				<div className='z-20 flex  flex-col'>
 					<div className='z-20 m-auto flex flex-col gap-8 bg-primaryOne/20 p-7 shadow-lg shadow-blackOne/50 lg:w-[500px] 2xl:w-[600px] 2xl:gap-10 2xl:p-10'>
 						<div className='flex flex-col gap-3'>
-							<h2 className='font-caveat text-4xl font-bold 3xl:text-5xl'>
+							<h2 className='font-caveat text-3xl font-bold lg:text-4xl 3xl:text-5xl'>
 								Changer les possibles
 							</h2>
 							<div className='h-[1px] w-full bg-secondaryOne/50'></div>
 						</div>
 						<div className='flex flex-col gap-4'>
-							<h3 className='font-inter text-xl'>
+							<h3 className='font-inter text-lg lg:text-xl'>
 								Métaphore coaching, pour quoi ?
 							</h3>
-							<div className='flex flex-col gap-3'>
+							<div className='flex flex-col gap-3 text-sm lg:text-base'>
 								<p>
 									Nous créons ensemble un chemin personnalisé pour
 									atteindre votre objectif final en prenant en compte

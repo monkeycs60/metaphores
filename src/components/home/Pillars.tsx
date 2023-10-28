@@ -21,7 +21,7 @@ const Pillars = () => {
 				height={100}
 			/>
 			<div className='m-auto flex flex-col gap-[40px] lg:w-3/4 lg:gap-[60px] 3xl:gap-[80px] '>
-				<h2 className='text-center text-2xl font-bold'>
+				<h2 className='text-center text-xl lg:text-2xl font-bold'>
 					Les piliers de Métaphore Coaching
 				</h2>
 				<div className='flex w-full flex-wrap bg-white lg:flex-nowrap'>

@@ -56,14 +56,16 @@ const WhoAmI = () => {
 					<div className='z-20 flex h-[600px] flex-col'>
 						<div className='z-20 m-auto flex flex-col gap-10 bg-whiteOne p-7 text-blackOne shadow-lg shadow-blackOne/40 lg:w-[500px] 2xl:w-[600px] 2xl:p-10'>
 							<div className='flex flex-col gap-3'>
-								<h2 className='font-caveat text-4xl font-bold 3xl:text-5xl'>
+								<h2 className='font-caveat text-3xl font-bold lg:text-4xl 3xl:text-5xl'>
 									Se redécouvrir
 								</h2>
 								<div className='h-[1px] w-full bg-secondaryOne'></div>
 							</div>
 							<div className='flex flex-col gap-4'>
-								<h3 className='font-inter text-xl'>Qui suis-je ?</h3>
-								<div className='flex flex-col gap-3'>
+								<h3 className='font-inter text-lg lg:text-xl'>
+									Qui suis-je ?
+								</h3>
+								<div className='flex flex-col gap-3 text-sm lg:text-base'>
 									<p>
 										Mon parcours de vie sort souvent des sentiers
 										battus. Il a été riche d'expériences et de

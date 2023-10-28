@@ -25,7 +25,7 @@ const Testimonies = () => {
 	return (
 		<div className='containerBordureBriseeTwo relative flex w-full flex-col items-center gap-6 pb-8 pt-12 lg:h-[70vh] 2xl:h-[50vh] 3xl:h-[36vh] '>
 			<div>
-				<h2 className='text-center text-2xl font-bold'>Témoignages</h2>
+				<h2 className='text-center text-xl lg:text-2xl font-bold'>Témoignages</h2>
 			</div>
 			<div className='flex flex-col items-center gap-4'>
 				<div className='flex w-full px-[130px] 2xl:px-[300px] 3xl:px-[400px] '>
