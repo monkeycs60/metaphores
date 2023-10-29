@@ -35,7 +35,7 @@ const WhoAmI = () => {
 						alt='Chess'
 						width={100}
 						height={100}
-						className='absolute right-[3%] top-[50%] w-[70px] rotate-90'
+						className='absolute right-[3%] top-[50%] hidden w-[70px] rotate-90 lg:block'
 					/>
 
 					<div className='relative flex flex-col items-center justify-center gap-6 3xl:justify-start'>
@@ -44,7 +44,7 @@ const WhoAmI = () => {
 							alt='Chess'
 							width={789}
 							height={1080}
-							className='absolute z-10 w-[60vw] lg:static lg:w-[23vw] 3xl:w-[17vw]'
+							className='absolute z-10 hidden w-[60vw] lg:static lg:block lg:w-[23vw] 3xl:w-[17vw]'
 						/>
 						<p className='hidden translate-x-[0%] font-caveat text-3xl text-blackOne lg:block 2xl:text-4xl'>
 							Celui qui sait demander est{' '}

@@ -4,7 +4,7 @@ import { ChevronsDown } from 'lucide-react';
 
 const Hero = () => {
 	return (
-		<div className='relative flex h-[100dvh] flex-col items-start gap-8 text-secondaryOne lg:h-[calc(100vh-120px)] lg:gap-0 2xl:h-[calc(100vh-150px)]'>
+		<div className='relative flex h-[100vh] flex-col items-start gap-8 text-secondaryOne lg:h-[calc(100vh-120px)] lg:gap-0 2xl:h-[calc(100vh-150px)]'>
 			<div className='mt-[9vh] flex flex-col-reverse items-center justify-center text-center lg:mt-[5vh] lg:w-[65%] lg:flex-col lg:gap-36 2xl:mt-[15vh] 3xl:mt-[20vh] 3xl:w-[60%]'>
 				<div className='flex w-full justify-start px-[7vw] text-start font-caveat text-2xl text-blackOne lg:text-3xl 2xl:text-4xl 3xl:text-5xl'>
 					<h3 className='hidden lg:block'>
@@ -40,7 +40,7 @@ const Hero = () => {
 					alt='Chess'
 					width={2169}
 					height={1531}
-					className='lg:w-[30vw] 3xl:w-[35vw]'
+					className='w-[90%] lg:w-[30vw] 3xl:w-[35vw]'
 				/>
 				<div className='relative flex w-full items-center pl-6 font-caveat text-2xl lg:text-3xl 2xl:text-4xl 3xl:text-5xl'>
 					<h3 className='text-blackOne'>
