@@ -24,7 +24,7 @@ const Hero = () => {
 				</div>
 			</div>
 			<div
-				className='absolute bottom-4 left-1/2 -translate-x-1/2 bg-primaryOne px-3 py-2 lg:bottom-[5vh] 3xl:px-4 
+				className='absolute bottom-14 left-1/2 -translate-x-1/2 bg-primaryOne px-3 py-2 lg:bottom-[5vh] 3xl:px-4 
 			3xl:py-3  '>
 				<ChevronsDown className='h-[30px] w-[30px] text-whiteOne lg:h-[40px] lg:w-[40px] 3xl:h-[50px] 3xl:w-[50px] ' />
 			</div>
@@ -40,7 +40,7 @@ const Hero = () => {
 					alt='Chess'
 					width={2169}
 					height={1531}
-					className='w-[90%] lg:w-[30vw] 3xl:w-[35vw]'
+					className='m-auto mt-4 lg:mt-0 w-[90%] lg:w-[30vw] 3xl:w-[35vw]'
 				/>
 				<div className='relative flex w-full items-center pl-6 font-caveat text-2xl lg:text-3xl 2xl:text-4xl 3xl:text-5xl'>
 					<h3 className='text-blackOne'>

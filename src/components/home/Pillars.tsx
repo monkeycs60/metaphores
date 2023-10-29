@@ -16,7 +16,7 @@ const Pillars = () => {
 			<Image
 				src='/yellowCircle.svg'
 				alt='yellow circle'
-				className='absolute bottom-[-50px] lg:bottom-[-60px] right-[10px] lg:right-[-10px] w-[130px] lg:w-[150px] '
+				className='absolute bottom-[-50px] right-[10px] w-[130px] lg:bottom-[-60px] lg:right-[-10px] lg:w-[150px] '
 				width={100}
 				height={100}
 			/>
