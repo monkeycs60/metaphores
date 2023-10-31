@@ -43,6 +43,17 @@ html {
 	border-top-right-radius: 20% 50%;
 	border-top-left-radius: 50% 20%;
 }
+.containerBordureBriseeThree {
+	background-color: #ffb908bd;
+	border-bottom-left-radius: 20% 80%;
+	border-bottom-right-radius: 50% 20%;
+	border-top-right-radius: 20% 50%;
+	border-top-left-radius: 50% 20%;
+}
+
+.pictureBlob {
+    clip-path: ellipse(50% 40% at 50% 50%);
+}
 
 .linkHoverEffect {
     position: relative;
@@ -62,3 +73,6 @@ html {
 .linkHoverEffect:hover::after {
     width: 100%;
 }
+
+
+

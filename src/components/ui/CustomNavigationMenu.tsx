@@ -43,7 +43,7 @@ function CustomNavigationMenu() {
 		<NavigationMenu>
 			<NavigationMenuList>
 				<NavigationMenuItem>
-					<Link href='/docs' legacyBehavior passHref>
+					<Link href='/about' legacyBehavior passHref>
 						<NavigationMenuLink className={navigationMenuTriggerStyle()}>
 							A propos
 						</NavigationMenuLink>
