@@ -1,5 +1,14 @@
 import Image from 'next/image';
-import React from 'react';
+import {
+	Wrench,
+	Globe,
+	Briefcase,
+	Book,
+	Palette,
+	Drama,
+	Trophy,
+    GraduationCap
+} from 'lucide-react';
 
 const page = () => {
 	return (
@@ -36,11 +45,11 @@ const page = () => {
 					</div>
 				</div>
 			</div>
-			<div className='m-auto flex w-[80%] flex-col gap-[50px] '>
+			<div className='m-auto flex w-[70%] flex-col gap-[50px] '>
 				<div className='flex flex-col gap-4 '>
 					<h2 className='text-xl font-bold text-blackOne'>Mon parcours</h2>
 					<div>
-						<div>
+						<div className='flex flex-col gap-2'>
 							<p>
 								J’ai évolué dans diverses sphères privées (aéronautique,
 								immobilier, théâtre…), avant de m'orienter vers
@@ -51,27 +60,41 @@ const page = () => {
 								cycles, avec le coaching comme dernier virage. Mon
 								expérience est riche et variée :
 							</p>
-							<ul>
-								<li>Formation en ingénierie et mécanique</li>
-								<li>
+							<ul className='flex flex-col gap-3'>
+								<li className='flex items-center gap-2 '>
+									{' '}
+									<Wrench /> Formation en ingénierie et mécanique
+								</li>
+								<li className='flex items-center gap-2 '>
+									<Globe />
 									Vie à l'étranger: Angleterre, Australie, Inde, et
 									plus
 								</li>
-								<li>
+								<li className='flex items-center gap-2 '>
+									<Briefcase />
 									Multiples métiers : commercial, ingénieur,
 									commerçant...
 								</li>
-								<li>Enseignant depuis une dizaine d’années</li>
-								<li>Artiste peintre avec des expositions à Bordeaux</li>
-								<li>
+								<li className='flex items-center gap-2 '>
+									<Book />
+									Enseignant depuis une dizaine d’années
+								</li>
+								<li className='flex items-center gap-2 '>
+									<Palette />
+									Artiste peintre avec des expositions à Bordeaux
+								</li>
+								<li className='flex items-center gap-2 '>
+									<Drama />
 									Comédien professionnel ayant écrit et mis en scène
 									plusieurs pièces
 								</li>
-								<li>
+								<li className='flex items-center gap-2 '>
+									<Trophy />
 									Sportif ayant fait de la compétition en football,
 									handball, et beach-volley
 								</li>
-								<li>
+								<li className='flex items-center gap-2 '>
+									<GraduationCap />
 									Reprise d'études en sciences de l'éducation et en
 									coaching.
 								</li>
@@ -82,7 +105,7 @@ const page = () => {
 						</div>
 					</div>
 				</div>
-				<div>
+				<div className='flex flex-col gap-4 '>
 					<h2 className='text-xl font-bold text-blackOne'>
 						Ma découverte du Coaching
 					</h2>
@@ -90,7 +113,7 @@ const page = () => {
 						<div>
 							{/* <Image src='/chess.png' alt='chess' width={800} height={652} className='w-[400px]' /> */}
 						</div>
-						<div>
+						<div className='flex flex-col gap-2'>
 							<p>
 								L'accompagnement est plus qu'un métier, c'est un
 								sacerdoce pour moi. Bien que j’aie mis du temps à le
@@ -113,7 +136,7 @@ const page = () => {
 						</div>
 					</div>
 				</div>
-				<div>
+				<div className='flex flex-col gap-4 '>
 					<h2 className='text-xl font-bold text-blackOne'>
 						La Métaphore dans le Coaching
 					</h2>
@@ -121,25 +144,23 @@ const page = () => {
 						<div>
 							{/* <Image src='/chess.png' alt='chess' width={800} height={652} className='w-[400px]' /> */}
 						</div>
-						<div>
+						<div className='flex flex-col gap-2'>
 							<p>
-								L'accompagnement est plus qu'un métier, c'est un
-								sacerdoce pour moi. Bien que j’aie mis du temps à le
-								mettre en œuvre officiellement, il a toujours été
-								omniprésent dans mes activités professionnelles et
-								personnelles.
+								Notre cerveau fonctionne par images, et les métaphores
+								que nous utilisons reflètent notre perception du monde.
+								J'ai découvert la puissance des métaphores pendant ma
+								formation et j'ai vu leurs effets positifs sur ceux que
+								j'accompagne. Cet outil est au cœur de mon approche
+								narrative du coaching.
 							</p>
 							<p>
-								J'ai un don pour l'écoute et je suis accueillant. Avec
-								bienveillance, humour, et dynamisme, je m'efforce d'être
-								efficace dans mes méthodes d'accompagnement.
-							</p>
-							<p>
-								J'utilise fréquemment des métaphores pour aider mes
-								clients à changer d'univers et à visualiser leurs
-								idéaux. Comme un metteur en scène, je vous aiderai à
-								reprendre le contrôle du rôle principal de votre vie,
-								vous assurant d'être au centre de cette transformation.
+								Comme mon grand-père, un éminent professeur de grec
+								ancien qui chérissait "Le Petit Prince", je crois que
+								les choses essentielles ne sont pas toujours évidentes.
+								À travers le coaching, je souhaite vous aider à voir
+								au-delà du visible, à découvrir le sens profond dans
+								votre parcours de vie, et à contribuer positivement au
+								monde.
 							</p>
 						</div>
 					</div>
