@@ -44,7 +44,7 @@ const WhoAmI = () => {
 							alt='Chess'
 							width={789}
 							height={1080}
-							className='absolute z-10 hidden w-[60vw] lg:static lg:block lg:w-[23vw] 3xl:w-[17vw]'
+							className='absolute z-10 hidden w-[60vw] lg:static lg:block lg:w-[26vw] 2xl:w-[23vw] 3xl:w-[17vw]'
 						/>
 						<p className='hidden translate-x-[0%] font-caveat text-3xl text-blackOne lg:block 2xl:text-4xl'>
 							Celui qui sait demander est{' '}
@@ -54,18 +54,18 @@ const WhoAmI = () => {
 						</p>
 					</div>
 					<div className='z-20 flex h-[600px] flex-col'>
-						<div className='z-20 m-auto flex flex-col gap-10 bg-whiteOne p-7 text-blackOne shadow-lg shadow-blackOne/40 lg:w-[500px] 2xl:w-[600px] 2xl:p-10'>
+						<div className='z-20 m-auto flex flex-col gap-10 bg-whiteOne p-7 text-blackOne shadow-lg shadow-blackOne/40 lg:w-[500px] lg:gap-4 lg:p-6 2xl:w-[600px] 2xl:gap-10 2xl:p-10'>
 							<div className='flex flex-col gap-3'>
-								<h2 className='font-caveat text-3xl font-bold lg:text-4xl 3xl:text-5xl'>
+								<h2 className='font-caveat text-3xl font-bold 2xl:text-4xl 3xl:text-5xl'>
 									Se redécouvrir
 								</h2>
 								<div className='h-[1px] w-full bg-secondaryOne'></div>
 							</div>
 							<div className='flex flex-col gap-4'>
-								<h3 className='font-inter text-lg lg:text-xl'>
+								<h3 className='font-inter text-lg 2xl:text-xl'>
 									Qui suis-je ?
 								</h3>
-								<div className='flex flex-col gap-3 text-sm lg:text-base'>
+								<div className='flex flex-col gap-3 text-sm 2xl:text-base'>
 									<p>
 										Mon parcours de vie sort souvent des sentiers
 										battus. Il a été riche d'expériences et de

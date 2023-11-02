@@ -33,26 +33,14 @@ const NavBar = () => {
 			</AnimatePresence>
 			<>
 				<div
-					className={`sticky top-0 z-[60] m-auto my-[15px] hidden h-[90px] lg:block 2xl:h-[120px] ${
+					className={`sticky top-0 z-[60] m-auto my-[20px] hidden h-[80px] lg:block 2xl:my-[15px] 2xl:h-[90px] ${
 						isScrolled ? 'w-screen bg-white' : ''
 					}
 		`}>
 					<div
 						className={`m-auto flex h-full w-[90%] items-center justify-between gap-12 p-6 font-inter`}>
 						<Link href='/'>
-							<motion.div
-								className='w-[210px] 2xl:w-[260px] '
-								initial='hidden'
-								animate='visible'
-								variants={{
-									hidden: {
-										opacity: 0,
-									},
-									visible: {
-										opacity: 1,
-									},
-								}}
-								transition={{ duration: 0.3 }}>
+							<motion.div className='w-[210px] 2xl:w-[260px] '>
 								{isScrolled ? (
 									<Image
 										src='/m-logo.png'

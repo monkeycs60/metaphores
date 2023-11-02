@@ -104,9 +104,9 @@ const page = () => {
 								<Image
 									src='/spiral.png'
 									alt='chess'
-									width={2063}
-									height={1254}
-									className='w-[400px]'
+									width={1069}
+									height={1090}
+									className='w-[320px]'
 								/>
 							</div>
 						</div>

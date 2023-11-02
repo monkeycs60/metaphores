@@ -15,18 +15,18 @@ const WhatIsIt = () => {
 			/>
 			<div className='relative m-auto mt-8 flex flex-col-reverse justify-around gap-12 lg:w-[75%] lg:flex-row'>
 				<div className='z-20 flex  flex-col'>
-					<div className='z-20 m-auto flex flex-col gap-8 bg-primaryOne/20 p-7 shadow-lg shadow-blackOne/50 lg:w-[500px] 2xl:w-[600px] 2xl:gap-10 2xl:p-10'>
+					<div className='z-20 m-auto flex flex-col gap-8 bg-primaryOne/20 p-7 shadow-lg shadow-blackOne/50 lg:w-[500px] lg:gap-4 lg:p-6 2xl:w-[600px] 2xl:gap-10 2xl:p-10'>
 						<div className='flex flex-col gap-3'>
-							<h2 className='font-caveat text-3xl font-bold lg:text-4xl 3xl:text-5xl'>
+							<h2 className='font-caveat text-3xl font-bold 2xl:text-4xl 3xl:text-5xl'>
 								Changer les possibles
 							</h2>
 							<div className='h-[1px] w-full bg-secondaryOne/50'></div>
 						</div>
 						<div className='flex flex-col gap-4'>
-							<h3 className='font-inter text-lg lg:text-xl'>
+							<h3 className='font-inter text-lg 2xl:text-xl'>
 								Métaphore coaching, pour quoi ?
 							</h3>
-							<div className='flex flex-col gap-3 text-sm lg:text-base'>
+							<div className='flex flex-col gap-3 text-sm 2xl:text-base'>
 								<p>
 									Nous créons ensemble un chemin personnalisé pour
 									atteindre votre objectif final en prenant en compte
@@ -53,7 +53,7 @@ const WhatIsIt = () => {
 						alt='Chess'
 						width={642}
 						height={446}
-						className='z-10 lg:w-[29vw] 2xl:w-[30vw] 3xl:w-[25vw]'
+						className='z-10 lg:w-[30vw] 2xl:w-[30vw] 3xl:w-[25vw]'
 					/>
 					<p className='font-caveat text-2xl text-blackOne lg:translate-x-[-20%] lg:text-3xl 2xl:text-4xl 3xl:translate-x-[-50%]'>
 						Trouver du{' '}
