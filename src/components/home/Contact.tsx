@@ -13,7 +13,7 @@ const Contact = () => {
 				height={215}
 			/>
 			<div className='m-auto flex flex-col gap-[40px] lg:w-[85%] lg:gap-[80px] 2xl:w-3/4'>
-				<h2 className='flex justify-center text-xl font-bold lg:text-2xl'>
+				<h2 className='flex justify-center text-xl font-bold underline underline-offset-8 lg:text-2xl'>
 					Contactez-nous
 				</h2>
 				<div className='m-auto flex flex-col items-center justify-between gap-4 lg:w-3/4 lg:flex-row lg:items-start lg:gap-0'>

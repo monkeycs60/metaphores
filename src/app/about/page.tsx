@@ -7,14 +7,14 @@ import {
 	Palette,
 	Drama,
 	Trophy,
-    GraduationCap
+	GraduationCap,
 } from 'lucide-react';
 
 const page = () => {
 	return (
 		<div className='flex flex-col gap-12'>
 			<div className='containerBordureBriseeThree relative mt-24 h-1/2'>
-				<div className='flex justify-center gap-8 p-12'>
+				<div className='flex flex-row-reverse justify-center gap-8 p-12 2xl:gap-[5vw] 3xl:gap-[8vw] '>
 					<div className='flex w-[600px] flex-col items-center justify-center gap-12'>
 						<h2 className='font-caveat text-5xl text-blackOne'>
 							Moi, c'est Christophe
@@ -31,9 +31,9 @@ const page = () => {
 							</p>
 						</div>
 					</div>
-					<div className=''>
+					<div className='flex flex-col gap-4'>
 						<Image
-							src='/chris-blob.png'
+							src='/chris-blob-2.png'
 							alt='chess'
 							width={800}
 							height={652}
@@ -45,30 +45,31 @@ const page = () => {
 					</div>
 				</div>
 			</div>
-			<div className='m-auto flex w-[70%] flex-col gap-[50px] '>
+			<div className='m-auto flex w-[50%] flex-col gap-[30px]'>
 				<div className='flex flex-col gap-4 '>
 					<h2 className='text-xl font-bold text-blackOne'>Mon parcours</h2>
-					<div>
-						<div className='flex flex-col gap-2'>
-							<p>
-								J’ai évolué dans diverses sphères privées (aéronautique,
-								immobilier, théâtre…), avant de m'orienter vers
-								l'enseignement depuis quelques années.
-							</p>
-							<p>
-								La vie, pour moi, est une spirale faite de différents
-								cycles, avec le coaching comme dernier virage. Mon
-								expérience est riche et variée :
-							</p>
-							<ul className='flex flex-col gap-3'>
+
+					<div className='flex flex-col gap-2'>
+						<p>
+							J’ai évolué dans diverses sphères privées (aéronautique,
+							immobilier, théâtre…), avant de m'orienter vers
+							l'enseignement depuis quelques années.
+						</p>
+						<p>
+							La vie, pour moi, est une spirale faite de différents
+							cycles, avec le coaching comme dernier virage. Mon
+							expérience est riche et variée :
+						</p>
+						<div className='mt-14 flex justify-center gap-12'>
+							<ul className='flex flex-col gap-5'>
 								<li className='flex items-center gap-2 '>
 									{' '}
-									<Wrench /> Formation en ingénierie et mécanique
+									<Wrench /> Formation en ingénierie et mécanique.
 								</li>
 								<li className='flex items-center gap-2 '>
 									<Globe />
 									Vie à l'étranger: Angleterre, Australie, Inde, et
-									plus
+									plus.
 								</li>
 								<li className='flex items-center gap-2 '>
 									<Briefcase />
@@ -77,21 +78,21 @@ const page = () => {
 								</li>
 								<li className='flex items-center gap-2 '>
 									<Book />
-									Enseignant depuis une dizaine d’années
+									Enseignant depuis une dizaine d’années.
 								</li>
 								<li className='flex items-center gap-2 '>
 									<Palette />
-									Artiste peintre avec des expositions à Bordeaux
+									Artiste peintre avec des expositions à Bordeaux.
 								</li>
 								<li className='flex items-center gap-2 '>
 									<Drama />
 									Comédien professionnel ayant écrit et mis en scène
-									plusieurs pièces
+									plusieurs pièces.
 								</li>
 								<li className='flex items-center gap-2 '>
 									<Trophy />
 									Sportif ayant fait de la compétition en football,
-									handball, et beach-volley
+									handball, et beach-volley.
 								</li>
 								<li className='flex items-center gap-2 '>
 									<GraduationCap />
@@ -99,21 +100,33 @@ const page = () => {
 									coaching.
 								</li>
 							</ul>
-						</div>
-						<div>
-							{/* <Image src='/chess.png' alt='chess' width={800} height={652} className='w-[400px]' /> */}
+							<div className='m-auto '>
+								<Image
+									src='/spiral.png'
+									alt='chess'
+									width={2063}
+									height={1254}
+									className='w-[400px]'
+								/>
+							</div>
 						</div>
 					</div>
 				</div>
-				<div className='flex flex-col gap-4 '>
+				<div className='mt-6 flex flex-col gap-4'>
 					<h2 className='text-xl font-bold text-blackOne'>
 						Ma découverte du Coaching
 					</h2>
-					<div>
-						<div>
-							{/* <Image src='/chess.png' alt='chess' width={800} height={652} className='w-[400px]' /> */}
+					<div className='mt-6 flex w-[90%] items-center justify-between '>
+						<div className='w-[280px]'>
+							<Image
+								src='/boussole.jpg'
+								alt='chess'
+								width={2000}
+								height={2000}
+								className='w-[240px]'
+							/>
 						</div>
-						<div className='flex flex-col gap-2'>
+						<div className='flex w-[65%] flex-col gap-2 rounded-xl bg-primaryOne/10 p-6'>
 							<p>
 								L'accompagnement est plus qu'un métier, c'est un
 								sacerdoce pour moi. Bien que j’aie mis du temps à le
@@ -136,15 +149,13 @@ const page = () => {
 						</div>
 					</div>
 				</div>
-				<div className='flex flex-col gap-4 '>
+
+				<div className='mt-6 flex flex-col gap-4'>
 					<h2 className='text-xl font-bold text-blackOne'>
 						La Métaphore dans le Coaching
 					</h2>
-					<div>
-						<div>
-							{/* <Image src='/chess.png' alt='chess' width={800} height={652} className='w-[400px]' /> */}
-						</div>
-						<div className='flex flex-col gap-2'>
+					<div className='mt-6 flex w-[90%] items-center justify-between '>
+						<div className='flex w-[65%] flex-col gap-2 rounded-xl bg-primaryOne/10 p-6'>
 							<p>
 								Notre cerveau fonctionne par images, et les métaphores
 								que nous utilisons reflètent notre perception du monde.
@@ -162,6 +173,15 @@ const page = () => {
 								votre parcours de vie, et à contribuer positivement au
 								monde.
 							</p>
+						</div>
+						<div className=''>
+							<Image
+								src='/words.jpg'
+								alt='chess'
+								width={2063}
+								height={1254}
+								className='w-[280px]'
+							/>
 						</div>
 					</div>
 				</div>
