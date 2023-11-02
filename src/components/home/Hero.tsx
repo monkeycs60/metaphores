@@ -28,11 +28,11 @@ const Hero = () => {
 			3xl:py-3  '>
 				<ChevronsDown className='h-[30px] w-[30px] text-whiteOne lg:h-[40px] lg:w-[40px] 3xl:h-[50px] 3xl:w-[50px] ' />
 			</div>
-			<div className='left-[55%] top-[15%] z-10 flex flex-col gap-3 lg:absolute lg:block 3xl:left-[53%]'>
+			<div className='left-[55%] top-[15%] z-30 flex flex-col gap-3 lg:absolute lg:block 3xl:left-[53%]'>
 				<div className='flex justify-end pr-6 font-caveat text-2xl text-blackOne'>
 					<h3 className='lg:hidden'>
-						<span className='bg-primaryOne px-2'>Développer</span> votre
-						potentiel
+						<span className='z-50 bg-primaryOne px-2'>Développer</span>{' '}
+						votre potentiel
 					</h3>
 				</div>
 				<Image
@@ -40,7 +40,7 @@ const Hero = () => {
 					alt='Chess'
 					width={2169}
 					height={1531}
-					className='m-auto mt-4 lg:mt-0 w-[90%] lg:w-[30vw] 3xl:w-[35vw]'
+					className='m-auto mt-4 w-[90%] lg:mt-0 lg:w-[30vw] 3xl:w-[35vw]'
 				/>
 				<div className='relative flex w-full items-center pl-6 font-caveat text-2xl lg:text-3xl 2xl:text-4xl 3xl:text-5xl'>
 					<h3 className='text-blackOne'>
@@ -65,7 +65,7 @@ const Hero = () => {
 					alt='blue circle'
 					width={50}
 					height={100}
-					className='absolute -left-8 top-8 z-10 w-[110px] rotate-[120deg] lg:bottom-[23%] lg:left-[2%]'
+					className='absolute -left-8 top-8 -z-10 w-[110px] rotate-[120deg] lg:bottom-[23%] lg:left-[2%]'
 				/>
 			</div>
 			<div className=''>
