@@ -65,7 +65,7 @@ function CustomNavigationMenu() {
 					</NavigationMenuContent>
 				</NavigationMenuItem>
 				<NavigationMenuItem>
-					<Link href='/docs' legacyBehavior passHref>
+					<Link href='/deontology' legacyBehavior passHref>
 						<NavigationMenuLink className={navigationMenuTriggerStyle()}>
 							Déontologie
 						</NavigationMenuLink>
