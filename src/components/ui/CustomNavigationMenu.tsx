@@ -72,7 +72,7 @@ function CustomNavigationMenu() {
 					</Link>
 				</NavigationMenuItem>
 				<NavigationMenuItem>
-					<Link href='/docs' legacyBehavior passHref>
+					<Link href='/offers' legacyBehavior passHref>
 						<NavigationMenuLink className={navigationMenuTriggerStyle()}>
 							Tarifs
 						</NavigationMenuLink>

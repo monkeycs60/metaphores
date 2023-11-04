@@ -13,9 +13,12 @@ const Contact = () => {
 				height={215}
 			/>
 			<div className='m-auto flex flex-col gap-[40px] lg:w-[85%] lg:gap-[80px] 2xl:w-3/4'>
-				<h2 className='flex justify-center text-xl font-bold underline underline-offset-8 lg:text-2xl'>
-					Contactez-nous
-				</h2>
+				<div>
+					<h2 className='flex justify-center text-xl font-bold lg:text-2xl'>
+						Contactez-moi
+					</h2>
+					<div className='m-auto mt-2 h-[1px] w-[15%] bg-blackOne'></div>
+				</div>
 				<div className='m-auto flex flex-col items-center justify-between gap-4 lg:w-3/4 lg:flex-row lg:items-start lg:gap-0'>
 					<div className='flex flex-col items-center gap-3 lg:h-[120px] lg:w-1/3 lg:gap-8 2xl:h-[150px]'>
 						<h3 className='text-sm font-bold uppercase lg:text-base 2xl:text-lg'>

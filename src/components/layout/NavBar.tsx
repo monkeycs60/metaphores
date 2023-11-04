@@ -63,13 +63,15 @@ const NavBar = () => {
 						<CustomNavigationMenu />
 
 						<div className='mr-[3vw] flex gap-6 text-base 2xl:text-3xl 3xl:mr-[1vw]'>
-							<Button
-								className='ml-auto'
-								variant={'outline'}
-								size={'lg'}>
-								{' '}
-								Contact{' '}
-							</Button>
+							<Link href='/contact'>
+								<Button
+									className='ml-auto'
+									variant={'outline'}
+									size={'lg'}>
+									{' '}
+									Contact{' '}
+								</Button>
+							</Link>
 							<Button className='ml-auto' size={'lg'}>
 								{' '}
 								Réserver{' '}
