@@ -18,13 +18,13 @@ const page = () => {
 				alt='fleche bas'
 				className='absolute -right-12 bottom-20 w-[160px] '
 			/>
-			<div className='m-auto mt-24 w-[50%]'>
+			<div className='m-auto mt-16 w-[50%]'>
 				<div>
 					<div>
 						<h1 className='flex justify-center text-xl font-bold text-blackOne lg:text-3xl'>
 							Ethique et déontologie
 						</h1>
-						<div className='m-auto mt-2 h-[1px] w-[25%] bg-blackOne'></div>
+						<div className='m-auto mt-2 h-[1px] w-[30%] bg-blackOne'></div>
 					</div>
 					<div className='mt-2 flex items-center justify-between gap-10'>
 						<p className='text-lg italic'>
