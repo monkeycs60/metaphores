@@ -33,30 +33,30 @@ const page = () => {
 					tarifs, afin de vous offrir le meilleur en fonction de votre
 					point de départ et de votre destination souhaitée.
 				</p>
-				<div className='mt-[80px] flex items-center justify-center gap-[20px] '>
-					<div className='relative h-[450px] w-[400px] bg-primaryOne p-12 '>
+				<div className='mt-[80px] flex items-start justify-center gap-[20px] '>
+					<div className='relative h-[400px] w-[400px] bg-gray-400 p-8 '>
 						<div className='space-y-4'>
-							<h2 className='text-center text-2xl font-semibold text-white'>
+							<h2 className='text-center text-3xl font-semibold text-white'>
 								Laser
 							</h2>
 							<p className='flex items-center justify-center gap-2 text-center'>
-								<span className='text-2xl font-bold'>3</span> Heures
+								<span className='text-3xl font-bold'>3</span> Heures
 							</p>
 						</div>
-						<div className='mt-10 flex flex-col items-start gap-6 text-gray-700'>
-							<div className='flex gap-4'>
+						<div className='mt-10 flex flex-col items-start gap-6 text-gray-900'>
+							<div className='flex items-center gap-4'>
 								<div className='rounded-full bg-white p-1'>
 									<Check />
 								</div>
 								<p>Identifier vos ressources</p>
 							</div>
-							<div className='flex gap-4'>
+							<div className='flex items-center gap-4'>
 								<div className='rounded-full bg-white p-1'>
 									<Check />
 								</div>
 								<p>Optimiser votre organisation</p>
 							</div>
-							<div className='flex gap-4'>
+							<div className='flex items-center gap-4'>
 								<div className='rounded-full bg-white p-1'>
 									<Check />
 								</div>
@@ -68,18 +68,96 @@ const page = () => {
 							alt='prisma 1'
 							width={59}
 							height={58}
-							className='absolute bottom-4 right-12 w-[80px] '
+							className='absolute bottom-4 right-12 w-[70px] '
 						/>
 						<Image
 							src='/prisma2.svg'
 							alt='prisma 2'
 							width={137}
 							height={120}
-							className='absolute bottom-16 right-2 w-[60px]'
+							className='absolute bottom-16 right-2 w-[50px]'
 						/>
 					</div>
-					<div></div>
-					<div></div>
+					<div className='relative h-[450px] w-[400px] bg-secondaryOne p-8 '>
+						<div className='space-y-4'>
+							<h2 className='text-center text-3xl font-semibold text-white'>
+								Pas de côté
+							</h2>
+							<p className='flex items-center justify-center gap-2 text-center'>
+								<span className='text-3xl font-bold'>6</span> Heures
+							</p>
+						</div>
+						<div className='mt-10 flex flex-col items-start gap-6 text-gray-800'>
+							<div className='flex items-center gap-4'>
+								<div className='rounded-full bg-white p-1'>
+									<Check />
+								</div>
+								<p>Se mettre en action</p>
+							</div>
+							<div className='flex items-center gap-4'>
+								<div className='rounded-full bg-white p-1'>
+									<Check />
+								</div>
+								<p>Retrouver de l'équilibre</p>
+							</div>
+							<div className='flex items-center gap-4'>
+								<div className='rounded-full bg-white p-1'>
+									<Check />
+								</div>
+								<p>Développer sa confiance</p>
+							</div>
+						</div>
+						<Image
+							src='/zpath.png'
+							alt='chemin'
+							width={269}
+							height={136}
+							className='absolute bottom-4 right-4 w-[220px] '
+						/>
+					</div>
+					<div className='relative h-[500px] w-[400px] bg-primaryOne p-8 text-black '>
+						<div className='space-y-4'>
+							<h2 className='text-center text-3xl font-semibold text-white'>
+								Parenthèse
+							</h2>
+							<p className='flex items-center justify-center gap-2 text-center'>
+								<span className='text-3xl font-bold'>9</span> Heures
+							</p>
+						</div>
+						<div className='mt-10 flex flex-col items-start gap-6 text-gray-700'>
+							<div className='flex items-center gap-4'>
+								<div className='rounded-full bg-white p-1'>
+									<Check />
+								</div>
+								<p>Gagner en sérénité</p>
+							</div>
+							<div className='flex items-center gap-4'>
+								<div className='rounded-full bg-white p-1'>
+									<Check />
+								</div>
+								<p>Atteindre un épanouissement</p>
+							</div>
+							<div className='flex items-center gap-4'>
+								<div className='rounded-full bg-white p-1'>
+									<Check />
+								</div>
+								<p>développer son estime</p>
+							</div>
+							<div className='flex items-center gap-4'>
+								<div className='rounded-full bg-white p-1'>
+									<Check />
+								</div>
+								<p>Atteindre une réalisation</p>
+							</div>
+						</div>
+						<Image
+							src='/flag.svg'
+							alt='drapeau'
+							width={59}
+							height={58}
+							className='absolute bottom-4 right-12 w-[80px] text-blackOne'
+						/>
+					</div>
 				</div>
 			</div>
 		</div>
