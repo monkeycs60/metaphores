@@ -16,25 +16,36 @@ import {
 
 const components: { title: string; href: string; description: string }[] = [
 	{
+		title: 'Coaching individuel',
+		href: '/coaching/individuel',
+		description: 'Un projet, un changement, un problème, un bilan...',
+	},
+	{
+		title: "Origines : c'est quoi ?",
+		href: '/coaching/origines',
+		description: 'Origines, définitions et objectifs du coaching.',
+	},
+
+	{
+		title: 'Coaching collectif',
+		href: '/coaching/collectif',
+		description: "Cohésion d'équipe, performance, conflit, développement...",
+	},
+	{
 		title: 'Ma vision',
 		href: '/coaching/ma-vision',
 		description:
 			'Un accompagnement pour vous permettre de dépasser une difficulté ou pour atteindre un but.',
 	},
 	{
-		title: 'Coaching individuel',
-		href: '/coaching/individuel',
-		description: 'Un projet, un changement, un problème, un bilan...',
-	},
-	{
-		title: 'Coaching collectif',
-		href: '/coaching/individuel',
-		description: "Cohésion d'équipe, performance, conflit, développement...",
-	},
-	{
 		title: 'Coaching en entreprise',
-		href: '/coaching/individuel',
+		href: '/coaching/entreprise',
 		description: 'Intelligence collective, leadership, évolution...',
+	},
+	{
+		title: 'Coach ou psy ?',
+		href: '/coaching/ma-vision',
+		description: 'Clarification : distinction entre coach et psychologue.',
 	},
 ];
 
