@@ -15,7 +15,7 @@ const page = () => {
 		<>
 			<div className='mb-[60px] mt-16'>
 				<h1 className='flex justify-center text-xl font-bold text-blackOne lg:text-3xl'>
-					Contactez-moi
+					A propos
 				</h1>
 				<div className='m-auto mt-2 h-[1px] w-[15%] bg-blackOne'></div>
 			</div>

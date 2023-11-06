@@ -44,7 +44,7 @@ const components: { title: string; href: string; description: string }[] = [
 	},
 	{
 		title: 'Coach ou psy ?',
-		href: '/coaching/ma-vision',
+		href: '/coaching/psy',
 		description: 'Clarification : distinction entre coach et psychologue.',
 	},
 ];
