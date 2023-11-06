@@ -21,9 +21,12 @@ export const page = () => {
 			<div className='m-auto mt-16 w-[60%]'>
 				<div>
 					<div className='flex flex-col gap-[55px]'>
-						<h1 className='flex justify-center text-xl font-bold text-blackOne lg:text-3xl'>
-							Coach ou psychologue : clarifications
-						</h1>
+						<div>
+							<h1 className='flex justify-center text-xl font-bold text-blackOne lg:text-3xl'>
+								Coach ou psychologue : clarifications
+							</h1>
+							<div className='m-auto mt-2 h-[1px] w-[50%] bg-blackOne'></div>
+						</div>
 						<div>
 							<p className='text-lg'>
 								Il est de plus en plus dur de trouver des personnes qui
@@ -122,11 +125,8 @@ export const page = () => {
 							/>
 							<div className='flex flex-1 flex-col gap-2 rounded-xl bg-primaryOne/10 p-6'>
 								<p>
-									Un coach en réalité n’est
-                                        {' '}
-									<span className='font-bold'>
-										pas un entraîneur{' '}
-									</span>{' '}
+									Un coach en réalité n’est{' '}
+									<span className='font-bold'>pas un entraîneur </span>{' '}
 									qui va vous donner tout un tas d'exercices qu’il sait
 									pouvoir vous aider à performer dans un domaine mais
 									plutôt quelqu’un qui va vous accompagner sur le
