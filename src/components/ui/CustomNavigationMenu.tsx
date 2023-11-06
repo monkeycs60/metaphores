@@ -33,7 +33,7 @@ const components: { title: string; href: string; description: string }[] = [
 	},
 	{
 		title: 'Ma vision',
-		href: '/coaching/ma-vision',
+		href: '/coaching/vision',
 		description:
 			'Un accompagnement pour vous permettre de dépasser une difficulté ou pour atteindre un but.',
 	},
