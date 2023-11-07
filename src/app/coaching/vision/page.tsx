@@ -46,10 +46,10 @@ const page = () => {
 							sourceWidth={15}
 							sourceHeight={24}
 							sourceValue='/ecoute.svg'
-							imgWidth={80}
+							imgWidth={'w-[30px]'}
 						/>
 						<Card
-							bgvalue='bg-primaryOne'
+							bgvalue='bg-primaryOne/90'
 							number={2}
 							value='Unique'
 							textVision='Chaque personne est différente ce qui fait que vos solutions sont uniques. Je ne les trouverais pas
@@ -57,10 +57,10 @@ pour vous ! Par contre, je peux vous accompagner pour que vous les trouviez.'
 							sourceWidth={150}
 							sourceHeight={176}
 							sourceValue='/unique.svg'
-							imgWidth={80}
+							imgWidth={'w-[100px]'}
 						/>
 						<Card
-							bgvalue='bg-primaryOne'
+							bgvalue='bg-primaryOne/80'
 							number={3}
 							value='Droit au but'
 							textVision='Actif, j’aime voir les choses avancer. Je suis un coach plutôt confrontant mais avec douceur et
@@ -68,10 +68,10 @@ subtilité. A l’image d’une main de fer dans un gant de velours.'
 							sourceWidth={133}
 							sourceHeight={32}
 							sourceValue='/direct.png'
-							imgWidth={80}
+							imgWidth={'w-[100px]'}
 						/>
 						<Card
-							bgvalue='bg-primaryOne'
+							bgvalue='bg-primaryOne/70'
 							number={4}
 							value='Chirurgical'
 							textVision='La précision est primordiale. Identifier et travailler sur une problématique demande à agir avec
@@ -80,10 +80,10 @@ l’image d’un laser.'
 							sourceWidth={150}
 							sourceHeight={103}
 							sourceValue='/laser.svg'
-							imgWidth={80}
+							imgWidth={'w-[100px]'}
 						/>
 						<Card
-							bgvalue='bg-primaryOne'
+							bgvalue='bg-primaryOne/60'
 							number={5}
 							value='Concret'
 							textVision='Ancré dans la réalité. Votre démarche dépasse le cadre
@@ -93,10 +93,10 @@ agir concrètement et atteindre vos objectifs.'
 							sourceWidth={150}
 							sourceHeight={137}
 							sourceValue='/strong.svg'
-							imgWidth={80}
+							imgWidth={'w-[70px]'}
 						/>
 						<Card
-							bgvalue='bg-primaryOne'
+							bgvalue='bg-primaryOne/50'
 							number={6}
 							value='Projection'
 							textVision='La métaphore est un outil puissant que j’utilise régulièrement. Il permet de sortir des
@@ -106,10 +106,10 @@ solutions.'
 							sourceWidth={158}
 							sourceHeight={122}
 							sourceValue='/projection.svg'
-							imgWidth={80}
+							imgWidth={'w-[100px]'}
 						/>
 						<Card
-							bgvalue='bg-primaryOne'
+							bgvalue='bg-primaryOne/40'
 							number={7}
 							value='Cheminer'
 							textVision='Nous créons ensemble un chemin personnalisé pour atteindre votre objectif final en
@@ -117,7 +117,7 @@ prenant en compte votre univers personnel et vos images mentales.'
 							sourceWidth={81}
 							sourceHeight={80}
 							sourceValue='/pathway.svg'
-							imgWidth={80}
+							imgWidth={'w-[80px]'}
 						/>
 					</div>
 				</div>

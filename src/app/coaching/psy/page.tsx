@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import React from 'react';
 
-export const page = () => {
+const page = () => {
 	return (
 		<div className='relative w-[100%]'>
 			<Image
