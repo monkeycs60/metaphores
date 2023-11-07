@@ -72,10 +72,12 @@ const NavBar = () => {
 									Contact{' '}
 								</Button>
 							</Link>
-							<Button className='ml-auto' size={'lg'}>
-								{' '}
-								Réserver{' '}
-							</Button>
+							<Link href={'/reservation'}>
+								<Button className='ml-auto' size={'lg'}>
+									{' '}
+									Réserver{' '}
+								</Button>
+							</Link>
 						</div>
 					</div>
 				</div>

@@ -19,7 +19,7 @@ export default function RootLayout({
 				className={
 					'm-auto overflow-x-hidden  bg-white font-inter text-base lg:overflow-x-hidden'
 				}>
-				<div className='w-full'>
+				<div className='w-full' id='__next'>
 					<NavBar />
 					{children}
 					<Footer />

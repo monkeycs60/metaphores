@@ -26,7 +26,7 @@ const Card = ({
 }: cardVisionProps) => {
 	return (
 		<div
-			className={`relative flex h-[400px] flex-col justify-around xl:w-[35%] 2xl:w-[30%] ${bgvalue} p-8`}>
+			className={`relative flex h-[400px] flex-col justify-around xl:w-[35%] 2xl:w-[30%] ${bgvalue} p-8 shadow-md hover:drop-shadow-2xl`}>
 			<Image
 				src={sourceValue}
 				width={sourceWidth}
