@@ -43,9 +43,9 @@ const page = () => {
 								Une écoute sans jugement, active, neutre et
 								bienveillante ; pour vous aider à déposer et mieux
 								rebondir.'
-							sourceWidth={140}
-							sourceHeight={150}
-							sourceValue='/discrete-blue-circle.svg'
+							sourceWidth={15}
+							sourceHeight={24}
+							sourceValue='/ecoute.svg'
 							imgWidth={80}
 						/>
 						<Card
@@ -54,9 +54,9 @@ const page = () => {
 							value='Unique'
 							textVision='Chaque personne est différente ce qui fait que vos solutions sont uniques. Je ne les trouverais pas
 pour vous ! Par contre, je peux vous accompagner pour que vous les trouviez.'
-							sourceWidth={140}
-							sourceHeight={150}
-							sourceValue='/discrete-blue-circle.svg'
+							sourceWidth={150}
+							sourceHeight={176}
+							sourceValue='/unique.svg'
 							imgWidth={80}
 						/>
 						<Card
@@ -65,9 +65,9 @@ pour vous ! Par contre, je peux vous accompagner pour que vous les trouviez.'
 							value='Droit au but'
 							textVision='Actif, j’aime voir les choses avancer. Je suis un coach plutôt confrontant mais avec douceur et
 subtilité. A l’image d’une main de fer dans un gant de velours.'
-							sourceWidth={140}
-							sourceHeight={150}
-							sourceValue='/discrete-blue-circle.svg'
+							sourceWidth={133}
+							sourceHeight={32}
+							sourceValue='/direct.png'
 							imgWidth={80}
 						/>
 						<Card
@@ -77,9 +77,9 @@ subtilité. A l’image d’une main de fer dans un gant de velours.'
 							textVision='La précision est primordiale. Identifier et travailler sur une problématique demande à agir avec
 précision et à recentrer régulièrement pour offrir un accompagnement efficace et soigneux. A
 l’image d’un laser.'
-							sourceWidth={140}
-							sourceHeight={150}
-							sourceValue='/discrete-blue-circle.svg'
+							sourceWidth={150}
+							sourceHeight={103}
+							sourceValue='/laser.svg'
 							imgWidth={80}
 						/>
 						<Card
@@ -90,9 +90,9 @@ l’image d’un laser.'
 des entretiens et va se répercuter dans votre vie; Nous
 essayerons d’avancer pas à pas pour vous encourager à
 agir concrètement et atteindre vos objectifs.'
-							sourceWidth={140}
-							sourceHeight={150}
-							sourceValue='/discrete-blue-circle.svg'
+							sourceWidth={150}
+							sourceHeight={137}
+							sourceValue='/strong.svg'
 							imgWidth={80}
 						/>
 						<Card
@@ -102,10 +102,10 @@ agir concrètement et atteindre vos objectifs.'
 							textVision='La métaphore est un outil puissant que j’utilise régulièrement. Il permet de sortir des
 méandres du mental. L’identification et l’utilisation de vos images et métaphores nous
 permettra de vous décentrer de votre problématique et de vous aider à entrevoir des
-solutions. (jaguar, jungle).'
-							sourceWidth={140}
-							sourceHeight={150}
-							sourceValue='/discrete-blue-circle.svg'
+solutions.'
+							sourceWidth={158}
+							sourceHeight={122}
+							sourceValue='/projection.svg'
 							imgWidth={80}
 						/>
 						<Card
@@ -114,9 +114,9 @@ solutions. (jaguar, jungle).'
 							value='Cheminer'
 							textVision='Nous créons ensemble un chemin personnalisé pour atteindre votre objectif final en
 prenant en compte votre univers personnel et vos images mentales.'
-							sourceWidth={140}
-							sourceHeight={150}
-							sourceValue='/discrete-blue-circle.svg'
+							sourceWidth={81}
+							sourceHeight={80}
+							sourceValue='/pathway.svg'
 							imgWidth={80}
 						/>
 					</div>
