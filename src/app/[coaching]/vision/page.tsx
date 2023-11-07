@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import React from 'react';
-import Card from './card';
+import Card from '@/components/vision/Card';
 
 const page = () => {
 	return (
