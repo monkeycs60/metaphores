@@ -1,7 +1,8 @@
 import Image from 'next/image';
 import React from 'react';
-import { Minus, ChevronRightSquare, Dot } from 'lucide-react';
+import { Minus, ChevronRightSquare, Dot, ArrowUpRight } from 'lucide-react';
 import Link from 'next/link';
+import { Button } from '@/components/ui/button';
 
 const page = () => {
 	return (
@@ -150,7 +151,19 @@ const page = () => {
 								</div>
 							</div>
 						</div>
-						<div className='mt-8 flex flex-col gap-[55px]'>
+						<div className='mt-2 flex w-full justify-center'>
+							<Link
+								href='/reservation'
+								className='flex w-full justify-center'>
+								<Button
+									size={'lg'}
+									className='w-1/3 gap-2 bg-primaryOne'>
+									{' '}
+									<span>Réserver ma séance</span> <ArrowUpRight />
+								</Button>
+							</Link>
+						</div>
+						<div className='mt-2 flex flex-col gap-[55px]'>
 							<h2 className='-mb-4 text-center text-xl font-bold text-blackOne'>
 								Pourquoi choisir le coaching individuel ?
 							</h2>

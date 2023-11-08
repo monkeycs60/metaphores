@@ -1,5 +1,7 @@
 import Image from 'next/image';
-import { Check } from 'lucide-react';
+import { ArrowUpRight, Check } from 'lucide-react';
+import { Button } from '@/components/ui/button';
+import Link from 'next/link';
 
 const page = () => {
 	return (
@@ -258,6 +260,17 @@ const page = () => {
 							className='absolute bottom-12 right-4 w-[60px]'
 						/>
 					</div>
+				</div>
+
+				<div className='mt-2 flex w-full justify-center'>
+					<Link href='/reservation' className='flex w-full justify-center'>
+						<Button
+							size={'lg'}
+							className='w-1/3 gap-2 bg-primaryOne'>
+							{' '}
+							<span>Réserver ma séance</span> <ArrowUpRight />
+						</Button>
+					</Link>
 				</div>
 				<div>
 					<h2 className='text-xl font-bold text-blackOne'>
