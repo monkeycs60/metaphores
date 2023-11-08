@@ -21,9 +21,9 @@ const components: { title: string; href: string; description: string }[] = [
 		description: 'Un projet, un changement, un problème, un bilan...',
 	},
 	{
-		title: "Origines : c'est quoi ?",
+		title: "C'est quoi le coaching ?",
 		href: '/coaching/origines',
-		description: 'Origines, définitions et objectifs du coaching.',
+		description: 'Définitions, déroulement et objectifs du coaching.',
 	},
 
 	{
