@@ -45,13 +45,13 @@ const page = () => {
 						/>
 					</div>
 					<div className='flex flex-col gap-[55px]'>
-						<h2 className='-mb-4 text-xl font-bold text-blackOne'>
+						<h2 className='-mb-4 text-center text-3xl font-bold text-blackOne'>
 							Formules
 						</h2>
 						<div className='m-auto flex w-[90%] gap-[50px]'>
-							<div className='flex h-[650px] w-1/2 flex-col items-center gap-12 bg-secondaryOne p-8'>
+							<div className='flex h-[650px] w-1/2 flex-col items-center gap-12 bg-secondaryOne p-8 drop-shadow-xl'>
 								<div className='flex flex-col gap-2 text-center'>
-									<h3 className='text-3xl font-bold'>Coaching Pro</h3>
+									<h3 className='text-2xl font-bold'>Coaching Pro</h3>
 									<span className='text-lg'>
 										Accompagnement professionnel
 									</span>
@@ -98,9 +98,9 @@ const page = () => {
 									</div>
 								</div>
 							</div>
-							<div className='flex h-[650px] w-1/2 flex-col items-center gap-12 bg-secondaryOne/60 p-8'>
+							<div className='flex h-[650px] w-1/2 flex-col items-center gap-12 bg-secondaryOne/60 p-8 drop-shadow-xl'>
 								<div className='flex flex-col gap-2 text-center'>
-									<h3 className='text-3xl font-bold'>
+									<h3 className='text-2xl font-bold'>
 										Coaching de Vie
 									</h3>
 									<span className='text-lg'>
@@ -150,93 +150,109 @@ const page = () => {
 								</div>
 							</div>
 						</div>
-						<div className='flex flex-col gap-[55px]'>
-							<h2 className='-mb-4 text-xl font-bold text-blackOne'>
+						<div className='mt-8 flex flex-col gap-[55px]'>
+							<h2 className='-mb-4 text-center text-xl font-bold text-blackOne'>
 								Pourquoi choisir le coaching individuel ?
 							</h2>
-							<div>
-								<p></p>
-								<div>
+							<div className='m-auto flex flex-wrap justify-center gap-12'>
+								<div className='flex w-[40%] items-center justify-center gap-6 '>
 									<Image
 										src={'/empathy.svg'}
 										width={52}
 										height={45}
 										alt='empathie'
+										className='h-[60px] w-[80px] '
 									/>
 									<h3>
-										Écoute active et empathique : Nous offrons un
-										espace d'écoute où vous êtes entendu et vos
-										expériences, valorisées.
+										<strong>Écoute active et empathique</strong> :
+										l'assurance d'un espace d'écoute où vous êtes
+										entendu et vos expériences, valorisées.
 									</h3>
 								</div>
-								<div>
+								<div className='flex w-[40%] items-center justify-center gap-6 '>
 									<Image
 										src={'/guidance.svg'}
 										width={83}
 										height={83}
 										alt='guidance'
+										className='w-[75px] '
 									/>
 									<h3>
-										Guidance discrète: mon rôle est de vous guider
-										avec subtilité, en vous aidant à révéler vos
-										propres réponses et solutions.
+										<strong>Guidance discrète</strong> : mon rôle est
+										de vous guider avec subtilité, en vous aidant à
+										révéler vos propres réponses et solutions.
 									</h3>
 								</div>
-								<div>
+								<div className='flex w-[40%] items-center justify-center gap-6 '>
 									<Image
 										src={'/rythm.svg'}
 										width={65}
 										height={75}
 										alt='rythme'
+										className='w-[58px]'
 									/>
 									<h3>
-										Respect de votre rythme : il est très important
-										pour moi de de progresser à votre propre cadence,
-										en assurant un suivi adapté à vos besoins.
+										<strong>Respect de votre rythme</strong> : il est
+										très important pour moi de de progresser à votre
+										propre cadence, en assurant un suivi adapté à vos
+										besoins.
 									</h3>
 								</div>
-								<div>
+								<div className='flex w-[40%] items-center justify-center gap-6 '>
 									<Image
 										src={'/strength.svg'}
 										width={120}
 										height={102}
 										alt='force'
+										className='w-[80px]'
 									/>
 									<h3>
-										Approche basée sur vos forces: Nous mettons en
-										lumière vos compétences et qualités pour vous
-										aider à bâtir sur ce que vous avez déjà.
+										<strong>Approche basée sur vos forces</strong> :
+										En mettant en lumière vos compétences et qualités
+										pour vous aider à bâtir sur ce que vous avez déjà.
 									</h3>
 								</div>
 							</div>
-							<p>
-								Le coaching individuel est offert en sessions de 60
-								minutes. Les séances se déroulent en ligne, par
-								téléphone ou en personne, selon votre préférence.
-							</p>
 						</div>
 						<div className='flex flex-col gap-[55px]'>
-							<h2 className='-mb-4 text-xl font-bold text-blackOne'>
+							<h2 className='-mb-4 text-center text-xl font-bold text-blackOne'>
 								Modalités et questions fréquentes
 							</h2>
-							<div>
+							<div className='flex flex-col gap-3'>
+								<p>
+									Le coaching individuel est déroule habituellement en
+									sessions de 60 minutes. Les séances se déroulent en
+									visio, par téléphone ou en personne, selon votre
+									préférence.
+								</p>
+
 								<p>
 									Pour en savoir plus sur la structure de nos séances,
 									les options de forfaits et les tarifs, veuillez
 									visiter notre page{' '}
-									<Link href={'/offers'}>Tarifs</Link>. Nous proposons
-									une variété de formules pour s'adapter à différents
-									besoins et préférences.
+									<Link
+										className='font-bold text-primaryOne hover:underline'
+										href={'/offers'}>
+										Tarifs
+									</Link>
+									. Nous proposons une variété de formules pour
+									s'adapter à différents besoins et préférences.
 								</p>
 								<p>
 									Si vous hésitez sur la formule qui vous conviendrait
 									le mieux ou si vous souhaitez obtenir plus
 									d'informations, n'hésitez pas à nous contacter. Notre
-									page Contact est le moyen le plus rapide pour nous
-									joindre et pour que nous puissions répondre à toutes
-									vos questions. Vous pouvez également programmer une
-									première consultation pour discuter de vos attentes
-									et voir comment le coaching individuel peut vous être
+									page{' '}
+									<Link
+										className='font-bold text-primaryOne hover:underline'
+										href={'/contact'}>
+										Contact
+									</Link>{' '}
+									est le moyen le plus rapide pour nous joindre et pour
+									que nous puissions répondre à toutes vos questions.
+									Vous pouvez également programmer une première
+									consultation pour discuter de vos attentes et voir
+									comment le coaching individuel peut vous être
 									bénéfique.
 								</p>
 							</div>
