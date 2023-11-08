@@ -28,19 +28,28 @@ const page = () => {
 						</h1>
 						<div className='m-auto mt-2 h-[1px] w-[32%] bg-blackOne'></div>
 					</div>
-					<p>
-						Explorez nos formules de coaching <strong>individuel</strong>,
-						conçues pour vous soutenir dans la découverte de vos propres
-						solutions. Nous sommes ici pour vous accompagner, à chaque
-						pas, sur le chemin de l'autonomie et de la compréhension
-						personnelle.
-					</p>
+					<div className='-my-4 flex items-center justify-center gap-20'>
+						<p className='w-1/3 text-center text-lg'>
+							Explorez nos formules de coaching{' '}
+							<strong>individuel</strong>, conçues pour vous soutenir
+							dans la découverte de vos propres solutions. Nous sommes
+							ici pour vous accompagner, à chaque pas, sur le chemin de
+							l'autonomie et de la compréhension personnelle.
+						</p>
+						<Image
+							src={'/soutien2.svg'}
+							className='w-[300px] '
+							alt='main tendue'
+							width={646}
+							height={554}
+						/>
+					</div>
 					<div className='flex flex-col gap-[55px]'>
 						<h2 className='-mb-4 text-xl font-bold text-blackOne'>
 							Formules
 						</h2>
 						<div className='m-auto flex w-[90%] gap-[50px]'>
-							<div className='flex w-1/2 flex-col items-center justify-between bg-secondaryOne p-8'>
+							<div className='flex h-[650px] w-1/2 flex-col items-center gap-12 bg-secondaryOne p-8'>
 								<div className='flex flex-col gap-2 text-center'>
 									<h3 className='text-3xl font-bold'>Coaching Pro</h3>
 									<span className='text-lg'>
@@ -51,7 +60,7 @@ const page = () => {
 									Cultivez votre potentiel professionnel avec un
 									accompagnement respectueux et attentif.
 								</h4>
-								<div className='flex flex-col gap-5'>
+								<div className='flex h-2/3 flex-col justify-between gap-5'>
 									<div className='flex gap-4'>
 										<ChevronRightSquare className='h-8 w-8' />
 										<p className='w-full'>
@@ -89,7 +98,7 @@ const page = () => {
 									</div>
 								</div>
 							</div>
-							<div className='flex w-1/2 flex-col items-center justify-between gap-12 bg-secondaryOne/60 p-8'>
+							<div className='flex h-[650px] w-1/2 flex-col items-center gap-12 bg-secondaryOne/60 p-8'>
 								<div className='flex flex-col gap-2 text-center'>
 									<h3 className='text-3xl font-bold'>
 										Coaching de Vie
@@ -102,7 +111,7 @@ const page = () => {
 									Avancez vers une meilleure compréhension de vous-même
 									et de ce qui compte vraiment pour vous.
 								</h4>
-								<div className='flex flex-col gap-5'>
+								<div className='flex h-2/3 flex-col justify-between gap-5'>
 									<div className='flex gap-4'>
 										<ChevronRightSquare className='h-8 w-8' />
 										<p className='w-full'>
