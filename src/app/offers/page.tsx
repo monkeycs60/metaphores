@@ -205,68 +205,77 @@ const page = () => {
 						Si vous souhaitez une intervention éclair et très ciblée, ou
 						simplement établir un premier contact avec votre accompagnant.
 					</p>
-					<div className='relative h-[450px] w-[400px] bg-blackOne p-8 text-white '>
-						<div className='space-y-4'>
-							<h2 className='text-center text-3xl font-semibold text-white'>
-								Les bulles
-							</h2>
-							<div>
-								<p className='flex items-center justify-center gap-2 text-center'>
-									<span className='text-3xl font-bold'>30</span>{' '}
-									minutes
-								</p>
-								<p className='mt-1 text-center text-sm italic'>35€</p>
+					<div className='flex justify-center'>
+						<div className='relative h-[450px] w-[400px] bg-blackOne p-8 text-white '>
+							<div className='space-y-4'>
+								<h2 className='text-center text-3xl font-semibold text-white'>
+									Les bulles
+								</h2>
+								<div>
+									<p className='flex items-center justify-center gap-2 text-center'>
+										<span className='text-3xl font-bold'>30</span>{' '}
+										minutes
+									</p>
+									<p className='mt-1 text-center text-sm italic'>
+										35€
+									</p>
+								</div>
 							</div>
+							<div className='mt-10 flex flex-col items-start gap-6 text-gray-100'>
+								<div className='flex items-center gap-4'>
+									<div className='rounded-full bg-white p-1'>
+										<Check className='text-blackOne' />
+									</div>
+									<p>Coaching express</p>
+								</div>
+								<div className='flex items-center gap-4'>
+									<div className='rounded-full bg-white p-1'>
+										<Check className='text-blackOne' />
+									</div>
+									<p>Changer de perspective</p>
+								</div>
+								<div className='flex items-center gap-4'>
+									<div className='rounded-full bg-white p-1'>
+										<Check className='text-blackOne' />
+									</div>
+									<p>Identifier une problématique</p>
+								</div>
+							</div>
+							<Image
+								src='/bubble.svg'
+								alt='bulle'
+								width={106}
+								height={102}
+								className='absolute bottom-4 right-12 w-[80px]'
+							/>
+							<Image
+								src='/bubble.svg'
+								alt='bulle'
+								width={106}
+								height={102}
+								className='absolute bottom-4 right-4 w-[40px]'
+							/>
+							<Image
+								src='/bubble.svg'
+								alt='bulle'
+								width={106}
+								height={102}
+								className='absolute bottom-12 right-4 w-[60px]'
+							/>
 						</div>
-						<div className='mt-10 flex flex-col items-start gap-6 text-gray-100'>
-							<div className='flex items-center gap-4'>
-								<div className='rounded-full bg-white p-1'>
-									<Check className='text-blackOne' />
-								</div>
-								<p>Coaching express</p>
-							</div>
-							<div className='flex items-center gap-4'>
-								<div className='rounded-full bg-white p-1'>
-									<Check className='text-blackOne' />
-								</div>
-								<p>Changer de perspective</p>
-							</div>
-							<div className='flex items-center gap-4'>
-								<div className='rounded-full bg-white p-1'>
-									<Check className='text-blackOne' />
-								</div>
-								<p>Identifier une problématique</p>
-							</div>
-						</div>
 						<Image
-							src='/bubble.svg'
-							alt='bulle'
-							width={106}
-							height={102}
-							className='absolute bottom-4 right-12 w-[80px]'
-						/>
-						<Image
-							src='/bubble.svg'
-							alt='bulle'
-							width={106}
-							height={102}
-							className='absolute bottom-4 right-4 w-[40px]'
-						/>
-						<Image
-							src='/bubble.svg'
-							alt='bulle'
-							width={106}
-							height={102}
-							className='absolute bottom-12 right-4 w-[60px]'
+							src='/alone.jpg'
+							alt='homme seul'
+							width={1920}
+							height={1280}
+							className='w-1/3 object-cover'
 						/>
 					</div>
 				</div>
 
 				<div className='my-4 flex w-full justify-center'>
 					<Link href='/reservation' className='flex w-full justify-center'>
-						<Button
-							size={'lg'}
-							className='w-1/3 gap-2 bg-primaryOne'>
+						<Button size={'lg'} className='w-1/3 gap-2 bg-primaryOne'>
 							{' '}
 							<span>Réserver ma séance</span> <ArrowUpRight />
 						</Button>
