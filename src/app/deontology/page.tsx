@@ -5,11 +5,11 @@ const page = () => {
 	return (
 		<div className='relative w-[100%]'>
 			<Image
-				src={'/twoCircles.svg'}
-				width={120}
-				height={183}
+				src={'/forme3.png'}
+				width={361}
+				height={281}
 				alt='fleche bas'
-				className='absolute left-0 top-64 w-[200px] '
+				className='absolute left-0 top-[40vh] w-[300px] '
 			/>
 			<Image
 				src={'/circle-black.png'}

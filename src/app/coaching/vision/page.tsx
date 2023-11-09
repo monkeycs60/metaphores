@@ -19,6 +19,20 @@ const page = () => {
 				alt='fleche bas'
 				className='absolute -right-12 bottom-20 w-[160px] '
 			/>
+			<Image
+				src={'/forme5.png'}
+				width={153}
+				height={160}
+				alt='fleche bas'
+				className='absolute right-12 bottom-[50vh] w-[160px] '
+			/>
+			<Image
+				src={'/forme11.png'}
+				width={485}
+				height={283}
+				alt='fleche bas'
+				className='absolute -left-12 bottom-[15vh] w-[460px] '
+			/>
 			<div className='m-auto mt-16 w-[60%]'>
 				<div className='flex flex-col gap-[75px]'>
 					<div>

@@ -12,7 +12,35 @@ import {
 
 const page = () => {
 	return (
-		<>
+		<div className='relative w-screen'>
+			<Image
+				src={'/forme10.png'}
+				width={223}
+				height={181}
+				alt='rond bleu clair'
+				className='absolute left-0 top-[60vh] w-[200px] '
+			/>
+			<Image
+				src={'/forme4.png'}
+				width={289}
+				height={269}
+				alt='rond bleu clair'
+				className='absolute right-24 top-[75vh] w-[200px] '
+			/>
+			<Image
+				src={'/forme14.png'}
+				width={495}
+				height={424}
+				alt='rond bleu clair'
+				className='absolute bottom-[10vh] left-8 w-[400px] '
+			/>
+			<Image
+				src={'/circle-black.png'}
+				width={120}
+				height={183}
+				alt='fleche bas'
+				className='absolute -right-12 bottom-20 w-[160px] '
+			/>
 			<div className='mb-[60px] mt-16'>
 				<h1 className='flex justify-center text-xl font-bold text-blackOne lg:text-3xl'>
 					A propos
@@ -203,7 +231,7 @@ const page = () => {
 					</div>
 				</div>
 			</div>
-		</>
+		</div>
 	);
 };
 

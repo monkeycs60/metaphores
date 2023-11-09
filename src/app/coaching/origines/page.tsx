@@ -12,6 +12,41 @@ const page = () => {
 				className='absolute left-0 top-64 w-[200px] '
 			/>
 			<Image
+				src={'/forme13.png'}
+				width={372}
+				height={358}
+				alt='fleche bas'
+				className='absolute right-0 top-[100vh] w-[300px] '
+			/>
+			<Image
+				src={'/forme6.png'}
+				width={289}
+				height={248}
+				alt='fleche bas'
+				className='absolute right-12 top-[40vh] w-[220px] '
+			/>
+			<Image
+				src={'/forme3.png'}
+				width={361}
+				height={281}
+				alt='fleche bas'
+				className='absolute left-16 top-[70vh] w-[200px] '
+			/>
+			<Image
+				src={'/forme9.png'}
+				width={207}
+				height={227}
+				alt='fleche bas'
+				className='absolute left-0 top-[180vh] w-[250px] '
+			/>
+			<Image
+				src={'/forme2.png'}
+				width={221}
+				height={207}
+				alt='fleche bas'
+				className='absolute right-0 top-[140vh] w-[250px] '
+			/>
+			<Image
 				src={'/circle-black.png'}
 				width={120}
 				height={183}

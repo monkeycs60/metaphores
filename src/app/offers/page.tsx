@@ -15,6 +15,20 @@ const page = () => {
 				className='absolute -left-8 top-64 w-[140px] '
 			/>
 			<Image
+				src={'/forme7.png'}
+				width={463}
+				height={344}
+				alt='cercle orange'
+				className='absolute left-8 top-[85vh] w-[460px] '
+			/>
+			<Image
+				src={'/forme12.png'}
+				width={252}
+				height={261}
+				alt='cercle orange'
+				className='absolute right-8 top-[70vh] w-[260px] '
+			/>
+			<Image
 				src={'/discrete-blue-circle.svg'}
 				width={120}
 				height={183}

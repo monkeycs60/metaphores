@@ -12,6 +12,20 @@ const page = () => {
 				className='absolute left-0 top-64 w-[200px] '
 			/>
 			<Image
+				src={'/forme8.png'}
+				width={293}
+				height={247}
+				alt='fleche bas'
+				className='absolute right-8 top-[40vh] w-[250px] '
+			/>
+			<Image
+				src={'/forme6.png'}
+				width={289}
+				height={248}
+				alt='fleche bas'
+				className='absolute left-16 top-[65vh] w-[220px] '
+			/>
+			<Image
 				src={'/circle-black.png'}
 				width={120}
 				height={183}
