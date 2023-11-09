@@ -262,7 +262,7 @@ const page = () => {
 					</div>
 				</div>
 
-				<div className='mt-2 flex w-full justify-center'>
+				<div className='my-4 flex w-full justify-center'>
 					<Link href='/reservation' className='flex w-full justify-center'>
 						<Button
 							size={'lg'}
