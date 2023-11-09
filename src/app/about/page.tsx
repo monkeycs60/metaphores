@@ -32,7 +32,7 @@ const page = () => {
 				width={495}
 				height={424}
 				alt='rond bleu clair'
-				className='absolute bottom-[10vh] left-8 w-[400px] '
+				className='absolute bottom-[15vh] left-8 w-[200px] 3xl:bottom-[10vh] 3xl:w-[400px] '
 			/>
 			<Image
 				src={'/circle-black.png'}
@@ -85,7 +85,7 @@ const page = () => {
 						</div>
 					</div>
 				</div>
-				<div className='m-auto flex w-[50%] flex-col gap-[30px]'>
+				<div className='m-auto flex w-[90%] flex-col gap-[30px] lg:w-[80%] 2xl:w-[70%] 3xl:w-[50%]'>
 					<div className='flex flex-col gap-4 '>
 						<h2 className='text-xl font-bold text-blackOne'>
 							Mon parcours
