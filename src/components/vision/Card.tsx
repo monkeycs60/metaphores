@@ -2,7 +2,7 @@ import Image from 'next/image';
 import React from 'react';
 
 interface cardVisionProps {
-	bgvalue: string;
+	addStyle?: string;
 	sourceValue: string;
 	altValue?: string | undefined;
 	sourceWidth?: number;
@@ -14,7 +14,7 @@ interface cardVisionProps {
 }
 
 const Card = ({
-	bgvalue,
+	addStyle,
 	number,
 	value,
 	textVision,
@@ -26,7 +26,7 @@ const Card = ({
 }: cardVisionProps) => {
 	return (
 		<div
-			className={`relative flex h-[400px] flex-col justify-around xl:w-[35%] 2xl:w-[30%] ${bgvalue} p-8 shadow-md hover:drop-shadow-2xl`}>
+			className={`relative flex h-[400px] flex-col justify-around transition-all duration-300 xl:w-[30%] ${addStyle} p-8 shadow-md hover:drop-shadow-2xl`}>
 			<Image
 				src={sourceValue}
 				width={sourceWidth}

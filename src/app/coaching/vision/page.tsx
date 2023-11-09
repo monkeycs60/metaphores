@@ -36,7 +36,7 @@ const page = () => {
 					</p>
 					<div className='m-auto flex flex-wrap items-center justify-center gap-[30px]'>
 						<Card
-							bgvalue='bg-primaryOne'
+							addStyle='translate-x-[-20px] translate-y-[-20px] bg-primaryOne hover:translate-x-[-10px] hover:translate-y-[-10px]   '
 							number={1}
 							value='Bienveillance & Écoute'
 							textVision='L’accueil et l’écoute sont centraux dans le coaching.
@@ -49,7 +49,7 @@ const page = () => {
 							imgWidth={'w-[30px]'}
 						/>
 						<Card
-							bgvalue='bg-primaryOne/90'
+							addStyle='translate-x-[-5px] translate-y-[-5px] bg-primaryOne/90 hover:translate-x-[-10px] hover:translate-y-[-15px]'
 							number={2}
 							value='Unique'
 							textVision='Chaque personne est différente ce qui fait que vos solutions sont uniques. Je ne les trouverais pas
@@ -60,7 +60,7 @@ pour vous ! Par contre, je peux vous accompagner pour que vous les trouviez.'
 							imgWidth={'w-[100px]'}
 						/>
 						<Card
-							bgvalue='bg-primaryOne/80'
+							addStyle='translate-x-[-10px] translate-y-[-20px] bg-primaryOne/80 hover:translate-x-[-10px] hover:translate-y-[10px]'
 							number={3}
 							value='Droit au but'
 							textVision='Actif, j’aime voir les choses avancer. Je suis un coach plutôt confrontant mais avec douceur et
@@ -71,7 +71,7 @@ subtilité. A l’image d’une main de fer dans un gant de velours.'
 							imgWidth={'w-[100px]'}
 						/>
 						<Card
-							bgvalue='bg-primaryOne/70'
+							addStyle='bg-primaryOne/70 translate-x-[-10px] translate-y-[-10px] hover:translate-x-[-20px] hover:translate-y-[-10px]'
 							number={4}
 							value='Chirurgical'
 							textVision='La précision est primordiale. Identifier et travailler sur une problématique demande à agir avec
@@ -83,7 +83,7 @@ l’image d’un laser.'
 							imgWidth={'w-[100px]'}
 						/>
 						<Card
-							bgvalue='bg-primaryOne/60'
+							addStyle='bg-primaryOne/60 translate-x-[-15px] translate-y-[10px] hover:translate-y-[-10px]'
 							number={5}
 							value='Concret'
 							textVision='Ancré dans la réalité. Votre démarche dépasse le cadre
@@ -96,7 +96,7 @@ agir concrètement et atteindre vos objectifs.'
 							imgWidth={'w-[70px]'}
 						/>
 						<Card
-							bgvalue='bg-primaryOne/50'
+							addStyle='bg-primaryOne/50 hover:translate-x-[-20px] hover:translate-y-[-15px]'
 							number={6}
 							value='Projection'
 							textVision='La métaphore est un outil puissant que j’utilise régulièrement. Il permet de sortir des
@@ -109,7 +109,7 @@ solutions.'
 							imgWidth={'w-[100px]'}
 						/>
 						<Card
-							bgvalue='bg-primaryOne/40'
+							addStyle='bg-primaryOne/40 translate-x-[100px] translate-y-[10px] hover:translate-x-[60px] hover:translate-y-[15px]'
 							number={7}
 							value='Cheminer'
 							textVision='Nous créons ensemble un chemin personnalisé pour atteindre votre objectif final en
