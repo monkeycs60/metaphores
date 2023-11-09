@@ -38,7 +38,7 @@ const page = () => {
 								</p>
 							</div>
 						</div>
-						<div className='flex flex-col gap-4'>
+						<div className='flex flex-col items-center gap-4'>
 							<Image
 								src='/chris-blob-2.png'
 								alt='chess'
@@ -46,9 +46,14 @@ const page = () => {
 								height={652}
 								className='w-[400px]'
 							/>
-							<span className='text-lg font-semibold text-blackOne'>
-								Christophe JACQUES Coach professionnel diplômé
-							</span>
+							<div className='flex flex-col items-center'>
+								<span className='text-lg font-semibold text-blackOne'>
+									Christophe JACQUES
+								</span>
+								<span className='text-base'>
+									Coach professionnel diplômé
+								</span>
+							</div>
 						</div>
 					</div>
 				</div>
