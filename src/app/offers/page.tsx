@@ -2,6 +2,7 @@ import Image from 'next/image';
 import { ArrowUpRight, Check } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import Link from 'next/link';
+import { StudentCard } from '@/components/offers/student-card';
 
 const page = () => {
 	return (
@@ -20,14 +21,15 @@ const page = () => {
 				alt='cercle orange'
 				className='absolute right-32 top-64 w-[80px] '
 			/>
-			<div className='m-auto mt-16 flex w-[50%] flex-col gap-[54px] '>
+			<div className='relative m-auto mt-16 flex w-[50%] flex-col gap-[54px]'>
+				<StudentCard />
 				<div className=''>
 					<h1 className='flex justify-center text-xl font-bold text-blackOne lg:text-3xl'>
 						Tarifs et formules
 					</h1>
 					<div className='m-auto mt-2 h-[1px] w-[30%] bg-blackOne'></div>
 				</div>
-				<div className='flex flex-col items-center gap-1 bg-primaryOne/20 p-8 text-lg'>
+				<div className='relative flex flex-col items-center gap-1 bg-primaryOne/20 p-8 text-lg'>
 					<p>La séance dure environ 1h.</p>
 					<p className='underline underline-offset-4'>
 						Tarif horaire : <span className='font-bold'>70€</span>
@@ -281,7 +283,7 @@ const page = () => {
 						</Button>
 					</Link>
 				</div>
-				<div>
+				{/* <div>
 					<h2 className='text-xl font-bold text-blackOne'>
 						Engagements et tarifs spéciaux
 					</h2>
@@ -298,7 +300,7 @@ const page = () => {
 							pour plus de renseignements.{' '}
 						</p>
 					</div>
-				</div>
+				</div> */}
 			</div>
 		</div>
 	);
