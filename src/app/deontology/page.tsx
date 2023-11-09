@@ -18,7 +18,7 @@ const page = () => {
 				alt='fleche bas'
 				className='absolute -right-12 bottom-20 w-[160px] '
 			/>
-			<div className='m-auto mt-16 w-[50%]'>
+			<div className='m-auto mt-16'>
 				<div>
 					<div>
 						<h1 className='flex justify-center text-xl font-bold text-blackOne lg:text-3xl'>
@@ -26,20 +26,22 @@ const page = () => {
 						</h1>
 						<div className='m-auto mt-2 h-[1px] w-[30%] bg-blackOne'></div>
 					</div>
-					<div className='mt-2 flex items-center justify-between gap-10'>
-						<p className='text-lg italic'>
-							Métaphore coaching adhère et respecte les chartes
-							déontologiques de la profession (type EMCC).
-						</p>
-						<Image
-							src='/emcc.jpg'
-							alt='charte emcc'
-							width={1181}
-							height={762}
-							className='w-[180px]'
-						/>
+					<div className='containerBordureBriseeFourth mt-14 flex h-[20vh] w-screen items-center justify-center'>
+						<div className='mt-2 flex items-center justify-center gap-10'>
+							<p className='w-1/2 text-lg italic'>
+								Métaphore coaching adhère et respecte les chartes
+								déontologiques de la profession (type EMCC).
+							</p>
+							<Image
+								src='/emcc.png'
+								alt='charte emcc'
+								width={1181}
+								height={762}
+								className='w-[260px]'
+							/>
+						</div>
 					</div>
-					<div className='flex flex-col gap-8'>
+					<div className='m-auto mt-16 flex w-[50%] flex-col gap-8'>
 						<p>Les 4 points suivants sont fondamentales à nos yeux :</p>
 						<div className='flex justify-between'>
 							<div className='flex w-[20%] flex-col items-center gap-4 '>

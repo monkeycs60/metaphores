@@ -51,6 +51,14 @@ html {
 	border-top-left-radius: 50% 20%;
 }
 
+.containerBordureBriseeFourth {
+	background-color: #b4d6e6;
+	border-top-left-radius: 40% 60%;
+	border-top-right-radius: 30% 70%;
+	border-bottom-right-radius: 20% 10%;
+	border-bottom-left-radius: 80% 50%;
+}
+
 .pictureBlob {
     clip-path: ellipse(50% 40% at 50% 50%);
 }
