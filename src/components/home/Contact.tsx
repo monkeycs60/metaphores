@@ -48,7 +48,7 @@ const Contact = () => {
 							</Link>
 						</div>
 					</div>
-					<div className='h-[2px] w-full bg-primaryOne lg:w-[2px] '></div>
+					<div className='h-[150px] w-full bg-primaryOne lg:w-[1px] '></div>
 					<div className='flex flex-col items-center justify-between gap-1 lg:h-[120px] lg:w-1/3 lg:gap-6 2xl:h-[150px]'>
 						<h3 className='text-sm font-bold uppercase lg:text-base 2xl:text-lg'>
 							Téléphone
@@ -64,7 +64,7 @@ const Contact = () => {
 						</div>
 						<p className='text-base 2xl:text-lg'>06 72 71 61 60</p>
 					</div>
-					<div className='h-[2px] w-full bg-primaryOne lg:w-[2px] '></div>
+					<div className='h-[150px] w-full bg-primaryOne lg:w-[1px] '></div>
 
 					<div className='flex flex-col items-center justify-between gap-1 lg:h-[120px] lg:w-1/3 lg:gap-6 2xl:h-[150px]'>
 						<h3 className='text-sm font-bold uppercase lg:text-base 2xl:text-lg'>
