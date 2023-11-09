@@ -43,7 +43,7 @@ const NavBar = () => {
 							<motion.div className='w-[210px] 2xl:w-[260px] '>
 								{isScrolled ? (
 									<Image
-										src='/m-logo.png'
+										src='/monogramme.svg'
 										alt='Logo'
 										width={894}
 										height={279}
@@ -51,7 +51,7 @@ const NavBar = () => {
 									/>
 								) : (
 									<Image
-										src='/logo-metaphore-final.png'
+										src='/final-logo.svg'
 										alt='Logo'
 										width={894}
 										height={279}
