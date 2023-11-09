@@ -20,7 +20,7 @@ const page = () => {
 				alt='cercle orange'
 				className='absolute right-32 top-64 w-[80px] '
 			/>
-			<div className='m-auto mt-16 w-[60%]'>
+			<div className='m-auto mt-16 w-[90%] lg:w-[80%] 2xl:w-[70%] 3xl:w-[60%]'>
 				<div className=' mb-[80px]'>
 					<h1 className='flex justify-center text-xl font-bold text-blackOne lg:text-3xl'>
 						Contactez-moi

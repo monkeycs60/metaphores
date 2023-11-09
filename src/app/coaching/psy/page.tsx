@@ -32,7 +32,7 @@ const page = () => {
 				alt='fleche bas'
 				className='absolute -right-12 bottom-20 w-[160px] '
 			/>
-			<div className='m-auto mt-16 w-[60%]'>
+			<div className='m-auto mt-16 w-[90%] lg:w-[80%] 2xl:w-[75%] 3xl:w-[60%]'>
 				<div>
 					<div className='flex flex-col gap-[55px]'>
 						<div>

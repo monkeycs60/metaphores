@@ -35,7 +35,7 @@ const page = () => {
 				alt='cercle orange'
 				className='absolute right-32 top-64 w-[80px] '
 			/>
-			<div className='relative m-auto mt-16 flex w-[50%] flex-col gap-[54px]'>
+			<div className='relative m-auto mt-16 flex w-[90%] flex-col gap-[54px] lg:w-[80%] 2xl:w-[70%] 3xl:w-[50%]'>
 				<StudentCard />
 				<div className=''>
 					<h1 className='flex justify-center text-xl font-bold text-blackOne lg:text-3xl'>

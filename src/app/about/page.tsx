@@ -85,8 +85,8 @@ const page = () => {
 						</div>
 					</div>
 				</div>
-				<div className='m-auto flex w-[90%] flex-col gap-[30px] lg:w-[80%] 2xl:w-[70%] 3xl:w-[50%]'>
-					<div className='flex flex-col gap-4 '>
+				<div className='m-auto flex  flex-col gap-[30px] w-[90%] lg:w-[80%] 2xl:w-[70%] 3xl:w-[50%]'>
+					<div className='flex flex-col  gap-4 '>
 						<h2 className='text-xl font-bold text-blackOne'>
 							Mon parcours
 						</h2>

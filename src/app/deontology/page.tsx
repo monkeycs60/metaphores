@@ -41,7 +41,7 @@ const page = () => {
 							/>
 						</div>
 					</div>
-					<div className='m-auto mt-16 flex w-[50%] flex-col gap-8'>
+					<div className='m-auto mt-16 flex w-[90%] flex-col gap-8 lg:w-[80%] 2xl:w-[70%] 3xl:w-[50%]'>
 						<p>Les 4 points suivants sont fondamentales à nos yeux :</p>
 						<div className='flex justify-between'>
 							<div className='flex w-[20%] flex-col items-center gap-4 '>
