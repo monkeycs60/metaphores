@@ -24,7 +24,7 @@ const page = () => {
 				width={153}
 				height={160}
 				alt='fleche bas'
-				className='absolute right-12 bottom-[50vh] w-[160px] '
+				className='absolute bottom-[50vh] right-12 w-[160px] '
 			/>
 			<Image
 				src={'/forme11.png'}
@@ -33,7 +33,7 @@ const page = () => {
 				alt='fleche bas'
 				className='absolute -left-12 bottom-[15vh] w-[460px] '
 			/>
-			<div className='m-auto mt-16 w-[60%]'>
+			<div className='m-auto mt-16 w-[90%] lg:w-[80%] 2xl:w-[75%] 3xl:w-[60%]'>
 				<div className='flex flex-col gap-[75px]'>
 					<div>
 						<h1 className='flex justify-center text-xl font-bold text-blackOne lg:text-3xl'>
