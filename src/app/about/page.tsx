@@ -54,7 +54,7 @@ const page = () => {
 							<h2 className='font-caveat text-4xl text-blackOne lg:text-5xl'>
 								Moi, c'est Christophe
 							</h2>
-							<div className='flex  flex-col gap-3 text-lg lg:px-8 3xl:px-0'>
+							<div className='flex  flex-col gap-3 lg:text-lg lg:px-8 3xl:px-0'>
 								<p>
 									Bien choisir son accompagnant.e, c’est important.
 									Alors voici mon portrait, pour apprendre à me
@@ -91,7 +91,7 @@ const page = () => {
 							Mon parcours
 						</h2>
 
-						<div className='mt-2 flex flex-col gap-2 text-lg lg:mt-0 lg:text-base'>
+						<div className='mt-2 flex flex-col gap-2 lg:mt-0'>
 							<p>
 								J’ai évolué dans diverses sphères privées (aéronautique,
 								immobilier, théâtre…), avant de m'orienter vers

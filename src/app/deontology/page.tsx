@@ -41,13 +41,13 @@ const page = () => {
 							/>
 						</div>
 					</div>
-					<div className='m-auto mt-16 flex w-[90%] flex-col gap-8 text-lg lg:w-[80%] lg:text-base 2xl:w-[70%] 3xl:w-[50%]'>
-						<p className='text-center lg:text-base'>
+					<div className='m-auto mt-16 flex w-[90%] flex-col gap-8 lg:w-[80%] 2xl:w-[70%] 3xl:w-[50%]'>
+						<p className='text-center'>
 							Les 4 points suivants sont fondamentales à nos yeux :
 						</p>
 						<div className='flex justify-between gap-6 lg:gap-0'>
 							<div className='flex flex-col items-center gap-4 lg:w-[20%] '>
-								<div className='h-[250px] lg:h-[70px]'>
+								<div className='h-[190px] lg:h-[70px]'>
 									<div className='relative h-[35px] w-[35px] lg:h-[45px] lg:w-[45px] 2xl:h-[40px] 2xl:w-[40px]'>
 										<Image src='/lock.svg' fill alt='pilier 1' />
 									</div>
@@ -57,7 +57,7 @@ const page = () => {
 										<Image src='/loupe.svg' fill alt='pilier 2' />
 									</div>
 								</div>
-								<div className='h-[210px] lg:h-[70px]'>
+								<div className='h-[140px] lg:h-[70px]'>
 									<div className='relative h-[35px] w-[35px] lg:h-[45px] lg:w-[45px] 2xl:h-[50px] 2xl:w-[50px]'>
 										<Image src='/dove.svg' fill alt='pilier 3' />
 									</div>
