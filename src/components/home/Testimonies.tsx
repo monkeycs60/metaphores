@@ -23,7 +23,7 @@ const Testimonies = () => {
 		}
 	};
 	return (
-		<div className='containerBordureBriseeTwo relative flex w-full flex-col items-center gap-6 pb-8 pt-12 lg:h-[70vh] 2xl:h-[50vh] 3xl:h-[36vh] '>
+		<div className='containerBordureBriseeTwo relative flex w-full flex-col items-center gap-6 pb-8 pt-12 lg:h-[57vh] 2xl:h-[45vh] 3xl:h-[32vh] '>
 			<div>
 				<h2 className='text-center text-xl font-bold lg:text-2xl'>
 					Témoignages
@@ -49,7 +49,7 @@ const Testimonies = () => {
 						{testimoniesList[testimonyIndex].position}
 					</p>
 				</div>
-				<div className='mt-4 flex justify-center gap-14 lg:w-[20%] 2xl:mt-8'>
+				<div className='mt-4 flex justify-center gap-14 lg:mt-0 lg:w-[20%] 2xl:mt-0 3xl:mt-4'>
 					<MoveLeft
 						className='h-[45px] w-[45px] cursor-pointer select-none hover:text-primaryOne'
 						onClick={previousImage}

@@ -1,7 +1,7 @@
 interface testimoniesListProps {
 	text: string;
 	author: string;
-    position: string;
+	position: string;
 }
 
 export const testimoniesList: testimoniesListProps[] = [
@@ -16,14 +16,7 @@ renforcer sa posture et son savoir faire très professionnels à votre égard.`,
 		position: 'Chef de projet',
 	},
 	{
-		text: `J’ai été coaché par Christophe pendant une durée de 6
-mois. Ce fut une expérience très enrichissante et productive, sur le plan sportif,
-scolaire et personnelle. À vrai dire je suis une personne qui doute beaucoup et au
-début je m’attendais à ce que mon coach me donne des réponses, des solutions et des choix à faire afin d’atteindre mes objectifs. Mais finalement, pendant 6
-mois, j’ai appris à trouver ces réponses qui étaient déjà en mois, à changer ma
-manière de percevoir les situations, les gens qui m’entoure et ma vie dans sa
-globalité. Ce coaching m’a permis d’en apprendre plus sur moi même, d’améliorer
-ma réflexion et aujourd’hui il m’a permis d’atteindre mes objectif.`,
+		text: `J'ai été coaché par Christophe pendant 6 mois, une expérience enrichissante et productive sur les plans sportif, scolaire et personnel. Initialement, j'espérais que mon coach me fournisse des réponses et des solutions pour atteindre mes objectifs. Cependant, ce coaching m'a appris à trouver mes propres réponses, à changer ma perception des situations, des gens et de ma vie. J'en ai appris davantage sur moi-même, amélioré ma réflexion et atteint mes objectifs.`,
 		author: 'Nathan B.',
 		position: 'Handballeur pro',
 	},
