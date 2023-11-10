@@ -45,7 +45,7 @@ const page = () => {
 				<h1 className='flex justify-center text-3xl font-bold text-blackOne lg:text-3xl'>
 					A propos
 				</h1>
-				<div className='m-auto mt-2 h-[1px] w-[15%] bg-blackOne'></div>
+				<div className='m-auto mt-2 h-[1px] w-1/2 bg-blackOne lg:w-[15%]'></div>
 			</div>
 			<div className='flex flex-col gap-12'>
 				<div className='containerBordureBriseeThree relative h-1/2 p-2 lg:mt-2 lg:p-0'>
