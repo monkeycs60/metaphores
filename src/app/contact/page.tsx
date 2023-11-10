@@ -11,14 +11,14 @@ const page = () => {
 				width={120}
 				height={183}
 				alt='cercle orange'
-				className='absolute -left-8 top-64 w-[140px] '
+				className='absolute -left-8 top-64 w-[90px] lg:w-[140px] '
 			/>
 			<Image
 				src={'/discrete-blue-circle.svg'}
 				width={120}
 				height={183}
 				alt='cercle orange'
-				className='absolute right-32 top-64 w-[80px] '
+				className='absolute right-32 top-64 hidden w-[80px] lg:block '
 			/>
 			<div className='m-auto mt-16 w-[90%] lg:w-[80%] 2xl:w-[70%] 3xl:w-[60%]'>
 				<div className=' mb-[80px]'>
@@ -56,7 +56,7 @@ const page = () => {
 							</Link>
 						</div>
 					</div>
-					<div className='h-[140px] w-full bg-primaryOne lg:w-[1px] '></div>
+					<div className='h-[1px] w-1/2 bg-primaryOne lg:h-[140px] lg:w-[1px] '></div>
 					<div className='flex flex-col items-center justify-between gap-1 lg:h-[120px] lg:w-1/3 lg:gap-6 2xl:h-[150px]'>
 						<h3 className='text-sm font-bold uppercase lg:text-base 2xl:text-lg'>
 							Téléphone
@@ -72,7 +72,7 @@ const page = () => {
 						</div>
 						<p className='text-base 2xl:text-lg'>06 72 71 61 60</p>
 					</div>
-					<div className='h-[140px] w-full bg-primaryOne lg:w-[1px] '></div>
+					<div className='h-[1px] w-1/2 bg-primaryOne lg:h-[140px] lg:w-[1px] '></div>
 
 					<div className='flex flex-col items-center justify-between gap-1 lg:h-[120px] lg:w-1/3 lg:gap-6 2xl:h-[150px]'>
 						<h3 className='text-sm font-bold uppercase lg:text-base 2xl:text-lg'>
@@ -94,7 +94,7 @@ const page = () => {
 				</div>
 				<section className='mt-[40px] bg-white dark:bg-gray-900 '>
 					<div className='mx-auto max-w-screen-md px-4 py-8 lg:py-16'>
-						<p className='mb-8 text-center font-light text-gray-500 dark:text-gray-400 sm:text-lg lg:mb-16'>
+						<p className='mb-8 text-center font-light text-gray-900 dark:text-gray-400 sm:text-lg lg:mb-16'>
 							Une question, une demande de réservation, un devis ?
 							N'hésitez pas à me contacter en remplissant le formulaire
 							ci-dessous. Je vous répondrai dans les plus brefs délais.
