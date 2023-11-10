@@ -18,40 +18,40 @@ const page = () => {
 				width={223}
 				height={181}
 				alt='rond bleu clair'
-				className='absolute -left-8 top-[90vh] w-[140px] 2xl:left-0 2xl:top-[60vh] 2xl:w-[200px] '
+				className='absolute -left-8 top-[90vh] hidden w-[140px] lg:block 2xl:left-0 2xl:top-[60vh] 2xl:w-[200px] '
 			/>
 			<Image
 				src={'/forme4.png'}
 				width={289}
 				height={269}
 				alt='rond bleu clair'
-				className='absolute right-12 top-[140vh] w-[160px] 2xl:right-24 2xl:top-[75vh] 2xl:w-[200px] '
+				className='absolute right-12 top-[140vh] hidden w-[160px] lg:block 2xl:right-24 2xl:top-[75vh] 2xl:w-[200px] '
 			/>
 			<Image
 				src={'/forme14.png'}
 				width={495}
 				height={424}
 				alt='rond bleu clair'
-				className='absolute bottom-[15vh] w-[130px] 2xl:left-8 2xl:w-[200px] 3xl:bottom-[10vh] 3xl:w-[400px] '
+				className='absolute -bottom-24 w-[130px] lg:bottom-[15vh] 2xl:left-8 2xl:w-[200px] 3xl:bottom-[10vh] 3xl:w-[400px] '
 			/>
 			<Image
 				src={'/circle-black.png'}
 				width={120}
 				height={183}
 				alt='fleche bas'
-				className='absolute -right-12 bottom-20 w-[140px] 2xl:w-[160px] '
+				className='absolute -right-12 bottom-20 hidden w-[140px] 2xl:w-[160px] '
 			/>
 			<div className='mb-[60px] mt-16'>
-				<h1 className='flex justify-center text-xl font-bold text-blackOne lg:text-3xl'>
+				<h1 className='flex justify-center text-3xl font-bold text-blackOne lg:text-3xl'>
 					A propos
 				</h1>
 				<div className='m-auto mt-2 h-[1px] w-[15%] bg-blackOne'></div>
 			</div>
 			<div className='flex flex-col gap-12'>
-				<div className='containerBordureBriseeThree relative mt-2 h-1/2'>
-					<div className='flex flex-row-reverse justify-center gap-8 p-12 lg:gap-16 2xl:gap-[5vw] 3xl:gap-[8vw] '>
-						<div className='flex w-[600px] flex-col items-center justify-center gap-12'>
-							<h2 className='font-caveat text-5xl text-blackOne'>
+				<div className='containerBordureBriseeThree relative h-1/2 p-2 lg:mt-2 lg:p-0'>
+					<div className='flex flex-col justify-center gap-8 p-12 lg:flex-row-reverse lg:gap-16 2xl:gap-[5vw] 3xl:gap-[8vw] '>
+						<div className='flex flex-col items-center justify-center gap-12 lg:w-[600px]'>
+							<h2 className='font-caveat text-4xl text-blackOne lg:text-5xl'>
 								Moi, c'est Christophe
 							</h2>
 							<div className='flex  flex-col gap-3 text-lg lg:px-8 3xl:px-0'>
@@ -66,7 +66,7 @@ const page = () => {
 								</p>
 							</div>
 						</div>
-						<div className='flex flex-col items-center gap-4'>
+						<div className='mt-4 flex flex-col items-center gap-4 lg:mt-0'>
 							<Image
 								src='/chris-blob-2.png'
 								alt='chess'
@@ -85,13 +85,13 @@ const page = () => {
 						</div>
 					</div>
 				</div>
-				<div className='m-auto flex  w-[90%] flex-col gap-[30px] lg:w-[80%] 2xl:w-[70%] 3xl:w-[50%]'>
-					<div className='flex flex-col  gap-4 '>
-						<h2 className='text-xl font-bold text-blackOne'>
+				<div className='m-auto flex w-[90%] flex-col gap-[30px] lg:w-[80%] 2xl:w-[70%] 3xl:w-[50%]'>
+					<div className='flex flex-col  gap-4'>
+						<h2 className='text-center text-2xl font-bold text-blackOne lg:text-left lg:text-xl'>
 							Mon parcours
 						</h2>
 
-						<div className='flex flex-col gap-2'>
+						<div className='mt-2 flex flex-col gap-2 text-lg lg:mt-0 lg:text-base'>
 							<p>
 								J’ai évolué dans diverses sphères privées (aéronautique,
 								immobilier, théâtre…), avant de m'orienter vers
@@ -102,44 +102,64 @@ const page = () => {
 								cycles, avec le coaching comme dernier virage. Mon
 								expérience est riche et variée :
 							</p>
-							<div className='mt-14 flex justify-center gap-12'>
-								<ul className='flex flex-col gap-5'>
-									<li className='flex items-center gap-2 '>
+							<div className='mt-14 flex flex-col-reverse justify-center gap-12 lg:flex-row'>
+								<ul className='flex w-full flex-col items-center justify-center gap-7 lg:items-start lg:justify-normal lg:gap-6'>
+									<li className='flex items-center gap-5'>
 										{' '}
-										<Wrench /> Formation en ingénierie et mécanique.
+										<Wrench />{' '}
+										<span className=''>
+											Formation en ingénierie et mécanique.
+										</span>
 									</li>
-									<li className='flex items-center gap-2 '>
+									<li className='flex items-center gap-5'>
 										<Globe />
-										Vie à l'étranger: Angleterre, Australie, Inde, et
-										plus.
+										<span>
+											Vie à l'étranger: Angleterre, Australie, Inde,
+											et plus.
+										</span>
 									</li>
-									<li className='flex items-center gap-2 '>
+									<li className='flex items-center gap-5'>
 										<Briefcase />
-										Multiples métiers : commercial, ingénieur,
-										commerçant...
+										<span>
+											Multiples métiers : commercial, ingénieur,
+											commerçant...
+										</span>
 									</li>
-									<li className='flex items-center gap-2 '>
-										<Book />
-										Enseignant depuis une dizaine d’années.
+									<li className='flex items-center gap-5'>
+										<Book />{' '}
+										<span>
+											{' '}
+											Enseignant depuis une dizaine d’années.
+										</span>
 									</li>
-									<li className='flex items-center gap-2 '>
+									<li className='flex items-center gap-5'>
 										<Palette />
-										Artiste peintre avec des expositions à Bordeaux.
+										<span>
+											{' '}
+											Artiste peintre avec des expositions à
+											Bordeaux.
+										</span>
 									</li>
-									<li className='flex items-center gap-2 '>
-										<Drama />
-										Comédien professionnel ayant écrit et mis en scène
-										plusieurs pièces.
+									<li className='flex items-center gap-5 '>
+										<Drama />{' '}
+										<span>
+											Comédien professionnel ayant écrit et mis en
+											scène plusieurs pièces.
+										</span>
 									</li>
-									<li className='flex items-center gap-2 '>
-										<Trophy />
-										Sportif ayant fait de la compétition en football,
-										handball, et beach-volley.
+									<li className='flex items-center gap-5 '>
+										<Trophy />{' '}
+										<span>
+											Sportif ayant fait de la compétition en
+											football, handball, et beach-volley.
+										</span>
 									</li>
-									<li className='flex items-center gap-2 '>
-										<GraduationCap />
-										Reprise d'études en sciences de l'éducation et en
-										coaching.
+									<li className='flex items-center gap-5 '>
+										<GraduationCap />{' '}
+										<span>
+											Reprise d'études en sciences de l'éducation et
+											en coaching.
+										</span>
 									</li>
 								</ul>
 								<div className='m-auto '>
@@ -148,27 +168,27 @@ const page = () => {
 										alt='chess'
 										width={1069}
 										height={1090}
-										className='w-[320px]'
+										className='w-[250px] lg:w-[320px]'
 									/>
 								</div>
 							</div>
 						</div>
 					</div>
 					<div className='mt-6 flex flex-col gap-4'>
-						<h2 className='text-xl font-bold text-blackOne'>
+						<h2 className='text-center text-2xl font-bold text-blackOne lg:text-left lg:text-xl'>
 							Ma découverte du Coaching
 						</h2>
-						<div className='mt-6 flex w-[90%] items-center justify-between '>
-							<div className='w-[280px]'>
+						<div className='mt-6 flex w-[90%] flex-col items-center justify-between gap-8 lg:flex-row lg:gap-0 '>
+							<div className='lg:w-[280px]'>
 								<Image
 									src='/boussole.jpg'
 									alt='chess'
 									width={2000}
 									height={2000}
-									className='w-[240px]'
+									className='w-[180px] lg:w-[240px]'
 								/>
 							</div>
-							<div className='flex w-[65%] flex-col gap-2 rounded-xl bg-primaryOne/10 p-6'>
+							<div className='flex  flex-col gap-4 rounded-xl bg-primaryOne/10 p-6 lg:w-[65%] lg:gap-2'>
 								<p>
 									L'accompagnement est plus qu'un métier, c'est un
 									sacerdoce pour moi. Bien que j’aie mis du temps à le
@@ -195,11 +215,11 @@ const page = () => {
 					</div>
 
 					<div className='mt-6 flex flex-col gap-4'>
-						<h2 className='text-xl font-bold text-blackOne'>
+						<h2 className='text-center text-2xl font-bold text-blackOne lg:text-left lg:text-xl'>
 							La Métaphore dans le Coaching
 						</h2>
-						<div className='mt-6 flex w-[90%] items-center justify-between '>
-							<div className='flex w-[65%] flex-col gap-2 rounded-xl bg-primaryOne/10 p-6'>
+						<div className='mt-6 flex w-[90%] flex-col-reverse items-center justify-between gap-8 lg:flex-row lg:gap-0 '>
+							<div className='flex  flex-col gap-4 rounded-xl bg-primaryOne/10 p-6 lg:w-[65%] lg:gap-2 lg:p-6'>
 								<p>
 									Notre cerveau fonctionne par images, et les
 									métaphores que nous utilisons reflètent notre
