@@ -35,22 +35,34 @@ const Hamburger = ({
 						A propos
 					</Link>
 					<Link
-						href={'/'}
+						href={'/coaching'}
 						className='linkHoverEffect'
 						onClick={toggleHamburgerMenu}>
-						FAQ
+						Coaching
 					</Link>
 					<Link
-						href={'/explore'}
+						href={'/deontology'}
 						className='linkHoverEffect'
 						onClick={toggleHamburgerMenu}>
-						Explorer
+						Déontologie
 					</Link>
 					<Link
-						href={'/ajouter-spot'}
+						href={'/offers'}
 						className='linkHoverEffect'
 						onClick={toggleHamburgerMenu}>
-						Ajouter un spot
+						Tarifs
+					</Link>
+					<Link
+						href={'/contact'}
+						className='linkHoverEffect'
+						onClick={toggleHamburgerMenu}>
+						Contact
+					</Link>
+					<Link
+						href={'/reservation'}
+						className='linkHoverEffect'
+						onClick={toggleHamburgerMenu}>
+						Réserver
 					</Link>
 				</div>
 
