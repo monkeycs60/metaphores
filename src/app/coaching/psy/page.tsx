@@ -9,21 +9,21 @@ const page = () => {
 				width={120}
 				height={183}
 				alt='fleche bas'
-				className='absolute left-0 top-64 w-[200px] '
+				className='absolute left-0 top-64 w-[100px] 2xl:w-[200px] '
 			/>
 			<Image
 				src={'/forme8.png'}
 				width={293}
 				height={247}
 				alt='fleche bas'
-				className='absolute right-8 top-[40vh] w-[250px] '
+				className='absolute right-0 2xl:right-8 top-[80vh] w-[140px] 2xl:w-[200px] 3xl:top-[40vh] 3xl:w-[250px] '
 			/>
 			<Image
 				src={'/forme6.png'}
 				width={289}
 				height={248}
 				alt='fleche bas'
-				className='absolute left-16 top-[65vh] w-[220px] '
+				className='absolute -left-6 2xl:left-0 3xl:left-16 top-[140vh] 2xl:top-[110vh] 3xl:top-[65vh] w-[160px] 3xl:w-[220px] '
 			/>
 			<Image
 				src={'/circle-black.png'}

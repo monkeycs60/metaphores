@@ -24,7 +24,7 @@ const page = () => {
 				width={153}
 				height={160}
 				alt='fleche bas'
-				className='absolute bottom-[50vh] right-12 w-[160px] '
+				className='absolute bottom-[50vh] right-12 w-[110px] 2xl:w-[160px] '
 			/>
 			<Image
 				src={'/forme11.png'}
