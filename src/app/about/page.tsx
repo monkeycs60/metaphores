@@ -18,28 +18,28 @@ const page = () => {
 				width={223}
 				height={181}
 				alt='rond bleu clair'
-				className='absolute left-0 top-[60vh] w-[200px] '
+				className='absolute -left-8 top-[90vh] w-[140px] 2xl:left-0 2xl:top-[60vh] 2xl:w-[200px] '
 			/>
 			<Image
 				src={'/forme4.png'}
 				width={289}
 				height={269}
 				alt='rond bleu clair'
-				className='absolute right-24 top-[75vh] w-[200px] '
+				className='absolute right-12 top-[140vh] w-[160px] 2xl:right-24 2xl:top-[75vh] 2xl:w-[200px] '
 			/>
 			<Image
 				src={'/forme14.png'}
 				width={495}
 				height={424}
 				alt='rond bleu clair'
-				className='absolute bottom-[15vh] left-8 w-[200px] 3xl:bottom-[10vh] 3xl:w-[400px] '
+				className='absolute bottom-[15vh] w-[130px] 2xl:left-8 2xl:w-[200px] 3xl:bottom-[10vh] 3xl:w-[400px] '
 			/>
 			<Image
 				src={'/circle-black.png'}
 				width={120}
 				height={183}
 				alt='fleche bas'
-				className='absolute -right-12 bottom-20 w-[160px] '
+				className='absolute -right-12 bottom-20 w-[140px] 2xl:w-[160px] '
 			/>
 			<div className='mb-[60px] mt-16'>
 				<h1 className='flex justify-center text-xl font-bold text-blackOne lg:text-3xl'>

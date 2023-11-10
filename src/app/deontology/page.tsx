@@ -9,7 +9,7 @@ const page = () => {
 				width={361}
 				height={281}
 				alt='fleche bas'
-				className='absolute left-0 top-[40vh] w-[300px] '
+				className='absolute -left-2 top-[65vh] w-[160px] 2xl:left-0 2xl:top-[40vh] 2xl:w-[240px] 3xl:w-[300px]'
 			/>
 			<Image
 				src={'/circle-black.png'}
@@ -26,7 +26,7 @@ const page = () => {
 						</h1>
 						<div className='m-auto mt-2 h-[1px] w-[30%] bg-blackOne'></div>
 					</div>
-					<div className='containerBordureBriseeFourth mt-14 flex h-[20vh] w-screen items-center justify-center'>
+					<div className='containerBordureBriseeFourth mt-14 flex w-screen items-center justify-center lg:h-[32vh] 2xl:h-[27vh] 3xl:h-[20vh]'>
 						<div className='mt-2 flex items-center justify-center gap-10'>
 							<p className='w-1/2 text-lg italic'>
 								Métaphore coaching adhère et respecte les chartes

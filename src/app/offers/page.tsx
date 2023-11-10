@@ -19,7 +19,7 @@ const page = () => {
 				width={463}
 				height={344}
 				alt='cercle orange'
-				className='absolute left-8 top-[85vh] w-[460px] '
+				className='absolute left-8 top-[140vh] w-[250px] 2xl:top-[125vh] 2xl:w-[350px] 3xl:top-[85vh] 3xl:w-[460px] '
 			/>
 			<Image
 				src={'/forme12.png'}
@@ -69,7 +69,7 @@ const page = () => {
 					</p>
 
 					<div className=' flex items-start justify-center gap-[20px] '>
-						<div className='relative h-[400px] w-[400px] bg-gray-400 p-8 '>
+						<div className='relative h-[400px] w-[330px] bg-gray-400 p-8 2xl:h-[400px] 2xl:w-[400px] '>
 							<div className='space-y-4'>
 								<h2 className='text-center text-3xl font-semibold text-white'>
 									Laser
@@ -119,7 +119,7 @@ const page = () => {
 								className='absolute bottom-16 right-2 w-[50px]'
 							/>
 						</div>
-						<div className='relative h-[450px] w-[400px] bg-secondaryOne p-8 '>
+						<div className='relative h-[450px] w-[330px] bg-secondaryOne p-8 2xl:w-[400px] '>
 							<div className='space-y-4'>
 								<h2 className='text-center text-3xl font-semibold text-white'>
 									Pas de côté
@@ -162,7 +162,7 @@ const page = () => {
 								className='absolute bottom-1 right-4 w-[220px] '
 							/>
 						</div>
-						<div className='relative h-[500px] w-[400px] bg-primaryOne p-8 text-black '>
+						<div className='relative h-[500px] w-[330px] bg-primaryOne p-8 text-black 2xl:w-[400px] '>
 							<div className='space-y-4'>
 								<h2 className='text-center text-3xl font-semibold text-white'>
 									Parenthèse

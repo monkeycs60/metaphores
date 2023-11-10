@@ -19,9 +19,9 @@ export function StudentCard() {
 	if (!show) return null;
 	return (
 		<Card
-			className={`fixed right-[5vw] top-[16vh] z-10 mx-auto w-full max-w-lg scale-[85%] overflow-hidden rounded-xl bg-white shadow-2xl dark:bg-gray-800 3xl:right-[8vw] 3xl:top-[15vh] 3xl:scale-[90%]`}>
+			className={`fixed right-[5vw] top-[16vh] z-10 mx-auto w-full max-w-lg scale-[75%] space-y-4 overflow-hidden rounded-xl bg-white shadow-2xl dark:bg-gray-800 2xl:scale-[85%] 3xl:right-[8vw] 3xl:top-[15vh] 3xl:scale-[90%] 3xl:space-y-0`}>
 			<div className='relative flex items-center justify-between bg-gradient-to-r from-blue-300 to-secondaryOne px-6 py-4'>
-				<div className='flex space-x-3 items-center'>
+				<div className='flex items-center space-x-3'>
 					<h1 className='text-xl font-bold text-white'>Tarifs Réduits</h1>
 					<svg
 						className=' h-8 w-8 text-white'
@@ -65,7 +65,7 @@ export function StudentCard() {
 				<Link href='/contact'>
 					<Button
 						size={'sm'}
-						className='m-auto mt-4 flex w-[45%] justify-center gap-2 bg-primaryOne'>
+						className='m-auto mt-6 flex w-[45%] justify-center gap-2 bg-primaryOne 3xl:mt-4'>
 						{' '}
 						<span className='text-sm'>En savoir plus</span>{' '}
 						<ArrowUpRight />
