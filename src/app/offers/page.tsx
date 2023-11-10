@@ -12,14 +12,14 @@ const page = () => {
 				width={120}
 				height={183}
 				alt='cercle orange'
-				className='absolute -left-8 top-64 w-[140px] '
+				className='absolute -left-24 top-64 w-[140px] lg:-left-8 '
 			/>
 			<Image
 				src={'/forme7.png'}
 				width={463}
 				height={344}
 				alt='cercle orange'
-				className='absolute left-8 top-[140vh] w-[250px] 2xl:top-[125vh] 2xl:w-[350px] 3xl:top-[85vh] 3xl:w-[460px] '
+				className='absolute left-8 top-[140vh] hidden w-[250px] lg:block 2xl:top-[125vh] 2xl:w-[350px] 3xl:top-[85vh] 3xl:w-[460px] '
 			/>
 			<Image
 				src={'/forme12.png'}
@@ -33,17 +33,17 @@ const page = () => {
 				width={120}
 				height={183}
 				alt='cercle orange'
-				className='absolute right-32 top-64 w-[80px] '
+				className='absolute right-32 top-64 hidden w-[80px] lg:block '
 			/>
-			<div className='relative m-auto mt-16 flex w-[90%] flex-col gap-[54px] lg:w-[80%] 2xl:w-[70%] 3xl:w-[50%]'>
+			<div className='relative m-auto mt-24 flex w-[90%] flex-col gap-[54px] lg:mt-16 lg:w-[80%] 2xl:w-[70%] 3xl:w-[50%]'>
 				<StudentCard />
 				<div className=''>
 					<h1 className='flex justify-center text-xl font-bold text-blackOne lg:text-3xl'>
 						Tarifs et formules
 					</h1>
-					<div className='m-auto mt-2 h-[1px] w-[30%] bg-blackOne'></div>
+					<div className='m-auto mt-2 h-[1px] w-1/2 bg-blackOne lg:w-[30%]'></div>
 				</div>
-				<div className='relative flex flex-col items-center gap-1 bg-primaryOne/20 p-8 text-lg'>
+				<div className='relative mt-[230px] flex flex-col items-center gap-4 bg-primaryOne/20 p-8 text-center text-lg lg:mt-0 lg:gap-1 lg:text-left'>
 					<p>La séance dure environ 1h.</p>
 					<p className='underline underline-offset-4'>
 						Tarif horaire : <span className='font-bold'>70€</span>
@@ -54,7 +54,7 @@ const page = () => {
 						pour obtenir un devis ou pour réserver.{' '}
 					</p>
 				</div>
-				<div className='flex flex-col items-center justify-center space-y-10'>
+				<div className='flex flex-col items-center justify-center space-y-10 lg:mt-0'>
 					<h2 className='text-xl font-bold text-blackOne'>
 						Formules populaires
 					</h2>
@@ -68,8 +68,8 @@ const page = () => {
 						destination souhaitée.
 					</p>
 
-					<div className=' flex items-start justify-center gap-[20px] '>
-						<div className='relative h-[400px] w-[330px] bg-gray-400 p-8 2xl:h-[400px] 2xl:w-[400px] '>
+					<div className=' flex flex-col items-start justify-center gap-[20px] lg:flex-row '>
+						<div className='relative h-[450px] w-[330px] bg-gray-400 p-8 lg:h-[400px] 2xl:h-[400px] 2xl:w-[400px] '>
 							<div className='space-y-4'>
 								<h2 className='text-center text-3xl font-semibold text-white'>
 									Laser
@@ -221,7 +221,7 @@ const page = () => {
 						Si vous souhaitez une intervention éclair et très ciblée, ou
 						simplement établir un premier contact avec votre accompagnant.
 					</p>
-					<div className='flex justify-center'>
+					<div className='flex flex-col-reverse justify-center lg:flex-row'>
 						<div className='relative h-[450px] w-[400px] bg-blackOne p-8 text-white '>
 							<div className='space-y-4'>
 								<h2 className='text-center text-3xl font-semibold text-white'>
@@ -284,14 +284,14 @@ const page = () => {
 							alt='homme seul'
 							width={1920}
 							height={1280}
-							className='w-1/3 object-cover'
+							className='object-cover lg:w-1/3'
 						/>
 					</div>
 				</div>
 
 				<div className='my-4 flex w-full justify-center'>
 					<Link href='/reservation' className='flex w-full justify-center'>
-						<Button size={'lg'} className='w-1/3 gap-2 bg-primaryOne'>
+						<Button size={'lg'} className='gap-2 bg-primaryOne lg:w-1/3'>
 							{' '}
 							<span>Réserver ma séance</span> <ArrowUpRight />
 						</Button>

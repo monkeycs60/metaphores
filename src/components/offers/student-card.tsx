@@ -19,7 +19,7 @@ export function StudentCard() {
 	if (!show) return null;
 	return (
 		<Card
-			className={`fixed right-[5vw] top-[16vh] z-10 mx-auto w-full max-w-lg scale-[75%] space-y-4 overflow-hidden rounded-xl bg-white shadow-2xl dark:bg-gray-800 2xl:scale-[85%] 3xl:right-[8vw] 3xl:top-[15vh] 3xl:scale-[90%] 3xl:space-y-0`}>
+			className={`absolute left-0 top-[50px] z-10 mx-auto w-full max-w-lg scale-[80%] space-y-4 overflow-hidden rounded-xl bg-white shadow-2xl dark:bg-gray-800 lg:fixed lg:right-[-800px] lg:top-[16vh] lg:scale-[65%] 2xl:right-[-1300px] 2xl:scale-[75%] 3xl:right-[8vw] 3xl:top-[15vh] 3xl:scale-[90%] 3xl:space-y-0`}>
 			<div className='relative flex items-center justify-between bg-gradient-to-r from-blue-300 to-secondaryOne px-6 py-4'>
 				<div className='flex items-center space-x-3'>
 					<h1 className='text-xl font-bold text-white'>Tarifs Réduits</h1>
@@ -65,7 +65,7 @@ export function StudentCard() {
 				<Link href='/contact'>
 					<Button
 						size={'sm'}
-						className='m-auto mt-6 flex w-[45%] justify-center gap-2 bg-primaryOne 3xl:mt-4'>
+						className='m-auto mt-6 flex justify-center gap-2 bg-primaryOne lg:w-[45%] 3xl:mt-4'>
 						{' '}
 						<span className='text-sm'>En savoir plus</span>{' '}
 						<ArrowUpRight />

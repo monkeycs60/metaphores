@@ -41,7 +41,7 @@ const page = () => {
 				alt='fleche bas'
 				className='absolute -right-12 bottom-20 hidden w-[140px] 2xl:w-[160px] '
 			/>
-			<div className='mb-[60px] mt-16'>
+			<div className='mb-[60px] mt-24 lg:mt-16'>
 				<h1 className='flex justify-center text-3xl font-bold text-blackOne lg:text-3xl'>
 					A propos
 				</h1>

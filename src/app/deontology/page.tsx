@@ -18,7 +18,7 @@ const page = () => {
 				alt='fleche bas'
 				className='absolute -right-12 bottom-20 hidden w-[160px] lg:block '
 			/>
-			<div className='m-auto mt-16'>
+			<div className='m-auto mt-24 lg:mt-16'>
 				<div>
 					<div>
 						<h1 className='flex justify-center text-3xl font-bold text-blackOne'>
@@ -57,7 +57,7 @@ const page = () => {
 										<Image src='/loupe.svg' fill alt='pilier 2' />
 									</div>
 								</div>
-								<div className='h-[190px] lg:h-[70px]'>
+								<div className='h-[210px] lg:h-[70px]'>
 									<div className='relative h-[35px] w-[35px] lg:h-[45px] lg:w-[45px] 2xl:h-[50px] 2xl:w-[50px]'>
 										<Image src='/dove.svg' fill alt='pilier 3' />
 									</div>
