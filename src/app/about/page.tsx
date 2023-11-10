@@ -49,12 +49,12 @@ const page = () => {
 			</div>
 			<div className='flex flex-col gap-12'>
 				<div className='containerBordureBriseeThree relative mt-2 h-1/2'>
-					<div className='flex flex-row-reverse justify-center gap-8 p-12 2xl:gap-[5vw] 3xl:gap-[8vw] '>
+					<div className='flex flex-row-reverse justify-center gap-8 p-12 lg:gap-16 2xl:gap-[5vw] 3xl:gap-[8vw] '>
 						<div className='flex w-[600px] flex-col items-center justify-center gap-12'>
 							<h2 className='font-caveat text-5xl text-blackOne'>
 								Moi, c'est Christophe
 							</h2>
-							<div className='flex  flex-col gap-3 text-lg'>
+							<div className='flex  flex-col gap-3 text-lg lg:px-8 3xl:px-0'>
 								<p>
 									Bien choisir son accompagnant.e, c’est important.
 									Alors voici mon portrait, pour apprendre à me
@@ -72,7 +72,7 @@ const page = () => {
 								alt='chess'
 								width={800}
 								height={652}
-								className='w-[400px]'
+								className='xl:w-[280px] 2xl:w-[320px] 3xl:w-[400px]'
 							/>
 							<div className='flex flex-col items-center'>
 								<span className='text-lg font-semibold text-blackOne'>
@@ -85,7 +85,7 @@ const page = () => {
 						</div>
 					</div>
 				</div>
-				<div className='m-auto flex  flex-col gap-[30px] w-[90%] lg:w-[80%] 2xl:w-[70%] 3xl:w-[50%]'>
+				<div className='m-auto flex  w-[90%] flex-col gap-[30px] lg:w-[80%] 2xl:w-[70%] 3xl:w-[50%]'>
 					<div className='flex flex-col  gap-4 '>
 						<h2 className='text-xl font-bold text-blackOne'>
 							Mon parcours
