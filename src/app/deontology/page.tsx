@@ -68,7 +68,7 @@ const page = () => {
 									</div>
 								</div>
 							</div>
-							<div className='flex flex-col gap-8 lg:gap-4'>
+							<div className='flex text-base flex-col gap-8 lg:gap-4'>
 								<p className='lg:h-[70px] '>
 									<strong> 1. Confidentialité </strong>: aussi bien sur
 									l’identité que sur le contenu des échanges. En tant

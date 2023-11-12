@@ -87,7 +87,7 @@ const page = () => {
 				</div>
 				<div className='m-auto flex w-[90%] flex-col gap-[30px] lg:w-[80%] 2xl:w-[70%] 3xl:w-[50%]'>
 					<div className='flex flex-col  gap-4'>
-						<h2 className='text-center text-2xl font-bold text-blackOne lg:text-left lg:text-xl'>
+						<h2 className='text-center text-xl font-bold text-blackOne lg:text-left lg:text-xl'>
 							Mon parcours
 						</h2>
 
@@ -175,7 +175,7 @@ const page = () => {
 						</div>
 					</div>
 					<div className='mt-6 flex flex-col gap-4'>
-						<h2 className='text-center text-2xl font-bold text-blackOne lg:text-left lg:text-xl'>
+						<h2 className='text-center text-xl font-bold text-blackOne lg:text-left lg:text-xl'>
 							Ma découverte du Coaching
 						</h2>
 						<div className='mt-6 flex w-[90%] flex-col items-center justify-between gap-8 lg:flex-row lg:gap-0 '>

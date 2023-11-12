@@ -53,16 +53,16 @@ const page = () => {
 				alt='fleche bas'
 				className='absolute -left-10 bottom-20 w-[130px] 2xl:w-[160px] 3xl:-right-12 '
 			/>
-			<div className='m-auto mt-16 w-[90%] lg:w-[80%] 2xl:w-[75%] 3xl:w-[60%]'>
+			<div className='m-auto mt-24 w-[90%] lg:mt-16 lg:w-[80%] 2xl:w-[75%] 3xl:w-[60%]'>
 				<div className='flex flex-col gap-[75px]'>
 					<div>
-						<h1 className='flex justify-center text-xl font-bold text-blackOne lg:text-3xl'>
+						<h1 className='flex justify-center text-center text-3xl font-bold text-blackOne lg:text-left'>
 							Qu'est-ce que le coaching ?
 						</h1>
 						<div className='m-auto mt-2 h-[1px] w-[40%] bg-blackOne'></div>
 					</div>
 					<div className='flex flex-col gap-[55px] '>
-						<h2 className='-mb-4 text-xl font-bold text-blackOne'>
+						<h2 className='-mb-4 text-center text-xl font-bold text-blackOne lg:text-left'>
 							Origine
 						</h2>
 						<div className='flex justify-between gap-[50px]'>

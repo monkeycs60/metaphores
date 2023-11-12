@@ -26,7 +26,7 @@ const Card = ({
 }: cardVisionProps) => {
 	return (
 		<div
-			className={`relative flex h-[400px] flex-col justify-around transition-all duration-300 xl:w-[30%] ${addStyle} p-8 shadow-md hover:drop-shadow-2xl`}>
+			className={`relative flex h-[360px] lg:h-[400px] flex-col justify-around transition-all duration-300 xl:w-[30%] ${addStyle} p-8 shadow-md hover:drop-shadow-2xl`}>
 			<Image
 				src={sourceValue}
 				width={sourceWidth}

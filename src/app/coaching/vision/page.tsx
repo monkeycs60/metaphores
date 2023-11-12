@@ -10,38 +10,38 @@ const page = () => {
 				width={120}
 				height={183}
 				alt='fleche bas'
-				className='absolute left-0 top-64 w-[200px] '
+				className='absolute left-0 top-64 hidden w-[200px] lg:block '
 			/>
 			<Image
 				src={'/circle-black.png'}
 				width={120}
 				height={183}
 				alt='fleche bas'
-				className='absolute -right-12 bottom-20 w-[160px] '
+				className='absolute -right-12 bottom-20 hidden w-[160px] lg:block '
 			/>
 			<Image
 				src={'/forme5.png'}
 				width={153}
 				height={160}
 				alt='fleche bas'
-				className='absolute bottom-[50vh] right-12 w-[110px] 2xl:w-[160px] '
+				className='absolute bottom-[50vh] right-12 hidden w-[110px] lg:block 2xl:w-[160px] '
 			/>
 			<Image
 				src={'/forme11.png'}
 				width={485}
 				height={283}
 				alt='fleche bas'
-				className='absolute -left-12 bottom-[15vh] w-[460px] '
+				className='absolute -left-12 bottom-[15vh] hidden w-[460px] lg:block '
 			/>
-			<div className='m-auto mt-16 w-[90%] lg:w-[80%] 2xl:w-[75%] 3xl:w-[60%]'>
+			<div className='m-auto mt-24 w-[90%] lg:mt-16 lg:w-[80%] 2xl:w-[75%] 3xl:w-[60%]'>
 				<div className='flex flex-col gap-[75px]'>
 					<div>
-						<h1 className='flex justify-center text-xl font-bold text-blackOne lg:text-3xl'>
+						<h1 className='flex justify-center text-center text-3xl font-bold text-blackOne lg:text-left'>
 							Ma vision
 						</h1>
 						<div className='m-auto mt-2 h-[1px] w-[40%] bg-blackOne'></div>
 					</div>
-					<p className='text-lg'>
+					<p className='lg:text-lg'>
 						Ma vision du coaching se nourrit à la fois de ma formation
 						comme coach d'Etat, de mes expériences personnelles et
 						professionnelles. C'est pour cela qu'elle est à la fois unique
@@ -50,7 +50,7 @@ const page = () => {
 					</p>
 					<div className='m-auto flex flex-wrap items-center justify-center gap-[30px]'>
 						<Card
-							addStyle='translate-x-[-20px] translate-y-[-20px] bg-primaryOne hover:translate-x-[-10px] hover:translate-y-[-10px]   '
+							addStyle='lg:translate-x-[-20px] lg:translate-y-[-20px] bg-primaryOne lg:hover:translate-x-[-10px] lg:hover:translate-y-[-10px]   '
 							number={1}
 							value='Bienveillance & Écoute'
 							textVision='L’accueil et l’écoute sont centraux dans le coaching.
@@ -63,7 +63,7 @@ const page = () => {
 							imgWidth={'w-[30px]'}
 						/>
 						<Card
-							addStyle='translate-x-[-5px] translate-y-[-5px] bg-primaryOne/90 hover:translate-x-[-10px] hover:translate-y-[-15px]'
+							addStyle='lg:translate-x-[-5px] lg:translate-y-[-5px] bg-primaryOne/90 lg:hover:translate-x-[-10px] lg:hover:translate-y-[-15px]'
 							number={2}
 							value='Unique'
 							textVision='Chaque personne est différente ce qui fait que vos solutions sont uniques. Je ne les trouverais pas
@@ -74,7 +74,7 @@ pour vous ! Par contre, je peux vous accompagner pour que vous les trouviez.'
 							imgWidth={'w-[100px]'}
 						/>
 						<Card
-							addStyle='translate-x-[-10px] translate-y-[-20px] bg-primaryOne/80 hover:translate-x-[-10px] hover:translate-y-[10px]'
+							addStyle='lg:translate-x-[-10px] lg:translate-y-[-20px] bg-primaryOne/80 lg:hover:translate-x-[-10px] lg:hover:translate-y-[10px]'
 							number={3}
 							value='Droit au but'
 							textVision='Actif, j’aime voir les choses avancer. Je suis un coach plutôt confrontant mais avec douceur et
@@ -85,7 +85,7 @@ subtilité. A l’image d’une main de fer dans un gant de velours.'
 							imgWidth={'w-[100px]'}
 						/>
 						<Card
-							addStyle='bg-primaryOne/70 translate-x-[-10px] translate-y-[-10px] hover:translate-x-[-20px] hover:translate-y-[-10px]'
+							addStyle='bg-primaryOne/70 lg:translate-x-[-10px] lg:translate-y-[-10px] lg:hover:translate-x-[-20px] lg:hover:translate-y-[-10px]'
 							number={4}
 							value='Chirurgical'
 							textVision='La précision est primordiale. Identifier et travailler sur une problématique demande à agir avec
@@ -97,7 +97,7 @@ l’image d’un laser.'
 							imgWidth={'w-[100px]'}
 						/>
 						<Card
-							addStyle='bg-primaryOne/60 translate-x-[-15px] translate-y-[10px] hover:translate-y-[-10px]'
+							addStyle='bg-primaryOne/60 lg:translate-x-[-15px] lg:translate-y-[10px] lg:hover:translate-y-[-10px]'
 							number={5}
 							value='Concret'
 							textVision='Ancré dans la réalité. Votre démarche dépasse le cadre
@@ -110,7 +110,7 @@ agir concrètement et atteindre vos objectifs.'
 							imgWidth={'w-[70px]'}
 						/>
 						<Card
-							addStyle='bg-primaryOne/50 hover:translate-x-[-20px] hover:translate-y-[-15px]'
+							addStyle='bg-primaryOne/50 lg:hover:translate-x-[-20px] lg:hover:translate-y-[-15px]'
 							number={6}
 							value='Projection'
 							textVision='La métaphore est un outil puissant que j’utilise régulièrement. Il permet de sortir des
@@ -123,7 +123,7 @@ solutions.'
 							imgWidth={'w-[100px]'}
 						/>
 						<Card
-							addStyle='bg-primaryOne/40 translate-x-[100px] translate-y-[10px] hover:translate-x-[60px] hover:translate-y-[15px]'
+							addStyle='bg-primaryOne/40 lg:translate-x-[100px] lg:translate-y-[10px] lg:hover:translate-x-[60px] lg:hover:translate-y-[15px]'
 							number={7}
 							value='Cheminer'
 							textVision='Nous créons ensemble un chemin personnalisé pour atteindre votre objectif final en
