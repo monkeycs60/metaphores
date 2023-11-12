@@ -22,7 +22,7 @@ const page = () => {
 			/>
 			<div className='m-auto mt-16 w-[90%] lg:w-[80%] 2xl:w-[70%] 3xl:w-[60%]'>
 				<div className=' mb-[80px]'>
-					<h1 className='flex justify-center text-xl font-bold text-blackOne lg:text-3xl'>
+					<h1 className='flex justify-center text-3xl font-bold text-blackOne'>
 						Contactez-moi
 					</h1>
 					<div className='m-auto mt-2 h-[1px] w-[20%] bg-blackOne'></div>

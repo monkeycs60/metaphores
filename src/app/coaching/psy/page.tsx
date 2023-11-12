@@ -1,5 +1,4 @@
 import Image from 'next/image';
-import React from 'react';
 
 const page = () => {
 	return (
@@ -9,40 +8,42 @@ const page = () => {
 				width={120}
 				height={183}
 				alt='fleche bas'
-				className='absolute left-0 top-64 w-[100px] 2xl:w-[200px] '
+				className='absolute left-0 top-64 hidden w-[100px] lg:block 2xl:w-[200px] '
 			/>
 			<Image
 				src={'/forme8.png'}
 				width={293}
 				height={247}
 				alt='fleche bas'
-				className='absolute right-0 top-[80vh] w-[140px] 2xl:right-8 2xl:w-[200px] 3xl:top-[40vh] 3xl:w-[250px] '
+				className='absolute right-0 top-[80vh] hidden w-[140px] lg:block 2xl:right-8 2xl:w-[200px] 3xl:top-[40vh] 3xl:w-[250px] '
 			/>
 			<Image
 				src={'/forme6.png'}
 				width={289}
 				height={248}
 				alt='fleche bas'
-				className='absolute -left-6 top-[140vh] w-[160px] 2xl:left-0 2xl:top-[110vh] 3xl:left-16 3xl:top-[65vh] 3xl:w-[220px] '
+				className='absolute -left-6 top-[140vh] hidden w-[160px] lg:block 2xl:left-0 2xl:top-[110vh] 3xl:left-16 3xl:top-[65vh] 3xl:w-[220px] '
 			/>
 			<Image
 				src={'/circle-black.png'}
 				width={120}
 				height={183}
 				alt='fleche bas'
-				className='absolute -right-12 bottom-20 w-[160px] '
+				className='absolute -right-12 bottom-20 hidden lg:block lg:w-[160px] '
 			/>
-			<div className='m-auto mt-16 w-[90%] lg:w-[80%] 2xl:w-[75%] 3xl:w-[60%]'>
+			<div className='m-auto mt-24 w-[90%] lg:mt-16 lg:w-[80%] 2xl:w-[75%] 3xl:w-[60%]'>
 				<div>
 					<div className='flex flex-col gap-[55px]'>
 						<div>
-							<h1 className='flex justify-center text-xl font-bold text-blackOne lg:text-3xl'>
-								Coach ou psychologue : clarifications
+							<h1 className='flex justify-center text-center text-3xl font-bold text-blackOne lg:text-left'>
+								Coach ou psychologue{' '}
+								<span className='hidden px-2 lg:block'>:</span>{' '}
+								clarifications
 							</h1>
 							<div className='m-auto mt-2 h-[1px] w-[50%] bg-blackOne'></div>
 						</div>
 						<div>
-							<p className='text-lg'>
+							<p className='lg:text-lg'>
 								Il est de plus en plus dur de trouver des personnes qui
 								écoutent vraiment. Écouter dans le sens être avec
 								l’autre en se mettant à distance pour l’accompagner.
@@ -51,13 +52,13 @@ const page = () => {
 								sa solution sera aussi bonne pour vous.
 							</p>
 						</div>
-						<div className='flex items-center justify-between gap-[40px]'>
+						<div className='flex flex-col items-center justify-between gap-[40px] lg:flex-row'>
 							<Image
 								src={'/psycoach.png'}
 								width={1458}
 								height={813}
 								alt='psy'
-								className='w-[400px] '
+								className='w-[300px] lg:w-[400px] '
 							/>
 							<div className='flex flex-1 flex-col gap-2 rounded-xl bg-primaryOne/10 p-6'>
 								<p>
@@ -86,7 +87,7 @@ const page = () => {
 								</p>
 							</div>
 						</div>
-						<div className='flex flex-row-reverse items-center justify-between gap-[40px]'>
+						<div className='flex flex-col items-center justify-between gap-[40px] lg:flex-row-reverse'>
 							<Image
 								src={'/times.jpg'}
 								width={640}
@@ -125,11 +126,11 @@ const page = () => {
 							</div>
 						</div>
 						<div>
-							<h2 className='text-xl font-bold text-blackOne'>
+							<h2 className='text-center text-xl font-bold text-blackOne lg:text-left'>
 								Il est quoi le coach ?
 							</h2>
 						</div>
-						<div className='flex flex-row items-center justify-between gap-[40px]'>
+						<div className='flex flex-col items-center justify-between gap-[40px] lg:flex-row'>
 							<Image
 								src={'/binocular.jpg'}
 								width={640}
@@ -165,7 +166,7 @@ const page = () => {
 								</p>
 							</div>
 						</div>
-						<div className='flex flex-row-reverse items-center justify-between gap-[40px]'>
+						<div className='flex flex-col items-center justify-between gap-[40px] lg:flex-row-reverse'>
 							<Image
 								src={'/blocnotes.jpg'}
 								width={640}

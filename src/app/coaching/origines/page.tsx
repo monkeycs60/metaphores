@@ -9,49 +9,49 @@ const page = () => {
 				width={120}
 				height={183}
 				alt='fleche bas'
-				className='absolute -left-24 top-64 w-[200px] 2xl:left-0 '
+				className='absolute -left-24 top-64 hidden w-[200px] lg:block 2xl:left-0 '
 			/>
 			<Image
 				src={'/forme13.png'}
 				width={372}
 				height={358}
 				alt='fleche bas'
-				className='absolute -right-8 top-[320vh] w-[180px] 2xl:right-0 2xl:top-[290vh] 2xl:w-[220px] 3xl:top-[150vh] 3xl:w-[300px] '
+				className='absolute -right-8 top-[320vh] hidden w-[180px] lg:block 2xl:right-0 2xl:top-[290vh] 2xl:w-[220px] 3xl:top-[150vh] 3xl:w-[300px] '
 			/>
 			<Image
 				src={'/forme6.png'}
 				width={289}
 				height={248}
 				alt='fleche bas'
-				className='absolute right-0 top-[430vh] w-[180px] 2xl:top-[70vh] 2xl:w-[220px] 3xl:right-12 3xl:top-[40vh] '
+				className='absolute right-0 top-[430vh] hidden w-[180px] lg:block 2xl:top-[70vh] 2xl:w-[220px] 3xl:right-12 3xl:top-[40vh] '
 			/>
 			<Image
 				src={'/forme3.png'}
 				width={361}
 				height={281}
 				alt='fleche bas'
-				className='absolute top-[120vh] hidden w-[200px] 2xl:block 3xl:left-16 3xl:top-[70vh] '
+				className='absolute top-[120vh] hidden w-[200px] lg:block 2xl:block 3xl:left-16 3xl:top-[70vh] '
 			/>
 			<Image
 				src={'/forme9.png'}
 				width={207}
 				height={227}
 				alt='fleche bas'
-				className='absolute left-0 top-[220vh] w-[150px] 3xl:top-[180vh] 3xl:w-[250px] '
+				className='absolute left-0 top-[220vh] hidden w-[150px] lg:block 3xl:top-[180vh] 3xl:w-[250px] '
 			/>
 			<Image
 				src={'/forme2.png'}
 				width={221}
 				height={207}
 				alt='fleche bas'
-				className='absolute right-0 top-[140vh] w-[110px] 2xl:w-[150px] 3xl:w-[250px] '
+				className='absolute right-0 top-[140vh] hidden w-[110px] lg:block 2xl:w-[150px] 3xl:w-[250px] '
 			/>
 			<Image
 				src={'/circle-black.png'}
 				width={120}
 				height={183}
 				alt='fleche bas'
-				className='absolute -left-10 bottom-20 w-[130px] 2xl:w-[160px] 3xl:-right-12 '
+				className='absolute -left-10 bottom-20 hidden w-[130px] lg:block 2xl:w-[160px] 3xl:-right-12 '
 			/>
 			<div className='m-auto mt-24 w-[90%] lg:mt-16 lg:w-[80%] 2xl:w-[75%] 3xl:w-[60%]'>
 				<div className='flex flex-col gap-[75px]'>
@@ -65,7 +65,7 @@ const page = () => {
 						<h2 className='-mb-4 text-center text-xl font-bold text-blackOne lg:text-left'>
 							Origine
 						</h2>
-						<div className='flex justify-between gap-[50px]'>
+						<div className='flex flex-col items-center justify-between gap-[50px] lg:flex-row lg:items-start'>
 							<Image
 								src='/socrate.jpeg'
 								alt='Socrate'
@@ -113,7 +113,7 @@ const page = () => {
 								</p>
 							</div>
 						</div>
-						<div className='flex flex-row-reverse justify-between gap-[50px]'>
+						<div className='flex flex-col items-center justify-between gap-[50px] lg:flex-row-reverse lg:items-start'>
 							<Image
 								src='/coche.png'
 								alt='Le coche'
@@ -147,7 +147,7 @@ const page = () => {
 								</p>
 							</div>
 						</div>
-						<div className='flex flex-row justify-between gap-[50px]'>
+						<div className='flex flex-col items-center justify-between gap-[50px] lg:flex-row lg:items-start'>
 							<Image
 								src='/library.jpg'
 								alt='Le coche'
@@ -182,10 +182,10 @@ const page = () => {
 								</p>
 							</div>
 						</div>
-						<h2 className='-mb-4 text-xl font-bold text-blackOne'>
+						<h2 className='-mb-4 text-center text-xl font-bold text-blackOne lg:text-left'>
 							Concrètement, le coaching, c'est quoi ?
 						</h2>
-						<div className='flex flex-row-reverse justify-between gap-[50px]'>
+						<div className='flex flex-col items-center justify-between gap-[50px] lg:flex-row-reverse lg:items-start'>
 							<Image
 								src='/falaise.jpg'
 								alt='falaise'
@@ -240,16 +240,16 @@ const page = () => {
 								</p>
 							</div>
 						</div>
-						<h2 className='-mb-4 text-xl font-bold text-blackOne'>
+						<h2 className='-mb-4 text-center text-xl font-bold text-blackOne lg:text-left'>
 							Ca se passe comment ?
 						</h2>
-						<div className='flex flex-row justify-between gap-[50px]'>
+						<div className='flex flex-col items-center justify-between gap-[50px] lg:flex-row lg:items-start'>
 							<Image
 								src='/football.jpg'
 								alt='football'
 								width={1920}
 								height={2880}
-								className='w-[360px] object-cover'
+								className='w-[240px] object-cover lg:w-[360px]'
 							/>
 							<div className='flex flex-1 flex-col gap-2 rounded-xl bg-primaryOne/10 p-6'>
 								<p>Prérequis :</p>
@@ -352,10 +352,10 @@ const page = () => {
 								</p>
 							</div>
 						</div>
-						<h2 className='-mb-4 text-xl font-bold text-blackOne'>
+						<h2 className='-mb-4 text-center text-xl font-bold text-blackOne lg:text-left'>
 							Les étapes d'un coaching{' '}
 						</h2>
-						<div className='flex flex-row-reverse justify-between gap-[50px]'>
+						<div className='flex flex-col items-center justify-between gap-[50px] lg:flex-row-reverse lg:items-start'>
 							<Image
 								src='/steps.jpg'
 								alt='pas'
@@ -397,10 +397,10 @@ const page = () => {
 								</p>
 							</div>
 						</div>
-						<h2 className='-mb-4 text-xl font-bold text-blackOne'>
+						<h2 className='-mb-4 text-center text-xl font-bold text-blackOne lg:text-left'>
 							Combien de temps ça dure ?
 						</h2>
-						<div className='flex flex-row justify-between gap-[50px]'>
+						<div className='flex flex-col items-center justify-between gap-[50px] lg:flex-row lg:items-start'>
 							<Image
 								src='/sablier.jpg'
 								alt='sablier'
@@ -432,10 +432,10 @@ const page = () => {
 								</p>
 							</div>
 						</div>
-						<h2 className='-mb-4 text-xl font-bold text-blackOne'>
+						<h2 className='-mb-4 text-center text-xl font-bold text-blackOne lg:text-left'>
 							Notre souci, votre équilibre
 						</h2>
-						<div className='flex flex-row-reverse justify-between gap-[50px]'>
+						<div className='flex flex-col items-center justify-between gap-[50px] lg:flex-row-reverse lg:items-start'>
 							<Image
 								src='/equilibre.jpg'
 								alt='balance equilibre'
