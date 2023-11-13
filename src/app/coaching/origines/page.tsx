@@ -1,9 +1,19 @@
 import Image from 'next/image';
 import { CircleDashed } from 'lucide-react';
+import TableOfContents, { Section } from '@/components/origine/TableOfContents';
+
+const pageSections: Section[] = [
+	{ id: 'origine', title: 'Origine' },
+	{ id: 'whatIsIt', title: "Concrètement, le coaching, c'est quoi ?" },
+	{ id: 'howItHappens', title: 'Ça se passe comment ?' },
+	{ id: 'steps', title: "Les étapes d'un coaching" },
+	{ id: 'timeDuration', title: 'Combien de temps ça dure ?' },
+	{ id: 'equilibre', title: 'Notre souci, votre équilibre' },
+];
 
 const page = () => {
 	return (
-		<div className='relative w-[100%]'>
+		<div className='relative w-[100%] scroll-smooth'>
 			<Image
 				src={'/twoCircles.svg'}
 				width={120}
@@ -61,8 +71,11 @@ const page = () => {
 						</h1>
 						<div className='m-auto mt-2 h-[1px] w-[40%] bg-blackOne'></div>
 					</div>
-					<div className='flex flex-col gap-[55px] '>
-						<h2 className='-mb-4 text-center text-xl font-bold text-blackOne lg:text-left'>
+					<TableOfContents sections={pageSections} />
+					<div className='flex flex-col gap-[55px]'>
+						<h2
+							className='-mb-4 text-center text-xl font-bold text-blackOne lg:text-left'
+							id='origine'>
 							Origine
 						</h2>
 						<div className='flex flex-col items-center justify-between gap-[50px] lg:flex-row '>
@@ -182,7 +195,9 @@ const page = () => {
 								</p>
 							</div>
 						</div>
-						<h2 className='-mb-4 text-center text-xl font-bold text-blackOne lg:text-left'>
+						<h2
+							className='-mb-4 text-center text-xl font-bold text-blackOne lg:text-left'
+							id='whatIsIt'>
 							Concrètement, le coaching, c'est quoi ?
 						</h2>
 						<div className='flex flex-col items-center justify-between gap-[50px] lg:flex-row-reverse '>
@@ -240,7 +255,9 @@ const page = () => {
 								</p>
 							</div>
 						</div>
-						<h2 className='-mb-4 text-center text-xl font-bold text-blackOne lg:text-left'>
+						<h2
+							className='-mb-4 text-center text-xl font-bold text-blackOne lg:text-left'
+							id='howItHappens'>
 							Ca se passe comment ?
 						</h2>
 						<div className='flex flex-col items-center justify-between gap-[50px] lg:flex-row '>
@@ -352,7 +369,9 @@ const page = () => {
 								</p>
 							</div>
 						</div>
-						<h2 className='-mb-4 text-center text-xl font-bold text-blackOne lg:text-left'>
+						<h2
+							className='-mb-4 text-center text-xl font-bold text-blackOne lg:text-left'
+							id='steps'>
 							Les étapes d'un coaching{' '}
 						</h2>
 						<div className='flex flex-col items-center justify-between gap-[50px] lg:flex-row-reverse '>
@@ -397,7 +416,9 @@ const page = () => {
 								</p>
 							</div>
 						</div>
-						<h2 className='-mb-4 text-center text-xl font-bold text-blackOne lg:text-left'>
+						<h2
+							className='-mb-4 text-center text-xl font-bold text-blackOne lg:text-left'
+							id='timeDuration'>
 							Combien de temps ça dure ?
 						</h2>
 						<div className='flex flex-col items-center justify-between gap-[50px] lg:flex-row '>
@@ -432,7 +453,9 @@ const page = () => {
 								</p>
 							</div>
 						</div>
-						<h2 className='-mb-4 text-center text-xl font-bold text-blackOne lg:text-left'>
+						<h2
+							className='-mb-4 text-center text-xl font-bold text-blackOne lg:text-left'
+							id='equilibre'>
 							Notre souci, votre équilibre
 						</h2>
 						<div className='flex flex-col items-center justify-between gap-[50px] lg:flex-row-reverse '>
