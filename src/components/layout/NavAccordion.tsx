@@ -16,11 +16,11 @@ export function NavAccordion() {
 						<Link className='w-[40%]' href='/coaching/individuel'>
 							Individuel
 						</Link>
-						<Link href='/coaching/collectif'>C'est quoi le coaching</Link>
+						<Link href='/coaching/origines'>C'est quoi le coaching</Link>
 						<Link href='/coaching/collectif'>Collectif</Link>
-						<Link href='/coaching/collectif'>Ma vision</Link>
+						<Link href='/coaching/vision'>Ma vision</Link>
 						<Link href='/coaching/enterprise'>Enterprise</Link>
-						<Link href='/coaching/collectif'>Coach ou psy ?</Link>
+						<Link href='/coaching/psey'>Coach ou psy ?</Link>
 					</div>
 				</AccordionContent>
 			</AccordionItem>

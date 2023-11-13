@@ -27,7 +27,7 @@ const Hamburger = ({
 			variants={variants}
 			transition={{ duration: 0.5 }}
 			className='fixed right-0 top-0 z-[100] h-screen w-screen overflow-hidden bg-primaryOne font-inter text-blackOne'>
-			<div className=' relative flex h-full flex-col justify-center mt-6 p-12 text-center text-lg font-semibold sm:text-xl '>
+			<div className='relative mt-6 flex h-full flex-col justify-center p-12 text-center text-lg font-semibold sm:text-xl '>
 				<Image
 					src='/seeking.svg'
 					width={403}
