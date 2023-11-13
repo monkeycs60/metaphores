@@ -12,25 +12,25 @@ const page = () => {
 				width={120}
 				height={183}
 				alt='fleche bas'
-				className='absolute left-0 top-64 w-[200px] '
+				className='absolute left-0 top-64 hidden w-[200px] lg:block '
 			/>
 			<Image
 				src={'/circle-black.png'}
 				width={120}
 				height={183}
 				alt='fleche bas'
-				className='absolute -right-12 bottom-20 w-[160px] '
+				className='absolute -right-12 bottom-20 hidden w-[160px] lg:block '
 			/>
-			<div className='m-auto mt-16 w-[90%] lg:w-[80%] 2xl:w-[75%] 3xl:w-[60%]'>
+			<div className='m-auto mt-24 w-[90%] lg:mt-16 lg:w-[80%] 2xl:w-[75%] 3xl:w-[60%]'>
 				<div className='flex flex-col gap-[75px]'>
 					<div>
-						<h1 className='flex justify-center text-xl font-bold text-blackOne lg:text-3xl'>
+						<h1 className='flex justify-center text-center text-3xl font-bold text-blackOne lg:text-left'>
 							Coaching Individuel
 						</h1>
 						<div className='m-auto mt-2 h-[1px] w-[32%] bg-blackOne'></div>
 					</div>
-					<div className='-my-4 flex items-center justify-center gap-20'>
-						<p className='w-1/3 text-center text-lg'>
+					<div className='-my-4 flex flex-col-reverse items-center justify-center gap-12 lg:flex-row lg:gap-20'>
+						<p className='text-center text-lg lg:w-1/3'>
 							Explorez nos formules de coaching{' '}
 							<strong>individuel</strong>, conçues pour vous soutenir
 							dans la découverte de vos propres solutions. Nous sommes
@@ -39,25 +39,27 @@ const page = () => {
 						</p>
 						<Image
 							src={'/soutien2.svg'}
-							className='w-[300px] '
+							className='w-[200px] lg:w-[300px] '
 							alt='main tendue'
 							width={646}
 							height={554}
 						/>
 					</div>
 					<div className='flex flex-col gap-[55px]'>
-						<h2 className='-mb-4 text-center text-3xl font-bold text-blackOne'>
+						<h2 className='-mb-4 text-center text-xl font-bold text-blackOne lg:text-3xl'>
 							Formules
 						</h2>
-						<div className='m-auto flex w-[90%] gap-[50px]'>
-							<div className='flex h-[650px] w-1/2 flex-col items-center gap-12 bg-secondaryOne p-8 drop-shadow-xl'>
+						<div className='m-auto flex flex-col gap-8 lg:w-[90%] lg:flex-row lg:gap-[50px]'>
+							<div className='flex flex-col items-center gap-6 bg-secondaryOne p-8 drop-shadow-xl lg:h-[650px] lg:w-1/2 lg:gap-12'>
 								<div className='flex flex-col gap-2 text-center'>
-									<h3 className='text-2xl font-bold'>Coaching Pro</h3>
-									<span className='text-lg'>
+									<h3 className='text-xl font-bold lg:text-2xl'>
+										Coaching Pro
+									</h3>
+									<span className='lg:text-lg'>
 										Accompagnement professionnel
 									</span>
 								</div>
-								<h4 className='text-center italic'>
+								<h4 className='text-center text-sm italic lg:text-base'>
 									Cultivez votre potentiel professionnel avec un
 									accompagnement respectueux et attentif.
 								</h4>
@@ -99,16 +101,16 @@ const page = () => {
 									</div>
 								</div>
 							</div>
-							<div className='flex h-[650px] w-1/2 flex-col items-center gap-12 bg-secondaryOne/60 p-8 drop-shadow-xl'>
+							<div className='flex flex-col items-center gap-6 bg-secondaryOne/60 p-8 drop-shadow-xl lg:h-[650px] lg:w-1/2 lg:gap-12'>
 								<div className='flex flex-col gap-2 text-center'>
-									<h3 className='text-2xl font-bold'>
+									<h3 className='text-xl font-bold lg:text-2xl'>
 										Coaching de Vie
 									</h3>
-									<span className='text-lg'>
+									<span className='lg:text-lg'>
 										Accompagnement personnel
 									</span>
 								</div>
-								<h4 className='text-center italic'>
+								<h4 className='text-center text-sm italic lg:text-base'>
 									Avancez vers une meilleure compréhension de vous-même
 									et de ce qui compte vraiment pour vous.
 								</h4>
@@ -157,7 +159,7 @@ const page = () => {
 								className='flex w-full justify-center'>
 								<Button
 									size={'lg'}
-									className='w-1/3 gap-2 bg-primaryOne'>
+									className='gap-2 bg-primaryOne lg:w-1/3'>
 									{' '}
 									<span>Réserver ma séance</span> <ArrowUpRight />
 								</Button>
@@ -167,14 +169,14 @@ const page = () => {
 							<h2 className='-mb-4 text-center text-xl font-bold text-blackOne'>
 								Pourquoi choisir le coaching individuel ?
 							</h2>
-							<div className='m-auto flex flex-wrap justify-center gap-12'>
-								<div className='flex w-[40%] items-center justify-center gap-6 '>
+							<div className='m-auto flex flex-col justify-center gap-12 lg:flex-row lg:flex-wrap'>
+								<div className='flex items-center justify-center gap-6 lg:w-[40%] '>
 									<Image
 										src={'/empathy.svg'}
 										width={52}
 										height={45}
 										alt='empathie'
-										className='h-[60px] w-[80px] '
+										className='w-[50px] lg:h-[60px] lg:w-[80px] '
 									/>
 									<h3>
 										<strong>Écoute active et empathique</strong> :
@@ -182,13 +184,13 @@ const page = () => {
 										entendu et vos expériences, valorisées.
 									</h3>
 								</div>
-								<div className='flex w-[40%] items-center justify-center gap-6 '>
+								<div className='flex items-center justify-center gap-6 lg:w-[40%] '>
 									<Image
 										src={'/guidance.svg'}
 										width={83}
 										height={83}
 										alt='guidance'
-										className='w-[75px] '
+										className='w-[47px] lg:w-[75px] '
 									/>
 									<h3>
 										<strong>Guidance discrète</strong> : mon rôle est
@@ -196,13 +198,13 @@ const page = () => {
 										révéler vos propres réponses et solutions.
 									</h3>
 								</div>
-								<div className='flex w-[40%] items-center justify-center gap-6 '>
+								<div className='flex items-center justify-center gap-6 lg:w-[40%] '>
 									<Image
 										src={'/rythm.svg'}
 										width={65}
 										height={75}
 										alt='rythme'
-										className='w-[58px]'
+										className='w-[44px] lg:w-[58px]'
 									/>
 									<h3>
 										<strong>Respect de votre rythme</strong> : il est
@@ -211,13 +213,13 @@ const page = () => {
 										besoins.
 									</h3>
 								</div>
-								<div className='flex w-[40%] items-center justify-center gap-6 '>
+								<div className='flex items-center justify-center gap-6 lg:w-[40%] '>
 									<Image
 										src={'/strength.svg'}
 										width={120}
 										height={102}
 										alt='force'
-										className='w-[80px]'
+										className='w-[50px] lg:w-[80px]'
 									/>
 									<h3>
 										<strong>Approche basée sur vos forces</strong> :
@@ -231,7 +233,7 @@ const page = () => {
 							<h2 className='-mb-4 text-center text-xl font-bold text-blackOne'>
 								Modalités et questions fréquentes
 							</h2>
-							<div className='flex flex-col gap-3'>
+							<div className='flex flex-col gap-6 lg:gap-3'>
 								<p>
 									Le coaching individuel est déroule habituellement en
 									sessions de 60 minutes. Les séances se déroulent en

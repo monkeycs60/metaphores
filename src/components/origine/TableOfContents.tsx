@@ -17,7 +17,7 @@ const TableOfContents = ({ sections }: TableOfContentsProps) => (
 			width={140}
 			height={93}
 			alt='doodle down'
-			className='absolute left-[25vw] top-[20vh] '
+			className='absolute left-[25vw] top-[20vh] hidden lg:block '
 		/>
 		<Image
 			src={'/forme11.png'}
