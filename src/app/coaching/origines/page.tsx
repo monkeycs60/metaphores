@@ -65,13 +65,13 @@ const page = () => {
 						<h2 className='-mb-4 text-center text-xl font-bold text-blackOne lg:text-left'>
 							Origine
 						</h2>
-						<div className='flex flex-col items-center justify-between gap-[50px] lg:flex-row lg:items-start'>
+						<div className='flex flex-col items-center justify-between gap-[50px] lg:flex-row '>
 							<Image
 								src='/socrate.jpeg'
 								alt='Socrate'
 								width={3323}
 								height={1829}
-								className='w-[300px] object-cover'
+								className='w-[300px] object-cover lg:h-[400px]'
 							/>
 							<div className='flex flex-1 flex-col gap-2 rounded-xl bg-primaryOne/10 p-6'>
 								<span className='font-bold'>Socrate</span>
@@ -113,7 +113,7 @@ const page = () => {
 								</p>
 							</div>
 						</div>
-						<div className='flex flex-col items-center justify-between gap-[50px] lg:flex-row-reverse lg:items-start'>
+						<div className='flex flex-col items-center justify-between gap-[50px] lg:flex-row-reverse'>
 							<Image
 								src='/coche.png'
 								alt='Le coche'
@@ -147,13 +147,13 @@ const page = () => {
 								</p>
 							</div>
 						</div>
-						<div className='flex flex-col items-center justify-between gap-[50px] lg:flex-row lg:items-start'>
+						<div className='flex flex-col items-center justify-between gap-[50px] lg:flex-row '>
 							<Image
 								src='/library.jpg'
 								alt='Le coche'
 								width={640}
 								height={427}
-								className='w-[290px] object-cover'
+								className='w-[290px] object-cover lg:h-[200px]'
 							/>
 							<div className='flex flex-1 flex-col gap-2 rounded-xl bg-primaryOne/10 p-6'>
 								<span className='text-lg font-bold'>De nos jours</span>
@@ -185,13 +185,13 @@ const page = () => {
 						<h2 className='-mb-4 text-center text-xl font-bold text-blackOne lg:text-left'>
 							Concrètement, le coaching, c'est quoi ?
 						</h2>
-						<div className='flex flex-col items-center justify-between gap-[50px] lg:flex-row-reverse lg:items-start'>
+						<div className='flex flex-col items-center justify-between gap-[50px] lg:flex-row-reverse '>
 							<Image
 								src='/falaise.jpg'
 								alt='falaise'
 								width={640}
 								height={640}
-								className='w-[290px] object-cover'
+								className='w-[290px] object-cover lg:h-[440px]'
 							/>
 							<div className='flex flex-1 flex-col gap-2 rounded-xl bg-primaryOne/10 p-6'>
 								<p>
@@ -243,13 +243,13 @@ const page = () => {
 						<h2 className='-mb-4 text-center text-xl font-bold text-blackOne lg:text-left'>
 							Ca se passe comment ?
 						</h2>
-						<div className='flex flex-col items-center justify-between gap-[50px] lg:flex-row lg:items-start'>
+						<div className='flex flex-col items-center justify-between gap-[50px] lg:flex-row '>
 							<Image
 								src='/football.jpg'
 								alt='football'
 								width={1920}
 								height={2880}
-								className='w-[240px] object-cover lg:w-[360px]'
+								className='w-[240px] object-cover lg:h-[840px] lg:w-[360px] '
 							/>
 							<div className='flex flex-1 flex-col gap-2 rounded-xl bg-primaryOne/10 p-6'>
 								<p>Prérequis :</p>
@@ -355,7 +355,7 @@ const page = () => {
 						<h2 className='-mb-4 text-center text-xl font-bold text-blackOne lg:text-left'>
 							Les étapes d'un coaching{' '}
 						</h2>
-						<div className='flex flex-col items-center justify-between gap-[50px] lg:flex-row-reverse lg:items-start'>
+						<div className='flex flex-col items-center justify-between gap-[50px] lg:flex-row-reverse '>
 							<Image
 								src='/steps.jpg'
 								alt='pas'
@@ -400,7 +400,7 @@ const page = () => {
 						<h2 className='-mb-4 text-center text-xl font-bold text-blackOne lg:text-left'>
 							Combien de temps ça dure ?
 						</h2>
-						<div className='flex flex-col items-center justify-between gap-[50px] lg:flex-row lg:items-start'>
+						<div className='flex flex-col items-center justify-between gap-[50px] lg:flex-row '>
 							<Image
 								src='/sablier.jpg'
 								alt='sablier'
@@ -435,7 +435,7 @@ const page = () => {
 						<h2 className='-mb-4 text-center text-xl font-bold text-blackOne lg:text-left'>
 							Notre souci, votre équilibre
 						</h2>
-						<div className='flex flex-col items-center justify-between gap-[50px] lg:flex-row-reverse lg:items-start'>
+						<div className='flex flex-col items-center justify-between gap-[50px] lg:flex-row-reverse '>
 							<Image
 								src='/equilibre.jpg'
 								alt='balance equilibre'
