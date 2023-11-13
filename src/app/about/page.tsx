@@ -54,7 +54,7 @@ const page = () => {
 							<h2 className='font-caveat text-4xl text-blackOne lg:text-5xl'>
 								Moi, c'est Christophe
 							</h2>
-							<div className='flex  flex-col gap-3 lg:text-lg lg:px-8 3xl:px-0'>
+							<div className='flex  flex-col gap-3 lg:px-8 lg:text-lg 3xl:px-0'>
 								<p>
 									Bien choisir son accompagnant.e, c’est important.
 									Alors voici mon portrait, pour apprendre à me
@@ -85,7 +85,7 @@ const page = () => {
 						</div>
 					</div>
 				</div>
-				<div className='m-auto flex w-[90%] flex-col gap-[30px] lg:w-[80%] 2xl:w-[70%] 3xl:w-[50%]'>
+				<div className='m-auto flex w-full flex-col gap-[30px] lg:w-[80%] 2xl:w-[70%] 3xl:w-[50%]'>
 					<div className='flex flex-col  gap-4'>
 						<h2 className='text-center text-xl font-bold text-blackOne lg:text-left lg:text-xl'>
 							Mon parcours
@@ -165,7 +165,7 @@ const page = () => {
 								<div className='m-auto '>
 									<Image
 										src='/spiral.png'
-										alt='chess'
+										alt='spirale'
 										width={1069}
 										height={1090}
 										className='w-[250px] lg:w-[320px]'
@@ -178,7 +178,7 @@ const page = () => {
 						<h2 className='text-center text-xl font-bold text-blackOne lg:text-left lg:text-xl'>
 							Ma découverte du Coaching
 						</h2>
-						<div className='mt-6 flex w-[90%] flex-col items-center justify-between gap-8 lg:flex-row lg:gap-0 '>
+						<div className='mt-6 flex w-full flex-col items-center justify-between gap-8 lg:flex-row lg:gap-0 '>
 							<div className='lg:w-[280px]'>
 								<Image
 									src='/boussole.jpg'
@@ -218,7 +218,7 @@ const page = () => {
 						<h2 className='text-center text-2xl font-bold text-blackOne lg:text-left lg:text-xl'>
 							La Métaphore dans le Coaching
 						</h2>
-						<div className='mt-6 flex w-[90%] flex-col-reverse items-center justify-between gap-8 lg:flex-row lg:gap-0 '>
+						<div className='mt-6 flex w-full flex-col-reverse items-center justify-between gap-8 lg:flex-row lg:gap-0 '>
 							<div className='flex  flex-col gap-4 rounded-xl bg-primaryOne/10 p-6 lg:w-[65%] lg:gap-2 lg:p-6'>
 								<p>
 									Notre cerveau fonctionne par images, et les
