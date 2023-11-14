@@ -33,7 +33,7 @@ const Hamburger = ({
 					width={403}
 					height={466}
 					alt='Seeking'
-					className='absolute left-12 top-4 w-[110px]'
+					className='absolute left-12 top-4 w-[60px]'
 				/>
 				<div className='flex flex-col gap-6'>
 					<Link
@@ -66,6 +66,18 @@ const Hamburger = ({
 						className='linkHoverEffect'
 						onClick={toggleHamburgerMenu}>
 						Réserver
+					</Link>
+					<Link
+						href={'/'}
+						className='linkHoverEffect'
+						onClick={toggleHamburgerMenu}>
+						<Image
+							src='/final-logo.svg'
+							alt='logo'
+							className='m-auto mt-4 w-[180px] rounded-xl bg-white/70 p-2 2xl:w-[200px] '
+							width={894}
+							height={279}
+						/>
 					</Link>
 				</div>
 			</div>

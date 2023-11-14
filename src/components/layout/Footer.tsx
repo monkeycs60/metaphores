@@ -7,12 +7,13 @@ const Footer = () => {
 			<div className='mx-auto flex h-[90%] w-[100%] flex-col items-center justify-center gap-8 lg:h-[70%] lg:flex-row lg:items-start lg:gap-0'>
 				<div className='flex w-[350px] flex-col items-center gap-4 2xl:w-[400px] 3xl:w-[500px]'>
 					<Image
-						src='/logo-metaphore-final.png'
+						src='/final-logo.svg'
 						alt='logo'
-						className='w-[150px] 2xl:w-[200px] '
+						className='w-[150px] 2xl:w-[200px]'
 						width={894}
 						height={279}
 					/>
+
 					<div className='flex gap-2 font-bold text-blackOne'>
 						<h4>Formation</h4>
 						<span>|</span>
