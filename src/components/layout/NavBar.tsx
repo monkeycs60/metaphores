@@ -39,27 +39,33 @@ const NavBar = () => {
 		`}>
 					<div
 						className={`m-auto flex h-full w-[90%] items-center justify-between gap-12 p-6 font-inter`}>
-						<Link href='/'>
+						<Link
+							href='/'
+							className='w-[210px] transition-all duration-100 2xl:w-[260px]'>
 							<motion.div
 								animate={{ scale: isScrolled ? 0.9 : 1 }}
 								transition={{ duration: 0.375 }}
-								className='w-[210px] transition-all duration-100 2xl:w-[260px]'>
+								className='h-full w-[210px] transition-all duration-100 2xl:w-[260px]'>
 								{isScrolled ? (
-									<Image
-										src='/monogramme.svg'
-										alt='Logo'
-										width={894}
-										height={279}
-										className='w-[43px] 2xl:w-[53px]'
-									/>
+									<div className='h-full w-full'>
+										<Image
+											src='/monogramme.svg'
+											alt='Logo'
+											width={894}
+											height={279}
+											className='w-[43px] 2xl:w-[53px]'
+										/>
+									</div>
 								) : (
-									<Image
-										src='/final-logo.svg'
-										alt='Logo'
-										width={894}
-										height={279}
-										className='w-[210px] 2xl:w-[260px]'
-									/>
+									<div className='h-full w-full'>
+										<Image
+											src='/final-logo.svg'
+											alt='Logo'
+											width={894}
+											height={279}
+											className='w-[210px] 2xl:w-[260px]'
+										/>
+									</div>
 								)}
 							</motion.div>
 						</Link>
