@@ -26,16 +26,16 @@ const Hamburger = ({
 			exit='exit'
 			variants={variants}
 			transition={{ duration: 0.5 }}
-			className='fixed right-0 top-0 z-[100] min-h-screen w-screen overflow-hidden bg-primaryOne font-inter text-blackOne'>
-			<div className='relative mt-6 flex h-full flex-col justify-center p-12 text-center text-lg font-semibold sm:text-xl '>
+			className='fixed right-0 top-0 z-[100] h-screen w-screen overflow-hidden bg-primaryOne font-inter text-blackOne'>
+			<div className='relative flex h-full flex-col justify-center p-12 text-center text-lg font-semibold sm:text-xl '>
 				<Image
 					src='/seeking.svg'
 					width={403}
 					height={466}
 					alt='Seeking'
-					className='absolute left-12 top-4 w-[60px]'
+					className='absolute left-12 top-8 w-[46px]'
 				/>
-				<div className='flex flex-col mt-12 gap-6'>
+				<div className='mt-2 flex flex-col gap-6'>
 					<Link
 						href={'/about'}
 						className='linkHoverEffect'
