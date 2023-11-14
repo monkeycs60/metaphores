@@ -44,7 +44,7 @@ html {
 	border-top-left-radius: 50% 20%;
 }
 .containerBordureBriseeThree {
-	background-color: #FFF1CE;
+	background-color: #fff1ce;
 	border-bottom-left-radius: 20% 80%;
 	border-bottom-right-radius: 50% 20%;
 	border-top-right-radius: 20% 50%;
@@ -60,27 +60,34 @@ html {
 }
 
 .pictureBlob {
-    clip-path: ellipse(50% 40% at 50% 50%);
+	clip-path: ellipse(50% 40% at 50% 50%);
 }
 
 .linkHoverEffect {
-    position: relative;
+	position: relative;
 }
 
 .linkHoverEffect::after {
-    content: '';
-    position: absolute;
-    bottom: -3px;
-    left: 0;
-    width: 0%;
-    height: 3px;
-    background: #007BFF;
-    transition: width 0.5s;
+	content: '';
+	position: absolute;
+	bottom: -3px;
+	left: 0;
+	width: 0%;
+	height: 3px;
+	background: #007bff;
+	transition: width 0.5s;
 }
 
 .linkHoverEffect:hover::after {
-    width: 100%;
+	width: 100%;
 }
 
-
-
+.parallax {
+	height: 100vh;
+	width: 100vw;
+	background-image: url('/rugby.jpg');
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}

@@ -20,7 +20,7 @@ export function NavAccordion() {
 						<Link href='/coaching/collectif'>Collectif</Link>
 						<Link href='/coaching/vision'>Ma vision</Link>
 						<Link href='/coaching/enterprise'>Enterprise</Link>
-						<Link href='/coaching/psey'>Coach ou psy ?</Link>
+						<Link href='/coaching/psy'>Coach ou psy ?</Link>
 					</div>
 				</AccordionContent>
 			</AccordionItem>
