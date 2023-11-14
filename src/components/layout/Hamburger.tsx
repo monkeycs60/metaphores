@@ -35,7 +35,7 @@ const Hamburger = ({
 					alt='Seeking'
 					className='absolute left-12 top-4 w-[60px]'
 				/>
-				<div className='flex flex-col mt-6 gap-6'>
+				<div className='flex flex-col mt-12 gap-6'>
 					<Link
 						href={'/about'}
 						className='linkHoverEffect'
