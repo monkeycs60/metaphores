@@ -5,7 +5,7 @@ import Link from 'next/link';
 import { Button } from '../ui/button';
 import CustomNavigationMenu from '../ui/CustomNavigationMenu';
 import useScrollPosition from '@/hooks/useScrollPosition';
-import { motion } from 'framer-motion';
+import { easeInOut, motion } from 'framer-motion';
 import { AnimatePresence } from 'framer-motion';
 import useHamburgerMenu from '@/hooks/useHamburgerMenu';
 import Hamburger from './Hamburger';
@@ -40,7 +40,10 @@ const NavBar = () => {
 					<div
 						className={`m-auto flex h-full w-[90%] items-center justify-between gap-12 p-6 font-inter`}>
 						<Link href='/'>
-							<motion.div className='w-[210px] transition-all duration-100 2xl:w-[260px]'>
+							<motion.div
+								animate={{ scale: isScrolled ? 0.9 : 1 }}
+								transition={{ duration: 0.375 }}
+								className='w-[210px] transition-all duration-100 2xl:w-[260px]'>
 								{isScrolled ? (
 									<Image
 										src='/monogramme.svg'
