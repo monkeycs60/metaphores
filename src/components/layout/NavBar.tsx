@@ -40,7 +40,7 @@ const NavBar = () => {
 					<div
 						className={`m-auto flex h-full w-[90%] items-center justify-between gap-12 p-6 font-inter`}>
 						<Link href='/'>
-							<motion.div className='w-[210px] 2xl:w-[260px] '>
+							<motion.div className='w-[210px] transition-all duration-100 2xl:w-[260px]'>
 								{isScrolled ? (
 									<Image
 										src='/monogramme.svg'
