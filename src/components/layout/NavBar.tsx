@@ -46,27 +46,37 @@ const NavBar = () => {
 								animate={{ scale: isScrolled ? 0.9 : 1 }}
 								transition={{ duration: 0.375 }}
 								className='h-full w-[210px] transition-all duration-100 2xl:w-[260px]'>
-								{isScrolled ? (
-									<div className='h-full w-full'>
-										<Image
-											src='/monogramme.svg'
-											alt='Logo'
-											width={894}
-											height={279}
-											className='w-[43px] 2xl:w-[53px]'
-										/>
-									</div>
-								) : (
-									<div className='h-full w-full'>
-										<Image
-											src='/final-logo.svg'
-											alt='Logo'
-											width={894}
-											height={279}
-											className='w-[210px] 2xl:w-[260px]'
-										/>
-									</div>
-								)}
+								<AnimatePresence mode='wait'>
+									{isScrolled ? (
+										<motion.div
+											className='h-full w-full'
+											animate={{ opacity: 1 }}
+											initial={{ opacity: 0 }}
+											transition={{ duration: 0.375 }}>
+											<Image
+												src='/monogramme.svg'
+												alt='Logo'
+												width={894}
+												height={279}
+												className='w-[43px] 2xl:w-[53px]'
+											/>
+										</motion.div>
+									) : (
+										<motion.div
+											className='h-full w-full'
+											animate={{ opacity: 1 }}
+											initial={{ opacity: 0 }}
+											transition={{ duration: 0.375 }}>
+											<Image
+												src='/final-logo.svg'
+												alt='Logo'
+												width={894}
+												height={279}
+												className='w-[210px] 2xl:w-[260px]'
+											/>
+										</motion.div>
+									)}
+								</AnimatePresence>
 							</motion.div>
 						</Link>
 						<CustomNavigationMenu />
