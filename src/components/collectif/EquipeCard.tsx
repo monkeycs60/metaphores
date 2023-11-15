@@ -19,7 +19,7 @@ export function EquipeCard() {
 	if (!show) return null;
 	return (
 		<Card
-			className={`absolute left-0 top-[50px] z-10 mx-auto w-full max-w-lg scale-[80%] space-y-4 overflow-hidden rounded-xl bg-white shadow-2xl dark:bg-gray-800 lg:fixed lg:top-[35vh] lg:scale-[65%] 2xl:left-[00px] 2xl:scale-[75%] 3xl:right-[8vw] 3xl:top-[15vh] 3xl:scale-[90%] 3xl:space-y-0`}>
+			className={`absolute left-0 top-[50vh] z-10 mx-auto w-full max-w-lg scale-[80%] space-y-4 overflow-hidden rounded-xl bg-white shadow-2xl dark:bg-gray-800 lg:fixed lg:top-[35vh] lg:scale-[65%] 2xl:left-[00px] 2xl:scale-[75%] 3xl:right-[8vw] 3xl:top-[15vh] 3xl:scale-[90%] 3xl:space-y-0`}>
 			<div className='relative flex items-center justify-between bg-gradient-to-r from-blue-300 to-secondaryOne px-6 py-4'>
 				<div className='flex items-center space-x-3'>
 					<h1 className='text-xl font-bold text-black'>

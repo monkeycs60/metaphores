@@ -27,7 +27,7 @@ const page = () => {
 				<h1 className='flex w-screen justify-center bg-white p-4 text-center text-3xl font-bold  text-blackOne lg:text-left'>
 					Coaching Collectif
 				</h1>
-				<div className='absolute bottom-[38vh] right-24 w-[36%] font-caveat text-5xl text-white'>
+				<div className='absolute right-24 top-[30vh] bg-blackOne/30 font-caveat text-3xl text-white lg:bottom-[38vh] lg:w-[36%] lg:bg-transparent lg:text-5xl'>
 					<p>Envie de créer de la cohésion ou d'en retrouver ?</p>
 				</div>
 				<div className='flex flex-col gap-[75px] p-16 lg:p-24'>
@@ -36,7 +36,7 @@ const page = () => {
 			</div>
 			<div className='m-auto mt-24 w-[90%] lg:mt-16 lg:w-[80%] 2xl:w-[75%] 3xl:w-[60%]'>
 				<div className='flex flex-col items-center gap-[75px] text-center'>
-					<div className='flex w-2/3 flex-col gap-8 text-lg'>
+					<div className='flex w-[90%] flex-col gap-8 lg:w-2/3 lg:text-lg'>
 						<p>
 							L'efficacité d'une équipe dépend de la synergie entre les
 							talents individuels de ses membres et de leur capacité
@@ -49,7 +49,7 @@ const page = () => {
 					</div>
 					<div>
 						<div className='flex flex-col items-center gap-6'>
-							<h2 className='font-caveat text-4xl'>
+							<h2 className='font-caveat text-3xl lg:text-4xl'>
 								Augmentez les performances de votre équipe grâce à des
 								individus épanouis
 							</h2>
@@ -62,8 +62,8 @@ const page = () => {
 							/>
 						</div>
 					</div>
-					<div className='flex w-[85%] bg-blackOne p-4 text-white '>
-						<div className='flex w-[60%] flex-col gap-6 p-8 text-left'>
+					<div className='flex w-screen flex-col-reverse bg-blackOne p-12 text-white lg:w-[85%] lg:flex-row lg:p-4 '>
+						<div className='flex w-full flex-col gap-6 text-left lg:w-[60%] lg:p-8'>
 							<h2
 								className='my-4 text-center text-2xl font-bold'
 								id='whatIsIt'>
@@ -122,13 +122,13 @@ const page = () => {
 								</p>
 							</div>
 						</div>
-						<div className='flex w-[40%] items-center justify-center '>
+						<div className='flex items-center justify-center lg:w-[40%] '>
 							<Image
 								src={'/4concepts.png'}
 								width={846}
 								height={847}
 								alt='4 valeurs'
-								className='w-[340px] '
+								className='w-[150px] lg:w-[340px] '
 							/>
 						</div>
 					</div>
@@ -144,7 +144,7 @@ const page = () => {
 							</Button>
 						</Link>
 					</div>
-					<div className='flex w-2/3 flex-col gap-8 text-lg'>
+					<div className='flex w-2/3 flex-col gap-8 lg:text-lg'>
 						<p>
 							Un vrai travail d’équipe repose sur la volonté de ses
 							membres de mettre en commun leurs talents individuels au
@@ -155,16 +155,16 @@ const page = () => {
 						</p>
 					</div>
 
-					<div className='flex w-[85%] bg-secondaryOne p-4 text-blackOne lg:flex-row-reverse '>
-						<div className='flex w-[70%] flex-col gap-6 p-8 text-left'>
+					<div className='flex w-screen flex-col-reverse bg-secondaryOne  px-2 py-12 text-blackOne lg:w-[85%] lg:flex-row-reverse lg:p-4 '>
+						<div className='flex flex-col gap-6 text-left lg:w-[70%] lg:p-8'>
 							<h2
 								className='my-4 text-center text-2xl font-bold'
 								id='whatIsIt'>
 								Déroulement d'un coaching d'équipe
 							</h2>
 							<div className='flex gap-4'>
-								<div className='flex w-full items-center justify-between'>
-									<span className='w-1/3 font-caveat text-4xl font-bold'>
+								<div className='flex w-full flex-col items-center justify-between gap-3 lg:flex-row lg:gap-0'>
+									<span className='font-caveat text-4xl font-bold lg:w-1/3'>
 										Etape 1.
 									</span>
 									<p className='w-full px-8 text-left'>
@@ -173,8 +173,8 @@ const page = () => {
 								</div>
 							</div>
 							<div className='flex gap-4 px-2'>
-								<div className='flex w-full items-center justify-between'>
-									<span className='w-1/3 font-caveat text-4xl font-bold'>
+								<div className='flex w-full flex-col items-center justify-between gap-3 lg:flex-row lg:gap-0'>
+									<span className='font-caveat text-4xl font-bold lg:w-1/3'>
 										Etape 2.
 									</span>
 									<p className='w-full px-8 text-left'>
@@ -187,8 +187,8 @@ const page = () => {
 								</div>
 							</div>
 							<div className='flex gap-4 px-4'>
-								<div className='flex w-full items-center justify-between'>
-									<span className='w-1/3 font-caveat text-4xl font-bold'>
+								<div className='flex w-full flex-col items-center justify-between gap-3 lg:flex-row lg:gap-0'>
+									<span className='font-caveat text-4xl font-bold lg:w-1/3'>
 										Etape 3.
 									</span>
 									<p className='w-full px-8 text-left'>
@@ -201,8 +201,8 @@ const page = () => {
 								</div>
 							</div>
 							<div className='flex gap-4 px-6'>
-								<div className='flex w-full items-center justify-between'>
-									<span className='w-1/3 font-caveat text-4xl font-bold'>
+								<div className='flex w-full flex-col items-center justify-between gap-3 lg:flex-row lg:gap-0'>
+									<span className='font-caveat text-4xl font-bold lg:w-1/3'>
 										Etape 4.
 									</span>
 									<p className='w-full px-8 text-left'>
@@ -212,8 +212,8 @@ const page = () => {
 								</div>
 							</div>
 							<div className='flex gap-4 px-6'>
-								<div className='flex w-full items-center justify-between'>
-									<span className='w-1/3 font-caveat text-4xl font-bold'>
+								<div className='flex w-full flex-col items-center justify-between gap-3 lg:flex-row lg:gap-0'>
+									<span className='font-caveat text-4xl font-bold lg:w-1/3'>
 										Etape 5.
 									</span>
 									<p className='w-full px-8 text-left'>
@@ -222,17 +222,17 @@ const page = () => {
 								</div>
 							</div>
 						</div>
-						<div className='flex w-[30%] items-center justify-center'>
+						<div className='flex items-center justify-center lg:w-[30%]'>
 							<Image
 								src={'/oneway.svg'}
 								width={84}
 								height={109}
 								alt='cheminement'
-								className='w-[170px] text-white'
+								className='mb-6 w-[100px] text-white lg:mb-0 lg:w-[170px]'
 							/>
 						</div>
 					</div>
-					<div className='flex w-2/3 flex-col gap-8 text-lg'>
+					<div className='flex w-2/3 flex-col gap-8 lg:text-lg'>
 						<p>
 							Les entretiens de débriefing sont une part essentielle de
 							la réussite ! ils entretiennent la motivation. C’est en
