@@ -1,5 +1,8 @@
-import { ChevronRightSquare } from 'lucide-react';
+import { EquipeCard } from '@/components/collectif/EquipeCard';
+import { Button } from '@/components/ui/button';
+import { ArrowUpRight, ChevronRightSquare } from 'lucide-react';
 import Image from 'next/image';
+import Link from 'next/link';
 import React from 'react';
 
 const page = () => {
@@ -19,6 +22,7 @@ const page = () => {
 				alt='fleche bas'
 				className='absolute -right-12 bottom-20 hidden w-[160px] lg:block'
 			/>
+			<EquipeCard />
 			<div className='parallax relative h-screen w-screen pt-16'>
 				<h1 className='flex w-screen justify-center bg-white p-4 text-center text-3xl font-bold  text-blackOne lg:text-left'>
 					Coaching Collectif
@@ -58,7 +62,7 @@ const page = () => {
 							/>
 						</div>
 					</div>
-					<div className='w-[85%] bg-blackOne p-4 text-white '>
+					<div className='flex w-[85%] bg-blackOne p-4 text-white '>
 						<div className='flex w-[60%] flex-col gap-6 p-8 text-left'>
 							<h2
 								className='my-4 text-center text-2xl font-bold'
@@ -118,7 +122,27 @@ const page = () => {
 								</p>
 							</div>
 						</div>
-						<div></div>
+						<div className='flex w-[40%] items-center justify-center '>
+							<Image
+								src={'/4concepts.png'}
+								width={846}
+								height={847}
+								alt='4 valeurs'
+								className='w-[340px] '
+							/>
+						</div>
+					</div>
+					<div className='flex w-full justify-center'>
+						<Link
+							href='/reservation'
+							className='flex w-full justify-center'>
+							<Button
+								size={'lg'}
+								className='gap-2 bg-primaryOne lg:w-1/3'>
+								{' '}
+								<span>Réserver ma séance</span> <ArrowUpRight />
+							</Button>
+						</Link>
 					</div>
 					<div className='flex w-2/3 flex-col gap-8 text-lg'>
 						<p>
@@ -207,6 +231,14 @@ const page = () => {
 								className='w-[170px] text-white'
 							/>
 						</div>
+					</div>
+					<div className='flex w-2/3 flex-col gap-8 text-lg'>
+						<p>
+							Les entretiens de débriefing sont une part essentielle de
+							la réussite ! ils entretiennent la motivation. C’est en
+							revenant à ces objectifs régulièrement que l’on arrive à
+							garder la motivation et à les atteindre
+						</p>
 					</div>
 				</div>
 			</div>
