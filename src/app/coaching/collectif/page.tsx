@@ -1,4 +1,3 @@
-import { EquipeCard } from '@/components/collectif/EquipeCard';
 import { Button } from '@/components/ui/button';
 import { ArrowUpRight, ChevronRightSquare } from 'lucide-react';
 import Image from 'next/image';
