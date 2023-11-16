@@ -136,6 +136,216 @@ const page = () => {
 					<h2 className='-mb-4 text-center text-xl font-bold text-blackOne'>
 						Les apports du coaching d'entreprise
 					</h2>
+					<div className='m-auto mb-6 flex flex-col justify-center gap-12 lg:flex-row lg:flex-wrap'>
+						<div className='flex items-center justify-center gap-6 lg:w-[40%] '>
+							<Image
+								src={'/enterprise4.svg'}
+								width={52}
+								height={45}
+								alt='empathie'
+								className='w-[50px] lg:h-[60px] lg:w-[85px] '
+							/>
+							<h3>
+								Réconcilier la <strong>performance </strong> et la
+								<strong>qualité de vie au travail</strong>. Prévenir les
+								risques psychosociaux et créer un climat de confiance.
+							</h3>
+						</div>
+						<div className='flex items-center justify-center gap-6 lg:w-[40%] '>
+							<Image
+								src={'/enterprise1.svg'}
+								width={83}
+								height={83}
+								alt='guidance'
+								className='w-[47px] lg:w-[72px] '
+							/>
+							<h3>
+								Créer de la <strong>cohésion</strong> et de{' '}
+								<strong>l’adhésion</strong>, Capter les signaux faibles
+								et développer <strong>l’intelligence collective</strong>{' '}
+								pour faire émerger les talents dans l’entreprise.
+							</h3>
+						</div>
+						<div className='flex items-center justify-center gap-6 lg:w-[40%] '>
+							<Image
+								src={'/enterprise2.svg'}
+								width={65}
+								height={75}
+								alt='rythme'
+								className='w-[44px] lg:w-[70px]'
+							/>
+							<h3>
+								Faire <strong>progresser </strong> l’ensemble des
+								acteurs de l’entreprise. <strong>Clarifier</strong> la
+								volonté des acteurs pour leur permettre de trouver leur
+								meilleure place
+							</h3>
+						</div>
+						<div className='flex items-center justify-center gap-6 lg:w-[40%] '>
+							<Image
+								src={'/enterprise3.svg'}
+								width={120}
+								height={102}
+								alt='force'
+								className='w-[50px] lg:h-[65px] lg:w-[80px] '
+							/>
+							<h3>
+								Co-élaborer la structure organisationnelle en alignant
+								sur la mission et la <strong>vision</strong> de
+								l'entreprise, favorisant <strong>l'engagement</strong>
+								des employés et la réussite organisationnelle.
+							</h3>
+						</div>
+					</div>
+					<div className='m-auto h-[1px] w-1/2 bg-primaryOne '></div>
+					<h2 className='mt-6 text-center text-xl font-bold text-blackOne'>
+						Coaching de dirigeant
+					</h2>
+					<div className='flex flex-row-reverse items-center justify-center gap-10'>
+						<div className='flex w-[60%] flex-col gap-10'>
+							<div className='space-y-2'>
+								<p>
+									Le rôle d'un <strong>dirigeant d'entreprise</strong>{' '}
+									est souvent comparé à celui d'un chef d'orchestre,
+									orchestrant les talents et compétences au sein de son
+									organisation. Cependant, malgré l'entourage et le
+									soutien des collaborateurs, le dirigeant peut{' '}
+									<strong>se sentir isolé</strong> face aux défis
+									stratégiques, aux pressions et aux incertitudes.
+								</p>
+								<p>
+									Que ce soit dans le cadre d'une nouvelle nomination,
+									la gestion de situations complexes, ou la prise de
+									décisions critiques, il est essentiel pour un
+									dirigeant de{' '}
+									<strong>
+										disposer des ressources nécessaires pour surmonter
+										ces défis
+									</strong>
+									.
+								</p>
+							</div>
+
+							<div className='space-y-2'>
+								<p>
+									Un coach professionnel spécialisé dans
+									l'accompagnement des dirigeants peut jouer un rôle
+									clé en offrant un <strong>soutien sur mesure</strong>{' '}
+									pour atteindre les objectifs fixés tout en gérant les
+									problématiques opérationnelles quotidiennes.
+								</p>{' '}
+								<p>
+									{' '}
+									Chez Métaphore Coaching, nous nous engageons à
+									établir un{' '}
+									<strong>climat de confiance et de sérénité</strong>,
+									pour vous guider vers des résultats efficaces et
+									personnalisés.
+								</p>
+							</div>
+							<div>
+								<Button className='ml-auto' size={'lg'}>
+									Plus de renseignements
+								</Button>
+							</div>
+						</div>
+						<div>
+							<Image
+								src={'/chris-cut.png'}
+								width={1103}
+								height={1275}
+								alt='inspiration de dos'
+								className='w-[400px] object-cover'
+							/>
+						</div>
+					</div>
+					<div className='m-auto flex w-2/3 flex-col gap-4 bg-secondaryOne p-8'>
+						<h3 className='text-lg font-bold'>
+							Les points clés du coaching de dirigeant :
+						</h3>
+						<div className='flex items-center justify-center'>
+							<div>
+								<div className='flex h-[100px] '>
+									{' '}
+									<ChevronRightSquare className='h-8 w-8' />
+									<p>
+										<span>Renforcement du Leadership :</span> cultiver
+										une capacité de leadership efficace et inspirante.
+									</p>
+								</div>
+								<div>
+									{' '}
+									<ChevronRightSquare className='h-8 w-8' />
+									<p>
+										<span>
+											Accompagnement dans les Nouvelles
+											Responsabilités :
+										</span>
+										soutien lors de la prise de nouvelles fonctions ou
+										responsabilités.
+									</p>
+								</div>
+								<div>
+									{' '}
+									<ChevronRightSquare className='h-8 w-8' />
+									<p>
+										<span>Gestion des Conflits et Management :</span>
+										stratégies pour surmonter les situations
+										conflictuelles en management.
+									</p>
+								</div>
+								<div>
+									{' '}
+									<ChevronRightSquare className='h-8 w-8' />
+									<p>
+										<span>Confiance et Estime de Soi :</span>améliorer
+										la confiance en soi pour prendre des décisions
+										affirmées.
+									</p>
+								</div>
+							</div>
+							<div>
+								<div>
+									{' '}
+									<ChevronRightSquare className='h-8 w-8' />
+									<p>
+										<span>
+											Prise de Recul sur les Situations Complexes :
+										</span>
+										Aide à la réflexion et à l'analyse pour des
+										décisions difficiles.
+									</p>
+								</div>
+								<div>
+									{' '}
+									<ChevronRightSquare className='h-8 w-8' />
+									<p>
+										<span>Gestion des Priorités et du Stress :</span>
+										méthodes pour mieux gérer le temps, les priorités
+										et réduire le stress
+									</p>
+								</div>
+								<div>
+									{' '}
+									<ChevronRightSquare className='h-8 w-8' />
+									<p>
+										<span>Délégation Efficace :</span>
+										Apprendre à déléguer pour optimiser la performance
+										et l'efficacité.
+									</p>
+								</div>
+								<div>
+									{' '}
+									<ChevronRightSquare className='h-8 w-8' />
+									<p>
+										<span>CPréparation aux Événements Clés :</span>
+										Techniques pour se préparer à des événements
+										importants, négociations, ou prises de parole.
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
