@@ -59,10 +59,11 @@ const page = () => {
 										Accompagnement professionnel
 									</span>
 								</div>
-								<h4 className='text-center text-sm italic lg:text-base'>
+								<h4 className='text-center text-sm italic text-gray-600 lg:text-base'>
 									Cultivez votre potentiel professionnel avec un
 									accompagnement respectueux et attentif.
 								</h4>
+								<div className='h-[1px] w-2/3 bg-blackOne lg:w-1/2 '></div>
 								<div className='flex h-2/3 flex-col justify-between gap-5'>
 									<div className='flex gap-4'>
 										<ChevronRightSquare className='h-8 w-8' />
@@ -110,10 +111,11 @@ const page = () => {
 										Accompagnement personnel
 									</span>
 								</div>
-								<h4 className='text-center text-sm italic lg:text-base'>
+								<h4 className='text-center text-sm italic text-gray-600 lg:text-base'>
 									Avancez vers une meilleure compréhension de vous-même
 									et de ce qui compte vraiment pour vous.
 								</h4>
+								<div className='h-[1px] w-2/3 bg-blackOne lg:w-1/2 '></div>
 								<div className='flex h-2/3 flex-col justify-between gap-5'>
 									<div className='flex gap-4'>
 										<ChevronRightSquare className='h-8 w-8' />
