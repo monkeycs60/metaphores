@@ -52,7 +52,7 @@ const page = () => {
 					<div className='flex flex-col justify-center gap-8 p-12 lg:flex-row-reverse lg:gap-16 2xl:gap-[5vw] 3xl:gap-[8vw] '>
 						<div className='flex flex-col items-center justify-center gap-12 lg:w-[600px]'>
 							<h2 className='font-caveat text-4xl text-blackOne lg:text-5xl'>
-								Moi, c'est Christophe
+								Enchanté, moi c'est Christophe !
 							</h2>
 							<div className='flex  flex-col gap-3 lg:px-8 lg:text-lg 3xl:px-0'>
 								<p>
@@ -68,11 +68,11 @@ const page = () => {
 						</div>
 						<div className='mt-4 flex flex-col items-center gap-4 lg:mt-0'>
 							<Image
-								src='/chris-blob-2.png'
-								alt='chess'
+								src='/chris-doudoune.png'
+								alt='Christophe'
 								width={800}
 								height={652}
-								className='xl:w-[280px] 2xl:w-[320px] 3xl:w-[400px]'
+								className='xl:w-[195px] 2xl:w-[225px] 3xl:w-[280px]'
 							/>
 							<div className='flex flex-col items-center'>
 								<span className='text-lg font-semibold text-blackOne'>
