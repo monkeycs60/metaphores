@@ -103,37 +103,37 @@ const page = () => {
 								expérience est riche et variée :
 							</p>
 							<div className='mt-14 flex flex-col-reverse justify-center gap-12 lg:flex-row'>
-								<ul className='flex w-full flex-col items-center justify-center gap-7 lg:items-start lg:justify-normal lg:gap-6'>
+								<ul className='m-auto flex w-[85%] flex-col items-center justify-center gap-7 lg:w-full lg:items-start lg:justify-normal lg:gap-6'>
 									<li className='flex items-center gap-5'>
 										{' '}
-										<Wrench />{' '}
+										<Wrench className='w-[26px] lg:w-6' />{' '}
 										<span className=''>
 											Formation en ingénierie et mécanique.
 										</span>
 									</li>
 									<li className='flex items-center gap-5'>
-										<Globe />
+										<Globe className='w-[30px] lg:w-6' />
 										<span>
 											Vie à l'étranger: Angleterre, Australie, Inde,
 											et plus.
 										</span>
 									</li>
 									<li className='flex items-center gap-5'>
-										<Briefcase />
+										<Briefcase className='w-[32px] lg:w-6' />
 										<span>
 											Multiples métiers : commercial, ingénieur,
 											commerçant...
 										</span>
 									</li>
 									<li className='flex items-center gap-5'>
-										<Book />{' '}
+										<Book className='w-[24px] lg:w-6' />{' '}
 										<span>
 											{' '}
 											Enseignant depuis une dizaine d’années.
 										</span>
 									</li>
 									<li className='flex items-center gap-5'>
-										<Palette />
+										<Palette className='w-[30px] lg:w-6' />
 										<span>
 											{' '}
 											Artiste peintre avec des expositions à
@@ -141,21 +141,21 @@ const page = () => {
 										</span>
 									</li>
 									<li className='flex items-center gap-5 '>
-										<Drama />{' '}
+										<Drama className='w-[42px] lg:w-6' />{' '}
 										<span>
 											Comédien professionnel ayant écrit et mis en
 											scène plusieurs pièces.
 										</span>
 									</li>
 									<li className='flex items-center gap-5 '>
-										<Trophy />{' '}
+										<Trophy className='w-[40px] lg:w-6' />{' '}
 										<span>
 											Sportif ayant fait de la compétition en
 											football, handball, et beach-volley.
 										</span>
 									</li>
 									<li className='flex items-center gap-5 '>
-										<GraduationCap />{' '}
+										<GraduationCap className='w-[40px] lg:w-6' />{' '}
 										<span>
 											Reprise d'études en sciences de l'éducation et
 											en coaching.
