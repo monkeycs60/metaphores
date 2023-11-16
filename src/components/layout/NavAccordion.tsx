@@ -19,7 +19,7 @@ export function NavAccordion() {
 						<Link href='/coaching/origines'>C'est quoi le coaching</Link>
 						<Link href='/coaching/collectif'>Collectif</Link>
 						<Link href='/coaching/vision'>Ma vision</Link>
-						<Link href='/coaching/enterprise'>Enterprise</Link>
+						<Link href='/coaching/entreprise'>Entreprise</Link>
 						<Link href='/coaching/psy'>Coach ou psy ?</Link>
 					</div>
 				</AccordionContent>
