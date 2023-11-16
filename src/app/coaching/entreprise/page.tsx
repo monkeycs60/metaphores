@@ -44,9 +44,9 @@ const page = () => {
 						<p>
 							Le coaching en entreprise sert de catalyseur pour débloquer
 							le potentiel des équipes et des dirigeants, transformant
-							les défis en opportunités de croissance. Ce processus
+							les défis en opportunités. Ce processus
 							enrichissant contribue à forger des leaders inspirants et à
-							instaurer une dynamique d'équipe solide, essentielle pour
+							instaurer une dynamique d'équipe solide et solidaire, essentielle pour
 							naviguer dans les eaux turbulentes du marché actuel. Le
 							coaching en entreprise est donc une pierre angulaire pour
 							toute organisation aspirant à l'excellence et à
