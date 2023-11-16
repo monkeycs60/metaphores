@@ -22,12 +22,14 @@ const page = () => {
 				className='absolute -right-12 bottom-20 hidden w-[160px] lg:block'
 			/>
 			<div className='absolute left-1/2 top-[105vh] z-20 -translate-x-1/2 translate-y-[-50vh] bg-primaryOne  text-xl  lg:text-4xl'>
-				<Button className='ml-auto' size={'xl'}>
-					Demandez un devis
-				</Button>
+				<Link href='/contact'>
+					<Button className='ml-auto' size={'xl'}>
+						Demandez un devis
+					</Button>
+				</Link>
 			</div>
 			<div className='parallax-enterprise relative h-screen w-screen pt-16'>
-				<h1 className='flex w-screen justify-center bg-white p-4 text-center text-3xl font-bold  text-blackOne lg:text-left'>
+				<h1 className='h1-striped flex w-screen justify-center  p-4 text-center text-3xl font-bold  text-blackOne lg:text-left'>
 					Coaching en entreprise
 				</h1>
 				<div className='absolute right-24 top-[30vh] bg-blackOne/30 font-caveat text-3xl text-white lg:bottom-[38vh] lg:w-[36%] lg:bg-transparent lg:text-5xl'>
@@ -43,207 +45,95 @@ const page = () => {
 						<p>
 							Le coaching en entreprise sert de catalyseur pour débloquer
 							le potentiel des équipes et des dirigeants, transformant
-							les défis en opportunités. Ce processus
-							enrichissant contribue à forger des leaders inspirants et à
-							instaurer une dynamique d'équipe solide et solidaire, essentielle pour
-							naviguer dans les eaux turbulentes du marché actuel. Le
-							coaching en entreprise est donc une pierre angulaire pour
-							toute organisation aspirant à l'excellence et à
+							les défis en opportunités. Ce processus enrichissant
+							contribue à forger des leaders inspirants et à instaurer
+							une dynamique d'équipe solide et solidaire, essentielle
+							pour naviguer dans les eaux turbulentes du marché actuel.
+							Le coaching en entreprise est donc une pierre angulaire
+							pour toute organisation aspirant à l'excellence et à
 							l'innovation.
 						</p>
 					</div>
 					<div>
-						<div className='flex flex-col items-center gap-6'>
-							<h2 className='font-caveat text-3xl lg:text-4xl'>
-								Augmentez les performances de votre équipe grâce à des
-								individus épanouis
-							</h2>
+						<h2 className='-mb-4 text-center text-xl font-bold text-blackOne'>
+							Identifier les besoins de votre entreprise
+						</h2>
+					</div>
+					<div className='flex items-center justify-between gap-10 text-left'>
+						<div className='flex flex-col gap-3'>
+							<div className='flex h-[85px] items-center gap-8'>
+								<ChevronRightSquare className='h-8 w-8' />
+								<p className='w-[80%]'>
+									<span className='pr-2 font-semibold'>
+										Soutien aux Projets et Défis de Croissance :
+									</span>
+									Accompagnement dans la gestion du changement,
+									clarification des missions, renforcement de la
+									cohésion et augmentation de la motivation pour
+									surmonter les défis de croissance et de
+									restructuration.
+								</p>
+							</div>
+							<div className='flex h-[85px] items-center gap-8'>
+								<ChevronRightSquare className='h-8 w-8' />
+								<p className='w-[80%]'>
+									<span className='pr-2 font-semibold'>
+										Développement des Compétences et Libération du
+										Potentiel :
+									</span>
+									Renforcement du leadership et gestion efficace des
+									talents pour améliorer les compétences individuelles
+									et collectives.
+								</p>
+							</div>
+							<div className='flex h-[85px] items-center gap-8'>
+								<ChevronRightSquare className='h-8 w-8' />
+								<p className='w-[80%]'>
+									<span className='pr-2 font-semibold'>
+										Amélioration de la Collaboration et Restauration
+										de la Confiance :
+									</span>
+									Techniques pour renforcer l’esprit collaboratif,
+									notamment en environnements mixtes (présentiel et
+									distanciel), et pour rétablir un climat de confiance
+									boostant la performance globale.
+								</p>
+							</div>
+							<div className='flex h-[85px] items-center gap-8'>
+								<ChevronRightSquare className='h-8 w-8' />
+								<p className='w-[80%]'>
+									<span className='pr-2 font-semibold'>
+										Adaptation aux Nouvelles Technologies et
+										Communication Intergénérationnelle :
+									</span>
+									Aide à l'adaptation aux évolutions technologiques et
+									amélioration de la communication entre différentes
+									générations au sein de l'équipe.
+								</p>
+							</div>
+							<div className='flex h-[85px] items-center gap-8'>
+								<ChevronRightSquare className='h-8 w-8' />
+								<p className='w-[80%]'>
+									<span className='pr-2 font-semibold'>
+										Agilité et Autonomie face aux Mutations Actuelles
+										:
+									</span>
+									Formation en gestion du temps et développement de
+									l'autonomie pour mieux naviguer dans un environnement
+									complexe et incertain, répondant ainsi aux enjeux
+									futurs.
+								</p>
+							</div>
+						</div>
+						<div>
 							<Image
-								src={'/fulfilled.svg'}
-								width={75}
-								height={73}
-								alt='epanouis'
-								className='w-[75px] lg:w-[110px]'
+								src={'/board.png'}
+								width={1241}
+								height={796}
+								alt='réunion équipe'
+								className='w-[1100px] '
 							/>
 						</div>
-					</div>
-					<div className='flex w-screen flex-col-reverse bg-blackOne p-12 text-white lg:w-[85%] lg:flex-row lg:p-4 '>
-						<div className='flex w-full flex-col gap-6 text-left lg:w-[60%] lg:p-8'>
-							<h2
-								className='my-4 text-center text-2xl font-bold'
-								id='whatIsIt'>
-								Les objectifs d'un coaching d'équipe
-							</h2>
-							<div className='flex gap-4'>
-								<div className='flex gap-4'>
-									<ChevronRightSquare className='h-8 w-8' />
-									<p className='w-full text-left'>
-										Développer le fonctionnement d’une équipe par
-										l’intelligence collective pour lui permettre de
-										donner toute son efficacité.
-									</p>
-								</div>
-							</div>
-							<div className='flex gap-4'>
-								<ChevronRightSquare className='h-8 w-8' />
-								<p className='w-full'>
-									Favoriser la communication et la coopération au sein
-									de l’équipe : concourir ensemble à l’atteinte des
-									objectifs, Désamorcer les situations de conflits et
-									de crises.
-								</p>
-							</div>
-							<div className='flex gap-4'>
-								<ChevronRightSquare className='h-8 w-8' />
-								<p className='w-full'>
-									Mobiliser les compétences collectives et améliorer
-									les performances : une équipe est porteuse de
-									compétences collectives dans lesquelles réside sa
-									force.
-								</p>
-							</div>
-							<div className='flex gap-4'>
-								<ChevronRightSquare className='h-8 w-8' />
-								<p className='w-full'>
-									Transformer la diversité et la complémentarité des
-									profils des équipiers en talent d’équipe.
-								</p>
-							</div>
-							<div className='flex gap-4'>
-								<ChevronRightSquare className='h-8 w-8' />
-								<p className='w-full'>
-									Accompagner les transformations et les équipes qui
-									les vivent et les mettre en œuvre.
-								</p>
-							</div>
-							<div className='flex gap-4'>
-								<ChevronRightSquare className='h-8 w-8' />
-								<p className='w-full'>
-									Réussir la mise en œuvre des projets de changement et
-									de transformation d'entreprise : nouvelle
-									organisation, fusion intégration d'un nouveau membre
-									dans une équipe, démarrage d'un projet
-									multi-disciplinaire.
-								</p>
-							</div>
-						</div>
-						<div className='flex items-center justify-center lg:w-[40%] '>
-							<Image
-								src={'/4concepts.png'}
-								width={846}
-								height={847}
-								alt='4 valeurs'
-								className='w-[150px] lg:w-[340px] '
-							/>
-						</div>
-					</div>
-					<div className='flex w-full justify-center'>
-						<Link
-							href='/reservation'
-							className='flex w-full justify-center'>
-							<Button
-								size={'lg'}
-								className='gap-2 bg-primaryOne lg:w-1/3'>
-								{' '}
-								<span>Réserver ma séance</span> <ArrowUpRight />
-							</Button>
-						</Link>
-					</div>
-					<div className='flex w-2/3 flex-col gap-8 lg:text-lg'>
-						<p>
-							Un vrai travail d’équipe repose sur la volonté de ses
-							membres de mettre en commun leurs talents individuels au
-							profit du collectif. L’accompagnement est bien sur adapté à
-							la situation, aux enjeux et aux objectifs. C’est pourquoi
-							un coaching d’équipe s’inscrit dans la durée et se déroule
-							en plusieurs phases de montée en puissance
-						</p>
-					</div>
-
-					<div className='flex w-screen flex-col-reverse bg-secondaryOne  px-2 py-12 text-blackOne lg:w-[85%] lg:flex-row-reverse lg:p-4 '>
-						<div className='flex flex-col gap-6 text-left lg:w-[70%] lg:p-8'>
-							<h2
-								className='my-4 text-center text-2xl font-bold'
-								id='whatIsIt'>
-								Déroulement d'un coaching d'équipe
-							</h2>
-							<div className='flex gap-4'>
-								<div className='flex w-full flex-col items-center justify-between gap-3 lg:flex-row lg:gap-0'>
-									<span className='font-caveat text-4xl font-bold lg:w-1/3'>
-										Etape 1.
-									</span>
-									<p className='w-full px-8 text-left'>
-										Apprendre à se connaitre et travailler ensemble.
-									</p>
-								</div>
-							</div>
-							<div className='flex gap-4 px-2'>
-								<div className='flex w-full flex-col items-center justify-between gap-3 lg:flex-row lg:gap-0'>
-									<span className='font-caveat text-4xl font-bold lg:w-1/3'>
-										Etape 2.
-									</span>
-									<p className='w-full px-8 text-left'>
-										Exprimer une vision partagée de la réalité (état
-										des lieux), découverte de l'équipe afin de définir
-										les objectifs, besoins et enjeux. Les objectifs
-										sont définis en collaboration avec le responsable
-										de l'équipe et l'équipe elle-même.
-									</p>
-								</div>
-							</div>
-							<div className='flex gap-4 px-4'>
-								<div className='flex w-full flex-col items-center justify-between gap-3 lg:flex-row lg:gap-0'>
-									<span className='font-caveat text-4xl font-bold lg:w-1/3'>
-										Etape 3.
-									</span>
-									<p className='w-full px-8 text-left'>
-										Construire la vision d’un avenir commun avec son
-										plan d’action, , Une restitution des besoins et
-										demandes de l'équipe et du manager destinés à
-										calibrer les objectifs et modalités de
-										l'accompagnement.
-									</p>
-								</div>
-							</div>
-							<div className='flex gap-4 px-6'>
-								<div className='flex w-full flex-col items-center justify-between gap-3 lg:flex-row lg:gap-0'>
-									<span className='font-caveat text-4xl font-bold lg:w-1/3'>
-										Etape 4.
-									</span>
-									<p className='w-full px-8 text-left'>
-										Mettre en œuvre le plan, itérer et adapter en
-										fonction des résultats constatés.
-									</p>
-								</div>
-							</div>
-							<div className='flex gap-4 px-6'>
-								<div className='flex w-full flex-col items-center justify-between gap-3 lg:flex-row lg:gap-0'>
-									<span className='font-caveat text-4xl font-bold lg:w-1/3'>
-										Etape 5.
-									</span>
-									<p className='w-full px-8 text-left'>
-										Séance de bilan à l'issue de l'accompagnement.
-									</p>
-								</div>
-							</div>
-						</div>
-						<div className='flex items-center justify-center lg:w-[30%]'>
-							<Image
-								src={'/oneway.svg'}
-								width={84}
-								height={109}
-								alt='cheminement'
-								className='mb-6 w-[100px] text-white lg:mb-0 lg:w-[170px]'
-							/>
-						</div>
-					</div>
-					<div className='flex w-2/3 flex-col gap-8 lg:text-lg'>
-						<p>
-							Les entretiens de débriefing sont une part essentielle de
-							la réussite ! ils entretiennent la motivation. C’est en
-							revenant à ces objectifs régulièrement que l’on arrive à
-							garder la motivation et à les atteindre
-						</p>
 					</div>
 				</div>
 			</div>

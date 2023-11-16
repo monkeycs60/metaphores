@@ -42,7 +42,7 @@ const Hamburger = ({
 						onClick={toggleHamburgerMenu}>
 						A propos
 					</Link>
-					<NavAccordion />
+					<NavAccordion hamburgerBehavior={toggleHamburgerMenu} />
 					<Link
 						href={'/deontology'}
 						className='linkHoverEffect'
