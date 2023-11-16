@@ -23,12 +23,12 @@ const page = () => {
 				className='absolute -right-12 bottom-20 hidden w-[160px] lg:block'
 			/>
 			<EquipeCard />
-			<div className='parallax relative h-screen w-screen pt-16'>
+			<div className='parallax-enterprise relative h-screen w-screen pt-16'>
 				<h1 className='flex w-screen justify-center bg-white p-4 text-center text-3xl font-bold  text-blackOne lg:text-left'>
-					Coaching Collectif
+					Coaching en entreprise
 				</h1>
 				<div className='absolute right-24 top-[30vh] bg-blackOne/30 font-caveat text-3xl text-white lg:bottom-[38vh] lg:w-[36%] lg:bg-transparent lg:text-5xl'>
-					<p>Envie de créer de la cohésion ou d'en retrouver ?</p>
+					<p>Besoin de faire évoluer une personne ou un groupe ?</p>
 				</div>
 				<div className='flex flex-col gap-[75px] p-16 lg:p-24'>
 					<div></div>
@@ -38,13 +38,14 @@ const page = () => {
 				<div className='flex flex-col items-center gap-[75px] text-center'>
 					<div className='flex w-[90%] flex-col gap-8 lg:w-2/3 lg:text-lg'>
 						<p>
-							L'efficacité d'une équipe dépend de la synergie entre les
-							talents individuels de ses membres et de leur capacité
-							collective à opérer de manière efficiente et coordonnée. Le
-							coaching d'équipe, à l'instar du coaching individuel, joue
-							un rôle crucial en intégrant la préparation mentale pour
-							renforcer l'unité du groupe et réaliser les objectifs
-							fixés.
+						Le coaching en entreprise sert de catalyseur pour débloquer le potentiel des
+							équipes et des dirigeants, transformant les défis en
+							opportunités de croissance. Ce processus enrichissant
+							contribue à forger des leaders inspirants et à instaurer
+							une dynamique d'équipe solide, essentielle pour naviguer
+							dans les eaux turbulentes du marché actuel. Le coaching en
+							entreprise est donc une pierre angulaire pour toute
+							organisation aspirant à l'excellence et à l'innovation.
 						</p>
 					</div>
 					<div>
