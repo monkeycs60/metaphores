@@ -47,7 +47,7 @@ const ForWhom = () => {
 								alt='coaching individuel'
 								className='object-cover'
 							/>
-							<div className='absolute bottom-4 left-1/2 z-20 flex h-[60px] w-[40%] -translate-x-1/2 cursor-pointer items-center justify-center bg-primaryOne p-2 font-semibold text-blackOne outline-double hover:bg-blackOne hover:text-primaryOne 2xl:bottom-7 3xl:bottom-12 3xl:text-lg '>
+							<div className='absolute bottom-4 left-1/2 z-20 flex w-[40%] -translate-x-1/2 cursor-pointer items-center justify-center bg-primaryOne p-2 font-semibold text-blackOne outline-double hover:bg-blackOne hover:text-primaryOne lg:h-[60px] 2xl:bottom-7 3xl:bottom-12 3xl:text-lg '>
 								<Link href={'/coaching/#individuel'}>Individuel</Link>
 							</div>
 						</div>
@@ -58,7 +58,7 @@ const ForWhom = () => {
 								alt='coaching individuel'
 								className='object-cover'
 							/>
-							<div className='absolute bottom-4 left-1/2 z-20 flex h-[60px] w-[40%] -translate-x-1/2 cursor-pointer items-center justify-center bg-primaryOne p-2 font-semibold text-blackOne outline-double hover:bg-blackOne hover:text-primaryOne 2xl:bottom-7 3xl:bottom-12 3xl:text-lg '>
+							<div className='absolute bottom-4 left-1/2 z-20 flex w-[40%] -translate-x-1/2 cursor-pointer items-center justify-center bg-primaryOne p-2 font-semibold text-blackOne outline-double hover:bg-blackOne hover:text-primaryOne lg:h-[60px] 2xl:bottom-7 3xl:bottom-12 3xl:text-lg '>
 								<Link href={'/coaching/#collectif'}>Collectif</Link>
 							</div>
 						</div>
@@ -69,7 +69,7 @@ const ForWhom = () => {
 								alt='coaching individuel'
 								className='object-cover'
 							/>
-							<div className='absolute bottom-4 left-1/2 z-20 flex h-[60px] w-[40%] -translate-x-1/2 cursor-pointer items-center justify-center bg-primaryOne p-2 font-semibold text-blackOne outline-double hover:bg-blackOne hover:text-primaryOne 2xl:bottom-7 3xl:bottom-12 3xl:text-lg '>
+							<div className='absolute bottom-4 left-1/2 z-20 flex w-[40%] -translate-x-1/2 cursor-pointer items-center justify-center bg-primaryOne p-2 font-semibold text-blackOne outline-double hover:bg-blackOne hover:text-primaryOne lg:h-[60px] 2xl:bottom-7 3xl:bottom-12 3xl:text-lg '>
 								<Link href={'/coaching/#entreprise'}>Entreprise</Link>
 							</div>
 						</div>
