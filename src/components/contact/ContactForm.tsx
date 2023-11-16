@@ -26,8 +26,8 @@ const ContactForm = () => {
 	const { submit: onSubmit } = useWeb3Forms({
 		access_key: apiKey,
 		settings: {
-			from_name: 'Acme Inc',
-			subject: 'New Contact Message from your Website',
+			from_name: 'metaphorecoaching.com',
+			subject: 'Metaphore Coaching - Contact',
 		},
 		onSuccess: (msg, data) => {
 			setIsSuccess(true);
@@ -80,24 +80,24 @@ const ContactForm = () => {
 				</div>
 				<div>
 					<label
-						htmlFor='subject'
+						htmlFor='sujet '
 						className='mb-2 block text-sm font-medium text-gray-900 dark:text-gray-300'>
 						Objet
 					</label>
 					<input
 						type='text'
-						id='subject'
+						id='sujet'
 						className='block w-full rounded-lg border border-gray-300 bg-gray-50 p-3 text-sm text-gray-900 shadow-sm focus:border-primaryOne focus:ring-primaryOne dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:placeholder:text-gray-400'
 						placeholder='Comment puis-je vous aider ?'
 						required
-						{...register('subject', {
+						{...register('sujet', {
 							required: "Merci d'entrer un sujet",
 						})}
 					/>
-					{errors.subject && (
+					{errors.sujet && (
 						<span className='text-sm text-red-500'>
-							{typeof errors.subject.message === 'string'
-								? errors.subject.message
+							{typeof errors.sujet.message === 'string'
+								? errors.sujet.message
 								: ''}
 						</span>
 					)}
