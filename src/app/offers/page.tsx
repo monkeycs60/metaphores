@@ -36,23 +36,40 @@ const page = () => {
 				className='absolute right-32 top-64 hidden w-[80px] lg:block '
 			/>
 			<div className='relative m-auto mt-24 flex w-[90%] flex-col gap-[54px] lg:mt-16 lg:w-[80%] 2xl:w-[70%] 3xl:w-[50%]'>
-				<StudentCard />
 				<div className=''>
 					<h1 className='flex justify-center text-xl font-bold text-blackOne lg:text-3xl'>
 						Tarifs et formules
 					</h1>
 					<div className='m-auto mt-2 h-[1px] w-1/2 bg-blackOne lg:w-[30%]'></div>
 				</div>
-				<div className='relative mt-[230px] flex flex-col items-center gap-4 bg-primaryOne/20 p-8 text-center text-lg lg:mt-0 lg:gap-1 lg:text-left'>
-					<p>La séance dure environ 1h.</p>
-					<p className='underline underline-offset-4'>
-						Tarif horaire : <span className='font-bold'>70€</span>
-					</p>
-					<p>Les tarifs sont dégressifs en fonction de la durée.</p>
-					<p>
-						N'hésitez pas à me contacter pour de plus amples informations,
-						pour obtenir un devis ou pour réserver.{' '}
-					</p>
+				<div className='flex gap-6'>
+					<div className='flex w-[75%] flex-col items-center gap-4 bg-primaryOne/20 p-8 text-center text-lg lg:mt-0 lg:gap-3 lg:text-left'>
+						<p>La séance dure environ 1h.</p>
+						<p className='underline underline-offset-4'>
+							Tarif horaire : <span className='font-bold'>70€</span>
+						</p>
+						<p>Les tarifs sont dégressifs en fonction de la durée.</p>
+						<p>
+							N'hésitez pas à me contacter pour de plus amples
+							informations, pour obtenir un devis ou pour réserver.{' '}
+						</p>
+					</div>
+					<div className='relative flex w-[25%] flex-col items-center bg-primaryOne/20 p-8 text-center text-lg lg:mt-0 lg:gap-1 lg:text-left'>
+						<Image
+							src='/discount.svg'
+							alt='réduction'
+							width={73}
+							height={94}
+							className='absolute right-4 top-6 w-[30px]'
+						/>
+						<h2>Tarifs spéciaux</h2>
+
+						<p className='mt-8 text-center text-sm leading-relaxed  dark:text-gray-300'>
+							Nous appliquons des tarifs spéciaux pour les étudiants, les
+							demandeurs d'emploi et les publics en difficulté
+							financière.
+						</p>
+					</div>
 				</div>
 				<div className='flex flex-col items-center justify-center space-y-10 lg:mt-0'>
 					<h2 className='text-xl font-bold text-blackOne'>
