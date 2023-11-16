@@ -54,11 +54,9 @@ const page = () => {
 							l'innovation.
 						</p>
 					</div>
-					<div>
-						<h2 className='-mb-4 text-center text-xl font-bold text-blackOne'>
-							Identifier les besoins de votre entreprise
-						</h2>
-					</div>
+					<h2 className='-mb-4 text-center text-xl font-bold text-blackOne'>
+						Identifier les besoins de votre entreprise
+					</h2>
 					<div className='flex items-center justify-between gap-10 text-left'>
 						<div className='flex flex-col gap-3'>
 							<div className='flex h-[85px] items-center gap-8'>
@@ -135,6 +133,9 @@ const page = () => {
 							/>
 						</div>
 					</div>
+					<h2 className='-mb-4 text-center text-xl font-bold text-blackOne'>
+						Les apports du coaching d'entreprise
+					</h2>
 				</div>
 			</div>
 		</div>

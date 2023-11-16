@@ -1,7 +1,8 @@
-import Contact from '@/components/home/Contact';
+'use client';
+
 import Image from 'next/image';
 import Link from 'next/link';
-import React from 'react';
+import ContactForm from '@/components/contact/ContactForm';
 
 const page = () => {
 	return (
@@ -99,53 +100,7 @@ const page = () => {
 							N'hésitez pas à me contacter en remplissant le formulaire
 							ci-dessous. Je vous répondrai dans les plus brefs délais.
 						</p>
-						<form action='#' className='space-y-8 font-inter'>
-							<div>
-								<label
-									htmlFor='email'
-									className='mb-2 block text-sm font-medium text-gray-900 dark:text-gray-300'>
-									Votre adresse mail
-								</label>
-								<input
-									type='email'
-									id='email'
-									className='block w-full rounded-lg border border-gray-300 bg-gray-50 p-2.5 text-sm text-gray-900 shadow-sm focus:border-primaryOne focus:ring-primaryOne dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:placeholder:text-gray-400'
-									placeholder='michel@exemple.com'
-									required
-								/>
-							</div>
-							<div>
-								<label
-									htmlFor='subject'
-									className='mb-2 block text-sm font-medium text-gray-900 dark:text-gray-300'>
-									Objet
-								</label>
-								<input
-									type='text'
-									id='subject'
-									className='block w-full rounded-lg border border-gray-300 bg-gray-50 p-3 text-sm text-gray-900 shadow-sm focus:border-primaryOne focus:ring-primaryOne dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:placeholder:text-gray-400'
-									placeholder='Comment puis-je vous aider ?'
-									required
-								/>
-							</div>
-							<div className='sm:col-span-2'>
-								<label
-									htmlFor='message'
-									className='mb-2 block text-sm font-medium text-gray-900 dark:text-gray-400'>
-									Votre message
-								</label>
-								<textarea
-									id='message'
-									rows={6}
-									className='block w-full rounded-lg border border-gray-300 bg-gray-50 p-2.5 text-sm text-gray-900 shadow-sm focus:border-primaryOne focus:ring-primaryOne dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:placeholder:text-gray-400'
-									placeholder='Ecrivez ici votre commentaire...'></textarea>
-							</div>
-							<button
-								type='submit'
-								className='rounded-lg bg-primaryOne px-5 py-3 text-center text-sm font-medium text-black hover:bg-blackOne hover:text-primaryOne focus:outline-none focus:ring-4 focus:ring-primaryOne sm:w-fit'>
-								Envoyer votre message
-							</button>
-						</form>
+						<ContactForm />
 					</div>
 				</section>
 			</div>
