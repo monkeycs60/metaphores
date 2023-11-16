@@ -22,7 +22,11 @@ const page = () => {
 				alt='fleche bas'
 				className='absolute -right-12 bottom-20 hidden w-[160px] lg:block'
 			/>
-			<EquipeCard />
+			<div className='absolute left-1/2 top-[105vh] z-20 -translate-x-1/2 translate-y-[-50vh] bg-primaryOne  text-xl  lg:text-4xl'>
+				<Button className='ml-auto' size={'xl'}>
+					Demandez un devis
+				</Button>
+			</div>
 			<div className='parallax relative h-screen w-screen pt-16'>
 				<h1 className='flex w-screen justify-center bg-white p-4 text-center text-3xl font-bold  text-blackOne lg:text-left'>
 					Coaching Collectif
