@@ -306,8 +306,8 @@ const page = () => {
 							Les points clés du coaching de dirigeant :
 						</h3>
 						<div className='flex flex-col items-center justify-center gap-4 text-left lg:flex-row lg:gap-10'>
-							<div className='space-y-5 lg:space-y-0'>
-								<div className='flex items-start justify-between   lg:h-[115px] 2xl:h-[95px] 3xl:h-[80px]'>
+							<div className='w-1/2 space-y-5 lg:space-y-0'>
+								<div className='flex items-start justify-between   lg:h-[130px] 2xl:h-[95px] 3xl:h-[80px]'>
 									{' '}
 									<ChevronRightSquare />
 									<p className='flex w-[80%] flex-col gap-1 lg:block'>
@@ -318,7 +318,7 @@ const page = () => {
 										inspirante.
 									</p>
 								</div>
-								<div className='flex items-start justify-between   lg:h-[115px] 2xl:h-[95px] 3xl:h-[80px]'>
+								<div className='flex items-start justify-between   lg:h-[130px] 2xl:h-[95px] 3xl:h-[80px]'>
 									{' '}
 									<ChevronRightSquare />
 									<p className='flex w-[80%] flex-col gap-1 lg:block'>
@@ -326,11 +326,11 @@ const page = () => {
 											Accompagnement dans les Nouvelles
 											Responsabilités
 										</span>
-										Soutien lors de la prise de nouvelles fonctions ou
+										Soutien lors de la prise de nouvelles
 										responsabilités.
 									</p>
 								</div>
-								<div className='flex items-start justify-between   lg:h-[115px] 2xl:h-[95px] 3xl:h-[80px]'>
+								<div className='mb-12 flex items-start justify-between  lg:h-[130px] 2xl:h-[95px] 3xl:h-[80px]'>
 									{' '}
 									<ChevronRightSquare />
 									<p className='flex w-[80%] flex-col gap-1 lg:block'>
@@ -341,7 +341,7 @@ const page = () => {
 										conflictuelles en management.
 									</p>
 								</div>
-								<div className='flex items-start justify-between   lg:h-[115px] 2xl:h-[95px] 3xl:h-[80px]'>
+								<div className='flex items-start justify-between   lg:h-[130px] 2xl:h-[95px] 3xl:h-[80px]'>
 									{' '}
 									<ChevronRightSquare />
 									<p className='flex w-[80%] flex-col gap-1 lg:block'>
@@ -353,8 +353,8 @@ const page = () => {
 									</p>
 								</div>
 							</div>
-							<div className='space-y-5 lg:space-y-0'>
-								<div className='flex items-start justify-between   lg:h-[115px] 2xl:h-[95px] 3xl:h-[80px]'>
+							<div className='space-y-5 lg:space-y-0 w-1/2'>
+								<div className='flex items-start justify-between   lg:h-[130px] 2xl:h-[95px] 3xl:h-[80px]'>
 									{' '}
 									<ChevronRightSquare />
 									<p className='flex w-[80%] flex-col gap-1 lg:block'>
@@ -365,7 +365,7 @@ const page = () => {
 										décisions difficiles.
 									</p>
 								</div>
-								<div className='flex items-start justify-between   lg:h-[115px] 2xl:h-[95px] 3xl:h-[80px]'>
+								<div className='flex items-start justify-between   lg:h-[130px] 2xl:h-[95px] 3xl:h-[80px]'>
 									{' '}
 									<ChevronRightSquare />
 									<p className='flex w-[80%] flex-col gap-1 lg:block'>
@@ -376,7 +376,7 @@ const page = () => {
 										et réduire le stress.
 									</p>
 								</div>
-								<div className='flex items-start justify-between   lg:h-[115px] 2xl:h-[95px] 3xl:h-[80px]'>
+								<div className='flex items-start justify-between   lg:h-[130px] 2xl:h-[95px] 3xl:h-[80px]'>
 									{' '}
 									<ChevronRightSquare />
 									<p className='flex w-[80%] flex-col gap-1 lg:block'>
@@ -387,7 +387,7 @@ const page = () => {
 										et l'efficacité.
 									</p>
 								</div>
-								<div className='flex items-start justify-between   lg:h-[115px] 2xl:h-[95px] 3xl:h-[80px]'>
+								<div className='flex items-start justify-between   lg:h-[130px] 2xl:h-[95px] 3xl:h-[80px]'>
 									{' '}
 									<ChevronRightSquare />
 									<p className='flex w-[80%] flex-col gap-1 lg:block'>
