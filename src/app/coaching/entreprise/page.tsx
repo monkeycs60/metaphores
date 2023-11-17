@@ -310,45 +310,45 @@ const page = () => {
 								<div className='flex items-start justify-between   lg:h-[115px] 2xl:h-[95px] 3xl:h-[80px]'>
 									{' '}
 									<ChevronRightSquare />
-									<p className='w-[80%] '>
-										<span className='px-[2px] font-bold'>
-											Renforcement du Leadership :
+									<p className='flex w-[80%] flex-col gap-1 lg:block'>
+										<span className='px-[2px] font-bold lg:block'>
+											Renforcement du Leadership
 										</span>
-										cultiver une capacité de leadership efficace et
+										Cultiver une capacité de leadership efficace et
 										inspirante.
 									</p>
 								</div>
 								<div className='flex items-start justify-between   lg:h-[115px] 2xl:h-[95px] 3xl:h-[80px]'>
 									{' '}
 									<ChevronRightSquare />
-									<p className='w-[80%] '>
-										<span className='px-[2px] font-bold'>
+									<p className='flex w-[80%] flex-col gap-1 lg:block'>
+										<span className='px-[2px] font-bold lg:block'>
 											Accompagnement dans les Nouvelles
-											Responsabilités :
+											Responsabilités
 										</span>
-										soutien lors de la prise de nouvelles fonctions ou
+										Soutien lors de la prise de nouvelles fonctions ou
 										responsabilités.
 									</p>
 								</div>
 								<div className='flex items-start justify-between   lg:h-[115px] 2xl:h-[95px] 3xl:h-[80px]'>
 									{' '}
 									<ChevronRightSquare />
-									<p className='w-[80%] '>
-										<span className='px-[2px] font-bold'>
-											Gestion des Conflits et Management :
+									<p className='flex w-[80%] flex-col gap-1 lg:block'>
+										<span className='px-[2px] font-bold lg:block'>
+											Gestion des Conflits et Management
 										</span>
-										stratégies pour surmonter les situations
+										Stratégies pour surmonter les situations
 										conflictuelles en management.
 									</p>
 								</div>
 								<div className='flex items-start justify-between   lg:h-[115px] 2xl:h-[95px] 3xl:h-[80px]'>
 									{' '}
 									<ChevronRightSquare />
-									<p className='w-[80%] '>
-										<span className='px-[2px] font-bold'>
-											Confiance et Estime de Soi :
+									<p className='flex w-[80%] flex-col gap-1 lg:block'>
+										<span className='px-[2px] font-bold lg:block'>
+											Confiance et Estime de Soi
 										</span>
-										la confiance en soi pour prendre des décisions
+										La confiance en soi pour prendre des décisions
 										affirmées.
 									</p>
 								</div>
@@ -357,44 +357,44 @@ const page = () => {
 								<div className='flex items-start justify-between   lg:h-[115px] 2xl:h-[95px] 3xl:h-[80px]'>
 									{' '}
 									<ChevronRightSquare />
-									<p className='w-[80%] '>
-										<span className='px-[2px] font-bold'>
-											Prise de Recul sur les Situations Complexes :
+									<p className='flex w-[80%] flex-col gap-1 lg:block'>
+										<span className='px-[2px] font-bold lg:block'>
+											Prise de Recul sur les Situations Complexes
 										</span>
-										aide à la réflexion et à l'analyse pour des
+										Aide à la réflexion et à l'analyse pour des
 										décisions difficiles.
 									</p>
 								</div>
 								<div className='flex items-start justify-between   lg:h-[115px] 2xl:h-[95px] 3xl:h-[80px]'>
 									{' '}
 									<ChevronRightSquare />
-									<p className='w-[80%] '>
-										<span className='px-[2px] font-bold'>
-											Gestion des Priorités et du Stress :
+									<p className='flex w-[80%] flex-col gap-1 lg:block'>
+										<span className='px-[2px] font-bold lg:block'>
+											Gestion des Priorités et du Stress
 										</span>
-										méthodes pour mieux gérer le temps, les priorités
+										Méthodes pour mieux gérer le temps, les priorités
 										et réduire le stress.
 									</p>
 								</div>
 								<div className='flex items-start justify-between   lg:h-[115px] 2xl:h-[95px] 3xl:h-[80px]'>
 									{' '}
 									<ChevronRightSquare />
-									<p className='w-[80%] '>
-										<span className='px-[2px] font-bold'>
-											Délégation Efficace :
+									<p className='flex w-[80%] flex-col gap-1 lg:block'>
+										<span className='px-[2px] font-bold lg:block'>
+											Délégation Efficace
 										</span>
-										apprendre à déléguer pour optimiser la performance
+										Apprendre à déléguer pour optimiser la performance
 										et l'efficacité.
 									</p>
 								</div>
 								<div className='flex items-start justify-between   lg:h-[115px] 2xl:h-[95px] 3xl:h-[80px]'>
 									{' '}
 									<ChevronRightSquare />
-									<p className='w-[80%] '>
-										<span className='px-[2px] font-bold'>
-											Préparation aux Événements Clés :
+									<p className='flex w-[80%] flex-col gap-1 lg:block'>
+										<span className='px-[2px] font-bold lg:block'>
+											Préparation aux Événements Clés
 										</span>
-										techniques pour se préparer à des événements
+										Techniques pour se préparer à des événements
 										importants, négociations, ou prises de parole.
 									</p>
 								</div>
