@@ -57,9 +57,9 @@ const page = () => {
 				</div>
 				<div className='flex flex-col items-center lg:flex-row lg:items-stretch lg:gap-6'>
 					<div className='flex flex-col items-center gap-4 bg-primaryOne/20 p-8 text-center text-lg lg:mt-0 lg:w-[75%] lg:gap-3 lg:text-left'>
-						<p>La séance dure environ 1h.</p>
+						<p>Une séance dure environ 1h.</p>
 						<p className='underline underline-offset-4'>
-							Tarif horaire : <span className='font-bold'>70€</span>
+							Tarif horaire : <span className='font-bold'>65€</span>
 						</p>
 						<p>Les tarifs sont dégressifs en fonction de la durée.</p>
 						<p className='text-center '>
@@ -76,7 +76,9 @@ const page = () => {
 							height={94}
 							className='absolute right-4 top-6 w-[20px] lg:w-[30px]'
 						/>
-						<h2 className='text-sm lg:text-base'>Tarifs spéciaux</h2>
+						<h2 className='text-sm font-semibold lg:text-base'>
+							Tarifs spéciaux
+						</h2>
 
 						<p className='mt-8 text-center text-sm leading-relaxed  dark:text-gray-300'>
 							Nous appliquons des tarifs spéciaux pour les étudiants, les
@@ -111,7 +113,7 @@ const page = () => {
 										Heures
 									</p>
 									<p className='mt-1 text-center text-sm italic'>
-										65€/h
+										60€/h
 									</p>
 								</div>
 							</div>
@@ -161,7 +163,7 @@ const page = () => {
 										Heures
 									</p>
 									<p className='mt-1 text-center text-sm italic'>
-										60€/h
+										55€/h
 									</p>
 								</div>
 							</div>
@@ -204,7 +206,7 @@ const page = () => {
 										Heures
 									</p>
 									<p className='mt-1 text-center text-sm italic'>
-										55€/h
+										50€/h
 									</p>
 								</div>
 							</div>
@@ -260,11 +262,11 @@ const page = () => {
 								</h2>
 								<div>
 									<p className='flex items-center justify-center gap-2 text-center'>
-										<span className='text-3xl font-bold'>30</span>{' '}
+										<span className='text-3xl font-bold'>25</span>{' '}
 										minutes
 									</p>
 									<p className='mt-1 text-center text-sm italic'>
-										35€
+										30€
 									</p>
 								</div>
 							</div>

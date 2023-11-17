@@ -15,11 +15,39 @@ const page = () => {
 				className='absolute left-0 top-64 hidden w-[200px] lg:block '
 			/>
 			<Image
+				src={'/forme7.png'}
+				width={463}
+				height={344}
+				alt='fleche bas'
+				className='absolute -right-8 top-[100vh] hidden w-[240px] lg:block '
+			/>
+			<Image
+				src={'/forme14.png'}
+				width={495}
+				height={424}
+				alt='fleche bas'
+				className='absolute -left-8 top-[165vh] hidden w-[240px] lg:block '
+			/>
+			<Image
 				src={'/circle-black.png'}
 				width={120}
 				height={183}
 				alt='fleche bas'
 				className='absolute -right-12 bottom-20 hidden w-[160px] lg:block '
+			/>
+			<Image
+				src={'/blobyellow.svg'}
+				width={300}
+				height={280}
+				alt='blob'
+				className='absolute -right-12 top-[10vh] hidden w-[160px] lg:block '
+			/>
+			<Image
+				src={'/blobblack.svg'}
+				width={300}
+				height={305}
+				alt='blob'
+				className='absolute -left-16 top-[4vh] hidden w-[160px] lg:block '
 			/>
 			<div className='m-auto mt-24 w-[90%] lg:mt-16 lg:w-[80%] 2xl:w-[75%] 3xl:w-[60%]'>
 				<div className='flex flex-col gap-[75px]'>
