@@ -1,4 +1,4 @@
-"use client";
+'use client';
 
 import Image from 'next/image';
 import {
@@ -42,7 +42,7 @@ const page = () => {
 				width={289}
 				height={269}
 				alt='rond bleu clair'
-				className='absolute right-0 top-[140vh] hidden w-[160px] lg:block 2xl:right-24 2xl:top-[75vh] 2xl:w-[200px] '
+				className='absolute -right-4 top-[148vh] hidden w-[160px] lg:block 2xl:right-24 2xl:top-[75vh] 2xl:w-[200px] '
 			/>
 			<Image
 				src={'/forme14.png'}
@@ -69,21 +69,25 @@ const page = () => {
 					<div className='flex flex-col justify-center gap-8 p-12 lg:flex-row-reverse lg:gap-16 2xl:gap-[5vw] 3xl:gap-[8vw] '>
 						<div className='flex flex-col items-center justify-center gap-12 lg:w-[600px]'>
 							<motion.h2
-								initial={{ x: '400' }} 
-								animate={{ x: 0 }} 
-								transition={{ type: 'spring', stiffness: 50, duration: 0.5 }} 
+								initial={{ x: '400' }}
+								animate={{ x: 0 }}
+								transition={{
+									type: 'spring',
+									stiffness: 50,
+									duration: 0.5,
+								}}
 								className='font-caveat text-4xl text-blackOne lg:text-5xl'>
 								Enchanté, moi c'est Christophe !
 							</motion.h2>
 							<div className='flex  flex-col gap-3 lg:px-8 lg:text-lg 3xl:px-0'>
 								<p>
 									Bien choisir son accompagnant.e, c’est important.
-									Alors voici mon portrait, pour apprendre à me
-									connaître un peu plus.
+									Voici mon portrait, pour apprendre à me connaître un
+									peu plus.
 								</p>
 								<p>
-									Vous retrouverez ce qui m’a conduit à
-									l’accompagnement, et à créer Métaphore coaching.
+									Vous trouverez ce qui m’a conduit à l’accompagnement,
+									et à créer Métaphore coaching.
 								</p>
 							</div>
 						</div>
@@ -93,7 +97,7 @@ const page = () => {
 								alt='Christophe'
 								width={800}
 								height={652}
-								className='xl:w-[240px] 2xl:w-[225px] 3xl:w-[280px]'
+								className='xl:w-[240px] 2xl:w-[285px] 3xl:w-[320px]'
 							/>
 							<div className='flex flex-col items-center'>
 								<span className='text-lg font-semibold text-blackOne'>
@@ -157,8 +161,8 @@ const page = () => {
 										<Palette className='w-[30px] lg:w-6' />
 										<span>
 											{' '}
-											Artiste peintre avec des expositions à
-											Bordeaux.
+											Artiste de toile (collage et peinture) avec des
+											expositions à Bordeaux.
 										</span>
 									</li>
 									<li className='flex items-center gap-5 '>
@@ -218,18 +222,17 @@ const page = () => {
 									personnelles.
 								</p>
 								<p>
-									J'ai un don pour l'écoute et je suis accueillant.
-									Avec bienveillance, humour, et dynamisme, je
-									m'efforce d'être efficace dans mes méthodes
-									d'accompagnement.
+									A l’écoute et accueillant, je m’efforce avec
+									délicatesse, humour et dynamisme d’être efficace dans
+									mes accompagnements.
 								</p>
 								<p>
-									J'utilise fréquemment des métaphores pour aider mes
-									clients à changer d'univers et à visualiser leurs
-									idéaux. Comme un metteur en scène, je vous aiderai à
-									reprendre le contrôle du rôle principal de votre vie,
-									vous assurant d'être au centre de cette
-									transformation.
+									Les métaphores sont des outils que j’utilise
+									fréquemment pour aider mes clients à changer
+									d'univers et à visualiser leurs idéaux. A l’image
+									d’un metteur en scène, je vous aiderai à reprendre le
+									contrôle du rôle principal de votre vie, vous
+									assurant d'être au centre de cette transformation.
 								</p>
 							</div>
 						</div>
@@ -247,25 +250,32 @@ const page = () => {
 									perception du monde. J'ai découvert la puissance des
 									métaphores pendant ma formation et j'ai vu leurs
 									effets positifs sur ceux que j'accompagne. Cet outil
-									est au cœur de mon approche narrative du coaching.
+									est au cœur de mon approche.
 								</p>
 								<p>
-									Comme mon grand-père, un éminent professeur de grec
-									ancien qui chérissait "Le Petit Prince", je crois que
-									les choses essentielles ne sont pas toujours
-									évidentes. À travers le coaching, je souhaite vous
-									aider à voir au-delà du visible, à découvrir le sens
-									profond dans votre parcours de vie, et à contribuer
-									positivement au monde.
+									Mon grand-père, un éminent professeur de grec ancien
+									qui chérissait "Le Petit Prince", m’a transmis cette
+									passion. Je crois que les choses essentielles ne sont
+									pas toujours évidentes. À travers le coaching, je
+									souhaite vous aider à voir au-delà du visible, à
+									découvrir le sens profond dans votre parcours de vie,
+									et à contribuer positivement au monde.
 								</p>
 							</div>
-							<div className=''>
+							<div className='flex flex-col justify-between gap-0 lg:gap-7'>
 								<Image
-									src='/words.jpg'
-									alt='chess'
-									width={2063}
-									height={1254}
-									className='w-[280px]'
+									src='/moon.svg'
+									alt='lune'
+									width={500}
+									height={490}
+									className='w-[50px] lg:w-[80px] -translate-x-8'
+								/>
+								<Image
+									src='/fox.svg'
+									alt='renard'
+									width={300}
+									height={235}
+									className=' lg:translate-x-0 translate-x-10 w-[130px] lg:w-[160px]'
 								/>
 							</div>
 						</div>
