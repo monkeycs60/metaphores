@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import { Button } from '../ui/button';
 import { ArrowUpRight } from 'lucide-react';
+import Link from 'next/link';
 
 const WhoAmI = () => {
 	return (
@@ -73,19 +74,21 @@ const WhoAmI = () => {
 									</p>
 									<p>
 										J'ai aujourd'hui appris à considérer ces
-										expériences comme une richesse qui m'a
-										permis de développer ouverture d'esprit, empathie,
-										recul, aptitude à comprendre les autres et bien
-										d'autres choses encore.
+										expériences comme une richesse qui m'a permis de
+										développer ouverture d'esprit, empathie, recul,
+										aptitude à comprendre les autres et bien d'autres
+										choses encore.
 									</p>
 								</div>
 							</div>
-							<Button
-								size={'md'}
-								className='flex items-center justify-center gap-2 bg-primaryOne'>
-								{' '}
-								<span>Mon parcours</span> <ArrowUpRight />
-							</Button>
+							<Link href={'/about'} className='w-full'>
+								<Button
+									size={'md'}
+									className='flex w-full items-center justify-center gap-2 bg-primaryOne'>
+									{' '}
+									<span>Mon parcours</span> <ArrowUpRight />
+								</Button>
+							</Link>
 						</div>
 					</div>
 				</div>

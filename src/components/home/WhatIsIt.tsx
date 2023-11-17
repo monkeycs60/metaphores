@@ -2,6 +2,7 @@ import Image from 'next/image';
 import React from 'react';
 import { Button } from '../ui/button';
 import { ArrowUpRight } from 'lucide-react';
+import Link from 'next/link';
 
 const WhatIsIt = () => {
 	return (
@@ -39,12 +40,14 @@ const WhatIsIt = () => {
 								</p>
 							</div>
 						</div>
-						<Button
-							size={'md'}
-							className='flex items-center justify-center gap-2 bg-primaryOne'>
-							{' '}
-							<span>Ma vision du coaching</span> <ArrowUpRight />
-						</Button>
+						<Link href={'/coaching/vision'} className='w-full'>
+							<Button
+								size={'md'}
+								className='flex w-full items-center justify-center gap-2 bg-primaryOne'>
+								{' '}
+								<span>Ma vision du coaching</span> <ArrowUpRight />
+							</Button>
+						</Link>
 					</div>
 				</div>
 				<div className='relative hidden flex-col items-center gap-6 lg:flex lg:justify-center 3xl:justify-center'>

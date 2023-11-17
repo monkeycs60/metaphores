@@ -2,6 +2,7 @@ import Image from 'next/image';
 import React from 'react';
 import { Button } from '../ui/button';
 import { ArrowUpRight } from 'lucide-react';
+import Link from 'next/link';
 
 const Pillars = () => {
 	return (
@@ -70,12 +71,14 @@ const Pillars = () => {
 						</p>
 					</div>
 				</div>
-				<Button
-					size={'md'}
-					className='m-auto flex w-3/4 items-center justify-center gap-2 bg-primaryOne lg:w-1/3'>
-					{' '}
-					<span>En savoir plus</span> <ArrowUpRight />
-				</Button>
+				<Link href='/deontology'>
+					<Button
+						size={'md'}
+						className='m-auto flex w-3/4 items-center justify-center gap-2 bg-primaryOne lg:w-1/3'>
+						{' '}
+						<span>En savoir plus</span> <ArrowUpRight />
+					</Button>
+				</Link>
 			</div>
 		</div>
 	);
