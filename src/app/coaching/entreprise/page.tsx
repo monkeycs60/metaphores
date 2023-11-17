@@ -57,7 +57,7 @@ const page = () => {
 				</Link>
 			</div>
 			<div className='parallax-enterprise relative h-screen w-screen pt-16'>
-				<h1 className='h1-striped flex w-screen justify-center  p-4 text-center text-3xl font-bold  text-blackOne lg:text-left'>
+				<h1 className='flex w-screen justify-center bg-white  p-4 text-center text-3xl font-bold  text-blackOne lg:text-left'>
 					Coaching en entreprise
 				</h1>
 				<div className='absolute right-24 top-[30vh] bg-blackOne/30 font-caveat text-3xl text-white lg:bottom-[38vh] lg:w-[36%] lg:bg-transparent lg:text-5xl'>
@@ -301,7 +301,7 @@ const page = () => {
 							/>
 						</div>
 					</div>
-					<div className='m-auto flex w-screen flex-col gap-12 bg-secondaryOne p-8 lg:w-3/4'>
+					<div className='flex w-screen flex-col gap-12 bg-secondaryOne p-8 lg:m-auto lg:w-3/4'>
 						<h3 className='text-lg font-bold'>
 							Les points clés du coaching de dirigeant :
 						</h3>
@@ -311,18 +311,21 @@ const page = () => {
 									{' '}
 									<ChevronRightSquare />
 									<p className='w-[80%] '>
-										<span>Renforcement du Leadership :</span> cultiver
-										une capacité de leadership efficace et inspirante.
+										<span className='px-[2px] font-bold'>
+											Renforcement du Leadership :
+										</span>
+										cultiver une capacité de leadership efficace et
+										inspirante.
 									</p>
 								</div>
 								<div className='flex items-start justify-between   lg:h-[115px] 2xl:h-[95px] 3xl:h-[80px]'>
 									{' '}
 									<ChevronRightSquare />
 									<p className='w-[80%] '>
-										<span>
+										<span className='px-[2px] font-bold'>
 											Accompagnement dans les Nouvelles
 											Responsabilités :
-										</span>{' '}
+										</span>
 										soutien lors de la prise de nouvelles fonctions ou
 										responsabilités.
 									</p>
@@ -331,7 +334,9 @@ const page = () => {
 									{' '}
 									<ChevronRightSquare />
 									<p className='w-[80%] '>
-										<span>Gestion des Conflits et Management :</span>{' '}
+										<span className='px-[2px] font-bold'>
+											Gestion des Conflits et Management :
+										</span>
 										stratégies pour surmonter les situations
 										conflictuelles en management.
 									</p>
@@ -340,8 +345,10 @@ const page = () => {
 									{' '}
 									<ChevronRightSquare />
 									<p className='w-[80%] '>
-										<span>Confiance et Estime de Soi :</span> la
-										confiance en soi pour prendre des décisions
+										<span className='px-[2px] font-bold'>
+											Confiance et Estime de Soi :
+										</span>
+										la confiance en soi pour prendre des décisions
 										affirmées.
 									</p>
 								</div>
@@ -351,9 +358,9 @@ const page = () => {
 									{' '}
 									<ChevronRightSquare />
 									<p className='w-[80%] '>
-										<span>
+										<span className='px-[2px] font-bold'>
 											Prise de Recul sur les Situations Complexes :
-										</span>{' '}
+										</span>
 										aide à la réflexion et à l'analyse pour des
 										décisions difficiles.
 									</p>
@@ -362,7 +369,9 @@ const page = () => {
 									{' '}
 									<ChevronRightSquare />
 									<p className='w-[80%] '>
-										<span>Gestion des Priorités et du Stress :</span>{' '}
+										<span className='px-[2px] font-bold'>
+											Gestion des Priorités et du Stress :
+										</span>
 										méthodes pour mieux gérer le temps, les priorités
 										et réduire le stress.
 									</p>
@@ -371,16 +380,20 @@ const page = () => {
 									{' '}
 									<ChevronRightSquare />
 									<p className='w-[80%] '>
-										<span>Délégation Efficace :</span> apprendre à
-										déléguer pour optimiser la performance et
-										l'efficacité.
+										<span className='px-[2px] font-bold'>
+											Délégation Efficace :
+										</span>
+										apprendre à déléguer pour optimiser la performance
+										et l'efficacité.
 									</p>
 								</div>
 								<div className='flex items-start justify-between   lg:h-[115px] 2xl:h-[95px] 3xl:h-[80px]'>
 									{' '}
 									<ChevronRightSquare />
 									<p className='w-[80%] '>
-										<span>Préparation aux Événements Clés :</span>{' '}
+										<span className='px-[2px] font-bold'>
+											Préparation aux Événements Clés :
+										</span>
 										techniques pour se préparer à des événements
 										importants, négociations, ou prises de parole.
 									</p>
