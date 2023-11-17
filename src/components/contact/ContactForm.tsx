@@ -21,7 +21,7 @@ const ContactForm = () => {
 
 	// Please update the Access Key in the .env
 	const apiKey =
-		process.env.PUBLIC_ACCESS_KEY || '5803a8bb-d1f0-4750-a98a-becd439a4a10';
+		process.env.PUBLIC_ACCESS_KEY || 'f807b50f-8300-45ba-8a28-82b661bf9314';
 
 	const { submit: onSubmit } = useWeb3Forms({
 		access_key: apiKey,

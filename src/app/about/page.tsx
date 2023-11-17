@@ -25,7 +25,7 @@ const page = () => {
 				width={289}
 				height={269}
 				alt='rond bleu clair'
-				className='absolute right-12 top-[140vh] hidden w-[160px] lg:block 2xl:right-24 2xl:top-[75vh] 2xl:w-[200px] '
+				className='absolute right-0 top-[140vh] hidden w-[160px] lg:block 2xl:right-24 2xl:top-[75vh] 2xl:w-[200px] '
 			/>
 			<Image
 				src={'/forme14.png'}
@@ -102,7 +102,7 @@ const page = () => {
 								cycles, avec le coaching comme dernier virage. Mon
 								expérience est riche et variée :
 							</p>
-							<div className='mt-14 flex flex-col-reverse justify-center gap-12 lg:flex-row'>
+							<div className='mt-14 flex flex-col-reverse justify-center gap-12 lg:flex-row lg:gap-8'>
 								<ul className='m-auto flex w-[85%] flex-col items-center justify-center gap-7 lg:w-full lg:items-start lg:justify-normal lg:gap-6'>
 									<li className='flex items-center gap-5'>
 										{' '}
@@ -168,7 +168,7 @@ const page = () => {
 										alt='spirale'
 										width={1069}
 										height={1090}
-										className='w-[250px] lg:w-[320px]'
+										className='w-[250px] lg:w-[430px]'
 									/>
 								</div>
 							</div>
