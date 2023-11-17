@@ -28,6 +28,20 @@ const page = () => {
 				className='absolute right-8 top-[70vh] hidden w-[260px] lg:block '
 			/>
 			<Image
+				src={'/forme3.png'}
+				width={361}
+				height={281}
+				alt='cercle orange'
+				className='absolute bottom-[50vh] right-8 hidden w-[260px] lg:block '
+			/>
+			<Image
+				src={'/forme10.png'}
+				width={223}
+				height={181}
+				alt='cercle orange'
+				className='absolute bottom-[20vh] left-8 hidden w-[140px] lg:block '
+			/>
+			<Image
 				src={'/discrete-blue-circle.svg'}
 				width={120}
 				height={183}
@@ -48,7 +62,7 @@ const page = () => {
 							Tarif horaire : <span className='font-bold'>70€</span>
 						</p>
 						<p>Les tarifs sont dégressifs en fonction de la durée.</p>
-						<p>
+						<p className='text-center '>
 							N'hésitez pas à me contacter pour de plus amples
 							informations, pour obtenir un devis ou pour réserver.{' '}
 						</p>
@@ -314,24 +328,6 @@ const page = () => {
 						</Button>
 					</Link>
 				</div>
-				{/* <div>
-					<h2 className='text-xl font-bold text-blackOne'>
-						Engagements et tarifs spéciaux
-					</h2>
-					<div className='mt-8 flex flex-col gap-2'>
-						<p>
-							<span className='font-bold'>Réduction</span> : étudiants et
-							demandeurs d'emploi.
-						</p>
-						<p>
-							<span className='font-bold'>Coaching solidaire</span> : je
-							suis engagé dans une démarche humaniste. Dans cette
-							optique, je m'engage à accompagner des personnes sans
-							revenu ou en grande difficulté financière. Me contacter
-							pour plus de renseignements.{' '}
-						</p>
-					</div>
-				</div> */}
 			</div>
 		</div>
 	);
