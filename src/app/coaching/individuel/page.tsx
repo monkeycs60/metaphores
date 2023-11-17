@@ -178,7 +178,7 @@ const page = () => {
 										width={52}
 										height={45}
 										alt='empathie'
-										className='w-[50px] lg:h-[60px] lg:w-[80px] '
+										className='w-[50px] lg:h-[60px] lg:w-[60px] '
 									/>
 									<h3>
 										<strong>Écoute active et empathique</strong> :
@@ -231,7 +231,7 @@ const page = () => {
 								</div>
 							</div>
 						</div>
-						<div className='flex flex-col gap-[55px]'>
+						<div className='flex flex-col gap-[55px] lg:m-auto lg:w-[80%]'>
 							<h2 className='-mb-4 text-center text-xl font-bold text-blackOne'>
 								Modalités et questions fréquentes
 							</h2>

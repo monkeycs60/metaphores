@@ -189,7 +189,7 @@ const page = () => {
 							</Button>
 						</Link>
 					</div>
-					<div className='flex w-2/3 flex-col gap-8 lg:text-lg'>
+					<div className='flex lg:w-2/3 flex-col gap-8 lg:text-lg'>
 						<p>
 							Un vrai travail d’équipe repose sur la volonté de ses
 							membres de mettre en commun leurs talents individuels au
