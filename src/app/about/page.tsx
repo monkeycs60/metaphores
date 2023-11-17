@@ -268,14 +268,14 @@ const page = () => {
 									alt='lune'
 									width={500}
 									height={490}
-									className='w-[50px] lg:w-[80px] -translate-x-8'
+									className='w-[50px] -translate-x-24 lg:w-[80px]'
 								/>
 								<Image
 									src='/fox.svg'
 									alt='renard'
 									width={300}
 									height={235}
-									className=' lg:translate-x-0 translate-x-10 w-[130px] lg:w-[160px]'
+									className=' w-[130px] translate-x-10 lg:w-[160px] lg:translate-x-0'
 								/>
 							</div>
 						</div>

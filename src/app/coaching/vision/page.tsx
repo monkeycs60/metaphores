@@ -43,7 +43,7 @@ const page = () => {
 					</div>
 					<p className='lg:text-lg'>
 						Ma vision du coaching se nourrit à la fois de ma formation
-						comme coach d'Etat, de mes expériences personnelles et
+						comme coach professionnel, de mes expériences personnelles et
 						professionnelles. C'est pour cela qu'elle est à la fois unique
 						et personnelle. Elle est aussi en constante évolution. Elle
 						s'appuie sur 7 principes :
