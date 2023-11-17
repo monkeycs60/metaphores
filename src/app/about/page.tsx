@@ -1,3 +1,5 @@
+"use client";
+
 import Image from 'next/image';
 import {
 	Wrench,
@@ -9,6 +11,7 @@ import {
 	Trophy,
 	GraduationCap,
 } from 'lucide-react';
+import { motion } from 'framer-motion';
 
 const page = () => {
 	return (
@@ -19,6 +22,20 @@ const page = () => {
 				height={181}
 				alt='rond bleu clair'
 				className='absolute -left-8 top-[90vh] hidden w-[140px] lg:block 2xl:left-0 2xl:top-[60vh] 2xl:w-[200px] '
+			/>
+			<Image
+				src={'/forme11.png'}
+				width={485}
+				height={283}
+				alt='rond bleu clair'
+				className='absolute -right-8 top-[0vh] hidden w-[240px] lg:block 2xl:left-0 2xl:top-[13vh] 2xl:w-[300px] '
+			/>
+			<Image
+				src={'/forme13.png'}
+				width={372}
+				height={358}
+				alt='rond bleu clair'
+				className='absolute -left-8 top-[0vh] hidden w-[140px] lg:block 2xl:left-0 2xl:top-[13vh] 2xl:w-[200px] '
 			/>
 			<Image
 				src={'/forme4.png'}
@@ -51,9 +68,13 @@ const page = () => {
 				<div className='containerBordureBriseeThree relative h-1/2 p-2 lg:mt-2 lg:p-0'>
 					<div className='flex flex-col justify-center gap-8 p-12 lg:flex-row-reverse lg:gap-16 2xl:gap-[5vw] 3xl:gap-[8vw] '>
 						<div className='flex flex-col items-center justify-center gap-12 lg:w-[600px]'>
-							<h2 className='font-caveat text-4xl text-blackOne lg:text-5xl'>
+							<motion.h2
+								initial={{ x: '400' }} 
+								animate={{ x: 0 }} 
+								transition={{ type: 'spring', stiffness: 50, duration: 0.5 }} 
+								className='font-caveat text-4xl text-blackOne lg:text-5xl'>
 								Enchanté, moi c'est Christophe !
-							</h2>
+							</motion.h2>
 							<div className='flex  flex-col gap-3 lg:px-8 lg:text-lg 3xl:px-0'>
 								<p>
 									Bien choisir son accompagnant.e, c’est important.
@@ -72,7 +93,7 @@ const page = () => {
 								alt='Christophe'
 								width={800}
 								height={652}
-								className='xl:w-[195px] 2xl:w-[225px] 3xl:w-[280px]'
+								className='xl:w-[240px] 2xl:w-[225px] 3xl:w-[280px]'
 							/>
 							<div className='flex flex-col items-center'>
 								<span className='text-lg font-semibold text-blackOne'>
