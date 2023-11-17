@@ -73,7 +73,7 @@ const WhoAmI = () => {
 									</p>
 									<p>
 										J'ai aujourd'hui appris à considérer ces
-										expériences comme une richesse inestimable qui m'a
+										expériences comme une richesse qui m'a
 										permis de développer ouverture d'esprit, empathie,
 										recul, aptitude à comprendre les autres et bien
 										d'autres choses encore.
