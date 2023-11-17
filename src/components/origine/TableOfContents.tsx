@@ -17,14 +17,14 @@ const TableOfContents = ({ sections }: TableOfContentsProps) => (
 			width={140}
 			height={93}
 			alt='doodle down'
-			className='absolute left-[25vw] top-[20vh] hidden lg:block '
+			className='absolute left-[32vw] 2xl:left-[25vw] top-[20vh] hidden lg:block '
 		/>
 		<Image
 			src={'/forme11.png'}
 			width={485}
 			height={283}
 			alt='doodle down'
-			className='absolute right-[-34vw] top-[-1vh] hidden w-[380px] lg:block '
+			className='absolute right-[-34vw] top-[-1vh] hidden w-[340px] lg:block 2xl:w-[380px] '
 		/>
 		<h2
 			className='-mb-4 text-center text-xl font-bold text-blackOne lg:text-left'

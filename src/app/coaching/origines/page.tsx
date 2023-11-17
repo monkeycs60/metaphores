@@ -98,9 +98,9 @@ const page = () => {
 									<i> maïeutique</i> dont le coaching est très
 									largement inspiré. La maïeutique est issu de
 									l’influence de la profession de sa mère qui était «
-									sage-femme », et aider les femmes à accoucher le fit
-									se définir comme «
-									<i>l’accoucheur de l’esprit humain</i> ».
+									sage-femme », et aider les femmes à accoucher. Cela
+									le fit se définir plus tard comme «
+									<i>l’accoucheur de l’esprit humain</i> .
 								</p>
 								<blockquote className='my-4 italic'>
 									« L’accoucheur n’apporte, ne transmet rien à l’âme
@@ -344,8 +344,7 @@ const page = () => {
 									ou le chemin qui est le vôtre.
 								</p>
 								<p className='my-2 text-lg font-bold'>
-									Car qui mieux que vous peut savoir ce dont vous avez
-									besoin ?
+									La parole mène à la transformation, au changement !
 								</p>
 								<p>
 									Le coach agit <strong>comme un miroir</strong> de la
@@ -397,11 +396,13 @@ const page = () => {
 								<p>
 									Cela permettra de définir vos{' '}
 									<strong>buts ou objectifs</strong>. Nous les suivrons
-									et pour s’adapter à vos <strong>évolutions</strong>.
-									Le questionnement sera central pour vous vous aider à
-									<strong>changer de perspective</strong>. Nous allons
-									travailler pour vous aider à élaguer la situation
-									afin de davantage la percevoir et à vous{' '}
+									pour s’adapter à vos <strong>évolutions</strong>. Le
+									questionnement sera central pour vous vous aider à
+									<strong className='pl-[3px]'>
+										changer de perspective
+									</strong>
+									. Nous allons travailler pour vous aider à élaguer la
+									situation afin de davantage la percevoir et à vous{' '}
 									<strong>sentir mieux</strong>.
 								</p>
 								<p>
@@ -409,10 +410,10 @@ const page = () => {
 									<strong>métaphores</strong> pour aider à changer
 									d’univers et mettre de la distance avec les
 									problématiques. C’est à dire les{' '}
-									<strong>images mentales</strong> de leurs univers
-									pour les faire voyager dans des mondes métaphoriques
-									propices à rêver de leur idéal et plus tard les aider
-									à le matérialiser dans leur réalité.
+									<strong>images mentales</strong> de votre univers
+									pour vous faire voyager dans des mondes métaphoriques
+									propices à rêver de votre idéal et plus tard de vous
+									aider à le matérialiser dans votre réalité.
 								</p>
 							</div>
 						</div>
@@ -482,7 +483,7 @@ const page = () => {
 									Il y a des fois où il vaudra peut être mieux ne pas
 									faire certains changements afin de préserver des
 									choses importantes pour vous. Vous devrez décider en
-									conscience et le coach vous aide à envisager les
+									conscience et le coach vous aidera à envisager les
 									différentes possibilités.
 								</p>
 							</div>

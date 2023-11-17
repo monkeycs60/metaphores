@@ -29,6 +29,13 @@ const page = () => {
 				className='absolute -left-8 top-[165vh] hidden w-[240px] lg:block '
 			/>
 			<Image
+				src={'/circlelight.svg'}
+				width={200}
+				height={200}
+				alt='fleche bas'
+				className='absolute -left-32 top-[115vh] hidden w-[240px] lg:block '
+			/>
+			<Image
 				src={'/circle-black.png'}
 				width={120}
 				height={183}
