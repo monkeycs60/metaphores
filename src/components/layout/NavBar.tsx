@@ -68,10 +68,10 @@ const NavBar = () => {
 											initial={{ opacity: 0 }}
 											transition={{ duration: 0.375 }}>
 											<Image
-												src='/final-logo.svg'
+												src='/Logo.svg'
 												alt='Logo'
-												width={894}
-												height={279}
+												width={580}
+												height={208}
 												className='w-[210px] 2xl:w-[260px]'
 											/>
 										</motion.div>
