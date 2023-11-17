@@ -23,7 +23,7 @@ const Testimonies = () => {
 		}
 	};
 	return (
-		<div className='containerBordureBriseeTwo relative flex w-full flex-col items-center gap-6 pb-8 pt-12 lg:h-[57vh] 2xl:h-[45vh] 3xl:h-[32vh] '>
+		<div className='containerBordureBriseeTwo relative flex w-full flex-col items-center gap-6 pb-8 pt-12 lg:h-[58vh] 2xl:h-[45vh] 3xl:h-[32vh] '>
 			<div>
 				<h2 className='text-center text-xl font-bold lg:text-2xl'>
 					Témoignages
@@ -36,7 +36,7 @@ const Testimonies = () => {
 						alt='quote'
 						width={80}
 						height={42}
-						className='h-[30px] w-[60px] lg:h-[42px] lg:w-[80px] '
+						className='h-[30px] w-[60px] 2xl:h-[42px] 2xl:w-[80px] '
 					/>
 				</div>
 				<div className=' flex w-[75%] flex-col gap-6 lg:h-[170px] lg:w-[60%] lg:translate-x-[-50px] 2xl:w-[45%]'>
@@ -49,7 +49,7 @@ const Testimonies = () => {
 						{testimoniesList[testimonyIndex].position}
 					</p>
 				</div>
-				<div className='mt-4 flex justify-center gap-14 lg:mt-0 lg:w-[20%] 2xl:mt-0 3xl:mt-4'>
+				<div className='mt-4 flex justify-center gap-14 lg:-mt-5 lg:w-[20%] 2xl:mt-0 3xl:mt-4'>
 					<MoveLeft
 						className='h-[45px] w-[45px] cursor-pointer select-none hover:text-primaryOne'
 						onClick={previousImage}

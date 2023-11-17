@@ -20,4 +20,9 @@ renforcer sa posture et son savoir faire très professionnels à votre égard.`,
 		author: 'Nathan B.',
 		position: 'Handballeur pro',
 	},
+	{
+		text: `Une précieuse aide pour entamer une nouvelle année avec un nouveau projet de vie ! Merci à lui .`,
+		author: 'Sandrine Mebs',
+		position: 'Cadre de santé publique',
+	},
 ];
