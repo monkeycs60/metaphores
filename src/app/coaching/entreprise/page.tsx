@@ -259,87 +259,87 @@ const page = () => {
 							/>
 						</div>
 					</div>
-					<div className='m-auto flex w-2/3 flex-col gap-4 bg-secondaryOne p-8'>
+					<div className='m-auto flex w-3/4 flex-col gap-12 bg-secondaryOne p-8'>
 						<h3 className='text-lg font-bold'>
 							Les points clés du coaching de dirigeant :
 						</h3>
-						<div className='flex items-center justify-center'>
+						<div className='flex items-center justify-center gap-10 text-left'>
 							<div>
-								<div className='flex h-[100px] '>
+								<div className='flex items-start justify-between   lg:h-[115px] 2xl:h-[95px] 3xl:h-[80px]'>
 									{' '}
 									<ChevronRightSquare className='h-8 w-8' />
-									<p>
+									<p className='w-[80%] '>
 										<span>Renforcement du Leadership :</span> cultiver
 										une capacité de leadership efficace et inspirante.
 									</p>
 								</div>
-								<div>
+								<div className='flex items-start justify-between   lg:h-[115px] 2xl:h-[95px] 3xl:h-[80px]'>
 									{' '}
 									<ChevronRightSquare className='h-8 w-8' />
-									<p>
+									<p className='w-[80%] '>
 										<span>
 											Accompagnement dans les Nouvelles
 											Responsabilités :
-										</span>
+										</span>{' '}
 										soutien lors de la prise de nouvelles fonctions ou
 										responsabilités.
 									</p>
 								</div>
-								<div>
+								<div className='flex items-start justify-between   lg:h-[115px] 2xl:h-[95px] 3xl:h-[80px]'>
 									{' '}
 									<ChevronRightSquare className='h-8 w-8' />
-									<p>
-										<span>Gestion des Conflits et Management :</span>
+									<p className='w-[80%] '>
+										<span>Gestion des Conflits et Management :</span>{' '}
 										stratégies pour surmonter les situations
 										conflictuelles en management.
 									</p>
 								</div>
-								<div>
+								<div className='flex items-start justify-between   lg:h-[115px] 2xl:h-[95px] 3xl:h-[80px]'>
 									{' '}
 									<ChevronRightSquare className='h-8 w-8' />
-									<p>
-										<span>Confiance et Estime de Soi :</span>améliorer
-										la confiance en soi pour prendre des décisions
+									<p className='w-[80%] '>
+										<span>Confiance et Estime de Soi :</span> la
+										confiance en soi pour prendre des décisions
 										affirmées.
 									</p>
 								</div>
 							</div>
 							<div>
-								<div>
+								<div className='flex items-start justify-between   lg:h-[115px] 2xl:h-[95px] 3xl:h-[80px]'>
 									{' '}
 									<ChevronRightSquare className='h-8 w-8' />
-									<p>
+									<p className='w-[80%] '>
 										<span>
 											Prise de Recul sur les Situations Complexes :
-										</span>
-										Aide à la réflexion et à l'analyse pour des
+										</span>{' '}
+										aide à la réflexion et à l'analyse pour des
 										décisions difficiles.
 									</p>
 								</div>
-								<div>
+								<div className='flex items-start justify-between   lg:h-[115px] 2xl:h-[95px] 3xl:h-[80px]'>
 									{' '}
 									<ChevronRightSquare className='h-8 w-8' />
-									<p>
-										<span>Gestion des Priorités et du Stress :</span>
+									<p className='w-[80%] '>
+										<span>Gestion des Priorités et du Stress :</span>{' '}
 										méthodes pour mieux gérer le temps, les priorités
-										et réduire le stress
+										et réduire le stress.
 									</p>
 								</div>
-								<div>
+								<div className='flex items-start justify-between   lg:h-[115px] 2xl:h-[95px] 3xl:h-[80px]'>
 									{' '}
 									<ChevronRightSquare className='h-8 w-8' />
-									<p>
-										<span>Délégation Efficace :</span>
-										Apprendre à déléguer pour optimiser la performance
-										et l'efficacité.
+									<p className='w-[80%] '>
+										<span>Délégation Efficace :</span> apprendre à
+										déléguer pour optimiser la performance et
+										l'efficacité.
 									</p>
 								</div>
-								<div>
+								<div className='flex items-start justify-between   lg:h-[115px] 2xl:h-[95px] 3xl:h-[80px]'>
 									{' '}
 									<ChevronRightSquare className='h-8 w-8' />
-									<p>
-										<span>CPréparation aux Événements Clés :</span>
-										Techniques pour se préparer à des événements
+									<p className='w-[80%] '>
+										<span>Préparation aux Événements Clés :</span>{' '}
+										techniques pour se préparer à des événements
 										importants, négociations, ou prises de parole.
 									</p>
 								</div>
