@@ -21,6 +21,48 @@ const page = () => {
 				alt='fleche bas'
 				className='absolute -right-12 bottom-20 hidden w-[160px] lg:block'
 			/>
+			<Image
+				src={'/forme4.png'}
+				width={289}
+				height={269}
+				alt='fleche bas'
+				className='absolute left-2 top-[120vh] hidden w-[220px] lg:block'
+			/>
+			<Image
+				src={'/forme11.png'}
+				width={485}
+				height={283}
+				alt='fleche bas'
+				className='absolute right-2 top-[180vh] hidden w-[220px] lg:block'
+			/>
+			<Image
+				src={'/forme1.png'}
+				width={92}
+				height={90}
+				alt='fleche bas'
+				className='absolute left-2 top-[220vh] hidden w-[92px] lg:block'
+			/>
+			<Image
+				src={'/forme6.png'}
+				width={289}
+				height={248}
+				alt='fleche bas'
+				className='absolute -right-6 top-[285vh] hidden w-[260px] lg:block'
+			/>
+			<Image
+				src={'/forme13.png'}
+				width={372}
+				height={358}
+				alt='fleche bas'
+				className='absolute left-0 top-[280vh] hidden w-[180px] lg:block'
+			/>
+			<Image
+				src={'/forme1.png'}
+				width={92}
+				height={90}
+				alt='fleche bas'
+				className='absolute bottom-[60vh] left-2 hidden w-[92px] lg:block'
+			/>
 			<div className='absolute left-1/2 top-[105vh] z-20 -translate-x-1/2 translate-y-[-50vh] bg-primaryOne  text-xl  lg:text-4xl'>
 				<Button className='ml-auto' size={'xl'}>
 					Demandez un devis

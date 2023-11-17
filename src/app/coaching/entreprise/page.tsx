@@ -21,6 +21,34 @@ const page = () => {
 				alt='fleche bas'
 				className='absolute -right-12 bottom-20 hidden w-[160px] lg:block'
 			/>
+			<Image
+				src={'/forme13.png'}
+				width={372}
+				height={358}
+				alt='cercle jaune'
+				className='absolute -left-12 top-[115vh] hidden w-[230px] lg:block'
+			/>
+			<Image
+				src={'/forme10.png'}
+				width={223}
+				height={181}
+				alt='cercles bleus'
+				className='absolute -right-4 top-[215vh] hidden w-[230px] lg:block'
+			/>
+			<Image
+				src={'/forme9.png'}
+				width={207}
+				height={227}
+				alt='cercles bleus'
+				className='absolute left-4 top-[300vh] hidden w-[150px] lg:block'
+			/>
+			<Image
+				src={'/forme3.png'}
+				width={361}
+				height={281}
+				alt='cercles bleus'
+				className='absolute bottom-[50vh] left-8 hidden w-[180px] lg:block'
+			/>
 			<div className='absolute left-1/2 top-[105vh] z-20 -translate-x-1/2 translate-y-[-50vh] bg-primaryOne  text-xl  lg:text-4xl'>
 				<Link href='/contact'>
 					<Button className='ml-auto' size={'xl'}>
