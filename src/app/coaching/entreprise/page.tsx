@@ -285,7 +285,7 @@ const page = () => {
 									et personnalisés.
 								</p>
 							</div>
-							<div className='m-auto w-1/2'>
+							<div className='m-auto lg:w-1/2'>
 								<Link href='/contact'>
 									<Button
 										className='ml-auto flex w-full gap-2'
@@ -311,9 +311,9 @@ const page = () => {
 						<h3 className='text-lg font-bold'>
 							Les points clés du coaching de dirigeant :
 						</h3>
-						<div className='flex flex-col items-center justify-center gap-4 text-left lg:flex-row lg:gap-10'>
-							<div className='w-1/2 space-y-5 lg:space-y-0'>
-								<div className='flex items-start justify-between  lg:h-[130px] 2xl:h-[95px] 3xl:h-[80px]'>
+						<div className='flex flex-col items-start justify-start gap-4 text-left lg:flex-row lg:gap-10'>
+							<div className='flex flex-col items-start justify-start space-y-5 lg:w-1/2 lg:space-y-0'>
+								<div className='flex items-start justify-between  py-1 lg:py-4'>
 									{' '}
 									<ChevronRightSquare />
 									<p className='flex w-[80%] flex-col gap-1 lg:block'>
@@ -324,7 +324,7 @@ const page = () => {
 										inspirante.
 									</p>
 								</div>
-								<div className='flex items-start justify-between   lg:h-[130px] 2xl:h-[95px] 3xl:h-[80px]'>
+								<div className='flex items-start justify-between   py-1 lg:py-4'>
 									{' '}
 									<ChevronRightSquare />
 									<p className='flex w-[80%] flex-col gap-1 lg:block'>
@@ -336,7 +336,7 @@ const page = () => {
 										responsabilités.
 									</p>
 								</div>
-								<div className='mb-12 flex items-start justify-between  lg:h-[130px] 2xl:h-[95px] 3xl:h-[80px]'>
+								<div className='mb-12 flex items-start justify-between  py-1 lg:py-4'>
 									{' '}
 									<ChevronRightSquare />
 									<p className='flex w-[80%] flex-col gap-1 lg:block'>
@@ -347,7 +347,7 @@ const page = () => {
 										conflictuelles en management.
 									</p>
 								</div>
-								<div className='flex items-start justify-between   lg:h-[130px] 2xl:h-[95px] 3xl:h-[80px]'>
+								<div className='flex items-start justify-between   py-1 lg:py-4'>
 									{' '}
 									<ChevronRightSquare />
 									<p className='flex w-[80%] flex-col gap-1 lg:block'>
@@ -359,8 +359,8 @@ const page = () => {
 									</p>
 								</div>
 							</div>
-							<div className='w-1/2 space-y-5 lg:space-y-0'>
-								<div className='flex items-start justify-between   lg:h-[130px] 2xl:h-[95px] 3xl:h-[80px]'>
+							<div className='flex flex-col items-start justify-start space-y-5 lg:w-1/2 lg:space-y-0'>
+								<div className='flex items-start justify-between   py-1 lg:py-4'>
 									{' '}
 									<ChevronRightSquare />
 									<p className='flex w-[80%] flex-col gap-1 lg:block'>
@@ -371,7 +371,7 @@ const page = () => {
 										décisions difficiles.
 									</p>
 								</div>
-								<div className='flex items-start justify-between   lg:h-[130px] 2xl:h-[95px] 3xl:h-[80px]'>
+								<div className='flex items-start justify-between   py-1 lg:py-4'>
 									{' '}
 									<ChevronRightSquare />
 									<p className='flex w-[80%] flex-col gap-1 lg:block'>
@@ -382,7 +382,7 @@ const page = () => {
 										et réduire le stress.
 									</p>
 								</div>
-								<div className='flex items-start justify-between   lg:h-[130px] 2xl:h-[95px] 3xl:h-[80px]'>
+								<div className='flex items-start justify-between   py-1 lg:py-4'>
 									{' '}
 									<ChevronRightSquare />
 									<p className='flex w-[80%] flex-col gap-1 lg:block'>
@@ -393,7 +393,7 @@ const page = () => {
 										et l'efficacité.
 									</p>
 								</div>
-								<div className='flex items-start justify-between   lg:h-[130px] 2xl:h-[95px] 3xl:h-[80px]'>
+								<div className='flex items-start justify-between   py-1 lg:py-4'>
 									{' '}
 									<ChevronRightSquare />
 									<p className='flex w-[80%] flex-col gap-1 lg:block'>
