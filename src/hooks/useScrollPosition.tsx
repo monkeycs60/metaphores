@@ -6,6 +6,9 @@ export default function useScrollPosition() {
 	const [scrollPosition, setScrollPosition] = useState(0);
 
 	useEffect(() => {
+		// Mise à jour initiale de la position de défilement
+		setScrollPosition(window.scrollY);
+
 		const handleScroll = () => {
 			setScrollPosition(window.scrollY);
 		};
