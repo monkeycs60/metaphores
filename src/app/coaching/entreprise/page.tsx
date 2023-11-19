@@ -29,25 +29,39 @@ const page = () => {
 				className='absolute -left-12 top-[115vh] hidden w-[230px] lg:block'
 			/>
 			<Image
+				src={'/forme4.png'}
+				width={289}
+				height={269}
+				alt='cercle jaune'
+				className='absolute right-6 top-[135vh] hidden w-[230px] lg:block'
+			/>
+			<Image
+				src={'/forme7.png'}
+				width={463}
+				height={344}
+				alt='cercle jaune'
+				className='absolute -left-2 top-[195vh] hidden w-[130px] lg:block'
+			/>
+			<Image
 				src={'/forme10.png'}
 				width={223}
 				height={181}
 				alt='cercles bleus'
-				className='absolute -right-4 top-[215vh] hidden w-[230px] lg:block'
+				className='absolute -right-4 top-[235vh] hidden w-[230px] lg:block'
 			/>
 			<Image
 				src={'/forme9.png'}
 				width={207}
 				height={227}
 				alt='cercles bleus'
-				className='absolute left-4 top-[300vh] hidden w-[150px] lg:block'
+				className='absolute left-4 top-[285vh] hidden w-[150px] lg:block 2xl:top-[300vh]'
 			/>
 			<Image
 				src={'/forme3.png'}
 				width={361}
 				height={281}
 				alt='cercles bleus'
-				className='absolute bottom-[50vh] left-8 hidden w-[180px] lg:block'
+				className='absolute bottom-[50vh] left-8 hidden w-[180px] lg:block 2xl:bottom-[25vh]'
 			/>
 			<div className='absolute left-1/2 top-[105vh] z-20 -translate-x-1/2 translate-y-[-50vh] bg-primaryOne  text-xl  lg:text-4xl'>
 				<Link href='/contact'>
@@ -77,9 +91,9 @@ const page = () => {
 							contribue à forger des leaders inspirants et à instaurer
 							une dynamique d'équipe solide et solidaire, essentielle
 							pour naviguer dans les eaux turbulentes du marché actuel.
-							Le coaching en entreprise est donc une pierre angulaire
-							pour toute organisation aspirant à l'excellence et à
-							l'innovation.
+							Le coaching en entreprise peut donc être vu comme une des
+							pierre angulaire d’une organisation aspirant à l'excellence
+							et à l'innovation.
 						</p>
 					</div>
 					<h2 className='-mb-4 text-center text-xl font-bold text-blackOne'>
@@ -93,7 +107,7 @@ const page = () => {
 									<span className='block pr-2 font-semibold'>
 										Soutien aux Projets et Défis de Croissance
 									</span>
-									Accompagnement dans la gestion du changement travail
+									Accompagnement dans la gestion du changement, travail
 									sur la motivation pour surmonter les défis de
 									croissance et de restructuration.
 								</p>
@@ -152,7 +166,7 @@ const page = () => {
 								width={1241}
 								height={796}
 								alt='réunion équipe'
-								className='w-[1100px] '
+								className='w-[1100px] 2xl:w-[1400px] '
 							/>
 						</div>
 					</div>
@@ -169,13 +183,10 @@ const page = () => {
 								className='w-[50px] lg:h-[60px] lg:w-[72px] '
 							/>
 							<h3>
-								Réconcilier la{' '}
-								<strong className='px-[2px]'>performance </strong> et la
-								<strong className='px-[2px]'>
-									qualité de vie au travail
-								</strong>
-								. Prévenir les risques psychosociaux et créer un climat
-								de confiance.
+								Réconcilier la &nbsp;<strong>performance </strong>&nbsp;
+								et la &nbsp;<strong>qualité de vie au travail</strong>
+								&nbsp;. Prévenir les risques psychosociaux et créer un
+								climat de confiance.
 							</h3>
 						</div>
 						<div className='flex items-center justify-center gap-8 lg:w-[40%] '>
@@ -187,14 +198,12 @@ const page = () => {
 								className='w-[47px] lg:w-[72px] '
 							/>
 							<h3>
-								Créer de la
-								<strong className='px-[2px]'>cohésion</strong> et de{' '}
-								<strong className='px-[2px]'>l’adhésion</strong>, Capter
-								les signaux faibles et développer
-								<strong className='px-[2px]'>
-									l’intelligence collective
-								</strong>
-								pour faire émerger les talents dans l’entreprise.
+								Créer de la &nbsp;<strong>cohésion</strong>&nbsp; et de
+								&nbsp;
+								<strong>l’adhésion</strong>&nbsp;, Capter les signaux
+								faibles et développer &nbsp;
+								<strong>l’intelligence collective</strong>&nbsp; pour
+								faire émerger les talents dans l’entreprise.
 							</h3>
 						</div>
 						<div className='flex items-center justify-center gap-8 lg:w-[40%] '>
@@ -206,11 +215,10 @@ const page = () => {
 								className='w-[44px] lg:w-[70px]'
 							/>
 							<h3>
-								Faire <strong className='px-[2px]'>progresser </strong>{' '}
-								l’ensemble des acteurs de l’entreprise.{' '}
-								<strong className='px-[2px]'>Clarifier</strong> la
-								volonté des acteurs pour leur permettre de trouver leur
-								meilleure place
+								Faire &nbsp;<strong>progresser </strong>&nbsp;
+								l’ensemble des acteurs de l’entreprise. &nbsp;
+								<strong>Clarifier</strong>&nbsp; la volonté des acteurs
+								pour leur permettre de trouver leur meilleure place
 							</h3>
 						</div>
 						<div className='flex items-center justify-center gap-8 lg:w-[40%] '>
@@ -223,44 +231,39 @@ const page = () => {
 							/>
 							<h3>
 								Co-élaborer la structure organisationnelle en alignant
-								sur la mission et la
-								<strong className='px-[2px]'>vision</strong> de
-								l'entreprise, favorisant
-								<strong className='px-[2px]'>l'engagement</strong>
-								des employés et la réussite organisationnelle.
+								sur la mission et la &nbsp;<strong>vision</strong>&nbsp;
+								de l'entreprise, favorisant &nbsp;
+								<strong>l'engagement</strong>&nbsp; des employés et la
+								réussite organisationnelle.
 							</h3>
 						</div>
 					</div>
-					<div className='m-auto h-[1px] w-1/2 bg-primaryOne '></div>
-					<h2 className='text-center text-xl font-bold text-blackOne lg:mt-6'>
+					<h2 className='mt-10 flex w-screen justify-center bg-primaryOne  p-4 text-center text-3xl font-bold  text-blackOne lg:text-left'>
 						Coaching de dirigeant
 					</h2>
 					<div className='flex flex-col-reverse items-center justify-center gap-10 lg:flex-row-reverse'>
 						<div className='flex flex-col gap-10 text-left lg:w-[60%] lg:text-center'>
 							<div className='space-y-3 lg:space-y-2'>
 								<p>
-									Le rôle d'un
-									<strong className='px-[2px]'>
-										dirigeant d'entreprise
-									</strong>
-									est souvent comparé à celui d'un chef d'orchestre,
+									Le rôle d'un &nbsp;
+									<strong>dirigeant d'entreprise</strong>&nbsp; est
+									souvent comparé à celui d'un chef d'orchestre,
 									orchestrant les talents et compétences au sein de son
 									organisation. Cependant, malgré l'entourage et le
-									soutien des collaborateurs, le dirigeant peut
-									<strong className='px-[2px]'>se sentir isolé</strong>
-									face aux défis stratégiques, aux pressions et aux
-									incertitudes.
+									soutien des collaborateurs, le dirigeant peut &nbsp;
+									<strong>se sentir isolé</strong>&nbsp; face aux défis
+									stratégiques, aux pressions et aux incertitudes.
 								</p>
 								<p>
 									Que ce soit dans le cadre d'une nouvelle nomination,
 									la gestion de situations complexes, ou la prise de
 									décisions critiques, il est essentiel pour un
-									dirigeant de
-									<strong className='px-[2px]'>
+									dirigeant de&nbsp;
+									<strong>
 										disposer des ressources nécessaires pour surmonter
 										ces défis
 									</strong>
-									.
+									&nbsp; .
 								</p>
 							</div>
 
@@ -268,27 +271,30 @@ const page = () => {
 								<p>
 									Un coach professionnel spécialisé dans
 									l'accompagnement des dirigeants peut jouer un rôle
-									clé en offrant un
-									<strong className='px-[2px]'>
-										soutien sur mesure
-									</strong>
-									pour atteindre les objectifs fixés tout en gérant les
-									problématiques opérationnelles quotidiennes.
+									clé en offrant un &nbsp;
+									<strong>soutien sur mesure</strong>
+									&nbsp; pour atteindre les objectifs fixés tout en
+									gérant les problématiques opérationnelles
+									quotidiennes.
 								</p>
 								<p>
 									Chez Métaphore Coaching, nous nous engageons à
-									établir un
-									<strong className='px-[2px]'>
-										climat de confiance et de sérénité,
-									</strong>
-									pour vous guider vers des résultats efficaces et
-									personnalisés.
+									établir un &nbsp;
+									<strong>climat de confiance et de sérénité,</strong>
+									&nbsp; pour vous guider vers des résultats efficaces
+									et personnalisés.
 								</p>
 							</div>
-							<div className='m-auto'>
-								<Button className='ml-auto' size={'lg'}>
-									Plus de renseignements
-								</Button>
+							<div className='m-auto w-1/2'>
+								<Link href='/contact'>
+									<Button
+										className='ml-auto flex w-full gap-2'
+										size={'lg'}>
+										{' '}
+										<span>Plus de renseignements</span>{' '}
+										<ArrowUpRight />{' '}
+									</Button>
+								</Link>
 							</div>
 						</div>
 						<div>
@@ -307,11 +313,11 @@ const page = () => {
 						</h3>
 						<div className='flex flex-col items-center justify-center gap-4 text-left lg:flex-row lg:gap-10'>
 							<div className='w-1/2 space-y-5 lg:space-y-0'>
-								<div className='flex items-start justify-between   lg:h-[130px] 2xl:h-[95px] 3xl:h-[80px]'>
+								<div className='flex items-start justify-between  lg:h-[130px] 2xl:h-[95px] 3xl:h-[80px]'>
 									{' '}
 									<ChevronRightSquare />
 									<p className='flex w-[80%] flex-col gap-1 lg:block'>
-										<span className='px-[2px] font-bold lg:block'>
+										<span className='px-[3px] font-bold lg:block'>
 											Renforcement du Leadership
 										</span>
 										Cultiver une capacité de leadership efficace et
@@ -322,7 +328,7 @@ const page = () => {
 									{' '}
 									<ChevronRightSquare />
 									<p className='flex w-[80%] flex-col gap-1 lg:block'>
-										<span className='px-[2px] font-bold lg:block'>
+										<span className='px-[3px] font-bold lg:block'>
 											Accompagnement dans les Nouvelles
 											Responsabilités
 										</span>
@@ -334,7 +340,7 @@ const page = () => {
 									{' '}
 									<ChevronRightSquare />
 									<p className='flex w-[80%] flex-col gap-1 lg:block'>
-										<span className='px-[2px] font-bold lg:block'>
+										<span className='px-[3px] font-bold lg:block'>
 											Gestion des Conflits et Management
 										</span>
 										Stratégies pour surmonter les situations
@@ -345,7 +351,7 @@ const page = () => {
 									{' '}
 									<ChevronRightSquare />
 									<p className='flex w-[80%] flex-col gap-1 lg:block'>
-										<span className='px-[2px] font-bold lg:block'>
+										<span className='px-[3px] font-bold lg:block'>
 											Confiance et Estime de Soi
 										</span>
 										La confiance en soi pour prendre des décisions
@@ -353,12 +359,12 @@ const page = () => {
 									</p>
 								</div>
 							</div>
-							<div className='space-y-5 lg:space-y-0 w-1/2'>
+							<div className='w-1/2 space-y-5 lg:space-y-0'>
 								<div className='flex items-start justify-between   lg:h-[130px] 2xl:h-[95px] 3xl:h-[80px]'>
 									{' '}
 									<ChevronRightSquare />
 									<p className='flex w-[80%] flex-col gap-1 lg:block'>
-										<span className='px-[2px] font-bold lg:block'>
+										<span className='px-[3px] font-bold lg:block'>
 											Prise de Recul sur les Situations Complexes
 										</span>
 										Aide à la réflexion et à l'analyse pour des
@@ -369,7 +375,7 @@ const page = () => {
 									{' '}
 									<ChevronRightSquare />
 									<p className='flex w-[80%] flex-col gap-1 lg:block'>
-										<span className='px-[2px] font-bold lg:block'>
+										<span className='px-[3px] font-bold lg:block'>
 											Gestion des Priorités et du Stress
 										</span>
 										Méthodes pour mieux gérer le temps, les priorités
@@ -380,7 +386,7 @@ const page = () => {
 									{' '}
 									<ChevronRightSquare />
 									<p className='flex w-[80%] flex-col gap-1 lg:block'>
-										<span className='px-[2px] font-bold lg:block'>
+										<span className='px-[3px] font-bold lg:block'>
 											Délégation Efficace
 										</span>
 										Apprendre à déléguer pour optimiser la performance
@@ -391,7 +397,7 @@ const page = () => {
 									{' '}
 									<ChevronRightSquare />
 									<p className='flex w-[80%] flex-col gap-1 lg:block'>
-										<span className='px-[2px] font-bold lg:block'>
+										<span className='px-[3px] font-bold lg:block'>
 											Préparation aux Événements Clés
 										</span>
 										Techniques pour se préparer à des événements
