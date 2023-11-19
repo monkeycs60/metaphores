@@ -43,18 +43,18 @@ const page = () => {
 				className='absolute -right-12 bottom-20 hidden w-[160px] lg:block '
 			/>
 			<Image
-				src={'/blobyellow.svg'}
+				src={'/forme3.png'}
 				width={300}
 				height={280}
 				alt='blob'
-				className='absolute -right-12 top-[10vh] hidden w-[160px] lg:block '
+				className='absolute -right-12 top-[10vh] hidden w-[300px] lg:block 2xl:w-[360px] '
 			/>
 			<Image
-				src={'/blobblack.svg'}
+				src={'/forme4.png'}
 				width={300}
 				height={305}
 				alt='blob'
-				className='absolute -left-16 top-[4vh] hidden w-[160px] lg:block '
+				className='absolute -left-2 top-[4vh] hidden w-[120px] lg:block '
 			/>
 			<div className='m-auto mt-24 w-[90%] lg:mt-16 lg:w-[80%] 2xl:w-[75%] 3xl:w-[60%]'>
 				<div className='flex flex-col gap-[75px]'>
@@ -65,7 +65,7 @@ const page = () => {
 						<div className='m-auto mt-2 h-[1px] w-[32%] bg-blackOne'></div>
 					</div>
 					<div className='-my-4 flex flex-col-reverse items-center justify-center gap-12 lg:flex-row lg:gap-20'>
-						<p className='text-center text-lg lg:w-1/3'>
+						<p className='text-center text-lg lg:w-[45%] 3xl:w-1/3'>
 							Explorez nos formules de coaching{' '}
 							<strong>individuel</strong>, conçues pour vous soutenir
 							dans la découverte de vos propres solutions. Nous sommes
@@ -272,10 +272,9 @@ const page = () => {
 							</h2>
 							<div className='flex flex-col gap-6 lg:gap-3'>
 								<p>
-									Le coaching individuel est déroule habituellement en
+									Le coaching individuel se déroule habituellement en
 									sessions de 60 minutes. Les séances se déroulent en
-									visio, par téléphone ou en personne, selon votre
-									préférence.
+									visio ou en présentiel, selon votre préférence.
 								</p>
 
 								<p>
@@ -293,8 +292,8 @@ const page = () => {
 								<p>
 									Si vous hésitez sur la formule qui vous conviendrait
 									le mieux ou si vous souhaitez obtenir plus
-									d'informations, n'hésitez pas à nous contacter. Notre
-									page{' '}
+									d'informations, n'hésitez pas à nous contacter.
+									Notre page{' '}
 									<Link
 										className='font-bold text-primaryOne hover:underline'
 										href={'/contact'}>
