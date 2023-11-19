@@ -1,6 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
 import { ChevronsDown } from 'lucide-react';
+import Link from 'next/link';
 
 const Hero = () => {
 	return (
@@ -23,11 +24,13 @@ const Hero = () => {
 					</div>
 				</div>
 			</div>
-			<div
-				className='absolute bottom-14 left-1/2 -translate-x-1/2 bg-primaryOne px-3 py-2 lg:bottom-[5vh] 3xl:px-4 
+			<Link href='/#what-is' className='cursor-pointer'>
+				<div
+					className='absolute bottom-14 left-1/2 -translate-x-1/2 bg-primaryOne px-3 py-2 lg:bottom-[5vh] 3xl:px-4 
 			3xl:py-3  '>
-				<ChevronsDown className='h-[30px] w-[30px] text-whiteOne lg:h-[40px] lg:w-[40px] 3xl:h-[50px] 3xl:w-[50px] ' />
-			</div>
+					<ChevronsDown className='h-[30px] w-[30px] text-whiteOne lg:h-[40px] lg:w-[40px] 3xl:h-[50px] 3xl:w-[50px] ' />
+				</div>
+			</Link>
 			<div className='left-[55%] top-[15%] z-30 flex flex-col gap-3 lg:absolute lg:block 3xl:left-[53%]'>
 				<div className='flex justify-end pr-6 font-caveat text-2xl text-blackOne'>
 					<h3 className='lg:hidden'>

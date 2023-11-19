@@ -6,7 +6,7 @@ import Link from 'next/link';
 
 const WhatIsIt = () => {
 	return (
-		<div className='relative w-full'>
+		<div className='relative w-full' id='what-is'>
 			<Image
 				src='/circle-black.png'
 				alt='Chess'

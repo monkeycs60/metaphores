@@ -94,7 +94,7 @@ html {
 .parallax {
 	height: 100vh;
 	width: 100vw;
-	background-image: url('/rugby-help.jpg');
+	background-image: url('/team-back.jpg');
 	background-attachment: fixed;
 	background-position: center;
 	background-repeat: no-repeat;
