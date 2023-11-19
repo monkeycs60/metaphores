@@ -29,6 +29,13 @@ const page = () => {
 				className='absolute left-2 top-[120vh] hidden w-[220px] lg:block'
 			/>
 			<Image
+				src={'/forme6.png'}
+				width={289}
+				height={269}
+				alt='fleche bas'
+				className='absolute right-2 top-[135vh] hidden w-[160px] lg:block 2xl:hidden'
+			/>
+			<Image
 				src={'/forme11.png'}
 				width={485}
 				height={283}
@@ -82,6 +89,24 @@ const page = () => {
 			<div className='m-auto mt-24 w-[90%] lg:mt-16 lg:w-[80%] 2xl:w-[75%] 3xl:w-[60%]'>
 				<div className='flex flex-col items-center gap-[75px] text-center'>
 					<div className='flex w-[90%] flex-col gap-8 lg:w-2/3 lg:text-lg'>
+						<div className='relative mb-4  lg:mb-10 flex flex-col items-center gap-4 bg-primaryOne/20 p-8 text-center lg:text-lg lg:mt-0 lg:gap-2 lg:text-left'>
+							<p>
+								Club de sport, association, fédération, troupe de
+								théatre...
+							</p>
+							<p className='underline underline-offset-4'>
+								<span className='font-bold'>
+									Le coaching d’équipe peut vous aider !
+								</span>
+							</p>
+							<Image
+								src={'/group.svg'}
+								width={563}
+								height={532}
+								alt='team'
+								className='absolute right-2 top-2 w-[25px] lg:right-4 lg:top-4 lg:w-[35px] '
+							/>
+						</div>
 						<p>
 							L'efficacité d'une équipe dépend de la synergie entre les
 							talents individuels de ses membres et de leur capacité
@@ -129,7 +154,7 @@ const page = () => {
 								<p className='w-full'>
 									Favoriser la communication et la coopération au sein
 									de l’équipe : concourir ensemble à l’atteinte des
-									objectifs, Désamorcer les situations de conflits et
+									objectifs, désamorcer les situations de conflits et
 									de crises.
 								</p>
 							</div>
@@ -160,10 +185,9 @@ const page = () => {
 								<ChevronRightSquare className='h-8 w-8' />
 								<p className='w-full'>
 									Réussir la mise en œuvre des projets de changement et
-									de transformation d'entreprise : nouvelle
-									organisation, fusion intégration d'un nouveau membre
-									dans une équipe, démarrage d'un projet
-									multi-disciplinaire.
+									de transformation : nouvelle organisation, fusion
+									intégration d'un nouveau membre dans une équipe,
+									démarrage d'un projet multi-disciplinaire.
 								</p>
 							</div>
 						</div>
@@ -193,10 +217,10 @@ const page = () => {
 						<p>
 							Un vrai travail d’équipe repose sur la volonté de ses
 							membres de mettre en commun leurs talents individuels au
-							profit du collectif. L’accompagnement est bien sur adapté à
+							profit du collectif. L’accompagnement est bien sûr adapté à
 							la situation, aux enjeux et aux objectifs. C’est pourquoi
 							un coaching d’équipe s’inscrit dans la durée et se déroule
-							en plusieurs phases de montée en puissance
+							en plusieurs phases de montée en puissance.
 						</p>
 					</div>
 
@@ -237,11 +261,10 @@ const page = () => {
 										Etape 3.
 									</span>
 									<p className='w-full px-8 text-left'>
-										Construire la vision d’un avenir commun avec son
-										plan d’action, , Une restitution des besoins et
-										demandes de l'équipe et du manager destinés à
-										calibrer les objectifs et modalités de
-										l'accompagnement.
+										Restitution des besoins et demandes de l'équipe et
+										du manager destinés à calibrer les objectifs et
+										modalités de l'accompagnement. Construire la
+										vision d’un avenir commun avec son plan d’action.
 									</p>
 								</div>
 							</div>
@@ -280,9 +303,9 @@ const page = () => {
 					<div className='flex w-2/3 flex-col gap-8 lg:text-lg'>
 						<p>
 							Les entretiens de débriefing sont une part essentielle de
-							la réussite ! ils entretiennent la motivation. C’est en
+							la réussite ! Ils entretiennent la motivation. C’est en
 							revenant à ces objectifs régulièrement que l’on arrive à
-							garder la motivation et à les atteindre
+							garder la motivation et à les atteindre.
 						</p>
 					</div>
 				</div>

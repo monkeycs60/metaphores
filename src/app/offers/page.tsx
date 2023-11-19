@@ -56,7 +56,7 @@ const page = () => {
 					<div className='m-auto mt-2 h-[1px] w-1/2 bg-blackOne lg:w-[30%]'></div>
 				</div>
 				<div className='flex flex-col items-center lg:flex-row lg:items-stretch lg:gap-6'>
-					<div className='flex flex-col items-center gap-4 bg-primaryOne/20 p-8 text-center text-lg lg:mt-0 lg:w-[75%] lg:gap-3 lg:text-left'>
+					<div className='flex flex-col items-center justify-center gap-4 bg-primaryOne/20 p-8 text-center text-lg lg:mt-0 lg:w-[70%] lg:gap-3 lg:text-left'>
 						<p>Une séance dure environ 1h.</p>
 						<p className='underline underline-offset-4'>
 							Tarif horaire : <span className='font-bold'>65€</span>
@@ -68,7 +68,7 @@ const page = () => {
 						</p>
 					</div>
 					<div className='m-auto h-[1px] w-2/3 bg-blackOne lg:hidden'></div>
-					<div className='relative flex flex-col items-center bg-primaryOne/20 p-8 text-center text-lg lg:mt-0 lg:w-[25%] lg:gap-1 lg:text-left'>
+					<div className='relative flex flex-col items-center bg-primaryOne/20 p-8 text-center text-lg lg:mt-0 lg:w-[30%] lg:gap-1 lg:text-left'>
 						<Image
 							src='/discount.svg'
 							alt='réduction'
@@ -80,10 +80,14 @@ const page = () => {
 							Tarifs spéciaux
 						</h2>
 
-						<p className='mt-8 text-center text-sm leading-relaxed  dark:text-gray-300'>
+						<p className='mt-8 text-center text-sm leading-relaxed'>
 							Nous appliquons des tarifs spéciaux pour les étudiants, les
-							demandeurs d'emploi et les publics en difficulté
-							financière.
+							demandeurs d'emploi.
+						</p>
+						<div className='my-2 h-[1px] w-2/3 bg-transparent lg:bg-blackOne'></div>
+						<p className=' text-center text-sm leading-relaxed'>
+							<span className='font-semibold'>Coaching solidaire :</span>{' '}
+							gratuité pour les publics en grande difficulté financière.
 						</p>
 					</div>
 				</div>
