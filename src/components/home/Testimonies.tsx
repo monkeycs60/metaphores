@@ -49,7 +49,7 @@ const Testimonies = () => {
 						{testimoniesList[testimonyIndex].position}
 					</p>
 				</div>
-				<div className='mt-4 flex justify-center gap-14 lg:-mt-5 lg:w-[20%] 2xl:mt-0 3xl:mt-4'>
+				<div className='mt-4 flex justify-center gap-14 lg:-mt-5 lg:w-[20%] 2xl:mt-0 3xl:-mt-6'>
 					<MoveLeft
 						className='h-[45px] w-[45px] cursor-pointer select-none hover:text-primaryOne'
 						onClick={previousImage}
