@@ -206,7 +206,7 @@ const page = () => {
 						<div className='mt-6 flex w-full flex-col items-center justify-between gap-8 lg:flex-row lg:gap-0 '>
 							<div className='lg:w-[280px]'>
 								<Image
-									src='/boussole.jpg'
+									src='/boussole.webp'
 									alt='chess'
 									width={2000}
 									height={2000}

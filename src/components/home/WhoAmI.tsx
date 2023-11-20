@@ -41,11 +41,11 @@ const WhoAmI = () => {
 
 					<div className='relative flex flex-col items-center justify-center gap-6 3xl:justify-start'>
 						<Image
-							src='/chris-profile-light.svg'
+							src='/chris-profile-light.webp'
 							alt='Chess'
 							width={789}
 							height={1080}
-							className='absolute z-10 hidden w-[60vw] lg:static lg:block lg:w-[26vw] 2xl:w-[23vw] 3xl:w-[17vw]'
+							className='absolute z-10 hidden w-[60vw] lg:static lg:block lg:w-[20vw] 2xl:w-[17vw] 3xl:w-[13vw]'
 						/>
 						<p className='hidden translate-x-[0%] font-caveat text-3xl text-blackOne lg:block 2xl:text-4xl'>
 							Celui qui sait demander est{' '}
