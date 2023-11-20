@@ -12,7 +12,7 @@ const page = () => {
 				width={120}
 				height={183}
 				alt='fleche bas'
-				className='absolute left-0 top-64 hidden w-[200px] lg:block '
+				className='absolute left-0 top-64 hidden w-[200px] lg:block'
 			/>
 			<Image
 				src={'/forme7.png'}

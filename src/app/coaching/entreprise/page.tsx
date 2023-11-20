@@ -12,35 +12,35 @@ const page = () => {
 				width={120}
 				height={183}
 				alt='fleche bas'
-				className='absolute left-0 top-64 hidden w-[200px] lg:block '
+				className='absolute left-0 top-64 hidden w-[200px] lg:block'
 			/>
 			<Image
 				src={'/circle-black.png'}
 				width={120}
 				height={183}
 				alt='fleche bas'
-				className='absolute -right-12 bottom-20 hidden w-[160px] lg:block'
+				className='absolute -right-12 bottom-20 hidden w-[160px] lg:block 3xl:w-[200px]'
 			/>
 			<Image
 				src={'/forme13.png'}
 				width={372}
 				height={358}
 				alt='cercle jaune'
-				className='absolute -left-12 top-[115vh] hidden w-[230px] lg:block'
+				className='absolute -left-12 top-[115vh] hidden w-[230px] lg:block 3xl:w-[360px]'
 			/>
 			<Image
 				src={'/forme4.png'}
 				width={289}
 				height={269}
 				alt='cercle jaune'
-				className='absolute right-6 top-[135vh] hidden w-[230px] lg:block'
+				className='absolute right-6 top-[135vh] hidden w-[230px] lg:block 3xl:top-[150vh] 3xl:w-[320px]'
 			/>
 			<Image
 				src={'/forme7.png'}
 				width={463}
 				height={344}
 				alt='cercle jaune'
-				className='absolute -left-2 top-[195vh] hidden w-[130px] lg:block'
+				className='absolute -left-2 top-[195vh] hidden w-[130px] lg:block 3xl:top-[215vh] 3xl:w-[300px] '
 			/>
 			<Image
 				src={'/forme10.png'}
@@ -54,7 +54,7 @@ const page = () => {
 				width={207}
 				height={227}
 				alt='cercles bleus'
-				className='absolute left-4 top-[285vh] hidden w-[150px] lg:block 2xl:top-[300vh]'
+				className='absolute left-4 top-[285vh] hidden w-[150px] lg:block 2xl:top-[300vh] 3xl:top-[280vh] 3xl:w-[300px] '
 			/>
 			<Image
 				src={'/forme3.png'}
