@@ -262,7 +262,7 @@ const page = () => {
 						</h2>
 						<div className='flex flex-col items-center justify-between gap-[50px] lg:flex-row '>
 							<Image
-								src='/football.jpg'
+								src='/football.webp'
 								alt='football'
 								width={1920}
 								height={2880}

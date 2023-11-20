@@ -8,13 +8,6 @@ const WhoAmI = () => {
 		<>
 			<div className='relative m-auto flex w-3/4 items-center justify-center lg:hidden'>
 				<Image
-					src='/chris-profile-light.svg'
-					alt='Chess'
-					width={789}
-					height={1080}
-					className='z-10'
-				/>
-				<Image
 					src='/circle-black.png'
 					alt='Chess'
 					width={239}
