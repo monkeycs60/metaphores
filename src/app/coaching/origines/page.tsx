@@ -80,7 +80,7 @@ const page = () => {
 						</h2>
 						<div className='flex flex-col items-center justify-between gap-[50px] lg:flex-row '>
 							<Image
-								src='/socrate.jpeg'
+								src='/socrate.webp'
 								alt='Socrate'
 								width={3323}
 								height={1829}
