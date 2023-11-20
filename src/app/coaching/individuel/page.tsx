@@ -19,42 +19,42 @@ const page = () => {
 				width={463}
 				height={344}
 				alt='fleche bas'
-				className='absolute -right-8 top-[100vh] hidden w-[240px] lg:block '
+				className='absolute -right-8 top-[100vh] hidden w-[240px] lg:block 3xl:top-[60vh] 3xl:w-[420px] '
 			/>
 			<Image
 				src={'/forme14.png'}
 				width={495}
 				height={424}
 				alt='fleche bas'
-				className='absolute -left-8 top-[165vh] hidden w-[240px] lg:block '
+				className='absolute -left-8 top-[165vh] hidden w-[240px] lg:block 3xl:hidden'
 			/>
 			<Image
 				src={'/circlelight.svg'}
 				width={200}
 				height={200}
 				alt='fleche bas'
-				className='absolute -left-32 top-[115vh] hidden w-[240px] lg:block '
+				className='absolute -left-32 top-[115vh] hidden w-[240px] lg:block 3xl:w-[320px]'
 			/>
 			<Image
 				src={'/circle-black.png'}
 				width={120}
 				height={183}
 				alt='fleche bas'
-				className='absolute -right-12 bottom-20 hidden w-[160px] lg:block '
+				className='absolute -right-12 bottom-20 hidden w-[160px] lg:block 3xl:w-[170px]'
 			/>
 			<Image
 				src={'/forme3.png'}
 				width={300}
 				height={280}
 				alt='blob'
-				className='absolute -right-12 top-[10vh] hidden w-[300px] lg:block 2xl:w-[360px] '
+				className='absolute -right-12 top-[10vh] hidden w-[300px] lg:block 2xl:w-[360px] 3xl:w-[420px] '
 			/>
 			<Image
 				src={'/forme4.png'}
 				width={300}
 				height={305}
 				alt='blob'
-				className='absolute -left-2 top-[4vh] hidden w-[120px] lg:block '
+				className='absolute -left-2 top-[4vh] hidden w-[120px] lg:block 3xl:top-[50vh] 3xl:w-[280px] '
 			/>
 			<div className='m-auto mt-24 w-[90%] lg:mt-16 lg:w-[80%] 2xl:w-[75%] 3xl:w-[60%]'>
 				<div className='flex flex-col gap-[75px]'>
@@ -292,8 +292,8 @@ const page = () => {
 								<p>
 									Si vous hésitez sur la formule qui vous conviendrait
 									le mieux ou si vous souhaitez obtenir plus
-									d'informations, n'hésitez pas à nous contacter.
-									Notre page{' '}
+									d'informations, n'hésitez pas à nous contacter. Notre
+									page{' '}
 									<Link
 										className='font-bold text-primaryOne hover:underline'
 										href={'/contact'}>

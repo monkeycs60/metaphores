@@ -26,7 +26,7 @@ const page = () => {
 				width={289}
 				height={269}
 				alt='fleche bas'
-				className='absolute left-2 top-[120vh] hidden w-[220px] lg:block'
+				className='absolute left-2 top-[120vh] hidden w-[220px] lg:block 3xl:w-[320px]'
 			/>
 			<Image
 				src={'/forme6.png'}
@@ -40,28 +40,28 @@ const page = () => {
 				width={485}
 				height={283}
 				alt='fleche bas'
-				className='absolute right-2 top-[180vh] hidden w-[220px] lg:block'
+				className='absolute right-2 top-[180vh] hidden w-[220px] lg:block 3xl:w-[320px]'
 			/>
 			<Image
 				src={'/forme1.png'}
 				width={92}
 				height={90}
 				alt='fleche bas'
-				className='absolute left-2 top-[220vh] hidden w-[92px] lg:block'
+				className='absolute left-2 top-[220vh] hidden w-[92px] lg:block 3xl:w-[120px]'
 			/>
 			<Image
 				src={'/forme6.png'}
 				width={289}
 				height={248}
 				alt='fleche bas'
-				className='absolute -right-6 top-[285vh] hidden w-[260px] lg:block'
+				className='absolute -right-6 top-[285vh] hidden w-[260px] lg:block 3xl:hidden'
 			/>
 			<Image
 				src={'/forme13.png'}
 				width={372}
 				height={358}
 				alt='fleche bas'
-				className='absolute left-0 top-[280vh] hidden w-[180px] lg:block'
+				className='absolute left-0 top-[280vh] hidden w-[180px] lg:block 3xl:bottom-[10vh]'
 			/>
 			<Image
 				src={'/forme1.png'}
@@ -89,7 +89,7 @@ const page = () => {
 			<div className='m-auto mt-24 w-[90%] lg:mt-16 lg:w-[80%] 2xl:w-[75%] 3xl:w-[60%]'>
 				<div className='flex flex-col items-center gap-[75px] text-center'>
 					<div className='flex w-[90%] flex-col gap-8 lg:w-2/3 lg:text-lg'>
-						<div className='relative mb-4  lg:mb-10 flex flex-col items-center gap-4 bg-primaryOne/20 p-8 text-center lg:text-lg lg:mt-0 lg:gap-2 lg:text-left'>
+						<div className='relative mb-4  flex flex-col items-center gap-4 bg-primaryOne/20 p-8 text-center lg:mb-10 lg:mt-0 lg:gap-2 lg:text-left lg:text-lg'>
 							<p>
 								Club de sport, association, fédération, troupe de
 								théatre...
