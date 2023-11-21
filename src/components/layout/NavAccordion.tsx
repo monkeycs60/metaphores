@@ -27,17 +27,17 @@ export function NavAccordion({ hamburgerBehavior }: navAccordionProps) {
 							onClick={hamburgerBehavior}>
 							Individuel
 						</Link>
-						<Link href='/coaching/origines' onClick={hamburgerBehavior}>
-							C'est quoi le coaching
-						</Link>
 						<Link href='/coaching/collectif' onClick={hamburgerBehavior}>
 							Collectif
 						</Link>
-						<Link href='/coaching/vision' onClick={hamburgerBehavior}>
-							Ma vision
-						</Link>
 						<Link href='/coaching/entreprise' onClick={hamburgerBehavior}>
 							Entreprise
+						</Link>
+						<Link href='/coaching/origines' onClick={hamburgerBehavior}>
+							C'est quoi le coaching
+						</Link>
+						<Link href='/coaching/vision' onClick={hamburgerBehavior}>
+							Ma vision
 						</Link>
 						<Link href='/coaching/psy' onClick={hamburgerBehavior}>
 							Coach ou psy ?
