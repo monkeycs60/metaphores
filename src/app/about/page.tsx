@@ -161,8 +161,8 @@ const page = () => {
 										<Palette className='w-[30px] lg:w-6' />
 										<span>
 											{' '}
-											Artiste de toile (collage et peinture) avec des
-											expositions à Bordeaux.
+											Artiste de toiles (collage et peinture) avec
+											des expositions à Bordeaux.
 										</span>
 									</li>
 									<li className='flex items-center gap-5 '>
@@ -193,7 +193,7 @@ const page = () => {
 										alt='spirale'
 										width={1069}
 										height={1090}
-										className='w-[250px] lg:w-[430px]'
+										className='w-[250px] lg:w-[550px]'
 									/>
 								</div>
 							</div>
@@ -228,11 +228,13 @@ const page = () => {
 								</p>
 								<p>
 									Les métaphores sont des outils que j’utilise
-									fréquemment pour aider mes clients à changer
-									d'univers et à visualiser leurs idéaux. A l’image
-									d’un metteur en scène, je vous aiderai à reprendre le
-									contrôle du rôle principal de votre vie, vous
-									assurant d'être au centre de cette transformation.
+									fréquemment pour aider mes clients à &nbsp;
+									<strong>changer d'univers</strong> &nbsp; et à
+									visualiser leurs idéaux. A l’image d’un metteur en
+									scène, je vous aiderai à reprendre le contrôle &nbsp;
+									<strong>du rôle principal de votre vie,</strong>
+									&nbsp; vous assurant d'être au centre de cette
+									transformation.
 								</p>
 							</div>
 						</div>
@@ -246,20 +248,27 @@ const page = () => {
 							<div className='flex  flex-col gap-4 rounded-xl bg-primaryOne/10 p-6 lg:w-[65%] lg:gap-2 lg:p-6'>
 								<p>
 									Notre cerveau fonctionne par images, et les
-									métaphores que nous utilisons reflètent notre
-									perception du monde. J'ai découvert la puissance des
-									métaphores pendant ma formation et j'ai vu leurs
-									effets positifs sur ceux que j'accompagne. Cet outil
-									est au cœur de mon approche.
+									métaphores que nous utilisons reflètent &nbsp;
+									<strong>notre perception du monde.</strong> &nbsp;
+									J'ai découvert la puissance des métaphores pendant ma
+									formation et j'ai vu leurs effets positifs sur ceux
+									que j'accompagne. Cet outil est au cœur de mon
+									approche.
 								</p>
 								<p>
-									Mon grand-père, un éminent professeur de grec ancien
-									qui chérissait "Le Petit Prince", m’a transmis cette
-									passion. Je crois que les choses essentielles ne sont
-									pas toujours évidentes. À travers le coaching, je
-									souhaite vous aider à voir au-delà du visible, à
-									découvrir le sens profond dans votre parcours de vie,
-									et à contribuer positivement au monde.
+									&nbsp;
+									<strong>Mon grand-père,</strong> &nbsp; un éminent
+									professeur de grec ancien qui chérissait &nbsp;
+									<strong>"Le Petit Prince",</strong> &nbsp; m’a
+									transmis cette passion. Je crois que les choses
+									essentielles ne sont pas toujours évidentes. À
+									travers le coaching, je souhaite &nbsp;
+									<strong>
+										vous aider à voir au-delà du visible,
+									</strong>{' '}
+									&nbsp; à découvrir le sens profond dans votre
+									parcours de vie, et à contribuer positivement au
+									monde.
 								</p>
 							</div>
 							<div className='flex flex-col justify-between gap-0 lg:gap-7'>
