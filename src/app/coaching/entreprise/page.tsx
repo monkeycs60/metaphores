@@ -271,7 +271,7 @@ const page = () => {
 							<div className='space-y-3 lg:space-y-2'>
 								<p>
 									Un coach professionnel spécialisé dans
-									l'accompagnement des dirigeants peut jouer un rôle
+									l'accompagnement et le développement peut jouer un rôle
 									clé en offrant un &nbsp;
 									<strong>soutien sur mesure</strong>
 									&nbsp; pour atteindre les objectifs fixés tout en
