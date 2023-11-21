@@ -46,7 +46,7 @@ const page = () => {
 				width={120}
 				height={183}
 				alt='cercle orange'
-				className='absolute right-32 top-64 hidden w-[80px] lg:block '
+				className='absolute right-8 top-64 hidden w-[80px] lg:block 3xl:right-32 '
 			/>
 			<div className='relative m-auto mt-24 flex w-[90%] flex-col gap-[54px] lg:mt-16 lg:w-[80%] 2xl:w-[70%] 3xl:w-[50%]'>
 				<div className=''>
