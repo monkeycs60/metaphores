@@ -15,6 +15,13 @@ const page = () => {
 				className='absolute left-0 top-64 hidden w-[200px] lg:block'
 			/>
 			<Image
+				src={'/desert.png'}
+				width={528}
+				height={489}
+				alt='fleche bas'
+				className='absolute left-[2vw] top-0 hidden w-[190px] lg:block 2xl:left-[8vw] 2xl:top-16 3xl:left-[14vw] 3xl:w-[240px]'
+			/>
+			<Image
 				src={'/forme7.png'}
 				width={463}
 				height={344}
@@ -54,7 +61,7 @@ const page = () => {
 				width={300}
 				height={305}
 				alt='blob'
-				className='absolute -left-2 top-[4vh] hidden w-[120px] lg:block 3xl:top-[50vh] 3xl:w-[280px] '
+				className='absolute -left-2 top-[4vh] hidden w-[120px] 2xl:block 3xl:top-[50vh] 3xl:w-[280px] '
 			/>
 			<div className='m-auto mt-24 w-[90%] lg:mt-16 lg:w-[80%] 2xl:w-[75%] 3xl:w-[60%]'>
 				<div className='flex flex-col gap-[75px]'>
@@ -274,7 +281,8 @@ const page = () => {
 								<p>
 									Le coaching individuel se déroule habituellement en
 									sessions de 60 minutes. Les séances se déroulent en
-									visio ou en présentiel - en intérieur ou en extérieur -, selon votre préférence.
+									visio ou en présentiel - en intérieur ou en extérieur
+									-, selon votre préférence.
 								</p>
 
 								<p>
