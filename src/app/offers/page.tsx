@@ -270,7 +270,7 @@ const page = () => {
 										minutes
 									</p>
 									<p className='mt-1 text-center text-sm italic'>
-										30€
+										35€
 									</p>
 								</div>
 							</div>

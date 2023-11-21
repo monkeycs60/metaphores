@@ -85,7 +85,7 @@ const page = () => {
 							Formules
 						</h2>
 						<div className='m-auto flex flex-col gap-8 lg:w-[90%] lg:flex-row lg:gap-[50px]'>
-							<div className='flex flex-col items-center gap-6 bg-secondaryOne p-8 drop-shadow-xl lg:h-[650px] lg:w-1/2 lg:gap-12'>
+							<div className='flex flex-col items-center gap-6 bg-secondaryOne p-8 drop-shadow-xl lg:h-[700px] lg:w-1/2 lg:gap-12 2xl:h-[650px]'>
 								<div className='flex flex-col gap-2 text-center'>
 									<h3 className='text-xl font-bold lg:text-2xl'>
 										Coaching Pro
@@ -108,7 +108,7 @@ const page = () => {
 										</p>
 									</div>
 									<div className='flex gap-4'>
-										<ChevronRightSquare className='h-8 w-8' />
+										<ChevronRightSquare className='h-8 w-8 ' />
 										<p className='w-full'>
 											Renforcement des aptitudes de communication
 											dans le respect de votre style personnel.
@@ -137,7 +137,7 @@ const page = () => {
 									</div>
 								</div>
 							</div>
-							<div className='flex flex-col items-center gap-6 bg-secondaryOne/60 p-8 drop-shadow-xl lg:h-[650px] lg:w-1/2 lg:gap-12'>
+							<div className='flex flex-col items-center gap-6 bg-secondaryOne/60 p-8 drop-shadow-xl lg:h-[700px] lg:w-1/2 lg:gap-12 2xl:h-[650px]'>
 								<div className='flex flex-col gap-2 text-center'>
 									<h3 className='text-xl font-bold lg:text-2xl'>
 										Coaching de Vie
@@ -274,7 +274,7 @@ const page = () => {
 								<p>
 									Le coaching individuel se déroule habituellement en
 									sessions de 60 minutes. Les séances se déroulent en
-									visio ou en présentiel, selon votre préférence.
+									visio ou en présentiel - en intérieur ou en extérieur -, selon votre préférence.
 								</p>
 
 								<p>

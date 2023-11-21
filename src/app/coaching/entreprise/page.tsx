@@ -238,7 +238,8 @@ const page = () => {
 							</h3>
 						</div>
 					</div>
-					<h2 className='mt-10 flex w-screen justify-center bg-primaryOne  p-4 text-center text-3xl font-bold  text-blackOne lg:text-left'>
+					<div className='h-[1px] w-2/3 bg-primaryOne '></div>
+					<h2 className='mt-2 flex w-screen justify-center bg-primaryOne/30  p-4 text-center text-3xl font-bold  text-blackOne lg:text-left'>
 						Coaching de dirigeant
 					</h2>
 					<div className='flex flex-col-reverse items-center justify-center gap-10 lg:flex-row-reverse'>
