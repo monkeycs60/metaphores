@@ -1,6 +1,12 @@
 import Image from 'next/image';
 import React from 'react';
-import { Minus, ChevronRightSquare, Dot, ArrowUpRight } from 'lucide-react';
+import {
+	Minus,
+	ChevronRightSquare,
+	Dot,
+	ArrowUpRight,
+	Check,
+} from 'lucide-react';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 
@@ -271,6 +277,73 @@ const page = () => {
 										pour vous aider à bâtir sur ce que vous avez déjà.
 									</h3>
 								</div>
+							</div>
+						</div>
+						<div className='flex flex-col items-center justify-center space-y-10'>
+							<h2 className='text-xl font-bold text-blackOne'>
+								Coaching en marchant
+							</h2>
+							<p className=''>
+								Un format inédit idéal pour vous recentrer et ouvrir
+								votre esprit à de nouveaux cheminements.
+							</p>
+							<div className='flex flex-col-reverse justify-center lg:flex-row'>
+								<div className='relative h-[450px] w-[400px] bg-green-950 p-8 text-white '>
+									<div className='space-y-4'>
+										<h2 className='text-center text-3xl font-semibold text-white'>
+											Le cheminement
+										</h2>
+										<div>
+											<p className='flex items-center justify-center gap-2 text-center'>
+												<span className='text-3xl font-bold'>
+													60
+												</span>{' '}
+												minutes
+											</p>
+										</div>
+									</div>
+									<div className='mt-10 flex flex-col items-start gap-6 text-gray-100'>
+										<div className='flex items-center gap-4'>
+											<div className='rounded-full bg-white p-1'>
+												<Check className='text-blackOne' />
+											</div>
+											<p>Identifier un bloquage</p>
+										</div>
+										<div className='flex items-center gap-4'>
+											<div className='rounded-full bg-white p-1'>
+												<Check className='text-blackOne' />
+											</div>
+											<p>Changer de perspective</p>
+										</div>
+										<div className='flex items-center gap-4'>
+											<div className='rounded-full bg-white p-1'>
+												<Check className='text-blackOne' />
+											</div>
+											<p>Ebaucher un changement de vie</p>
+										</div>
+									</div>
+									<Image
+										src='/walking.svg'
+										alt='man walking'
+										width={16}
+										height={28}
+										className='absolute bottom-6 right-12 w-[30px]'
+									/>
+									<Image
+										src='/walking.svg'
+										alt='man walking'
+										width={16}
+										height={28}
+										className='absolute bottom-6 right-24 w-[27px]'
+									/>
+								</div>
+								<Image
+									src='/forest.jpg'
+									alt='homme seul'
+									width={1920}
+									height={1279}
+									className='object-cover lg:w-1/3'
+								/>
 							</div>
 						</div>
 						<div className='flex flex-col gap-[55px] lg:m-auto lg:w-[80%]'>
