@@ -283,12 +283,9 @@ const page = () => {
 							<h2 className='text-xl font-bold text-blackOne'>
 								Coaching en marchant
 							</h2>
-							<p className=''>
-								Un format inédit idéal pour vous recentrer et ouvrir
-								votre esprit à de nouveaux cheminements.
-							</p>
+							<p className=''>Mettre son esprit en mouvement</p>
 							<div className='flex flex-col-reverse justify-center lg:flex-row'>
-								<div className='relative h-[450px] w-[400px] bg-green-950 p-8 text-white '>
+								<div className='relative h-[520px] w-[400px] bg-green-950 p-8 text-white '>
 									<div className='space-y-4'>
 										<h2 className='text-center text-3xl font-semibold text-white'>
 											Le cheminement
@@ -307,19 +304,37 @@ const page = () => {
 											<div className='rounded-full bg-white p-1'>
 												<Check className='text-blackOne' />
 											</div>
-											<p>Identifier un bloquage</p>
+											<p>
+												Déambuler au rythme de ses pensées.{' '}
+												<span className='mt-2 block text-xs italic'>
+													Le fait de voir les choses bouger aide
+													l'esprit à changer.
+												</span>
+											</p>
 										</div>
 										<div className='flex items-center gap-4'>
 											<div className='rounded-full bg-white p-1'>
 												<Check className='text-blackOne' />
 											</div>
-											<p>Changer de perspective</p>
+											<p>
+												Retrouver son équilibre
+												<span className='mt-2 block text-xs italic'>
+													Le déséquilibre permanent de la marche
+													aide l'esprit à sortir de ses blocages.
+												</span>
+											</p>
 										</div>
 										<div className='flex items-center gap-4'>
 											<div className='rounded-full bg-white p-1'>
 												<Check className='text-blackOne' />
 											</div>
-											<p>Ebaucher un changement de vie</p>
+											<p>
+												Trouver un nouveau chemin
+												<span className='mt-2 block text-xs italic'>
+													La profondeur de vue permet de découvrir
+													de nouveaux horizons.
+												</span>
+											</p>
 										</div>
 									</div>
 									<Image
