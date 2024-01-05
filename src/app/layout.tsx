@@ -6,6 +6,7 @@ import Footer from '@/components/layout/Footer';
 export const metadata: Metadata = {
 	title: 'Métaphore coaching',
 	description: 'Christophe Jacques, votre coach professionnel',
+	openGraph: { images: [{ url: '/final-logo.svg' }] },
 };
 
 export default function RootLayout({
