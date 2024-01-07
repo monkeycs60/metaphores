@@ -11,12 +11,13 @@ export const metadata: Metadata = {
 		title: 'Métaphore coaching',
 		description: 'Christophe Jacques, votre coach professionnel',
 		images: [
-			getCldOgImageUrl({
-				src: 'k6eowvgwc1w5xsg0q3xp',
+			{
+				url: getCldOgImageUrl({
+					src: 'k6eowvgwc1w5xsg0q3xp',
+				}),
 				width: 640,
 				height: 187,
-				crop: 'fill',
-			}),
+			},
 		],
 	},
 };
