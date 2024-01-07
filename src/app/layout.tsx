@@ -16,6 +16,7 @@ export const metadata: Metadata = {
 				width: 640,
 				height: 187,
 				crop: 'fill',
+				text: 'Métaphore coaching',
 			}),
 		],
 	},
