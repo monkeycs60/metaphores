@@ -13,10 +13,10 @@ export const metadata: Metadata = {
 		images: [
 			{
 				url: getCldOgImageUrl({
-					src: 'k6eowvgwc1w5xsg0q3xp',
+					src: 'sgxhzidob46rnoyhjqa6',
 				}),
-				width: 640,
-				height: 187,
+				width: 684,
+				height: 200,
 			},
 		],
 	},
