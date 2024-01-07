@@ -13,7 +13,7 @@ export const metadata: Metadata = {
 		images: [
 			getCldOgImageUrl({
 				src: 'k6eowvgwc1w5xsg0q3xp',
-				crop: 'fill',
+				fillBackground: true,
 			}),
 		],
 	},
