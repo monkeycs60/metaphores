@@ -12,7 +12,8 @@ export const metadata: Metadata = {
 		description: 'Christophe Jacques, votre coach professionnel',
 		images: [
 			getCldOgImageUrl({
-				src: 'qx0ymvdxhsevb4qhojo5',
+				src: 'k6eowvgwc1w5xsg0q3xp',
+				crop: 'fill',
 			}),
 		],
 	},
