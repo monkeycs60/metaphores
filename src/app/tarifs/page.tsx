@@ -20,8 +20,8 @@ export default function TarifsPage() {
 			<PageHero
 				title="Un accompagnement à votre mesure."
 				subtitle="Tarifs & formules"
-				image="/v2/bilan-carriere.webp"
-				imageAlt="Un carnet pour faire le point sur votre projet"
+				image="/photos/bilan-carriere.webp"
+				imageAlt="Un carnet marqué d’une rose des vents, pour faire le point"
 				actions={<HeroActions />}
 			>
 				<p>

@@ -128,7 +128,7 @@ export default function Home() {
 				title="Votre situation est singulière."
 				intro={<p>Certains parcours méritent une attention particulière.</p>}
 			>
-				<OfferList offers={SPECIFIC_OFFERS} shape="square" />
+				<OfferList offers={SPECIFIC_OFFERS} variant="split" />
 			</Section>
 
 			<Section>

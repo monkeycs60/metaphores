@@ -43,6 +43,7 @@ export function PageHero({
 	media,
 	caption,
 	actions,
+	split = false,
 }: {
 	title: ReactNode;
 	subtitle?: ReactNode;
@@ -52,6 +53,7 @@ export function PageHero({
 	media?: ReactNode;
 	caption?: ReactNode;
 	actions?: ReactNode;
+	split?: boolean;
 }) {
 	return (
 		<header className="page-hero">
@@ -72,7 +74,7 @@ export function PageHero({
 								height={1000}
 								priority
 								sizes="(min-width: 900px) 48vw, 100vw"
-								className="hero-photo"
+								className={cn('hero-photo', split && 'polyptych')}
 							/>
 						))}
 					{caption && <figcaption>{caption}</figcaption>}
@@ -154,36 +156,36 @@ export type Offer = {
 
 const OFFER_IMAGES: Record<string, { src: string; alt: string }> = {
 	'/coaching-professionnel': {
-		src: '/v2/coaching-professionnel.webp',
-		alt: 'Prendre de la hauteur sur les toits de Bordeaux',
+		src: '/photos/coaching-professionnel.webp',
+		alt: 'Une femme pensive regarde par la fenêtre de son bureau',
 	},
 	'/coaching-personnel': {
-		src: '/v3/conversation.webp',
-		alt: 'Un échange autour d’un carnet dans un lieu calme',
+		src: '/photos/coaching-personnel.webp',
+		alt: 'Deux personnes discutent au bord de l’eau',
 	},
-	'/bilan-carriere': { src: '/v2/bilan-carriere.webp', alt: 'Un carnet et une boussole pour faire le point' },
+	'/bilan-carriere': { src: '/photos/bilan-carriere.webp', alt: 'Un carnet marqué d’une rose des vents' },
 	'/transition-professionnelle': {
-		src: '/v2/transition-professionnelle.webp',
-		alt: 'Une passerelle ouverte vers une nouvelle rive',
+		src: '/photos/transition-professionnelle.webp',
+		alt: 'Une longue passerelle en bois à travers un marais',
 	},
-	'/jeunes-parents': { src: '/v2/jeunes-parents.webp', alt: 'Un jeune et son parent sur un chemin de dune' },
+	'/jeunes-parents': { src: '/photos/jeunes-parents.webp', alt: 'Un père et son fils marchent côte à côte' },
 	'/coaching-enseignants': {
-		src: '/v2/enseignants.webp',
-		alt: 'Une salle de classe dans la lumière du soir',
+		src: '/photos/classe.webp',
+		alt: 'Une salle de classe vide dans la lumière du soir',
 	},
 	'/entreprises-rps-qvct': {
-		src: '/v3/collectif.webp',
-		alt: 'Un temps de travail et de dialogue en petit groupe',
+		src: '/photos/entreprises.webp',
+		alt: 'Une équipe échange en cercle, dans un espace de travail',
 	},
 };
 
-export function OfferList({ offers, shape = 'circle' }: { offers: Offer[]; shape?: 'circle' | 'square' }) {
+export function OfferList({ offers, variant = 'portrait' }: { offers: Offer[]; variant?: 'portrait' | 'split' }) {
 	return (
 		<ul
 			className={cn(
 				'offer-gallery',
 				offers.length === 4 && 'offer-gallery-four',
-				shape === 'square' && 'offer-gallery-compact',
+				variant === 'split' && 'offer-gallery-split',
 			)}
 		>
 			{offers.map((offer) => {
@@ -199,14 +201,17 @@ export function OfferList({ offers, shape = 'circle' }: { offers: Offer[]; shape
 										width={720}
 										height={540}
 										sizes="(min-width: 1000px) 32vw, (min-width: 600px) 45vw, 100vw"
+										className={cn(variant === 'split' && 'polyptych polyptych-three')}
 									/>
 								</div>
 							)}
-							<div className="offer-heading">
-								<h3>{offer.title}</h3>
-								<ArrowRight size={22} strokeWidth={1.5} aria-hidden />
+							<div className="offer-copy">
+								<div className="offer-heading">
+									<h3>{offer.title}</h3>
+									<ArrowRight size={22} strokeWidth={1.5} aria-hidden />
+								</div>
+								<p>{offer.tagline}</p>
 							</div>
-							<p>{offer.tagline}</p>
 						</Link>
 						{offer.text && <p className="offer-detail">{offer.text}</p>}
 					</li>

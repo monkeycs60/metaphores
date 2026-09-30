@@ -15,8 +15,8 @@ export default function DeontologiePage() {
 			<PageHero
 				title="Un cadre de confiance pour avancer librement."
 				subtitle="Éthique & déontologie"
-				image="/v3/conversation.webp"
-				imageAlt="Une conversation dans un cadre calme et confidentiel"
+				image="/photos/conversation.webp"
+				imageAlt="Deux personnes échangent face à face, dans un cadre calme"
 			>
 				<p>
 					Métaphore Coaching adhère et respecte les chartes déontologiques de la profession, de type EMCC.

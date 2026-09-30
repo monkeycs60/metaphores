@@ -20,8 +20,8 @@ export default function CoachingDefinitionPage() {
 			<PageHero
 				title="Faire un pas de côté. Voir autrement."
 				subtitle="C’est quoi le coaching ?"
-				image="/v2/chemin.webp"
-				imageAlt="Un chemin dans les dunes ouvert vers l’océan"
+				image="/photos/chemin.webp"
+				imageAlt="Un sentier de sable entre les dunes"
 			>
 				<p>
 					Un accompagnement pour dépasser une difficulté ou atteindre un objectif, en trouvant les solutions
@@ -31,8 +31,8 @@ export default function CoachingDefinitionPage() {
 			<Section>
 				<Story
 					title="Le coach, un miroir de votre parole."
-					image="/v3/conversation.webp"
-					imageAlt="Un carnet ouvert accompagne une conversation de coaching"
+					image="/photos/conversation.webp"
+					imageAlt="Deux personnes échangent face à face lors d’une séance"
 				>
 					<p>
 						Par l’écoute, les questions et la reformulation, le coach vous aide à entendre autrement votre

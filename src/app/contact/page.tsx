@@ -33,8 +33,8 @@ export default function ContactPage() {
 				</div>
 				<div className="contact-atmosphere">
 					<Image
-						src="/v3/conversation.webp"
-						alt="Un cadre calme pour faire connaissance et échanger"
+						src="/photos/conversation.webp"
+						alt="Deux personnes échangent face à face, dans un cadre calme"
 						width={800}
 						height={400}
 						sizes="(min-width: 900px) 40vw, 100vw"

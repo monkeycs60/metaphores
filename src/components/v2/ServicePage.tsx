@@ -7,6 +7,7 @@ export type Service = {
 	description: string;
 	image: string;
 	imageAlt: string;
+	split?: boolean;
 	topicsTitle: string;
 	topics?: string[];
 	questions?: string[];
@@ -27,6 +28,7 @@ export default function ServicePage({ service }: { service: Service }) {
 				subtitle={service.context}
 				image={service.image}
 				imageAlt={service.imageAlt}
+				split={service.split}
 				actions={<HeroActions primary={service.primary} />}
 			>
 				<p>{service.description}</p>

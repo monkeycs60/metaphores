@@ -1,8 +1,8 @@
 import type { Service } from '@/components/v2/ServicePage';
 
 const conversation = {
-	storyImage: '/v3/conversation.webp',
-	storyImageAlt: 'Deux personnes échangent autour d’un carnet, dans la lumière d’une fenêtre',
+	storyImage: '/photos/conversation.webp',
+	storyImageAlt: 'Deux personnes échangent face à face, dans la lumière d’une grande baie vitrée',
 };
 const contact = (motif: string) => ({
 	label: 'Échanger sur votre situation',
@@ -15,8 +15,8 @@ export const services: Record<string, Service> = {
 		context: 'Coaching professionnel · Bordeaux & à distance',
 		description:
 			'Une évolution, une décision, un équilibre à retrouver. Clarifiez ce que vous souhaitez faire évoluer et comment y parvenir.',
-		image: '/v2/coaching-professionnel.webp',
-		imageAlt: 'Une personne regarde les toits de Bordeaux depuis une grande fenêtre',
+		image: '/photos/coaching-professionnel.webp',
+		imageAlt: 'Une femme pensive regarde par la fenêtre de son bureau',
 		topicsTitle: 'Qu’aimeriez-vous faire évoluer ?',
 		topics: [
 			'Le sens de votre travail',
@@ -44,8 +44,8 @@ export const services: Record<string, Service> = {
 		context: 'Coaching personnel · Bordeaux & à distance',
 		description:
 			'Vous savez ce que vous ne voulez plus, sans savoir encore ce qui vient après. Prenons le temps d’y voir plus clair.',
-		image: '/v3/conversation.webp',
-		imageAlt: 'Un échange de coaching autour d’une table, avec un carnet et une tasse',
+		image: '/photos/coaching-personnel.webp',
+		imageAlt: 'Deux personnes discutent au bord de l’eau, dans la lumière du soir',
 		topicsTitle: 'Un espace pour vous.',
 		topics: [
 			'La confiance en soi',
@@ -59,8 +59,8 @@ export const services: Record<string, Service> = {
 		storyText: [
 			'Le coaching offre un espace de réflexion, confidentiel et sans jugement. Nous explorons ce qui compte pour vous, ce qui vous freine et ce qui peut vous remettre en mouvement.',
 		],
-		storyImage: '/v2/chemin.webp',
-		storyImageAlt: 'Un chemin de sable ouvert vers l’horizon',
+		storyImage: '/photos/chemin.webp',
+		storyImageAlt: 'Un sentier de sable entre les dunes, vers le ciel',
 		notice: {
 			title: 'Un cadre distinct de la psychothérapie',
 			text: 'Le coaching n’est pas une psychothérapie et ne se substitue pas à un suivi médical ou psychologique lorsque celui-ci est nécessaire. Son cadre est orienté vers une situation, un objectif et la capacité d’action de la personne.',
@@ -77,8 +77,8 @@ export const services: Record<string, Service> = {
 		context: 'Bilan de carrière · Bordeaux & à distance',
 		description:
 			'Relire votre parcours, reconnaître vos compétences et clarifier vos envies avant de décider de la suite.',
-		image: '/v2/bilan-carriere.webp',
-		imageAlt: 'Un carnet ouvert, une boussole et une carte sur une table en bois',
+		image: '/photos/bilan-carriere.webp',
+		imageAlt: 'Un carnet en cuir marqué d’une rose des vents, à côté d’un ordinateur',
 		topicsTitle: 'Ce que nous explorons.',
 		topics: [
 			'Votre parcours et vos compétences',
@@ -109,8 +109,8 @@ export const services: Record<string, Service> = {
 		context: 'Transition & reconversion · Bordeaux & à distance',
 		description:
 			'Quelque chose ne vous convient plus. Explorons une nouvelle direction, sans idéaliser ni précipiter la décision.',
-		image: '/v2/transition-professionnelle.webp',
-		imageAlt: 'Une passerelle traverse un marais vers une rive ensoleillée',
+		image: '/photos/transition-professionnelle.webp',
+		imageAlt: 'Une longue passerelle en bois traverse un marais boisé',
 		topicsTitle: 'La question peut encore être floue.',
 		questions: [
 			'J’ai envie de changer mais je ne sais pas vers quoi.',
@@ -123,8 +123,8 @@ export const services: Record<string, Service> = {
 			'Une transition peut prendre plusieurs formes : reconversion, évolution de poste, nouvel environnement ou rééquilibrage de vos priorités.',
 			'Nous clarifions vos besoins, explorons vos possibilités et travaillons les freins. Puis nous construisons des étapes réalistes pour passer de la réflexion à l’action.',
 		],
-		storyImage: '/v2/bilan-carriere.webp',
-		storyImageAlt: 'Un carnet et une boussole pour préparer les prochaines étapes',
+		storyImage: '/photos/bilan-carriere.webp',
+		storyImageAlt: 'Un carnet marqué d’une rose des vents, prêt pour les prochaines étapes',
 		primary: contact('transition-professionnelle'),
 		related: [
 			{ label: 'Bilan de carrière', href: '/bilan-carriere' },
@@ -137,8 +137,9 @@ export const services: Record<string, Service> = {
 		context: 'Coaching jeunes & parents · Bordeaux',
 		description:
 			'Un espace neutre, différent de la famille et de l’école, pour parler librement, retrouver du sens et gagner en autonomie.',
-		image: '/v2/jeunes-parents.webp',
-		imageAlt: 'Un adolescent et son parent marchent sur un chemin de dune vers la mer',
+		image: '/photos/jeunes-parents.webp',
+		split: true,
+		imageAlt: 'Un père et son fils marchent côte à côte, face à la forêt',
 		topicsTitle: 'Pour quelles situations ?',
 		topics: [
 			'Motivation et sens',
@@ -154,8 +155,8 @@ export const services: Record<string, Service> = {
 			'Les parents peuvent aussi bénéficier de temps spécifiques pour clarifier la place de chacun, améliorer le dialogue et soutenir cette autonomie.',
 			'Plus de dix ans dans l’enseignement nourrissent mon écoute. Le coaching se concentre sur la personne, ses ressources et ses choix, au-delà des seuls résultats scolaires.',
 		],
-		storyImage: '/v2/enseignants.webp',
-		storyImageAlt: 'Une salle de classe vide dans la lumière de fin de journée',
+		storyImage: '/photos/jeunes-dialogue.webp',
+		storyImageAlt: 'Deux adolescents discutent, assis à une table en plein air',
 		primary: { label: 'Échanger sur la situation de votre enfant', href: '/contact?motif=jeunes-parents' },
 		related: [
 			{ label: 'Mon parcours', href: '/qui-suis-je' },
@@ -168,8 +169,9 @@ export const services: Record<string, Service> = {
 		context: 'Coaching enseignants · Bordeaux & à distance',
 		description:
 			'On peut aimer transmettre et ne plus se reconnaître dans ses conditions de travail. Prenons du recul sur ce qui vous questionne.',
-		image: '/v2/enseignants.webp',
-		imageAlt: 'Une salle de classe baignée de lumière dorée',
+		image: '/photos/classe.webp',
+		split: true,
+		imageAlt: 'Une salle de classe vide, baignée de la lumière du soir',
 		topicsTitle: 'Des questions que je connais de l’intérieur.',
 		questions: [
 			'Comment retrouver du sens dans mon métier ?',
@@ -182,7 +184,8 @@ export const services: Record<string, Service> = {
 			'Aucune réponse n’est décidée à l’avance. Nous pouvons travailler votre place dans le métier, faire un bilan de carrière, explorer une mobilité ou préparer une reconversion.',
 			'Enseignant en technologie pendant plus de dix ans, j’en connais les réalités. Mes propres reconversions, dans l’immobilier et l’aéronautique, nourrissent aussi ma compréhension du changement.',
 		],
-		...conversation,
+		storyImage: '/photos/enseignants.webp',
+		storyImageAlt: 'Un enseignant écrit au tableau, vu depuis le fond de la classe',
 		primary: contact('enseignant'),
 		related: [
 			{ label: 'Bilan de carrière', href: '/bilan-carriere' },

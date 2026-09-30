@@ -16,8 +16,8 @@ export default function RendezVousPage() {
 			<PageHero
 				title='Prenons le temps d’échanger.'
 				subtitle='Premier échange · Bordeaux & à distance'
-				image='/v3/conversation.webp'
-				imageAlt='Un carnet et une conversation pour faire connaissance'
+				image='/photos/conversation.webp'
+				imageAlt='Deux personnes échangent face à face pour faire connaissance'
 				actions={
 					<>
 						<a

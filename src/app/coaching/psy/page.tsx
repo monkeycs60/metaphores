@@ -13,8 +13,8 @@ export default function CoachOuPsyPage() {
 			<PageHero
 				title="Coach ou psy ? Comprendre le cadre."
 				subtitle="Choisir son accompagnement"
-				image="/v3/conversation.webp"
-				imageAlt="Deux personnes prennent le temps d’échanger autour d’un carnet"
+				image="/photos/conversation.webp"
+				imageAlt="Deux personnes prennent le temps d’échanger face à face"
 			>
 				<p>
 					Le coaching se concentre sur une situation, un objectif et votre capacité d’action. Il repose sur
@@ -24,8 +24,8 @@ export default function CoachOuPsyPage() {
 			<Section>
 				<Story
 					title="Clarifier le présent, préparer la suite."
-					image="/v2/chemin.webp"
-					imageAlt="Un chemin de dune se prolonge vers l’horizon"
+					image="/photos/chemin.webp"
+					imageAlt="Un sentier de sable se prolonge entre les dunes"
 				>
 					<p>
 						Le coach vous aide à regarder autrement ce que vous traversez, à différencier les faits et vos

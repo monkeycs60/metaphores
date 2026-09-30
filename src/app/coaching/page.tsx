@@ -46,8 +46,8 @@ export default function CoachingPage() {
 			<PageHero
 				title="Prendre du recul. Choisir comment avancer."
 				subtitle="Les accompagnements · Bordeaux & à distance"
-				image="/v3/conversation.webp"
-				imageAlt="Un temps d’échange autour d’un carnet dans un espace calme"
+				image="/photos/conversation.webp"
+				imageAlt="Deux personnes échangent face à face, dans la lumière d’une baie vitrée"
 				actions={<HeroActions />}
 			>
 				<p>

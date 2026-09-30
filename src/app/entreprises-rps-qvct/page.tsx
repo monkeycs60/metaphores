@@ -58,8 +58,9 @@ export default function EntreprisesPage() {
 			<PageHero
 				title="Remettre du dialogue dans le travail."
 				subtitle="Entreprises & organisations · Bordeaux et région"
-				image="/v3/collectif.webp"
-				imageAlt="Trois personnes échangent et travaillent autour d’une table en bois"
+				split
+				image="/photos/entreprises.webp"
+				imageAlt="Une équipe échange en cercle, dans un espace de travail lumineux"
 				actions={<HeroActions primary={CTA.business} />}
 			>
 				<p>
@@ -91,8 +92,8 @@ export default function EntreprisesPage() {
 			<Section tone="cream">
 				<Story
 					title="Partir du travail réel."
-					image="/v3/conversation.webp"
-					imageAlt="Un échange dans un cadre calme, avec un carnet ouvert"
+					image="/photos/entreprises-atelier.webp"
+					imageAlt="Un atelier d’équipe devant un tableau couvert de notes"
 				>
 					<p>
 						Les difficultés peuvent aussi être organisationnelles. L’accompagnement tient compte du contexte
