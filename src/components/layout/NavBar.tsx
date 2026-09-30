@@ -25,7 +25,7 @@ export default function NavBar() {
 
 	return (
 		<header
-			className="site-nav"
+			className='site-nav'
 			onKeyDown={(event) => {
 				if (event.key === 'Escape') {
 					if (menuOpen) menuButton.current?.focus();
@@ -34,33 +34,31 @@ export default function NavBar() {
 				}
 			}}
 		>
-			<div className="site-nav-inner">
-				<Link href="/" aria-label="Métaphore Coaching, accueil" onClick={close} className="shrink-0">
+			<div className='site-nav-inner'>
+				<Link href='/' aria-label='Métaphore Coaching, accueil' onClick={close} className='shrink-0'>
 					<Image
-						src="/Logo.svg"
-						alt="Métaphore Coaching"
+						src='/Logo.svg'
+						alt='Métaphore Coaching'
 						width={580}
 						height={208}
 						priority
-						className="nav-logo"
+						className='nav-logo'
 					/>
 				</Link>
-				<nav aria-label="Navigation principale" className="hidden xl:block">
-					<ul className="desktop-nav">
+				<nav aria-label='Navigation principale' className='hidden xl:block'>
+					<ul className='desktop-nav'>
 						{MAIN_NAV.filter((item) => item.href !== '/').map((item) =>
 							item.href === '/coaching' ? (
 								<li
 									key={item.href}
-									className="nav-coaching"
-									onMouseEnter={() => setCoachingOpen(true)}
-									onMouseLeave={() => setCoachingOpen(false)}
+									className='nav-coaching'
 									onBlur={(event) => {
 										if (!event.currentTarget.contains(event.relatedTarget)) setCoachingOpen(false);
 									}}
 								>
-									<div className="flex items-center">
+									<div className='flex items-center'>
 										<Link
-											href="/coaching"
+											href='/coaching'
 											aria-current={active('/coaching') ? 'page' : undefined}
 											onClick={close}
 											className={cn('nav-link', active('/coaching') && 'nav-active')}
@@ -69,18 +67,18 @@ export default function NavBar() {
 										</Link>
 										<button
 											ref={coachingButton}
-											type="button"
+											type='button'
 											aria-expanded={coachingOpen}
-											aria-controls="coaching-menu"
-											aria-label="Afficher les accompagnements de coaching"
+											aria-controls='coaching-menu'
+											aria-label='Afficher les accompagnements de coaching'
 											onClick={() => setCoachingOpen((open) => !open)}
-											className="nav-dropdown-toggle"
+											className='nav-dropdown-toggle'
 										>
 											<ChevronDown size={15} aria-hidden />
 										</button>
 									</div>
 									{coachingOpen && (
-										<ul id="coaching-menu" className="coaching-menu">
+										<ul id='coaching-menu' className='coaching-menu'>
 											{COACHING_SUBNAV.map((sub) => (
 												<li key={sub.href}>
 													<Link href={sub.href} onClick={close}>
@@ -107,25 +105,25 @@ export default function NavBar() {
 						)}
 					</ul>
 				</nav>
-				<div className="flex items-center gap-3">
-					<Link href={CTA.booking.href} onClick={close} className="nav-booking hidden sm:inline-flex">
+				<div className='flex items-center gap-3'>
+					<Link href={CTA.booking.href} onClick={close} className='nav-booking hidden sm:inline-flex'>
 						{CTA.booking.label}
 					</Link>
 					<button
 						ref={menuButton}
-						type="button"
+						type='button'
 						aria-label={menuOpen ? 'Fermer le menu' : 'Ouvrir le menu'}
 						aria-expanded={menuOpen}
-						aria-controls="mobile-menu"
+						aria-controls='mobile-menu'
 						onClick={() => setMenuOpen((open) => !open)}
-						className="nav-menu-button xl:hidden"
+						className='nav-menu-button xl:hidden'
 					>
 						{menuOpen ? <X size={26} aria-hidden /> : <Menu size={26} aria-hidden />}
 					</button>
 				</div>
 			</div>
 			{menuOpen && (
-				<nav id="mobile-menu" aria-label="Menu mobile" className="mobile-nav xl:hidden">
+				<nav id='mobile-menu' aria-label='Menu mobile' className='mobile-nav xl:hidden'>
 					<ul>
 						{MAIN_NAV.map((item) => (
 							<li key={item.href}>
@@ -133,7 +131,7 @@ export default function NavBar() {
 									{item.label}
 								</Link>
 								{item.href === '/coaching' && (
-									<ul className="mobile-subnav">
+									<ul className='mobile-subnav'>
 										{COACHING_SUBNAV.map((sub) => (
 											<li key={sub.href}>
 												<Link href={sub.href} onClick={close}>
@@ -146,7 +144,7 @@ export default function NavBar() {
 							</li>
 						))}
 					</ul>
-					<Link href={CTA.booking.href} onClick={close} className="action action-primary">
+					<Link href={CTA.booking.href} onClick={close} className='action action-primary'>
 						{CTA.booking.label}
 						<ArrowRight size={18} aria-hidden />
 					</Link>

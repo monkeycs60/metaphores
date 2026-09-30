@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
-import { Clock3, HeartHandshake, Video } from 'lucide-react';
+import { ArrowUpRight, Clock3, HeartHandshake, Video } from 'lucide-react';
 import CalBooking from '@/components/booking/CalBooking';
+import { ButtonLink, PageHero } from '@/components/v2/ui';
 import { CAL_LINK, CONTACT } from '@/lib/site';
 
 export const metadata: Metadata = {
@@ -11,43 +12,51 @@ export const metadata: Metadata = {
 };
 export default function RendezVousPage() {
 	return (
-		<div className="booking-layout">
-			<div className="booking-heading">
-				<div>
-					<h1 className="booking-title">Prenons le temps d’échanger.</h1>
-					<p>Un premier rendez-vous pour faire connaissance et voir comment je peux vous accompagner.</p>
+		<>
+			<PageHero
+				title='Prenons le temps d’échanger.'
+				subtitle='Premier échange · Bordeaux & à distance'
+				image='/v3/conversation.webp'
+				imageAlt='Un carnet et une conversation pour faire connaissance'
+				actions={
+					<>
+						<a
+							href={`https://cal.com/${CAL_LINK}`}
+							target='_blank'
+							rel='noopener noreferrer'
+							className='action action-primary'
+						>
+							Choisir un créneau
+							<ArrowUpRight size={18} aria-hidden />
+						</a>
+						<ButtonLink href='/contact' variant='text'>
+							Écrivez-moi
+						</ButtonLink>
+					</>
+				}
+			>
+				<p>Un premier rendez-vous pour faire connaissance et voir comment je peux vous accompagner.</p>
+				<div className='booking-facts'>
+					<span>
+						<Clock3 size={19} aria-hidden />
+						30 minutes
+					</span>
+					<span>
+						<HeartHandshake size={19} aria-hidden />
+						Gratuit, sans engagement
+					</span>
+					<span>
+						<Video size={19} aria-hidden />
+						Téléphone ou visio
+					</span>
 				</div>
-				<p className="booking-fallback">
-					Aucun créneau ne vous convient ?<br />
-					<a href={CONTACT.phoneHref}>{CONTACT.phone}</a> ou <a href="/contact">écrivez-moi</a>.
+			</PageHero>
+			<section className='booking-options' aria-label='Autres possibilités de réservation'>
+				<p>
+					Aucun créneau ne vous convient ? Appelez le <a href={CONTACT.phoneHref}>{CONTACT.phone}</a>.
 				</p>
-			</div>
-			<div className="booking-facts">
-				<span>
-					<Clock3 size={20} aria-hidden />
-					30 minutes
-				</span>
-				<span>
-					<HeartHandshake size={20} aria-hidden />
-					Gratuit, sans engagement
-				</span>
-				<span>
-					<Video size={20} aria-hidden />
-					Téléphone ou visio
-				</span>
-			</div>
-			<CalBooking calLink={CAL_LINK} />
-			<p className="booking-external">
-				Le calendrier ne s’affiche pas ?{' '}
-				<a
-					href={`https://cal.com/${CAL_LINK}`}
-					target="_blank"
-					rel="noopener noreferrer"
-					className="underline underline-offset-4"
-				>
-					Ouvrir la réservation sur Cal.com
-				</a>
-			</p>
-		</div>
+				<CalBooking calLink={CAL_LINK} />
+			</section>
+		</>
 	);
 }
