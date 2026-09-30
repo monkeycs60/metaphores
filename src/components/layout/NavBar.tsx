@@ -53,7 +53,9 @@ export default function NavBar() {
 									key={item.href}
 									className='nav-coaching'
 									onBlur={(event) => {
-										if (!event.currentTarget.contains(event.relatedTarget)) setCoachingOpen(false);
+										if (event.relatedTarget && !event.currentTarget.contains(event.relatedTarget)) {
+											setCoachingOpen(false);
+										}
 									}}
 								>
 									<div className='flex items-center'>
