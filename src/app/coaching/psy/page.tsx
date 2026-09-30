@@ -1,218 +1,55 @@
-import Image from 'next/image';
 import type { Metadata } from 'next';
+import { ButtonLink, Notice, PageHero, Section, Story } from '@/components/v2/ui';
 
 export const metadata: Metadata = {
 	title: 'Coach ou psy ?',
 	description:
 		'Ce qui distingue le coaching d’une psychothérapie, et quand orienter vers un autre professionnel.',
+	alternates: { canonical: '/coaching/psy' },
 };
-
-const page = () => {
+export default function CoachOuPsyPage() {
 	return (
-		<div className='relative w-[100%]'>
-			<Image
-				src={'/twoCircles.svg'}
-				width={120}
-				height={183}
-				alt='fleche bas'
-				className='absolute left-0 top-64 hidden w-[100px] lg:block 2xl:w-[200px] '
-			/>
-			<Image
-				src={'/forme8.png'}
-				width={293}
-				height={247}
-				alt='fleche bas'
-				className='absolute right-0 top-[80vh] hidden w-[140px] lg:block 2xl:right-8 2xl:w-[200px] 3xl:top-[40vh] 3xl:w-[250px] '
-			/>
-			<Image
-				src={'/forme6.png'}
-				width={289}
-				height={248}
-				alt='fleche bas'
-				className='absolute -left-6 top-[140vh] hidden w-[160px] lg:block 2xl:left-0 2xl:top-[110vh] 3xl:left-16 3xl:top-[65vh] 3xl:w-[220px] '
-			/>
-			<Image
-				src={'/circle-black.png'}
-				width={120}
-				height={183}
-				alt='fleche bas'
-				className='absolute -right-12 bottom-20 hidden lg:block lg:w-[160px] '
-			/>
-			<div className='m-auto mt-24 w-[90%] lg:mt-16 lg:w-[80%] 2xl:w-[75%] 3xl:w-[60%]'>
-				<div>
-					<div className='flex flex-col gap-[55px]'>
-						<div>
-							<h1 className='flex justify-center text-center text-3xl font-bold text-blackOne lg:text-left'>
-								Coach ou psychologue{' '}
-								<span className='hidden px-2 lg:block'>:</span>{' '}
-								clarifications
-							</h1>
-							<div className='m-auto mt-2 h-[1px] w-[50%] bg-blackOne'></div>
-						</div>
-						<div>
-							<p className='lg:text-lg'>
-								Il est de plus en plus dur de trouver des personnes qui
-								écoutent vraiment. Écouter dans le sens être avec
-								l’autre en se mettant à distance pour l’accompagner.
-								C’est à dire sans parler de soi. Sans se référer à soi
-								pour trouver des solutions pour l’autre. Sans penser que
-								sa solution sera aussi bonne pour vous.
-							</p>
-						</div>
-						<div className='flex flex-col items-center justify-between gap-[40px] lg:flex-row'>
-							<Image
-								src={'/psycoach.png'}
-								width={1458}
-								height={813}
-								alt='psy'
-								className='w-[300px] lg:w-[400px] '
-							/>
-							<div className='flex flex-1 flex-col gap-2 rounded-xl bg-primaryOne/10 p-6'>
-								<p>
-									<span className='font-bold'>
-										Le coach n’est pas un psychologue !
-									</span>{' '}
-									Il n’a pas de formation pour intervenir sur le passé
-									du client et doit donc y faire attention.
-								</p>
-								<p>
-									C’est un{' '}
-									<span className='font-bold'>
-										spécialiste du langage
-									</span>
-									. Il travaille dans l’ici et maintenant et vers le
-									futur. Il est là pour vous écouter, à l’instar d’un
-									psy. Accueillir ce qui vous amène. Il se rapproche du
-									psy en ce sens mais contrairement à lui ne va pas
-									travailler à déconstruire votre passé. Le coach vous
-									accompagne dans le présent pour mettre en œuvre des
-									changements dans le futur.
-								</p>
-								<p className='font-bold'>
-									Son écoute sera active car il va reformuler et
-									questionner pour vous aider à clarifier vos pensées.
-								</p>
-							</div>
-						</div>
-						<div className='flex flex-col items-center justify-between gap-[40px] lg:flex-row-reverse'>
-							<Image
-								src={'/times.jpg'}
-								width={640}
-								height={852}
-								alt='psy'
-								className='w-[220px] '
-							/>
-							<div className='flex flex-1 flex-col gap-2 rounded-xl bg-primaryOne/10 p-6'>
-								<p>
-									Le coach accompagne en vous ramenant{' '}
-									<span className='font-bold'>
-										dans le présent afin de vous projeter vers votre
-										avenir{' '}
-									</span>{' '}
-									et agir dans votre vie. Il se peut que dans cet
-									accompagnant le passé soit évoqué et discuté afin de
-									mieux travailler dans le présent mais il ne sera pas
-									travaillé.
-								</p>
-								<p>
-									Si vous souhaitez approfondir la compréhension de ce
-									passé, le travailler, pour éventuellement le
-									déconstruire ou mieux l’appréhender, il sera
-									préférable de recourir aux services d'un psychologue
-									ou psychiatre car ce sont leurs domaines
-									d’application.
-								</p>
-								<p>
-									Cette réorientation ne signifie pas forcement la fin
-									de l’accompagnement car ces deux approches sont
-									différentes. Elles peuvent donc être complémentaires
-									et menées en parallèle en fonction des besoins. Il
-									revient donc à chacun de choisir la solution qui
-									répondra au mieux à ses préoccupations du moment.
-								</p>
-							</div>
-						</div>
-						<div>
-							<h2 className='text-center text-xl font-bold text-blackOne lg:text-left'>
-								Il est quoi le coach ?
-							</h2>
-						</div>
-						<div className='flex flex-col items-center justify-between gap-[40px] lg:flex-row'>
-							<Image
-								src={'/binocular.jpg'}
-								width={640}
-								height={960}
-								alt='psy'
-								className='w-[200px] '
-							/>
-							<div className='flex flex-1 flex-col gap-2 rounded-xl bg-primaryOne/10 p-6'>
-								<p>
-									Un coach en réalité n’est{' '}
-									<span className='font-bold'>pas un entraîneur </span>{' '}
-									qui va vous donner tout un tas d'exercices qu’il sait
-									pouvoir vous aider à performer dans un domaine mais
-									plutôt quelqu’un qui va vous accompagner sur le
-									chemin que vous choisirez d’emprunter.
-								</p>
-								<p>
-									Le postulat de base est que l’on ne sait pas où vous
-									devez aller. Le coach n’a pas à être un spécialiste
-									de votre branche ou d’un domaine. D’ailleurs moins il
-									le sera plus il sera amène de vous accompagner de
-									manière neutre. Cela évitera qu’il ait une idée
-									préconçu sur ce qui vous amène.{' '}
-									<span className='font-bold'>
-										Il est la longue vue de votre esprit.
-									</span>
-								</p>
-								<p>
-									Il n’est donc{' '}
-									<span className='font-bold'>
-										pas non plus un guide ou un conseiller.
-									</span>
-								</p>
-							</div>
-						</div>
-						<div className='flex flex-col items-center justify-between gap-[40px] lg:flex-row-reverse'>
-							<Image
-								src={'/blocnotes.jpg'}
-								width={640}
-								height={426}
-								alt='psy'
-								className='w-[320px] '
-							/>
-							<div className='flex flex-1 flex-col gap-2 rounded-xl bg-primaryOne/10 p-6'>
-								<p>
-									Ce qui vous amène c’est une envie de changement, un
-									problème, une frustration, une envie de progresser,
-									un changement de vie… La clarification va donc vous
-									permettre de trouver des solutions ou des pistes.
-								</p>
-								<p>
-									Le coach pourrait être un{' '}
-									<span className='font-bold'>clarificateur. </span> Il
-									va en questionnant et reformulant essayer de vous
-									aider à différencier vos pensées et les faits, à
-									questionner vos croyances, vos convictions pour vous
-									permettre de comprendre et de clarifier votre
-									situation et la faire évoluer.
-								</p>
-								<p>
-									Cela va vous permettra de changer ce qui est
-									nécessaire et avancer.
-								</p>
-								<p>
-									Plus le coach sera neutre, plus il reflétera vos
-									pensées et sera à même de vous aider à clarifier les
-									choses pour vous.
-								</p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
+		<>
+			<PageHero
+				title="Coach ou psy ? Comprendre le cadre."
+				subtitle="Choisir son accompagnement"
+				image="/v3/conversation.webp"
+				imageAlt="Deux personnes prennent le temps d’échanger autour d’un carnet"
+			>
+				<p>
+					Le coaching se concentre sur une situation, un objectif et votre capacité d’action. Il repose sur
+					l’écoute, le questionnement et la reformulation.
+				</p>
+			</PageHero>
+			<Section>
+				<Story
+					title="Clarifier le présent, préparer la suite."
+					image="/v2/chemin.webp"
+					imageAlt="Un chemin de dune se prolonge vers l’horizon"
+				>
+					<p>
+						Le coach vous aide à regarder autrement ce que vous traversez, à différencier les faits et vos
+						représentations, puis à explorer vos propres pistes.
+					</p>
+					<p>
+						Votre passé peut être évoqué pour éclairer une situation actuelle. Le travail du coach reste
+						orienté vers vos choix et vos prochaines actions.
+					</p>
+				</Story>
+			</Section>
+			<Section tone="cream">
+				<Notice title="Le coaching ne remplace pas un suivi médical ou psychologique">
+					<p>
+						Le coaching n’est pas une psychothérapie. Lorsqu’un suivi médical ou psychologique est nécessaire,
+						il doit être assuré par les professionnels concernés. Le coach reconnaît les limites de son
+						intervention et peut vous orienter vers eux.
+					</p>
+					<p>Les deux approches peuvent être complémentaires, selon votre situation et vos besoins.</p>
+				</Notice>
+				<ButtonLink href="/coaching-personnel" variant="text">
+					Découvrir le coaching personnel
+				</ButtonLink>
+			</Section>
+		</>
 	);
-};
-
-export default page;
+}

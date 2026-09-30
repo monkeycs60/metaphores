@@ -34,3 +34,15 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+## Direction artistique — version éditoriale
+
+Le site conserve le logo et sa palette : blanc chaud `#FFFDF9`, marine `#0D0630`, jaune `#FFBA08`, bleu pâle `#B4D6E6`. Yeseva One pour les titres, Inter pour la lecture. Photographies naturelles, lumière douce, sable, bois et lin ; pas de texte intégré ni de visages identifiables dans les images générées. Le portrait de Christophe est une photo existante.
+
+| Famille | Sources | Fichiers servis | Format et usage |
+| --- | --- | --- | --- |
+| Paysage d’accueil | `assets-src/editorial/horizon.png` | `public/v3/horizon.webp` | 1536 × 1024, WebP, recadrage plein écran adapté au mobile |
+| Échange individuel | `assets-src/editorial/conversation.png` | `public/v3/conversation.webp` | 1280 × 960, WebP, pages d’offres et contact |
+| Accompagnement collectif | `assets-src/editorial/collectif.png` | `public/v3/collectif.webp` | 1280 × 960, WebP, entreprises et accueil |
+
+Les prompts sont conservés dans `assets-src/editorial/README.md`. Les textes des accompagnements sont dans `src/lib/accompagnements.ts`, leur composition dans `src/components/v2/ServicePage.tsx`. Les témoignages complets restent disponibles à la demande sur l’accueil.

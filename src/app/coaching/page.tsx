@@ -1,5 +1,5 @@
 import type { Metadata } from 'next';
-import { OfferList, PageHero, Section } from '@/components/v2/ui';
+import { OfferList, PageHero, Section, Steps } from '@/components/v2/ui';
 import { ContactBand, HeroActions } from '@/components/v2/blocks';
 
 export const metadata: Metadata = {
@@ -8,85 +8,65 @@ export const metadata: Metadata = {
 		'Coaching professionnel, coaching personnel, bilan de carrière et transition professionnelle à Bordeaux et en visio. Prendre du recul et choisir comment avancer.',
 	alternates: { canonical: '/coaching' },
 };
-
 const OFFERS = [
 	{
 		title: 'Coaching professionnel',
-		tagline: 'Retrouver du sens et de la capacité d’action',
-		text: 'Retrouver du sens et de la capacité d’action dans sa vie professionnelle : évolution, positionnement, relations, décisions, équilibre, prise de responsabilités ou transition.',
+		tagline: 'Retrouver du sens et de la capacité d’action au travail.',
+		text: '',
 		href: '/coaching-professionnel',
-		linkLabel: 'Découvrir le coaching professionnel',
 	},
 	{
 		title: 'Coaching personnel',
-		tagline: 'Prendre du recul sur une situation',
-		text: 'Prendre du recul sur une situation personnelle, travailler la confiance, les choix, les changements, les priorités, les limites et la recherche de sens.',
+		tagline: 'Prendre du recul sur une situation de vie.',
+		text: '',
 		href: '/coaching-personnel',
-		linkLabel: 'Découvrir le coaching personnel',
 	},
 	{
 		title: 'Bilan de carrière',
-		tagline: 'Faire le point avant de décider',
-		text: 'Faire le point sur son parcours, ses compétences, ses motivations et ses possibilités avant de décider de la suite.',
+		tagline: 'Faire le point avant de décider de la suite.',
+		text: '',
 		href: '/bilan-carriere',
-		linkLabel: 'Découvrir le bilan de carrière',
 	},
 	{
-		title: 'Transition professionnelle & reconversion',
-		tagline: 'Construire un changement choisi',
-		text: 'Explorer et construire un changement de métier, de secteur, de fonction ou de manière de travailler, sans idéaliser ni précipiter la décision.',
+		title: 'Transition professionnelle',
+		tagline: 'Explorer et construire un changement choisi.',
+		text: '',
 		href: '/transition-professionnelle',
-		linkLabel: 'Découvrir la transition professionnelle',
 	},
 ];
-
-const MOVEMENT = ['Comprendre', 'Clarifier', 'Expérimenter', 'Agir'];
-
+const STEPS = [
+	{ title: 'Comprendre', text: 'Regarder votre situation sous un autre angle.' },
+	{ title: 'Clarifier', text: 'Identifier vos ressources et ce qui compte pour vous.' },
+	{ title: 'Expérimenter', text: 'Explorer des possibilités et questionner les freins.' },
+	{ title: 'Agir', text: 'Construire vos prochaines étapes.' },
+];
 export default function CoachingPage() {
 	return (
 		<>
 			<PageHero
-				title='Prendre du recul. Comprendre ce qui se joue. Choisir comment avancer.'
-				image='/alone.jpg'
-				imageAlt='Une personne debout face à l’horizon, au lever du jour'
-				caption={
-					<>
-						Trouver du <span className='bg-blackOne px-1.5 text-whiteOne'>sens</span> et en donner
-					</>
-				}
-				actions={<HeroActions />}>
+				title="Prendre du recul. Choisir comment avancer."
+				subtitle="Les accompagnements · Bordeaux & à distance"
+				image="/v3/conversation.webp"
+				imageAlt="Un temps d’échange autour d’un carnet dans un espace calme"
+				actions={<HeroActions />}
+			>
 				<p>
-					Il n’est pas nécessaire d’être en crise pour faire appel à un coach. Parfois, quelque chose ne convient simplement plus :
-					une situation professionnelle qui interroge, une décision difficile, une envie de changement encore imprécise, un
-					équilibre à retrouver ou simplement le besoin de faire le point.
+					Une décision difficile, une envie de changement ou simplement le besoin de faire le point. Vous
+					pouvez venir avec une question encore imprécise.
 				</p>
-				<p>Le coaching offre un espace pour s’arrêter, questionner ce que l’on vit et retrouver sa capacité à choisir et à agir.</p>
 			</PageHero>
-
-			<Section title='Quel accompagnement recherchez-vous ?'>
+			<Section title="Quel chemin souhaitez-vous explorer ?">
 				<OfferList offers={OFFERS} />
 			</Section>
-
 			<Section
-				tone='blue'
-				title='Une même approche, quelle que soit votre situation'
+				tone="blue"
+				title="Vos réponses, votre mouvement."
 				intro={
-					<p>
-						Je ne décide pas à votre place. Je ne vous explique pas ce que vous devriez devenir. Je vous aide à prendre
-						suffisamment de recul pour mieux comprendre votre situation, identifier vos ressources, questionner certains freins
-						et retrouver votre capacité à choisir.
-					</p>
-				}>
-				<ol aria-label='Les étapes de l’approche' className='flex flex-wrap items-center gap-x-4 gap-y-3 font-yeseva text-2xl text-blackOne lg:text-3xl'>
-					{MOVEMENT.map((word, i) => (
-						<li key={word} className='flex items-center gap-4'>
-							<span className={i === MOVEMENT.length - 1 ? 'bg-primaryOne px-2' : ''}>{word}</span>
-							{i < MOVEMENT.length - 1 && <span aria-hidden className='h-[2px] w-8 bg-blackOne/40 lg:w-14' />}
-						</li>
-					))}
-				</ol>
+					<p>Je vous accompagne pour retrouver votre capacité à choisir. La direction reste la vôtre.</p>
+				}
+			>
+				<Steps steps={STEPS} />
 			</Section>
-
 			<ContactBand />
 		</>
 	);

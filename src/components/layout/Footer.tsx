@@ -1,88 +1,78 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import { COACHING_SUBNAV, CONTACT, LOCATIONS, MAIN_NAV } from '@/lib/site';
+import { COACHING_SUBNAV, CONTACT } from '@/lib/site';
 
-const PRACTICAL_LINKS = [
-	{ label: 'Déontologie', href: '/deontologie' },
-	{ label: 'Tarifs', href: '/tarifs' },
-	{ label: 'C’est quoi le coaching ?', href: '/coaching/origines' },
-	{ label: 'Coach ou psy ?', href: '/coaching/psy' },
-	{ label: 'Mentions légales et confidentialité', href: '/mentions-legales' },
-];
-
-const Footer = () => {
+export default function Footer() {
 	return (
-		<footer className='mt-8 bg-primaryOne/25 text-blackOne'>
-			<div className='mx-auto grid max-w-7xl gap-12 px-6 py-16 lg:grid-cols-[1.2fr_1fr_1fr_1fr] lg:px-10'>
-				<div className='flex flex-col gap-4'>
-					<Image src='/Logo.svg' alt='Métaphore Coaching' width={580} height={208} className='w-[160px]' />
-					<p className='font-caveat text-2xl'>Coaching professionnel et personnel à Bordeaux et à distance</p>
-					<div className='flex flex-col gap-1 text-[15px]'>
-						<a href={CONTACT.phoneHref} className='hover:underline'>
-							{CONTACT.phone}
-						</a>
-						<a href={`mailto:${CONTACT.email}`} className='hover:underline'>
-							{CONTACT.email}
-						</a>
-					</div>
-					<div className='flex gap-3'>
-						<a href={CONTACT.linkedin} target='_blank' rel='noopener noreferrer' aria-label='LinkedIn de Christophe Jacques'>
-							<Image src='/linkedin.svg' alt='' width={28} height={28} />
-						</a>
-						<a href={CONTACT.instagram} target='_blank' rel='noopener noreferrer' aria-label='Instagram de Métaphore Coaching'>
-							<Image src='/insta.svg' alt='' width={28} height={28} />
-						</a>
-					</div>
+		<footer className="site-footer">
+			<div className="footer-main">
+				<div className="footer-brand">
+					<Link href="/">
+						<Image
+							src="/Logo.svg"
+							alt="Métaphore Coaching, accueil"
+							width={580}
+							height={208}
+							className="w-[170px]"
+						/>
+					</Link>
+					<p>
+						À chacun son chemin.
+						<br />
+						Coaching à Bordeaux & à distance.
+					</p>
 				</div>
-
-				<nav aria-label='Accompagnements' className='flex flex-col gap-3 text-[15px]'>
-					<p className='font-semibold'>Accompagnements</p>
-					<Link href='/coaching' className='hover:underline'>
-						Coaching
-					</Link>
+				<nav aria-label="Accompagnements">
+					<p>Accompagnements</p>
 					{COACHING_SUBNAV.map((item) => (
-						<Link key={item.href} href={item.href} className='pl-3 hover:underline'>
+						<Link key={item.href} href={item.href}>
 							{item.label}
 						</Link>
 					))}
-					{MAIN_NAV.slice(2, 5).map((item) => (
-						<Link key={item.href} href={item.href} className='hover:underline'>
-							{item.label}
-						</Link>
-					))}
+					<Link href="/jeunes-parents">Jeunes & Parents</Link>
+					<Link href="/coaching-enseignants">Enseignants</Link>
+					<Link href="/entreprises-rps-qvct">Entreprises</Link>
 				</nav>
-
-				<nav aria-label='Informations pratiques' className='flex flex-col gap-3 text-[15px]'>
-					<p className='font-semibold'>Informations pratiques</p>
-					<Link href='/qui-suis-je' className='hover:underline'>
-						Qui suis-je ?
+				<nav aria-label="Informations pratiques">
+					<p>Pour mieux se connaître</p>
+					<Link href="/qui-suis-je">Christophe Jacques</Link>
+					<Link href="/coaching/origines">C’est quoi le coaching ?</Link>
+					<Link href="/coaching/psy">Coach ou psy ?</Link>
+					<Link href="/deontologie">Déontologie</Link>
+					<Link href="/tarifs">Tarifs</Link>
+					<Link href="/contact">Lieux de rendez-vous</Link>
+				</nav>
+				<div className="footer-contact">
+					<p>Gardons le contact</p>
+					<a href={CONTACT.phoneHref}>{CONTACT.phone}</a>
+					<a href={`mailto:${CONTACT.email}`}>{CONTACT.email}</a>
+					<Link href="/rendez-vous" className="underline underline-offset-4">
+						Prendre rendez-vous
 					</Link>
-					{PRACTICAL_LINKS.map((item) => (
-						<Link key={item.href} href={item.href} className='hover:underline'>
-							{item.label}
-						</Link>
-					))}
-				</nav>
-
-				<div className='flex flex-col gap-3 text-[15px]'>
-					<p className='font-semibold'>Lieux de rendez-vous</p>
-					{LOCATIONS.map((location) => (
-						<div key={location.title} className='flex flex-col gap-1'>
-							<p className='font-medium'>{location.title}</p>
-							{location.lines.map((line) => (
-								<p key={line} className='text-blackOne/75'>
-									{line}
-								</p>
-							))}
-						</div>
-					))}
+					<div className="footer-socials">
+						<a
+							href={CONTACT.linkedin}
+							target="_blank"
+							rel="noopener noreferrer"
+							aria-label="LinkedIn de Christophe Jacques"
+						>
+							<Image src="/linkedin.svg" alt="" width={22} height={22} />
+						</a>
+						<a
+							href={CONTACT.instagram}
+							target="_blank"
+							rel="noopener noreferrer"
+							aria-label="Instagram de Métaphore Coaching"
+						>
+							<Image src="/insta.svg" alt="" width={22} height={22} />
+						</a>
+					</div>
 				</div>
 			</div>
-			<p className='border-t border-blackOne/10 px-6 py-5 text-center text-sm text-blackOne/60'>
-				© {new Date().getFullYear()} Métaphore Coaching — Christophe Jacques, coach professionnel à Bordeaux
-			</p>
+			<div className="footer-bottom">
+				<p>© {new Date().getFullYear()} Métaphore Coaching · Christophe Jacques</p>
+				<Link href="/mentions-legales">Mentions légales & confidentialité</Link>
+			</div>
 		</footer>
 	);
-};
-
-export default Footer;
+}

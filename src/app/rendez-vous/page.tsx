@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
+import { Clock3, HeartHandshake, Video } from 'lucide-react';
 import CalBooking from '@/components/booking/CalBooking';
-import { ButtonLink } from '@/components/v2/ui';
 import { CAL_LINK, CONTACT } from '@/lib/site';
 
 export const metadata: Metadata = {
@@ -9,30 +9,45 @@ export const metadata: Metadata = {
 		'Réservez en ligne un premier échange gratuit de 30 minutes avec Christophe Jacques, coach professionnel à Bordeaux, par téléphone ou en visio.',
 	alternates: { canonical: '/rendez-vous' },
 };
-
 export default function RendezVousPage() {
 	return (
-		<div className='mx-auto flex w-full max-w-6xl flex-col gap-10 px-6 pb-20 pt-10 lg:px-10 lg:pt-16'>
-			<div className='grid gap-8 lg:grid-cols-[1.2fr_1fr] lg:items-end'>
-				<div className='flex flex-col gap-5'>
-					<h1 className='font-yeseva text-[2.1rem] leading-tight text-blackOne lg:text-5xl'>Prendre rendez-vous</h1>
-					<p className='max-w-[56ch] text-[1.0625rem] leading-relaxed text-blackOne/85'>
-						Choisissez un créneau pour un premier échange de 30 minutes, gratuit et sans engagement. Nous ferons le point sur ce
-						qui vous amène et sur la forme d’accompagnement qui pourrait vous convenir.
-					</p>
+		<div className="booking-layout">
+			<div className="booking-heading">
+				<div>
+					<h1 className="booking-title">Prenons le temps d’échanger.</h1>
+					<p>Un premier rendez-vous pour faire connaissance et voir comment je peux vous accompagner.</p>
 				</div>
-				<p className='text-blackOne/75 lg:text-right'>
-					Aucun créneau ne vous convient ?<br />
-					Appelez le{' '}
-					<a href={CONTACT.phoneHref} className='font-semibold underline'>
-						{CONTACT.phone}
-					</a>{' '}
-					ou <ButtonLink href='/contact' variant='text'>écrivez-moi</ButtonLink>.
+				<p className="booking-fallback">
+					Aucun créneau ne vous convient ?<br />
+					<a href={CONTACT.phoneHref}>{CONTACT.phone}</a> ou <a href="/contact">écrivez-moi</a>.
 				</p>
 			</div>
-			<div className='border border-blackOne/10 bg-white p-2 sm:p-4'>
-				<CalBooking calLink={CAL_LINK} />
+			<div className="booking-facts">
+				<span>
+					<Clock3 size={20} aria-hidden />
+					30 minutes
+				</span>
+				<span>
+					<HeartHandshake size={20} aria-hidden />
+					Gratuit, sans engagement
+				</span>
+				<span>
+					<Video size={20} aria-hidden />
+					Téléphone ou visio
+				</span>
 			</div>
+			<CalBooking calLink={CAL_LINK} />
+			<p className="booking-external">
+				Le calendrier ne s’affiche pas ?{' '}
+				<a
+					href={`https://cal.com/${CAL_LINK}`}
+					target="_blank"
+					rel="noopener noreferrer"
+					className="underline underline-offset-4"
+				>
+					Ouvrir la réservation sur Cal.com
+				</a>
+			</p>
 		</div>
 	);
 }

@@ -18,10 +18,10 @@ type FormValues = {
 };
 
 const inputClass =
-	'block w-full rounded-lg border border-blackOne/20 bg-white px-4 py-3 text-base text-blackOne shadow-sm placeholder:text-blackOne/40 focus:border-blackOne focus:outline-none focus:ring-2 focus:ring-primaryOne';
+	'block w-full rounded-lg border border-blackOne/20 bg-white px-4 py-3 text-base text-blackOne placeholder:text-blackOne/40 focus:border-blackOne focus:outline-none focus:ring-2 focus:ring-primaryOne';
 
 function FieldError({ message }: { message?: string }) {
-	return message ? <p className='mt-1 text-sm text-red-700'>{message}</p> : null;
+	return message ? <p className="mt-1 text-sm text-red-700">{message}</p> : null;
 }
 
 const ContactForm = () => {
@@ -44,13 +44,17 @@ const ContactForm = () => {
 			subject: 'Métaphore Coaching — nouvelle demande de contact',
 		},
 		onSuccess: () => {
-			setResult({ ok: true, message: 'Votre demande est envoyée. Merci, je reviens vers vous au plus vite.' });
+			setResult({
+				ok: true,
+				message: 'Votre demande est envoyée. Merci, je reviens vers vous au plus vite.',
+			});
 			reset({ motif: '' });
 		},
 		onError: () => {
 			setResult({
 				ok: false,
-				message: 'L’envoi a échoué. Réessayez dans un instant, ou écrivez directement à metaphorecoaching@gmail.com.',
+				message:
+					'L’envoi a échoué. Réessayez dans un instant, ou écrivez directement à metaphorecoaching@gmail.com.',
 			});
 		},
 	});
@@ -61,48 +65,66 @@ const ContactForm = () => {
 	};
 
 	return (
-		<form onSubmit={handleSubmit(onSubmit)} noValidate className='flex flex-col gap-6'>
-			<input type='checkbox' className='hidden' tabIndex={-1} autoComplete='off' {...register('botcheck')} />
+		<form onSubmit={handleSubmit(onSubmit)} noValidate className="flex flex-col gap-6">
+			<input type="checkbox" className="hidden" tabIndex={-1} autoComplete="off" {...register('botcheck')} />
 
-			<div className='grid gap-6 sm:grid-cols-2'>
+			<div className="grid gap-6 sm:grid-cols-2">
 				<div>
-					<label htmlFor='nom' className='mb-2 block text-sm font-semibold'>
+					<label htmlFor="nom" className="mb-2 block text-sm font-semibold">
 						Nom
 					</label>
-					<input id='nom' autoComplete='name' className={inputClass} {...register('nom', { required: 'Indiquez votre nom.' })} />
+					<input
+						id="nom"
+						autoComplete="name"
+						className={inputClass}
+						{...register('nom', { required: 'Indiquez votre nom.' })}
+					/>
 					<FieldError message={errors.nom?.message} />
 				</div>
 				<div>
-					<label htmlFor='email' className='mb-2 block text-sm font-semibold'>
+					<label htmlFor="email" className="mb-2 block text-sm font-semibold">
 						E-mail
 					</label>
 					<input
-						id='email'
-						type='email'
-						autoComplete='email'
+						id="email"
+						type="email"
+						autoComplete="email"
 						className={inputClass}
 						{...register('email', {
 							required: 'Indiquez votre adresse e-mail.',
-							pattern: { value: /^[^\s@]+@[^\s@]+\.[^\s@]+$/, message: 'Cette adresse e-mail n’est pas valide.' },
+							pattern: {
+								value: /^[^\s@]+@[^\s@]+\.[^\s@]+$/,
+								message: 'Cette adresse e-mail n’est pas valide.',
+							},
 						})}
 					/>
 					<FieldError message={errors.email?.message} />
 				</div>
 			</div>
 
-			<div className='grid gap-6 sm:grid-cols-2'>
+			<div className="grid gap-6 sm:grid-cols-2">
 				<div>
-					<label htmlFor='telephone' className='mb-2 block text-sm font-semibold'>
-						Téléphone <span className='font-normal text-blackOne/60'>(facultatif)</span>
+					<label htmlFor="telephone" className="mb-2 block text-sm font-semibold">
+						Téléphone <span className="font-normal text-blackOne/60">(facultatif)</span>
 					</label>
-					<input id='telephone' type='tel' autoComplete='tel' className={inputClass} {...register('telephone')} />
+					<input
+						id="telephone"
+						type="tel"
+						autoComplete="tel"
+						className={inputClass}
+						{...register('telephone')}
+					/>
 				</div>
 				<div>
-					<label htmlFor='motif' className='mb-2 block text-sm font-semibold'>
+					<label htmlFor="motif" className="mb-2 block text-sm font-semibold">
 						Vous me contactez pour…
 					</label>
-					<select id='motif' className={inputClass} {...register('motif', { required: 'Choisissez un motif.' })}>
-						<option value='' disabled>
+					<select
+						id="motif"
+						className={inputClass}
+						{...register('motif', { required: 'Choisissez un motif.' })}
+					>
+						<option value="" disabled>
 							Choisir
 						</option>
 						{MOTIFS.map((motif) => (
@@ -116,13 +138,13 @@ const ContactForm = () => {
 			</div>
 
 			<div>
-				<label htmlFor='message' className='mb-2 block text-sm font-semibold'>
+				<label htmlFor="message" className="mb-2 block text-sm font-semibold">
 					Message
 				</label>
 				<textarea
-					id='message'
+					id="message"
 					rows={6}
-					placeholder='Expliquez simplement ce qui vous amène.'
+					placeholder="Expliquez simplement ce qui vous amène."
 					className={inputClass}
 					{...register('message', { required: 'Écrivez quelques mots sur votre situation.' })}
 				/>
@@ -130,16 +152,18 @@ const ContactForm = () => {
 			</div>
 
 			<div>
-				<label className='flex items-start gap-3 text-sm leading-relaxed text-blackOne/85'>
+				<label className="flex items-start gap-3 text-sm leading-relaxed text-blackOne/80">
 					<input
-						type='checkbox'
-						className='mt-1 h-5 w-5 shrink-0 accent-blackOne'
-						{...register('consentement', { required: 'Votre accord est nécessaire pour traiter la demande.' })}
+						type="checkbox"
+						className="mt-1 h-5 w-5 shrink-0 accent-blackOne"
+						{...register('consentement', {
+							required: 'Votre accord est nécessaire pour traiter la demande.',
+						})}
 					/>
 					<span>
-						J’accepte que les informations saisies soient utilisées uniquement pour répondre à ma demande. Elles restent
-						confidentielles (voir la{' '}
-						<Link href='/mentions-legales#confidentialite' className='underline'>
+						J’accepte que les informations saisies soient utilisées uniquement pour répondre à ma demande.
+						Elles restent confidentielles (voir la{' '}
+						<Link href="/mentions-legales#confidentialite" className="underline">
 							politique de confidentialité
 						</Link>
 						).
@@ -149,14 +173,15 @@ const ContactForm = () => {
 			</div>
 
 			<button
-				type='submit'
+				type="submit"
 				disabled={isSubmitting}
-				className='inline-flex min-h-[52px] items-center justify-center self-start rounded-xl bg-primaryOne px-8 font-semibold text-blackOne hover:bg-blackOne hover:text-primaryOne disabled:opacity-60'>
+				className="inline-flex min-h-[52px] items-center justify-center self-start rounded-[5px] bg-primaryOne px-8 font-semibold text-blackOne hover:bg-blackOne hover:text-primaryOne disabled:opacity-60"
+			>
 				{isSubmitting ? 'Envoi en cours…' : 'Envoyer ma demande'}
 			</button>
 
 			{result && (
-				<p role='status' className={result.ok ? 'font-medium text-green-800' : 'font-medium text-red-700'}>
+				<p role="status" className={result.ok ? 'font-medium text-green-800' : 'font-medium text-red-700'}>
 					{result.message}
 				</p>
 			)}

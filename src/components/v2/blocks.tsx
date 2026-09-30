@@ -3,30 +3,45 @@ import { CTA } from '@/lib/site';
 import { ButtonLink, CtaBand, Principles } from './ui';
 
 export const FRAME_PRINCIPLES = [
-	{ icon: '/lock.svg', title: 'Confidentialité', text: 'Le contenu des séances reste confidentiel.' },
-	{ icon: '/loupe.svg', title: 'Transparence', text: 'Le cadre et les objectifs sont clairement définis.' },
+	{ icon: '/lock.svg', title: 'Confidentialité', text: 'Vos échanges restent confidentiels.' },
+	{ icon: '/loupe.svg', title: 'Transparence', text: 'Un cadre et des objectifs explicites.' },
 	{ icon: '/dove.svg', title: 'Liberté', text: 'Vous restez maître de vos décisions.' },
-	{
-		icon: '/balance.svg',
-		title: 'Respect de votre équilibre',
-		text: 'L’évolution recherchée doit pouvoir s’intégrer à votre vie.',
-	},
+	{ icon: '/balance.svg', title: 'Équilibre', text: 'Un changement qui respecte votre vie.' },
 ];
 
 export function FramePrinciples() {
 	return <Principles items={FRAME_PRINCIPLES} />;
 }
 
+const EXCERPTS = [
+	'D’une grande capacité d’écoute, il est doté d’une sensibilité lui permettant de créer une relation d’accompagnement',
+	"ce coaching m'a appris à trouver mes propres réponses, à changer ma perception des situations, des gens et de ma vie.",
+	'Une précieuse aide pour entamer une nouvelle année avec un nouveau projet de vie ! Merci à lui.',
+];
+
 export function Testimonies() {
 	return (
-		<ul className='grid gap-10 lg:grid-cols-3'>
-			{testimoniesList.map((testimony) => (
-				<li key={testimony.author} className='flex flex-col gap-4'>
-					<span aria-hidden className='font-yeseva text-6xl leading-none text-primaryOne'>“</span>
-					<blockquote className='leading-relaxed text-blackOne/85'>{testimony.text}</blockquote>
-					<p className='font-caveat text-2xl text-blackOne'>
-						{testimony.author}, <span className='text-blackOne/70'>{testimony.position.toLowerCase()}</span>
+		<ul className="testimonies">
+			{testimoniesList.map((testimony, i) => (
+				<li key={testimony.author}>
+					<span className="quote-mark" aria-hidden>
+						“
+					</span>
+					<blockquote>
+						{i < 2 && '… '}
+						{EXCERPTS[i]}
+						{i === 0 && '…'}
+					</blockquote>
+					<p className="testimony-author">
+						{testimony.author}
+						<span>{testimony.position}</span>
 					</p>
+					{i < 2 && (
+						<details className="testimony-full">
+							<summary>Lire le témoignage complet</summary>
+							<p>{testimony.text}</p>
+						</details>
+					)}
 				</li>
 			))}
 		</ul>
@@ -34,8 +49,8 @@ export function Testimonies() {
 }
 
 export function ContactBand({
-	title = 'Vous n’avez pas besoin d’avoir déjà toutes les réponses.',
-	text = 'Un premier échange permettra de comprendre ce qui vous amène et de voir si un accompagnement par le coaching peut réellement vous être utile.',
+	title = 'Et si nous faisions le point ?',
+	text = 'Un premier échange gratuit de 30 minutes, pour parler de ce qui vous amène.',
 	primary = CTA.primary,
 }: {
 	title?: string;
@@ -47,12 +62,13 @@ export function ContactBand({
 			title={title}
 			actions={
 				<>
-					<ButtonLink href={primary.href}>{primary.label}</ButtonLink>
-					<ButtonLink href={CTA.booking.href} variant='text'>
-						{CTA.booking.label}
+					<ButtonLink href={CTA.booking.href}>{CTA.booking.label}</ButtonLink>
+					<ButtonLink href={primary.href} variant="text">
+						{primary.label}
 					</ButtonLink>
 				</>
-			}>
+			}
+		>
 			<p>{text}</p>
 		</CtaBand>
 	);
@@ -62,7 +78,7 @@ export function HeroActions({ primary = CTA.primary }: { primary?: { label: stri
 	return (
 		<>
 			<ButtonLink href={primary.href}>{primary.label}</ButtonLink>
-			<ButtonLink href={CTA.booking.href} variant='text'>
+			<ButtonLink href={CTA.booking.href} variant="text">
 				{CTA.booking.label}
 			</ButtonLink>
 		</>
