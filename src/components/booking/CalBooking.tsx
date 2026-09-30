@@ -6,7 +6,9 @@ export default function CalBooking({ calLink }: { calLink: string }) {
 	return (
 		<Cal
 			calLink={calLink}
-			style={{ width: '100%', minHeight: '640px', overflow: 'scroll' }}
+			calOrigin='https://cal.com'
+			embedJsUrl='https://cal.com/embed/embed.js'
+			style={{ width: '100%', minHeight: '640px', overflow: 'auto' }}
 			config={{ layout: 'month_view', theme: 'light' }}
 		/>
 	);
