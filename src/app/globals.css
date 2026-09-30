@@ -259,6 +259,7 @@ p {
 	transition: transform 0.7s cubic-bezier(0.2, 0.7, 0.2, 1);
 }
 .offer-gallery:not(.offer-gallery-split) .offer-link {
+	container-type: inline-size;
 	position: relative;
 	overflow: hidden;
 	border-radius: 6px;
@@ -270,7 +271,7 @@ p {
 .offer-gallery:not(.offer-gallery-split) .offer-copy {
 	position: absolute;
 	inset: auto 0 0;
-	padding: 72px 26px 26px;
+	padding: 72px 22px 24px;
 	background: linear-gradient(to top, #0d0630e0 0%, #0d063094 55%, #0d063000 100%);
 	color: var(--paper);
 }
@@ -284,6 +285,9 @@ p {
 	font-family: 'Yeseva One', serif;
 	font-size: 25px;
 	line-height: 1.25;
+}
+.offer-gallery:not(.offer-gallery-split) .offer-heading h3 {
+	font-size: clamp(16px, calc(8.2cqi - 7px), 24px);
 }
 .offer-heading svg {
 	flex-shrink: 0;
@@ -1101,7 +1105,7 @@ p {
 		font-size: 19px;
 	}
 	.offer-gallery:not(.offer-gallery-split) .offer-copy {
-		padding: 56px 18px 18px;
+		padding: 56px 16px 18px;
 	}
 	.offer-copy p {
 		font-size: 13px;
