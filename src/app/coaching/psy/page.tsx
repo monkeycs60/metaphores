@@ -1,4 +1,11 @@
 import Image from 'next/image';
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+	title: 'Coach ou psy ?',
+	description:
+		'Ce qui distingue le coaching d’une psychothérapie, et quand orienter vers un autre professionnel.',
+};
 
 const page = () => {
 	return (

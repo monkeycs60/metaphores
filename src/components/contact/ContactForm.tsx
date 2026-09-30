@@ -1,151 +1,166 @@
 'use client';
 
+import Link from 'next/link';
+import { useSearchParams } from 'next/navigation';
 import { useState } from 'react';
 import { useForm } from 'react-hook-form';
 import useWeb3Forms from '@web3forms/react';
+import { MOTIFS } from '@/lib/site';
+
+type FormValues = {
+	nom: string;
+	email: string;
+	telephone?: string;
+	motif: string;
+	message: string;
+	consentement: boolean;
+	botcheck?: boolean;
+};
+
+const inputClass =
+	'block w-full rounded-lg border border-blackOne/20 bg-white px-4 py-3 text-base text-blackOne shadow-sm placeholder:text-blackOne/40 focus:border-blackOne focus:outline-none focus:ring-2 focus:ring-primaryOne';
+
+function FieldError({ message }: { message?: string }) {
+	return message ? <p className='mt-1 text-sm text-red-700'>{message}</p> : null;
+}
 
 const ContactForm = () => {
+	const searchParams = useSearchParams();
+	const motifParam = searchParams.get('motif');
+	const defaultMotif = MOTIFS.some((m) => m.value === motifParam) ? motifParam! : '';
+
+	const [result, setResult] = useState<{ ok: boolean; message: string } | null>(null);
 	const {
 		register,
 		handleSubmit,
 		reset,
-		watch,
-		control,
-		setValue,
-		formState: { errors, isSubmitSuccessful, isSubmitting },
-	} = useForm({
-		mode: 'onTouched',
-	});
-	const [isSuccess, setIsSuccess] = useState(false);
-	const [message, setMessage] = useState<String | Boolean>(false);
+		formState: { errors, isSubmitting },
+	} = useForm<FormValues>({ mode: 'onTouched', defaultValues: { motif: defaultMotif } });
 
-	// Please update the Access Key in the .env
-	const apiKey =
-		process.env.PUBLIC_ACCESS_KEY || 'f807b50f-8300-45ba-8a28-82b661bf9314';
-
-	const { submit: onSubmit } = useWeb3Forms({
-		access_key: apiKey,
+	const { submit } = useWeb3Forms<FormValues>({
+		access_key: process.env.NEXT_PUBLIC_WEB3FORMS_KEY || 'f807b50f-8300-45ba-8a28-82b661bf9314',
 		settings: {
 			from_name: 'metaphorecoaching.com',
-			subject: 'Metaphore Coaching - Contact',
+			subject: 'Métaphore Coaching — nouvelle demande de contact',
 		},
-		onSuccess: (msg, data) => {
-			setIsSuccess(true);
-			setMessage(msg);
-			reset();
+		onSuccess: () => {
+			setResult({ ok: true, message: 'Votre demande est envoyée. Merci, je reviens vers vous au plus vite.' });
+			reset({ motif: '' });
 		},
-		onError: (msg, data) => {
-			setIsSuccess(false);
-			setMessage(msg);
+		onError: () => {
+			setResult({
+				ok: false,
+				message: 'L’envoi a échoué. Réessayez dans un instant, ou écrivez directement à metaphorecoaching@gmail.com.',
+			});
 		},
 	});
+
+	const onSubmit = (values: FormValues) => {
+		const motifLabel = MOTIFS.find((m) => m.value === values.motif)?.label ?? values.motif;
+		return submit({ ...values, motif: motifLabel });
+	};
+
 	return (
-		<>
-			<form
-				onSubmit={handleSubmit(onSubmit)}
-				className='space-y-8 font-inter'>
-				<input
-					type='checkbox'
-					id=''
-					className='hidden'
-					style={{ display: 'none' }}
-					{...register('botcheck')}></input>
+		<form onSubmit={handleSubmit(onSubmit)} noValidate className='flex flex-col gap-6'>
+			<input type='checkbox' className='hidden' tabIndex={-1} autoComplete='off' {...register('botcheck')} />
+
+			<div className='grid gap-6 sm:grid-cols-2'>
 				<div>
-					<label
-						htmlFor='email'
-						className='mb-2 block text-sm font-medium text-gray-900 dark:text-gray-300'>
-						Votre adresse mail
+					<label htmlFor='nom' className='mb-2 block text-sm font-semibold'>
+						Nom
+					</label>
+					<input id='nom' autoComplete='name' className={inputClass} {...register('nom', { required: 'Indiquez votre nom.' })} />
+					<FieldError message={errors.nom?.message} />
+				</div>
+				<div>
+					<label htmlFor='email' className='mb-2 block text-sm font-semibold'>
+						E-mail
 					</label>
 					<input
-						type='email'
 						id='email'
-						className='block w-full rounded-lg border border-gray-300 bg-gray-50 p-2.5 text-sm text-gray-900 shadow-sm focus:border-primaryOne focus:ring-primaryOne dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:placeholder:text-gray-400'
-						placeholder='michel@exemple.com'
-						required
+						type='email'
+						autoComplete='email'
+						className={inputClass}
 						{...register('email', {
-							required: "Merci d'entrer une adresse mail valide",
-							pattern: {
-								value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
-								message: 'Please enter a valid email address',
-							},
+							required: 'Indiquez votre adresse e-mail.',
+							pattern: { value: /^[^\s@]+@[^\s@]+\.[^\s@]+$/, message: 'Cette adresse e-mail n’est pas valide.' },
 						})}
 					/>
-					{errors.email && (
-						<span className='text-sm text-red-500'>
-							{typeof errors.email.message === 'string'
-								? errors.email.message
-								: ''}
-						</span>
-					)}
+					<FieldError message={errors.email?.message} />
+				</div>
+			</div>
+
+			<div className='grid gap-6 sm:grid-cols-2'>
+				<div>
+					<label htmlFor='telephone' className='mb-2 block text-sm font-semibold'>
+						Téléphone <span className='font-normal text-blackOne/60'>(facultatif)</span>
+					</label>
+					<input id='telephone' type='tel' autoComplete='tel' className={inputClass} {...register('telephone')} />
 				</div>
 				<div>
-					<label
-						htmlFor='sujet '
-						className='mb-2 block text-sm font-medium text-gray-900 dark:text-gray-300'>
-						Objet
+					<label htmlFor='motif' className='mb-2 block text-sm font-semibold'>
+						Vous me contactez pour…
 					</label>
+					<select id='motif' className={inputClass} {...register('motif', { required: 'Choisissez un motif.' })}>
+						<option value='' disabled>
+							Choisir
+						</option>
+						{MOTIFS.map((motif) => (
+							<option key={motif.value} value={motif.value}>
+								{motif.label}
+							</option>
+						))}
+					</select>
+					<FieldError message={errors.motif?.message} />
+				</div>
+			</div>
+
+			<div>
+				<label htmlFor='message' className='mb-2 block text-sm font-semibold'>
+					Message
+				</label>
+				<textarea
+					id='message'
+					rows={6}
+					placeholder='Expliquez simplement ce qui vous amène.'
+					className={inputClass}
+					{...register('message', { required: 'Écrivez quelques mots sur votre situation.' })}
+				/>
+				<FieldError message={errors.message?.message} />
+			</div>
+
+			<div>
+				<label className='flex items-start gap-3 text-sm leading-relaxed text-blackOne/85'>
 					<input
-						type='text'
-						id='sujet'
-						className='block w-full rounded-lg border border-gray-300 bg-gray-50 p-3 text-sm text-gray-900 shadow-sm focus:border-primaryOne focus:ring-primaryOne dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:placeholder:text-gray-400'
-						placeholder='Comment puis-je vous aider ?'
-						required
-						{...register('sujet', {
-							required: "Merci d'entrer un sujet",
-						})}
+						type='checkbox'
+						className='mt-1 h-5 w-5 shrink-0 accent-blackOne'
+						{...register('consentement', { required: 'Votre accord est nécessaire pour traiter la demande.' })}
 					/>
-					{errors.sujet && (
-						<span className='text-sm text-red-500'>
-							{typeof errors.sujet.message === 'string'
-								? errors.sujet.message
-								: ''}
-						</span>
-					)}
-				</div>
-				<div className='sm:col-span-2'>
-					<label
-						htmlFor='message'
-						className='mb-2 block text-sm font-medium text-gray-900 dark:text-gray-400'>
-						Votre message
-					</label>
-					<textarea
-						id='message'
-						rows={6}
-						className='block w-full rounded-lg border border-gray-300 bg-gray-50 p-2.5 text-sm text-gray-900 shadow-sm focus:border-primaryOne focus:ring-primaryOne dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:placeholder:text-gray-400'
-						placeholder='Ecrivez ici votre commentaire...'
-						required
-						{...register('message', {
-							required: "Merci d'entrer un message",
-						})}></textarea>
-					{errors.message && (
-						<span className='text-sm text-red-500'>
-							{typeof errors.message.message === 'string'
-								? errors.message.message
-								: ''}
-						</span>
-					)}
-				</div>
-				<button
-					type='submit'
-					className='rounded-lg bg-primaryOne px-5 py-3 text-center text-sm font-medium text-black hover:bg-blackOne hover:text-primaryOne focus:outline-none focus:ring-4 focus:ring-primaryOne sm:w-fit'>
-					Envoyer votre message
-				</button>
-			</form>
-			{isSubmitSuccessful && isSuccess && (
-				<div className='mt-3 text-center text-sm text-green-500'>
-					{
-						'Le message a été envoyé avec succès. Je vous réponds dans les plus brefs délais.'
-					}
-				</div>
+					<span>
+						J’accepte que les informations saisies soient utilisées uniquement pour répondre à ma demande. Elles restent
+						confidentielles (voir la{' '}
+						<Link href='/mentions-legales#confidentialite' className='underline'>
+							politique de confidentialité
+						</Link>
+						).
+					</span>
+				</label>
+				<FieldError message={errors.consentement?.message} />
+			</div>
+
+			<button
+				type='submit'
+				disabled={isSubmitting}
+				className='inline-flex min-h-[52px] items-center justify-center self-start rounded-xl bg-primaryOne px-8 font-semibold text-blackOne hover:bg-blackOne hover:text-primaryOne disabled:opacity-60'>
+				{isSubmitting ? 'Envoi en cours…' : 'Envoyer ma demande'}
+			</button>
+
+			{result && (
+				<p role='status' className={result.ok ? 'font-medium text-green-800' : 'font-medium text-red-700'}>
+					{result.message}
+				</p>
 			)}
-			{isSubmitSuccessful && !isSuccess && (
-				<div className='mt-3 text-center text-sm text-red-500'>
-					{
-						'Une erreur est survenue. Veuillez réessayer plus tard ou contactez-moi directement par mail à metaphorecoaching@gmail.com'
-					}
-				</div>
-			)}
-		</>
+		</form>
 	);
 };
 

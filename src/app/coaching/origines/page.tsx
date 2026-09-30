@@ -1,6 +1,13 @@
 import Image from 'next/image';
 import { CircleDashed } from 'lucide-react';
 import TableOfContents, { Section } from '@/components/origine/TableOfContents';
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+	title: 'C’est quoi le coaching ?',
+	description:
+		'Définition, origines et déroulement d’un coaching professionnel ou personnel.',
+};
 
 const pageSections: Section[] = [
 	{ id: 'origine', title: 'Origine' },

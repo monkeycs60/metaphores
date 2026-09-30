@@ -110,3 +110,27 @@ html {
 	background-repeat: no-repeat;
 	background-size: cover;
 }
+
+@keyframes slice-in {
+	from {
+		opacity: 0;
+		clip-path: inset(100% 0 0 0);
+	}
+	to {
+		opacity: 1;
+		clip-path: inset(0 0 0 0);
+	}
+}
+
+.slice {
+	animation: slice-in 0.9s cubic-bezier(0.2, 0.7, 0.2, 1) both;
+}
+
+@media (prefers-reduced-motion: reduce) {
+	.slice {
+		animation: none;
+	}
+	html {
+		scroll-behavior: auto;
+	}
+}
