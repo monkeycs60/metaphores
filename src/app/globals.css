@@ -304,15 +304,6 @@ p {
 	line-height: 1.8;
 	max-width: 48ch;
 }
-@media (min-width: 900px) {
-	.offer-gallery:not(.offer-gallery-split, .offer-gallery-four) li:nth-child(3n + 2) {
-		margin-top: 56px;
-	}
-	.offer-gallery:not(.offer-gallery-split, .offer-gallery-four) li:nth-child(3n + 1),
-	.offer-gallery:not(.offer-gallery-split, .offer-gallery-four) li:nth-child(3n) {
-		margin-bottom: 56px;
-	}
-}
 .offer-gallery-split .offer-image {
 	aspect-ratio: 4/3;
 	background: none;
