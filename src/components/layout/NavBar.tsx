@@ -3,15 +3,27 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { useRef, useState } from 'react';
+import { useRef, useState, useSyncExternalStore } from 'react';
 import { ArrowRight, ChevronDown, Menu, X } from 'lucide-react';
 import { COACHING_SUBNAV, CTA, MAIN_NAV } from '@/lib/site';
 import { cn } from '@/lib/utils';
 
 const COACHING_PATHS = ['/coaching', ...COACHING_SUBNAV.map((item) => item.href)];
 
+const subscribeToScroll = (onChange: () => void) => {
+	window.addEventListener('scroll', onChange, { passive: true });
+	return () => window.removeEventListener('scroll', onChange);
+};
+const useScrolled = () =>
+	useSyncExternalStore(
+		subscribeToScroll,
+		() => window.scrollY > 60,
+		() => false,
+	);
+
 export default function NavBar() {
 	const pathname = usePathname();
+	const scrolled = useScrolled();
 	const [menuOpen, setMenuOpen] = useState(false);
 	const [coachingOpen, setCoachingOpen] = useState(false);
 	const menuButton = useRef<HTMLButtonElement>(null);
@@ -26,6 +38,7 @@ export default function NavBar() {
 	return (
 		<header
 			className='site-nav'
+			data-scrolled={scrolled || undefined}
 			onKeyDown={(event) => {
 				if (event.key === 'Escape') {
 					if (menuOpen) menuButton.current?.focus();
@@ -35,61 +48,72 @@ export default function NavBar() {
 			}}
 		>
 			<div className='site-nav-inner'>
-				<Link href='/' aria-label='Métaphore Coaching, accueil' onClick={close} className='shrink-0'>
-					<Image
-						src='/Logo.svg'
-						alt='Métaphore Coaching'
-						width={580}
-						height={208}
-						priority
-						className='nav-logo'
-					/>
+				<Link href='/' aria-label='Métaphore Coaching, accueil' onClick={close} className='nav-brand'>
+					<Image src='/Logo.svg' alt='' width={580} height={208} priority className='nav-logo' />
+					<Image src='/monogramme.svg' alt='' width={115} height={105} priority className='nav-monogram' />
 				</Link>
-				<nav aria-label='Navigation principale' className='hidden xl:block'>
+				<nav aria-label='Navigation principale' className='desktop-nav-wrap hidden xl:block'>
 					<ul className='desktop-nav'>
 						{MAIN_NAV.filter((item) => item.href !== '/').map((item) =>
 							item.href === '/coaching' ? (
 								<li
 									key={item.href}
 									className='nav-coaching'
+									onPointerEnter={(event) => event.pointerType === 'mouse' && setCoachingOpen(true)}
+									onPointerLeave={(event) => event.pointerType === 'mouse' && setCoachingOpen(false)}
 									onBlur={(event) => {
 										if (event.relatedTarget && !event.currentTarget.contains(event.relatedTarget)) {
 											setCoachingOpen(false);
 										}
 									}}
 								>
-									<div className='flex items-center'>
-										<Link
-											href='/coaching'
-											aria-current={active('/coaching') ? 'page' : undefined}
-											onClick={close}
-											className={cn('nav-link', active('/coaching') && 'nav-active')}
-										>
-											Coaching
-										</Link>
-										<button
-											ref={coachingButton}
-											type='button'
-											aria-expanded={coachingOpen}
-											aria-controls='coaching-menu'
-											aria-label='Afficher les accompagnements de coaching'
-											onClick={() => setCoachingOpen((open) => !open)}
-											className='nav-dropdown-toggle'
-										>
-											<ChevronDown size={15} aria-hidden />
-										</button>
-									</div>
+									<button
+										ref={coachingButton}
+										type='button'
+										aria-expanded={coachingOpen}
+										aria-controls='coaching-menu'
+										onClick={() => setCoachingOpen((open) => !open)}
+										className={cn('nav-link nav-trigger', active('/coaching') && 'nav-active')}
+									>
+										Coaching
+										<ChevronDown size={16} strokeWidth={2} aria-hidden className='nav-chevron' />
+									</button>
 									{coachingOpen && (
-										<ul id='coaching-menu' className='coaching-menu'>
-											{COACHING_SUBNAV.map((sub) => (
-												<li key={sub.href}>
-													<Link href={sub.href} onClick={close}>
-														{sub.label}
-														<ArrowRight size={16} aria-hidden />
+										<div id='coaching-menu' className='mega-menu'>
+											<div className='mega-inner'>
+												<div className='mega-intro'>
+													<p className='mega-title'>Coaching individuel</p>
+													<p>À Bordeaux ou à distance, pour avancer sur ce qui compte pour vous.</p>
+													<Link
+														href='/coaching'
+														onClick={close}
+														aria-current={pathname === '/coaching' ? 'page' : undefined}
+														className='action action-text'
+													>
+														Voir l’approche
+														<ArrowRight size={18} aria-hidden />
 													</Link>
-												</li>
-											))}
-										</ul>
+												</div>
+												<ul className='mega-list'>
+													{COACHING_SUBNAV.map((sub) => (
+														<li key={sub.href}>
+															<Link
+																href={sub.href}
+																onClick={close}
+																aria-current={pathname === sub.href ? 'page' : undefined}
+																className='mega-item'
+															>
+																{sub.image && (
+																	<Image src={sub.image} alt='' width={240} height={160} sizes='200px' />
+																)}
+																<span className='mega-item-label'>{sub.label}</span>
+																<span className='mega-item-text'>{sub.description}</span>
+															</Link>
+														</li>
+													))}
+												</ul>
+											</div>
+										</div>
 									)}
 								</li>
 							) : (

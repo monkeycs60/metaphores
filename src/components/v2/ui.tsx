@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import { ReactNode } from 'react';
+import { CSSProperties, ReactNode } from 'react';
 import {
 	ArrowRight,
 	Compass,
@@ -14,6 +14,7 @@ import {
 	Target,
 } from 'lucide-react';
 import { cn } from '@/lib/utils';
+import { Deco, Scribble } from './deco';
 
 export function ButtonLink({
 	href,
@@ -44,6 +45,8 @@ export function PageHero({
 	caption,
 	actions,
 	split = false,
+	note,
+	imagePosition,
 }: {
 	title: ReactNode;
 	subtitle?: ReactNode;
@@ -54,9 +57,13 @@ export function PageHero({
 	caption?: ReactNode;
 	actions?: ReactNode;
 	split?: boolean;
+	note?: ReactNode;
+	imagePosition?: string;
 }) {
 	return (
-		<header className="page-hero">
+		<header className={cn('page-hero', split && 'page-hero-split')}>
+			<Deco shape="sky" size={74} className="deco-float" style={{ top: 36, left: '2.5%' }} />
+			<Deco shape="ring" size={190} style={{ bottom: -70, left: -96 }} />
 			<div className="page-hero-inner">
 				<div className="page-hero-copy">
 					{subtitle && <p className="hero-context">{subtitle}</p>}
@@ -65,6 +72,7 @@ export function PageHero({
 					{actions && <div className="hero-actions">{actions}</div>}
 				</div>
 				<figure className="page-hero-media">
+					{split && <Deco shape="sun" size={200} className="hero-media-deco" />}
 					{media ??
 						(image && (
 							<Image
@@ -75,9 +83,11 @@ export function PageHero({
 								priority
 								sizes="(min-width: 900px) 48vw, 100vw"
 								className={cn('hero-photo', split && 'polyptych')}
+								style={imagePosition ? { objectPosition: imagePosition } : undefined}
 							/>
 						))}
 					{caption && <figcaption>{caption}</figcaption>}
+					{note}
 				</figure>
 			</div>
 		</header>
@@ -91,6 +101,8 @@ export function Section({
 	tone = 'plain',
 	id,
 	className,
+	note,
+	deco,
 }: {
 	title?: ReactNode;
 	intro?: ReactNode;
@@ -98,13 +110,21 @@ export function Section({
 	tone?: 'plain' | 'blue' | 'cream';
 	id?: string;
 	className?: string;
+	note?: ReactNode;
+	deco?: ReactNode;
 }) {
 	return (
 		<section id={id} className={cn('editorial-section', `tone-${tone}`, className)}>
+			{deco}
 			<div className="section-inner">
 				{(title || intro) && (
 					<div className="section-heading">
-						{title && <h2>{title}</h2>}
+						{title && (
+							<div className="section-title">
+								{note}
+								<h2>{title}</h2>
+							</div>
+						)}
 						{intro && <div className="section-intro">{intro}</div>}
 					</div>
 				)}
@@ -154,19 +174,43 @@ export type Offer = {
 	imageAlt?: string;
 };
 
-const OFFER_IMAGES: Record<string, { src: string; alt: string }> = {
+const OFFER_IMAGES: Record<string, { src: string; alt: string; note?: ReactNode; position?: string }> = {
 	'/coaching-professionnel': {
-		src: '/photos/coaching-professionnel.webp',
-		alt: 'Une femme pensive regarde par la fenêtre de son bureau',
+		src: '/photos/escalier-ciel.webp',
+		alt: 'Une personne gravit un escalier aux rampes jaunes qui s’ouvre sur le ciel bleu',
+		note: (
+			<>
+				Prendre de la <mark>hauteur</mark>
+			</>
+		),
 	},
 	'/coaching-personnel': {
-		src: '/photos/coaching-personnel.webp',
-		alt: 'Deux personnes discutent au bord de l’eau',
+		src: '/photos/bateau-papier.webp',
+		alt: 'Un bateau en papier jaune flotte sur une eau bleue et calme',
+		position: '96% center',
+		note: (
+			<>
+				Se laisser <mark>porter</mark>
+			</>
+		),
 	},
-	'/bilan-carriere': { src: '/photos/bilan-carriere.webp', alt: 'Un carnet marqué d’une rose des vents' },
+	'/bilan-carriere': {
+		src: '/photos/boussole-mer.webp',
+		alt: 'Une main tient une boussole face à la mer',
+		note: (
+			<>
+				Garder le <mark>cap</mark>
+			</>
+		),
+	},
 	'/transition-professionnelle': {
 		src: '/photos/transition-professionnelle.webp',
 		alt: 'Une longue passerelle en bois à travers un marais',
+		note: (
+			<>
+				Rejoindre l’autre <mark>rive</mark>
+			</>
+		),
 	},
 	'/jeunes-parents': { src: '/photos/jeunes-parents.webp', alt: 'Un père et son fils marchent côte à côte' },
 	'/coaching-enseignants': {
@@ -180,12 +224,13 @@ const OFFER_IMAGES: Record<string, { src: string; alt: string }> = {
 };
 
 export function OfferList({ offers, variant = 'portrait' }: { offers: Offer[]; variant?: 'portrait' | 'split' }) {
+	const portrait = variant === 'portrait';
 	return (
 		<ul
 			className={cn(
 				'offer-gallery',
 				offers.length === 4 && 'offer-gallery-four',
-				variant === 'split' && 'offer-gallery-split',
+				portrait ? 'offer-gallery-portrait' : 'offer-gallery-split',
 			)}
 		>
 			{offers.map((offer) => {
@@ -195,14 +240,18 @@ export function OfferList({ offers, variant = 'portrait' }: { offers: Offer[]; v
 						<Link href={offer.href} className="offer-link">
 							{(offer.image || photo) && (
 								<div className="offer-image">
-									<Image
-										src={offer.image ?? photo.src}
-										alt={offer.imageAlt ?? photo?.alt ?? ''}
-										width={720}
-										height={540}
-										sizes="(min-width: 1000px) 32vw, (min-width: 600px) 45vw, 100vw"
-										className={cn(variant === 'split' && 'polyptych polyptych-three')}
-									/>
+									<div className="offer-frame">
+										<Image
+											src={offer.image ?? photo.src}
+											alt={offer.imageAlt ?? photo?.alt ?? ''}
+											width={720}
+											height={900}
+											sizes="(min-width: 1000px) 32vw, (min-width: 600px) 45vw, 100vw"
+											className={cn(!portrait && 'polyptych polyptych-three')}
+											style={photo?.position ? { objectPosition: photo.position } : undefined}
+										/>
+									</div>
+									{portrait && photo?.note && <Scribble className="offer-note">{photo.note}</Scribble>}
 								</div>
 							)}
 							<div className="offer-copy">
@@ -224,15 +273,20 @@ export function OfferList({ offers, variant = 'portrait' }: { offers: Offer[]; v
 export function Steps({ steps }: { steps: { title: string; text: string }[] }) {
 	const icons = [MessageCircle, Compass, Footprints, Flag];
 	return (
-		<ol className="steps">
+		<ol className="steps" style={{ '--steps': steps.length } as CSSProperties}>
 			{steps.map((step, i) => {
 				const Icon = icons[i % icons.length];
 				return (
-					<li key={step.title}>
+					<li key={step.title} style={{ '--i': i } as CSSProperties}>
 						<div className="step-mark">
-							<Icon size={31} strokeWidth={1.3} aria-hidden />
-							<span>0{i + 1}</span>
+							<Icon size={24} strokeWidth={1.4} aria-hidden />
 						</div>
+						{i < steps.length - 1 && (
+							<svg className="step-path" viewBox="0 0 100 40" preserveAspectRatio="none" aria-hidden>
+								<path d="M0 40 C 45 40, 55 0, 100 0" vectorEffect="non-scaling-stroke" />
+							</svg>
+						)}
+						<p className="step-index">Étape {i + 1}</p>
 						<h3>{step.title}</h3>
 						<p>{step.text}</p>
 					</li>
@@ -256,6 +310,18 @@ export function Principles({ items }: { items: { icon: string; title: string; te
 	);
 }
 
+function FocusMark() {
+	return (
+		<div className="focus">
+			<span className="focus-ring" />
+			<span className="focus-sky" />
+			<span className="focus-hatch" />
+			<span className="focus-sun" />
+			<span className="focus-dot" />
+		</div>
+	);
+}
+
 export function CtaBand({
 	title,
 	children,
@@ -274,7 +340,7 @@ export function CtaBand({
 					<div className="hero-actions">{actions}</div>
 				</div>
 				<div className="cta-symbol" aria-hidden>
-					<Compass size={140} strokeWidth={0.6} />
+					<FocusMark />
 				</div>
 			</div>
 		</section>

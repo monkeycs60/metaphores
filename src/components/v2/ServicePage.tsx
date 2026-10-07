@@ -1,12 +1,15 @@
 import { ContactBand, HeroActions } from './blocks';
+import { Scribble } from './deco';
 import { CheckList, Notice, PageHero, Quotes, RelatedLinks, Section, Story } from './ui';
 
 export type Service = {
 	title: string;
 	context: string;
+	scribble?: { text: string; mark: string };
 	description: string;
 	image: string;
 	imageAlt: string;
+	imagePosition?: string;
 	split?: boolean;
 	topicsTitle: string;
 	topics?: string[];
@@ -20,6 +23,17 @@ export type Service = {
 	related: { label: string; href: string }[];
 };
 
+function ServiceScribble({ text, mark }: { text: string; mark: string }) {
+	const [before, after] = text.split(mark);
+	return (
+		<Scribble tone="sky" className="hero-scribble">
+			{before}
+			<mark>{mark}</mark>
+			{after}
+		</Scribble>
+	);
+}
+
 export default function ServicePage({ service }: { service: Service }) {
 	return (
 		<>
@@ -28,7 +42,9 @@ export default function ServicePage({ service }: { service: Service }) {
 				subtitle={service.context}
 				image={service.image}
 				imageAlt={service.imageAlt}
+				imagePosition={service.imagePosition}
 				split={service.split}
+				note={service.scribble && <ServiceScribble {...service.scribble} />}
 				actions={<HeroActions primary={service.primary} />}
 			>
 				<p>{service.description}</p>

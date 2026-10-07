@@ -20,27 +20,31 @@ export const CTA = {
 	},
 };
 
-export type NavItem = { label: string; href: string; description?: string };
+export type NavItem = { label: string; href: string; description?: string; image?: string };
 
 export const COACHING_SUBNAV: NavItem[] = [
 	{
 		label: 'Coaching professionnel',
 		href: '/coaching-professionnel',
+		image: '/photos/escalier-ciel.webp',
 		description: 'Retrouver du sens et de la capacité d’action au travail.',
 	},
 	{
 		label: 'Coaching personnel',
 		href: '/coaching-personnel',
+		image: '/photos/bateau-papier.webp',
 		description: 'Prendre du recul sur une situation de vie.',
 	},
 	{
 		label: 'Bilan de carrière',
 		href: '/bilan-carriere',
+		image: '/photos/boussole-mer.webp',
 		description: 'Faire le point avant de décider de la suite.',
 	},
 	{
 		label: 'Transition professionnelle',
 		href: '/transition-professionnelle',
+		image: '/photos/transition-professionnelle.webp',
 		description: 'Construire un changement sans le précipiter.',
 	},
 ];

@@ -1,9 +1,5 @@
 import type { Service } from '@/components/v2/ServicePage';
 
-const conversation = {
-	storyImage: '/photos/conversation.webp',
-	storyImageAlt: 'Deux personnes échangent face à face, dans la lumière d’une grande baie vitrée',
-};
 const contact = (motif: string) => ({
 	label: 'Échanger sur votre situation',
 	href: `/contact?motif=${motif}`,
@@ -13,10 +9,11 @@ export const services: Record<string, Service> = {
 	'coaching-professionnel': {
 		title: 'Retrouver du sens au travail.',
 		context: 'Coaching professionnel · Bordeaux & à distance',
+		scribble: { text: 'Trouver du sens et en donner', mark: 'sens' },
 		description:
 			'Une évolution, une décision, un équilibre à retrouver. Clarifiez ce que vous souhaitez faire évoluer et comment y parvenir.',
-		image: '/photos/coaching-professionnel.webp',
-		imageAlt: 'Une femme pensive regarde par la fenêtre de son bureau',
+		image: '/photos/escalier-ciel.webp',
+		imageAlt: 'Une personne gravit un escalier aux rampes jaunes qui s’ouvre sur le ciel bleu',
 		topicsTitle: 'Qu’aimeriez-vous faire évoluer ?',
 		topics: [
 			'Le sens de votre travail',
@@ -31,7 +28,8 @@ export const services: Record<string, Service> = {
 			'Nous partons de votre contexte, de vos contraintes et de vos ressources. Le coaching vous aide à clarifier vos choix et à construire des actions qui vous ressemblent.',
 			'Faire évoluer sa vie professionnelle peut aussi vouloir dire trouver une nouvelle manière d’exercer son métier.',
 		],
-		...conversation,
+		storyImage: '/photos/panneau-direction.webp',
+		storyImageAlt: 'Un panneau jaune indique un virage, sur fond de ciel bleu',
 		primary: contact('coaching-professionnel'),
 		related: [
 			{ label: 'Bilan de carrière', href: '/bilan-carriere' },
@@ -42,10 +40,12 @@ export const services: Record<string, Service> = {
 	'coaching-personnel': {
 		title: 'Retrouver votre propre chemin.',
 		context: 'Coaching personnel · Bordeaux & à distance',
+		scribble: { text: 'Qui mieux que vous connaît vos solutions ?', mark: 'vous' },
 		description:
 			'Vous savez ce que vous ne voulez plus, sans savoir encore ce qui vient après. Prenons le temps d’y voir plus clair.',
-		image: '/photos/coaching-personnel.webp',
-		imageAlt: 'Deux personnes discutent au bord de l’eau, dans la lumière du soir',
+		image: '/photos/bateau-papier.webp',
+		imageAlt: 'Un bateau en papier jaune flotte sur une eau bleue et calme',
+		imagePosition: '82% center',
 		topicsTitle: 'Un espace pour vous.',
 		topics: [
 			'La confiance en soi',
@@ -59,8 +59,8 @@ export const services: Record<string, Service> = {
 		storyText: [
 			'Le coaching offre un espace de réflexion, confidentiel et sans jugement. Nous explorons ce qui compte pour vous, ce qui vous freine et ce qui peut vous remettre en mouvement.',
 		],
-		storyImage: '/photos/chemin.webp',
-		storyImageAlt: 'Un sentier de sable entre les dunes, vers le ciel',
+		storyImage: '/photos/pousse-beton.webp',
+		storyImageAlt: 'Une jeune pousse verte perce une dalle de béton, dans la lumière',
 		notice: {
 			title: 'Un cadre distinct de la psychothérapie',
 			text: 'Le coaching n’est pas une psychothérapie et ne se substitue pas à un suivi médical ou psychologique lorsque celui-ci est nécessaire. Son cadre est orienté vers une situation, un objectif et la capacité d’action de la personne.',
@@ -75,10 +75,11 @@ export const services: Record<string, Service> = {
 	'bilan-carriere': {
 		title: 'Faire le point sur votre carrière.',
 		context: 'Bilan de carrière · Bordeaux & à distance',
+		scribble: { text: 'Faire le point, puis choisir', mark: 'choisir' },
 		description:
 			'Relire votre parcours, reconnaître vos compétences et clarifier vos envies avant de décider de la suite.',
-		image: '/photos/bilan-carriere.webp',
-		imageAlt: 'Un carnet en cuir marqué d’une rose des vents, à côté d’un ordinateur',
+		image: '/photos/boussole-mer.webp',
+		imageAlt: 'Une main tient une boussole face à la mer',
 		topicsTitle: 'Ce que nous explorons.',
 		topics: [
 			'Votre parcours et vos compétences',
@@ -92,7 +93,8 @@ export const services: Record<string, Service> = {
 		storyText: [
 			'L’objectif est d’aboutir à des hypothèses d’évolution et à des pistes professionnelles concrètes. Vous pouvez vouloir changer de métier, évoluer dans votre poste ou simplement retrouver vos repères.',
 		],
-		...conversation,
+		storyImage: '/photos/jumelles-mer.webp',
+		storyImageAlt: 'Des jumelles panoramiques tournées vers le large',
 		notice: {
 			title: 'Bilan de carrière ou bilan de compétences ?',
 			text: 'Le bilan de carrière proposé par Métaphore Coaching est un accompagnement de coaching centré sur votre parcours et vos choix professionnels. Il ne s’agit pas d’un « bilan de compétences » au sens du dispositif réglementé.',
@@ -107,6 +109,7 @@ export const services: Record<string, Service> = {
 	'transition-professionnelle': {
 		title: 'Construire un changement choisi.',
 		context: 'Transition & reconversion · Bordeaux & à distance',
+		scribble: { text: 'Changer les possibles', mark: 'possibles' },
 		description:
 			'Quelque chose ne vous convient plus. Explorons une nouvelle direction, sans idéaliser ni précipiter la décision.',
 		image: '/photos/transition-professionnelle.webp',
@@ -123,8 +126,8 @@ export const services: Record<string, Service> = {
 			'Une transition peut prendre plusieurs formes : reconversion, évolution de poste, nouvel environnement ou rééquilibrage de vos priorités.',
 			'Nous clarifions vos besoins, explorons vos possibilités et travaillons les freins. Puis nous construisons des étapes réalistes pour passer de la réflexion à l’action.',
 		],
-		storyImage: '/photos/bilan-carriere.webp',
-		storyImageAlt: 'Un carnet marqué d’une rose des vents, prêt pour les prochaines étapes',
+		storyImage: '/photos/pierres-gue.webp',
+		storyImageAlt: 'Des pierres de gué tracent un passage à travers l’eau',
 		primary: contact('transition-professionnelle'),
 		related: [
 			{ label: 'Bilan de carrière', href: '/bilan-carriere' },
@@ -135,6 +138,7 @@ export const services: Record<string, Service> = {
 	'jeunes-parents': {
 		title: 'Grandir en confiance. Trouver sa direction.',
 		context: 'Coaching jeunes & parents · Bordeaux',
+		scribble: { text: 'Grandir à son rythme', mark: 'Grandir' },
 		description:
 			'Un espace neutre, différent de la famille et de l’école, pour parler librement, retrouver du sens et gagner en autonomie.',
 		image: '/photos/jeunes-parents.webp',
@@ -167,6 +171,7 @@ export const services: Record<string, Service> = {
 	'coaching-enseignants': {
 		title: 'Retrouver votre place dans le métier.',
 		context: 'Coaching enseignants · Bordeaux & à distance',
+		scribble: { text: 'Celui qui sait demander est libre', mark: 'libre' },
 		description:
 			'On peut aimer transmettre et ne plus se reconnaître dans ses conditions de travail. Prenons du recul sur ce qui vous questionne.',
 		image: '/photos/classe.webp',
@@ -184,8 +189,8 @@ export const services: Record<string, Service> = {
 			'Aucune réponse n’est décidée à l’avance. Nous pouvons travailler votre place dans le métier, faire un bilan de carrière, explorer une mobilité ou préparer une reconversion.',
 			'Enseignant en technologie pendant plus de dix ans, j’en connais les réalités. Mes propres reconversions, dans l’immobilier et l’aéronautique, nourrissent aussi ma compréhension du changement.',
 		],
-		storyImage: '/photos/enseignants.webp',
-		storyImageAlt: 'Un enseignant écrit au tableau, vu depuis le fond de la classe',
+		storyImage: '/photos/enseignant-tableau.webp',
+		storyImageAlt: 'Un enseignant, de dos, écrit des équations sur un grand tableau noir',
 		primary: contact('enseignant'),
 		related: [
 			{ label: 'Bilan de carrière', href: '/bilan-carriere' },
