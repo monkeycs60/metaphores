@@ -3,9 +3,9 @@ import ServicePage from '@/components/v2/ServicePage';
 import { services } from '@/lib/accompagnements';
 
 export const metadata: Metadata = {
-	title: 'Coaching personnel à Bordeaux',
+	title: { absolute: 'Coaching personnel Bordeaux | Métaphore Coaching' },
 	description:
-		'Coaching personnel à Bordeaux et en visio : confiance en soi, choix, périodes de changement, priorités, limites et recherche de sens, dans un cadre confidentiel.',
+		'Coaching personnel à Bordeaux et à distance : confiance, choix, changement, équilibre, limites et recherche de sens.',
 	alternates: { canonical: '/coaching-personnel' },
 };
 

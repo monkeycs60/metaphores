@@ -5,9 +5,9 @@ import { ContactBand, HeroActions } from '@/components/v2/blocks';
 import { CTA } from '@/lib/site';
 
 export const metadata: Metadata = {
-	title: 'Coaching entreprise, prévention RPS et QVCT à Bordeaux',
+	title: { absolute: 'Coaching entreprise Bordeaux | RPS & QVCT | Métaphore Coaching' },
 	description:
-		'Coaching de managers, équipes sous tension, ateliers de prévention RPS & QVCT et espaces de parole pour les entreprises et organisations de la région bordelaise.',
+		'Coaching de managers et d’équipes à Bordeaux : tensions, changements, prévention RPS, QVCT, espaces de dialogue et accompagnement des collectifs.',
 	alternates: { canonical: '/entreprises-rps-qvct' },
 };
 const FORMATS = [
@@ -92,8 +92,8 @@ export default function EntreprisesPage() {
 			<Section tone="cream">
 				<Story
 					title="Partir du travail réel."
-					image="/photos/entreprises-atelier.webp"
-					imageAlt="Un atelier d’équipe devant un tableau couvert de notes"
+					image="/photos/christophe-portrait-entreprise.webp"
+					imageAlt="Portrait de Christophe Jacques en veste grise devant un immeuble de bureaux"
 				>
 					<p>
 						Les difficultés peuvent aussi être organisationnelles. L’accompagnement tient compte du contexte

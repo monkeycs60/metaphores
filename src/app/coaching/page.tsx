@@ -3,9 +3,9 @@ import { OfferList, PageHero, Section, Steps } from '@/components/v2/ui';
 import { ContactBand, HeroActions } from '@/components/v2/blocks';
 
 export const metadata: Metadata = {
-	title: 'Coaching à Bordeaux : professionnel, personnel, bilan de carrière',
+	title: { absolute: 'Coaching professionnel & personnel Bordeaux | Métaphore Coaching' },
 	description:
-		'Coaching professionnel, coaching personnel, bilan de carrière et transition professionnelle à Bordeaux et en visio. Prendre du recul et choisir comment avancer.',
+		'Coaching professionnel et personnel à Bordeaux et à distance : faire le point, retrouver du sens, décider, évoluer et se remettre en mouvement.',
 	alternates: { canonical: '/coaching' },
 };
 const OFFERS = [

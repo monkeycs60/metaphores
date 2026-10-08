@@ -7,9 +7,9 @@ import { ButtonLink } from '@/components/v2/ui';
 import { CONTACT, LOCATIONS } from '@/lib/site';
 
 export const metadata: Metadata = {
-	title: 'Contact et lieux de rendez-vous',
+	title: { absolute: 'Contact | Métaphore Coaching Bordeaux' },
 	description:
-		'Contacter Christophe Jacques, coach professionnel à Bordeaux : téléphone, e-mail, formulaire et lieux de rendez-vous à Bordeaux, en région bordelaise ou en visio.',
+		'Contactez Métaphore Coaching pour un premier échange : coaching à Bordeaux, en région bordelaise ou à distance.',
 	alternates: { canonical: '/contact' },
 };
 export default function ContactPage() {

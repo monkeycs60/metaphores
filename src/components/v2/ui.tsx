@@ -81,6 +81,7 @@ export function PageHero({
 								width={1100}
 								height={1000}
 								priority
+								quality={90}
 								sizes="(min-width: 900px) 48vw, 100vw"
 								className={cn('hero-photo', split && 'polyptych')}
 								style={imagePosition ? { objectPosition: imagePosition } : undefined}
@@ -246,6 +247,7 @@ export function OfferList({ offers, variant = 'portrait' }: { offers: Offer[]; v
 											alt={offer.imageAlt ?? photo?.alt ?? ''}
 											width={720}
 											height={900}
+											quality={88}
 											sizes="(min-width: 1000px) 32vw, (min-width: 600px) 45vw, 100vw"
 											className={cn(!portrait && 'polyptych polyptych-three')}
 											style={photo?.position ? { objectPosition: photo.position } : undefined}
@@ -401,7 +403,14 @@ export function Story({
 	return (
 		<div className="story">
 			<div className="story-image">
-				<Image src={image} alt={imageAlt} width={800} height={650} sizes="(min-width: 900px) 45vw, 100vw" />
+				<Image
+					src={image}
+					alt={imageAlt}
+					width={800}
+					height={650}
+					quality={88}
+					sizes="(min-width: 900px) 45vw, 100vw"
+				/>
 			</div>
 			<div className="story-copy">
 				<h2>{title}</h2>

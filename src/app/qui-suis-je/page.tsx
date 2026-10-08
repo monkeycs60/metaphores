@@ -2,15 +2,15 @@ import Image from 'next/image';
 import type { Metadata } from 'next';
 import { ButtonLink, CheckList, PageHero, Section } from '@/components/v2/ui';
 import { ContactBand, HeroActions } from '@/components/v2/blocks';
-import { Deco, Scribble } from '@/components/v2/deco';
+import { Scribble } from '@/components/v2/deco';
 
 export const metadata: Metadata = {
-	title: 'Qui suis-je ? Christophe Jacques, coach professionnel',
+	title: { absolute: 'Christophe Jacques | Coach professionnel à Bordeaux | Métaphore Coaching' },
 	description:
-		'Enseignant en technologie pendant plus de dix ans, reconverti après l’immobilier et l’aéronautique : le parcours et la manière de travailler de Christophe Jacques, coach à Bordeaux.',
+		'Découvrez le parcours et l’approche de Christophe Jacques, coach professionnel à Bordeaux : enseignement, reconversions et accompagnement du changement.',
 	alternates: { canonical: '/qui-suis-je' },
 };
-const PATH = [
+const PATH: { when: string; title: string; text: string; image: string; alt: string; position?: string }[] = [
 	{
 		when: 'D’abord',
 		title: 'Changer de voie',
@@ -29,8 +29,9 @@ const PATH = [
 		when: 'Aujourd’hui',
 		title: 'Accompagner',
 		text: 'Une formation au coaching et au développement professionnel, pour questionner sans imposer de réponse.',
-		image: '/photos/tandem.webp',
-		alt: 'Deux personnes pédalent ensemble sur un tandem, à contre-jour',
+		image: '/photos/christophe-veste-jaune-mur.webp',
+		alt: 'Christophe Jacques, veste jaune, sourit devant un mur bleu nuit',
+		position: '50% 4%',
 	},
 ];
 export default function QuiSuisJePage() {
@@ -41,13 +42,13 @@ export default function QuiSuisJePage() {
 				subtitle="Christophe Jacques · Coach professionnel à Bordeaux"
 				media={
 					<div className="portrait-stage">
-						<Deco shape="dots" size={110} className="portrait-deco" />
 						<Image
-							src="/chris-profile-light.webp"
-							alt="Christophe Jacques, souriant, un carnet à la main"
-							width={365}
-							height={500}
+							src="/photos/christophe-sourire.webp"
+							alt="Christophe Jacques, en veste grise, sourit dans une cour arborée"
+							width={1066}
+							height={1600}
 							priority
+							quality={88}
 							sizes="340px"
 						/>
 						<Scribble tone="ink" className="portrait-note">
@@ -67,12 +68,18 @@ export default function QuiSuisJePage() {
 					{PATH.map((step) => (
 						<li key={step.title}>
 							<div className="journey-photo">
-								<Image src={step.image} alt={step.alt} width={720} height={576} sizes="(min-width: 900px) 40vw, 100vw" />
+								<Image
+									src={step.image}
+									alt={step.alt}
+									width={720}
+									height={576}
+									quality={88}
+									sizes="(min-width: 900px) 40vw, 100vw"
+									style={step.position ? { objectPosition: step.position } : undefined}
+								/>
 							</div>
 							<div className="journey-copy">
-								<Scribble tone="sky">
-									<mark>{step.when}</mark>
-								</Scribble>
+								<Scribble tone="sky">{step.when}</Scribble>
 								<h3>{step.title}</h3>
 								<p>{step.text}</p>
 							</div>

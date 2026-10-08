@@ -6,9 +6,9 @@ import { ContactBand, FramePrinciples, Testimonies } from '@/components/v2/block
 import { Deco, Scribble } from '@/components/v2/deco';
 
 export const metadata: Metadata = {
-	title: { absolute: 'Coach professionnel à Bordeaux et à distance | Métaphore Coaching' },
+	title: { absolute: 'Coach professionnel à Bordeaux | Métaphore Coaching' },
 	description:
-		'Coaching professionnel, coaching personnel et bilan de carrière à Bordeaux et en visio. Accompagnements dédiés aux jeunes & parents, enseignants et entreprises.',
+		'Coaching professionnel et personnel à Bordeaux et à distance : bilan de carrière, transition, jeunes, enseignants, managers et équipes.',
 	alternates: { canonical: '/' },
 };
 
@@ -158,10 +158,11 @@ export default function Home() {
 					<div className="coach-photo">
 						<Deco shape="dots" size={110} className="portrait-deco" />
 						<Image
-							src="/chris-profile-light.webp"
-							alt="Christophe Jacques, souriant, un carnet à la main"
-							width={365}
-							height={500}
+							src="/photos/christophe-veste-jaune-sourire.webp"
+							alt="Christophe Jacques, veste jaune, sourit en plein air"
+							width={1066}
+							height={1600}
+							quality={88}
 							sizes="(min-width: 900px) 35vw, 80vw"
 						/>
 						<Scribble tone="ink" className="coach-scribble">

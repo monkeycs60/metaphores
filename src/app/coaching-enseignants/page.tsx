@@ -3,9 +3,9 @@ import ServicePage from '@/components/v2/ServicePage';
 import { services } from '@/lib/accompagnements';
 
 export const metadata: Metadata = {
-	title: 'Coaching pour enseignants à Bordeaux',
+	title: { absolute: 'Coaching enseignant & reconversion | Bordeaux | Métaphore Coaching' },
 	description:
-		'Coaching pour enseignants et personnels de l’Éducation nationale à Bordeaux et en visio : perte de sens, fatigue, évolution, bilan de carrière ou reconversion.',
+		'Enseignant en perte de sens ou en réflexion professionnelle ? Coaching à Bordeaux et à distance pour évoluer, faire un bilan ou préparer une transition.',
 	alternates: { canonical: '/coaching-enseignants' },
 };
 

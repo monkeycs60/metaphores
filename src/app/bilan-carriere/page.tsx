@@ -3,9 +3,9 @@ import ServicePage from '@/components/v2/ServicePage';
 import { services } from '@/lib/accompagnements';
 
 export const metadata: Metadata = {
-	title: 'Bilan de carrière à Bordeaux',
+	title: { absolute: 'Bilan de carrière Bordeaux | Faire le point | Métaphore Coaching' },
 	description:
-		'Bilan de carrière à Bordeaux et en visio : relire son parcours, identifier compétences et motivations, et construire des pistes d’évolution concrètes.',
+		'Bilan de carrière à Bordeaux et à distance : parcours, compétences, motivations, priorités et pistes d’évolution professionnelle.',
 	alternates: { canonical: '/bilan-carriere' },
 };
 

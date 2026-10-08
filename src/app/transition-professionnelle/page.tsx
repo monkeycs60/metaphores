@@ -3,9 +3,9 @@ import ServicePage from '@/components/v2/ServicePage';
 import { services } from '@/lib/accompagnements';
 
 export const metadata: Metadata = {
-	title: 'Transition professionnelle et reconversion à Bordeaux',
+	title: { absolute: 'Transition professionnelle à Bordeaux | Coaching | Métaphore Coaching' },
 	description:
-		'Coaching de transition professionnelle et de reconversion à Bordeaux et en visio : clarifier ce qui ne convient plus, explorer des pistes et passer à l’action.',
+		'Coaching de transition professionnelle à Bordeaux : perte de sens, évolution, reconversion, choix professionnels et passage de la réflexion à l’action.',
 	alternates: { canonical: '/transition-professionnelle' },
 };
 

@@ -2242,6 +2242,9 @@ p {
 .portrait-stage img {
 	width: min(330px, 68%);
 	height: auto;
+	aspect-ratio: 365 / 500;
+	object-fit: cover;
+	object-position: 50% 20%;
 	box-shadow: 18px 18px 0 #ffba08;
 }
 .portrait-note {
@@ -2281,10 +2284,6 @@ p {
 	height: auto;
 	aspect-ratio: 5 / 4;
 	object-fit: cover;
-	box-shadow: 14px 14px 0 #b4d6e6;
-}
-.journey > li:nth-child(2) .journey-photo img {
-	box-shadow: -14px 14px 0 #ffba08;
 }
 .journey-copy {
 	display: flex;
@@ -2362,10 +2361,6 @@ p {
 		width: min(280px, 72%);
 		box-shadow: 12px 12px 0 #ffba08;
 	}
-	.journey-photo img,
-	.journey > li:nth-child(2) .journey-photo img {
-		box-shadow: 10px 10px 0 #b4d6e6;
-	}
 	.journey-quote:before {
 		font-size: 90px;
 	}
@@ -2379,4 +2374,124 @@ p {
 .coach-photo .portrait-deco {
 	top: -34px;
 	left: -40px;
+}
+
+.parent-grid {
+	display: grid;
+	grid-template-columns: repeat(2, minmax(0, 1fr));
+	gap: 0 56px;
+	counter-reset: parent;
+}
+.parent-grid li {
+	position: relative;
+	padding: 28px 0 28px 64px;
+	border-top: 1px solid #0d063026;
+	counter-increment: parent;
+}
+.parent-grid li::before {
+	content: counter(parent, decimal-leading-zero);
+	position: absolute;
+	top: 26px;
+	left: 0;
+	font-family: 'Yeseva One', serif;
+	font-size: 30px;
+	line-height: 1;
+	color: #ffba08;
+}
+.parent-grid h3 {
+	font-family: 'Yeseva One', serif;
+	font-size: clamp(21px, 1.8vw, 25px);
+	line-height: 1.2;
+}
+.parent-grid p {
+	margin-top: 10px;
+	color: #0d0630b8;
+	line-height: 1.7;
+}
+@media (max-width: 760px) {
+	.parent-grid {
+		grid-template-columns: 1fr;
+	}
+}
+
+.situation-groups {
+	display: grid;
+	grid-template-columns: repeat(2, minmax(0, 1fr));
+	gap: 40px 64px;
+}
+.situation-title {
+	padding-bottom: 6px;
+	font-family: 'Caveat', cursive;
+	font-size: 28px;
+	font-weight: 600;
+	line-height: 1.2;
+	color: var(--ink);
+}
+.trio {
+	position: relative;
+	display: grid;
+	grid-template-columns: 1fr 1.15fr 1fr;
+	align-items: center;
+	gap: 28px;
+}
+.trio::before {
+	content: '';
+	position: absolute;
+	top: 50%;
+	left: 8%;
+	right: 8%;
+	border-top: 1.6px dotted var(--ink);
+}
+.trio li {
+	position: relative;
+	padding: 32px 30px;
+	background: var(--paper);
+}
+.trio li:nth-child(2) {
+	padding: 44px 36px;
+	background: var(--ink);
+	color: var(--paper);
+}
+.trio-who {
+	font-size: 13px;
+	font-weight: 600;
+	letter-spacing: 0.12em;
+	text-transform: uppercase;
+	color: #0d0630a6;
+}
+.trio li:nth-child(2) .trio-who {
+	color: #ffba08;
+}
+.trio h3 {
+	margin: 10px 0 12px;
+	font-family: 'Yeseva One', serif;
+	font-size: clamp(23px, 2vw, 28px);
+	line-height: 1.2;
+}
+.trio li p:last-child {
+	line-height: 1.7;
+	color: #0d0630c4;
+}
+.trio li:nth-child(2) p:last-child {
+	color: #fffdf9d9;
+}
+.parent-questions {
+	margin-top: 56px;
+}
+.parent-questions .question-list {
+	margin-top: 18px;
+}
+@media (max-width: 860px) {
+	.situation-groups,
+	.trio {
+		grid-template-columns: 1fr;
+	}
+	.trio::before {
+		top: 4%;
+		bottom: 4%;
+		left: 50%;
+		right: auto;
+		border-top: 0;
+		border-left: 1.6px dotted var(--ink);
+	}
 }

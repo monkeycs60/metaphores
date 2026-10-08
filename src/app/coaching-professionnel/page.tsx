@@ -3,9 +3,9 @@ import ServicePage from '@/components/v2/ServicePage';
 import { services } from '@/lib/accompagnements';
 
 export const metadata: Metadata = {
-	title: 'Coaching professionnel à Bordeaux',
+	title: { absolute: 'Coaching professionnel Bordeaux | Métaphore Coaching' },
 	description:
-		'Coaching professionnel à Bordeaux et en visio : retrouver du sens au travail, préparer une évolution, prendre une décision, améliorer ses relations professionnelles.',
+		'Coach professionnel à Bordeaux et à distance : sens au travail, évolution, positionnement, prise de décision, équilibre et transition.',
 	alternates: { canonical: '/coaching-professionnel' },
 };
 
