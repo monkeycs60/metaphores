@@ -10,25 +10,36 @@ export const metadata: Metadata = {
 		'Découvrez le parcours et l’approche de Christophe Jacques, coach professionnel à Bordeaux : enseignement, reconversions et accompagnement du changement.',
 	alternates: { canonical: '/qui-suis-je' },
 };
-const PATH: { when: string; title: string; text: string; image: string; alt: string; position?: string }[] = [
+const PATH: {
+	when: string;
+	title: string;
+	text: string;
+	contribution: string;
+	image: string;
+	alt: string;
+	position?: string;
+}[] = [
 	{
 		when: 'D’abord',
 		title: 'Changer de voie',
-		text: 'Immobilier, puis aéronautique : plusieurs reconversions et l’expérience concrète du changement.',
+		text: 'Dans l’immobilier puis l’aéronautique, j’ai vécu plusieurs reconversions : changer de repères, m’adapter et faire le lien entre mes compétences et un nouveau métier.',
+		contribution: 'Cette expérience nourrit le travail sur vos transitions : repérer ce que vous pouvez réutiliser, ce qui reste à explorer et les contraintes à prendre en compte.',
 		image: '/photos/aile-avion.webp',
 		alt: 'L’aile d’un avion au-dessus des nuages, dans un ciel bleu',
 	},
 	{
-		when: 'Dix ans',
+		when: 'Plus de dix ans',
 		title: 'Transmettre',
-		text: 'Plus de dix ans comme enseignant en technologie, à accompagner des jeunes et animer des groupes.',
+		text: 'Enseigner la technologie pendant plus de dix ans m’a appris à accompagner des jeunes, à animer des groupes et à écouter ce qui se joue derrière une difficulté.',
+		contribution: 'Avec un jeune, un parent ou un enseignant, cette connaissance du terrain aide à regarder au-delà des résultats : motivation, confiance, attentes et relations.',
 		image: '/photos/avion-papier.webp',
 		alt: 'Une main s’apprête à lancer un avion en papier vers le ciel',
 	},
 	{
 		when: 'Aujourd’hui',
 		title: 'Accompagner',
-		text: 'Une formation au coaching et au développement professionnel, pour questionner sans imposer de réponse.',
+		text: 'Ma formation au coaching et au développement professionnel a donné un autre cadre à ce parcours : vous aider à réfléchir et à agir, en vous laissant décider.',
+		contribution: 'En séance, nous clarifions ce qui compte, explorons les possibilités et définissons une prochaine étape concrète, à votre rythme.',
 		image: '/photos/christophe-veste-jaune-mur.webp',
 		alt: 'Christophe Jacques, veste jaune, sourit devant un mur bleu nuit',
 		position: '50% 4%',
@@ -63,7 +74,7 @@ export default function QuiSuisJePage() {
 					façon de vous accompagner.
 				</p>
 			</PageHero>
-			<Section tone="cream" title="Apprendre. Transmettre. Accompagner.">
+			<Section tone="cream" title="Ce que mon parcours apporte à votre accompagnement." className="journey-section">
 				<ol className="journey">
 					{PATH.map((step) => (
 						<li key={step.title}>
@@ -72,30 +83,23 @@ export default function QuiSuisJePage() {
 									src={step.image}
 									alt={step.alt}
 									width={720}
-									height={576}
+									height={400}
 									quality={88}
-									sizes="(min-width: 900px) 40vw, 100vw"
+									sizes="(min-width: 1200px) 360px, (min-width: 900px) 30vw, 96px"
 									style={step.position ? { objectPosition: step.position } : undefined}
 								/>
 							</div>
 							<div className="journey-copy">
 								<Scribble tone="sky">{step.when}</Scribble>
 								<h3>{step.title}</h3>
+							</div>
+							<div className="journey-detail">
 								<p>{step.text}</p>
+								<p>{step.contribution}</p>
 							</div>
 						</li>
 					))}
 				</ol>
-				<figure className="journey-quote">
-					<blockquote>
-						Je sais ce que les périodes de changement peuvent soulever : des doutes, des contraintes, mais aussi
-						des ressources qu’on ne voit pas encore. Mon rôle est de vous aider à les reconnaître et à
-						construire une direction qui vous correspond.
-					</blockquote>
-					<figcaption>
-						<Scribble>Christophe</Scribble>
-					</figcaption>
-				</figure>
 			</Section>
 			<Section title="Ma manière de travailler.">
 				<CheckList
