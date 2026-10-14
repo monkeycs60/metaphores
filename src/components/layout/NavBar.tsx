@@ -5,10 +5,33 @@ import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { useRef, useState, useSyncExternalStore } from 'react';
 import { ArrowRight, ChevronDown, Menu, X } from 'lucide-react';
-import { COACHING_SUBNAV, CTA, MAIN_NAV } from '@/lib/site';
+import { COACHING_SUBNAV, CTA, MAIN_NAV, NavItem, READING_NAV } from '@/lib/site';
 import { cn } from '@/lib/utils';
 
-const COACHING_PATHS = ['/coaching', ...COACHING_SUBNAV.map((item) => item.href)];
+type Menu = { id: string; trigger: string; title: string; intro: string; hub?: string; items: NavItem[] };
+
+const MENUS: Record<string, Menu> = {
+	'/coaching': {
+		id: 'coaching-menu',
+		trigger: 'Coaching',
+		title: 'Coaching individuel',
+		intro: 'À Bordeaux ou à distance, pour avancer sur ce qui compte pour vous.',
+		hub: '/coaching',
+		items: COACHING_SUBNAV,
+	},
+	'/coaching/origines': {
+		id: 'reading-menu',
+		trigger: 'Le coaching',
+		title: 'Le coaching',
+		intro: 'Comprendre ce qu’est le coaching, ce qu’il n’est pas et le cadre qui l’entoure.',
+		items: READING_NAV,
+	},
+};
+
+const menuPaths = (href: string) => {
+	const menu = MENUS[href];
+	return [...(menu.hub ? [menu.hub] : []), ...menu.items.map((item) => item.href)];
+};
 
 const subscribeToScroll = (onChange: () => void) => {
 	window.addEventListener('scroll', onChange, { passive: true });
@@ -25,14 +48,13 @@ export default function NavBar() {
 	const pathname = usePathname();
 	const scrolled = useScrolled();
 	const [menuOpen, setMenuOpen] = useState(false);
-	const [coachingOpen, setCoachingOpen] = useState(false);
+	const [openMenu, setOpenMenu] = useState<string | null>(null);
 	const menuButton = useRef<HTMLButtonElement>(null);
-	const coachingButton = useRef<HTMLButtonElement>(null);
-	const active = (href: string) =>
-		href === '/coaching' ? COACHING_PATHS.includes(pathname) : pathname === href;
+	const triggerButtons = useRef<Record<string, HTMLButtonElement | null>>({});
+	const active = (href: string) => (MENUS[href] ? menuPaths(href).includes(pathname) : pathname === href);
 	const close = () => {
 		setMenuOpen(false);
-		setCoachingOpen(false);
+		setOpenMenu(null);
 	};
 
 	return (
@@ -42,7 +64,7 @@ export default function NavBar() {
 			onKeyDown={(event) => {
 				if (event.key === 'Escape') {
 					if (menuOpen) menuButton.current?.focus();
-					if (coachingOpen) coachingButton.current?.focus();
+					if (openMenu) triggerButtons.current[openMenu]?.focus();
 					close();
 				}
 			}}
@@ -55,47 +77,51 @@ export default function NavBar() {
 				<nav aria-label='Navigation principale' className='desktop-nav-wrap hidden xl:block'>
 					<ul className='desktop-nav'>
 						{MAIN_NAV.filter((item) => item.href !== '/').map((item) =>
-							item.href === '/coaching' ? (
+							MENUS[item.href] ? (
 								<li
 									key={item.href}
 									className='nav-coaching'
-									onPointerEnter={(event) => event.pointerType === 'mouse' && setCoachingOpen(true)}
-									onPointerLeave={(event) => event.pointerType === 'mouse' && setCoachingOpen(false)}
+									onPointerEnter={(event) => event.pointerType === 'mouse' && setOpenMenu(item.href)}
+									onPointerLeave={(event) => event.pointerType === 'mouse' && setOpenMenu(null)}
 									onBlur={(event) => {
 										if (event.relatedTarget && !event.currentTarget.contains(event.relatedTarget)) {
-											setCoachingOpen(false);
+											setOpenMenu(null);
 										}
 									}}
 								>
 									<button
-										ref={coachingButton}
+										ref={(node) => {
+											triggerButtons.current[item.href] = node;
+										}}
 										type='button'
-										aria-expanded={coachingOpen}
-										aria-controls='coaching-menu'
-										onClick={() => setCoachingOpen((open) => !open)}
-										className={cn('nav-link nav-trigger', active('/coaching') && 'nav-active')}
+										aria-expanded={openMenu === item.href}
+										aria-controls={MENUS[item.href].id}
+										onClick={() => setOpenMenu((open) => (open === item.href ? null : item.href))}
+										className={cn('nav-link nav-trigger', active(item.href) && 'nav-active')}
 									>
-										Coaching
+										{MENUS[item.href].trigger}
 										<ChevronDown size={16} strokeWidth={2} aria-hidden className='nav-chevron' />
 									</button>
-									{coachingOpen && (
-										<div id='coaching-menu' className='mega-menu'>
+									{openMenu === item.href && (
+										<div id={MENUS[item.href].id} className='mega-menu'>
 											<div className='mega-inner'>
 												<div className='mega-intro'>
-													<p className='mega-title'>Coaching individuel</p>
-													<p>À Bordeaux ou à distance, pour avancer sur ce qui compte pour vous.</p>
-													<Link
-														href='/coaching'
-														onClick={close}
-														aria-current={pathname === '/coaching' ? 'page' : undefined}
-														className='action action-text'
-													>
-														Voir l’approche
-														<ArrowRight size={18} aria-hidden />
-													</Link>
+													<p className='mega-title'>{MENUS[item.href].title}</p>
+													<p>{MENUS[item.href].intro}</p>
+													{MENUS[item.href].hub && (
+														<Link
+															href={MENUS[item.href].hub!}
+															onClick={close}
+															aria-current={pathname === MENUS[item.href].hub ? 'page' : undefined}
+															className='action action-text'
+														>
+															Voir l’approche
+															<ArrowRight size={18} aria-hidden />
+														</Link>
+													)}
 												</div>
 												<ul className='mega-list'>
-													{COACHING_SUBNAV.map((sub) => (
+													{MENUS[item.href].items.map((sub) => (
 														<li key={sub.href}>
 															<Link
 																href={sub.href}
@@ -153,12 +179,16 @@ export default function NavBar() {
 					<ul>
 						{MAIN_NAV.map((item) => (
 							<li key={item.href}>
-								<Link href={item.href} onClick={close}>
-									{item.label}
-								</Link>
-								{item.href === '/coaching' && (
+								{MENUS[item.href] && !MENUS[item.href].hub ? (
+									<span className='mobile-nav-group'>{item.label}</span>
+								) : (
+									<Link href={item.href} onClick={close}>
+										{item.label}
+									</Link>
+								)}
+								{MENUS[item.href] && (
 									<ul className='mobile-subnav'>
-										{COACHING_SUBNAV.map((sub) => (
+										{MENUS[item.href].items.map((sub) => (
 											<li key={sub.href}>
 												<Link href={sub.href} onClick={close}>
 													{sub.label}

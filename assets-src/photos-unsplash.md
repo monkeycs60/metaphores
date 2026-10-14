@@ -24,3 +24,19 @@ Licence Unsplash : usage commercial libre, attribution non requise.
 | `avion-papier.webp` | https://unsplash.com/photos/2c9ffiPlD9Q |
 | `tandem.webp` | https://unsplash.com/photos/eTy3_4TtRp8 |
 | `enseignant-tableau.webp` | https://unsplash.com/photos/NGxk5h3fVYQ |
+
+## Photos ajoutées le 14 octobre 2026 (retours de Christophe)
+
+| Fichier | Auteur | Source |
+|---|---|---|
+| `accueil-chemin.webp` | Tunahan Kuzgun (@tunahankuzgun) | https://unsplash.com/fr/photos/personne-marchant-sur-un-sentier-de-parc-ensoleille-u2bL7sIdA1E |
+| `coaching-echange.webp` | Luigi Estuye, LUCREATIVE® (@lucreative) | https://unsplash.com/photos/homme-assis-a-linterieur-U8hxFaZK3tc |
+| `entreprises-equipe.webp` | Jud Mackrill (@judmackrill) | https://unsplash.com/photos/quatre-collegues-souriant-autour-de-lordinateur-portable-a-la-table-Of_m3hMsoAA |
+| `carte-coaching-professionnel.webp` | Fernando Valero (@vvalero) | https://unsplash.com/photos/personne-travaillant-sur-un-ordinateur-portable-pres-dune-fenetre-ensoleillee-OSSg4KsYFOE |
+| `carte-coaching-personnel.webp` | Kelly Sikkema (@kellysikkema) | https://unsplash.com/photos/une-femme-assise-a-une-table-ecrivant-sur-un-cahier-HymOWIY2o3s |
+| `carte-bilan-carriere.webp` | Andriyko Podilnyk (@andriyko) | https://unsplash.com/photos/homme-ecrivant-dans-un-cahier-VcqtDVnXQ-o |
+| `format-managers.webp` | TheStandingDesk (@thestandingdesk) | https://unsplash.com/photos/quelques-personnes-assises-a-une-table-y5fEI0MKMZo |
+| `format-cooperation.webp` | Brooke Cagle (@brookecagle) | https://unsplash.com/photos/trois-personnes-assises-devant-la-table-riant-ensemble-g1Kr4Ozfoac |
+| `format-prevention.webp` | Sable Flow (@sableflow) | https://unsplash.com/photos/reunion-de-personnes-dans-un-espace-de-travail-de-bureau-ensoleille-KHpjeuaWOec |
+| `format-parole.webp` | The Jopwell Collection (@jopwell) | https://unsplash.com/photos/un-groupe-de-personnes-assises-autour-dun-salon-KqcKFgbtgZ4 |
+| `carte-transition.webp` | Adam Thomas (@adamthomas48) | https://unsplash.com/photos/homme-en-chemise-blanche-et-short-marron-marchant-sur-un-chemin-de-terre-pendant-la-journee-Co5yMxDxvEQ |

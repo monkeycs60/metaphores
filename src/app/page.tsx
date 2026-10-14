@@ -15,39 +15,50 @@ export const metadata: Metadata = {
 const OFFERS = [
 	{
 		title: 'Coaching professionnel',
-		tagline: 'Retrouver du sens dans votre travail.',
+		tagline:
+			'Faire face au changement, à une évolution de poste ou de compétences, retrouver du sens, gérer une crise ou un contexte anxiogène.',
 		text: '',
 		href: '/coaching-professionnel',
 	},
 	{
 		title: 'Coaching personnel',
-		tagline: 'Prendre du recul. Retrouver votre équilibre.',
+		tagline:
+			'Prendre du recul, retrouver du sens et un équilibre, faire face à un changement de vie ou à des conflits.',
 		text: '',
 		href: '/coaching-personnel',
 	},
 	{
 		title: 'Bilan de carrière',
-		tagline: 'Faire le point avant de décider de la suite.',
+		tagline: 'Faire le point, envisager une évolution, préparer un nouveau poste, anticiper sa retraite.',
 		text: '',
 		href: '/bilan-carriere',
+	},
+	{
+		title: 'Transition professionnelle',
+		tagline: 'Prendre le temps de se réinventer, de se projeter et de passer à l’action.',
+		text: '',
+		href: '/transition-professionnelle',
 	},
 ];
 const SPECIFIC_OFFERS = [
 	{
 		title: 'Jeunes & Parents',
-		tagline: 'Confiance, motivation et orientation.',
+		tagline:
+			'Un espace neutre pour aider le jeune à mieux se comprendre, retrouver du sens, avancer dans son orientation et, lorsque c’est utile, travailler la relation avec ses parents.',
 		text: '',
 		href: '/jeunes-parents',
 	},
 	{
 		title: 'Enseignants',
-		tagline: 'Une place professionnelle qui vous ressemble.',
+		tagline:
+			'Perte de sens, fatigue, envie d’évolution ou de changement : un accompagnement nourri par une connaissance directe des réalités de l’Éducation nationale.',
 		text: '',
 		href: '/coaching-enseignants',
 	},
 	{
 		title: 'Entreprises',
-		tagline: 'Du dialogue et de la coopération au travail.',
+		tagline:
+			'Coaching de managers, équipes sous tension, ateliers de prévention RPS / QVCT et espaces de dialogue autour des situations de travail.',
 		text: '',
 		href: '/entreprises-rps-qvct',
 	},
@@ -71,9 +82,9 @@ export default function Home() {
 							<mark>Développer</mark> votre potentiel
 						</Scribble>
 						<h1>
-							Retrouver du sens.
+							Redonner du sens.
 							<br />
-							Trouver sa <span>direction.</span>
+							Dessiner votre <span>chemin.</span>
 						</h1>
 						<p className="home-hero-description">
 							Prendre du recul, retrouver de la clarté et construire votre propre chemin.
@@ -98,10 +109,10 @@ export default function Home() {
 					<figure className="home-hero-media">
 						<Deco shape="sun" size={250} className="hero-media-deco" />
 						<Image
-							src="/v3/horizon.webp"
-							alt="Un chemin de sable dans les dunes s’ouvre vers l’océan"
-							width={1536}
-							height={1024}
+							src="/photos/accueil-chemin.webp"
+							alt="Une personne marche sur un chemin de terre ensoleillé, bordé d’arbres"
+							width={1800}
+							height={1200}
 							priority
 							sizes="(min-width: 900px) 52vw, 100vw"
 							className="home-hero-photo polyptych"
@@ -129,12 +140,6 @@ export default function Home() {
 				}
 			>
 				<OfferList offers={OFFERS} />
-				<div className="section-tail">
-					<p>Envie de faire évoluer votre vie professionnelle ?</p>
-					<ButtonLink href="/transition-professionnelle" variant="text">
-						Explorer une transition
-					</ButtonLink>
-				</div>
 			</Section>
 
 			<Section
@@ -154,36 +159,49 @@ export default function Home() {
 			<Section
 				deco={<Deco shape="orbit" size={160} style={{ top: '18%', right: -60 }} />}
 			>
-				<div className="coach-story">
-					<div className="coach-photo">
-						<Deco shape="dots" size={110} className="portrait-deco" />
-						<Image
-							src="/photos/christophe-veste-jaune-sourire.webp"
-							alt="Christophe Jacques, veste jaune, sourit en plein air"
-							width={1066}
-							height={1600}
-							quality={88}
-							sizes="(min-width: 900px) 35vw, 80vw"
-						/>
-						<Scribble tone="ink" className="coach-scribble">
+				<div className="why-metaphore">
+					<div className="why-copy">
+						<h2>Pourquoi «&nbsp;Métaphore&nbsp;»&nbsp;?</h2>
+						<p>
+							Une métaphore permet parfois de regarder une situation connue sous un angle complètement
+							différent. C’est cette idée qui est à l’origine de Métaphore Coaching.
+						</p>
+						<p>
+							Nous partons de votre réalité : votre histoire, vos contraintes, vos ressources, vos envies et
+							votre manière de voir le monde. Le coaching n’a pas vocation à vous transformer en quelqu’un
+							d’autre ; il doit vous permettre d’avancer en restant cohérent avec qui vous êtes.
+						</p>
+						<Scribble tone="sky">
 							Celui qui sait demander est <mark>libre</mark>
 						</Scribble>
 					</div>
-					<div className="coach-copy">
-						<p className="hero-context">Christophe Jacques · Votre coach à Bordeaux</p>
-						<h2>Les bonnes questions ouvrent de nouveaux chemins.</h2>
-						<p>
-							Je ne suis pas là pour décider à votre place. Mon rôle est de vous aider à voir autrement votre
-							situation et à trouver vos propres réponses.
-						</p>
-						<p>
-							Plus de dix ans dans l’enseignement et plusieurs reconversions nourrissent ma manière
-							d’accompagner : avec écoute, sans direction imposée.
-						</p>
-						<ButtonLink href="/qui-suis-je" variant="text">
-							Découvrir mon parcours
-						</ButtonLink>
-					</div>
+					<aside className="coach-card">
+						<div className="coach-card-photo">
+							<Image
+								src="/photos/christophe-veste-jaune-sourire.webp"
+								alt="Christophe Jacques, veste jaune, sourit en plein air"
+								width={1066}
+								height={1600}
+								quality={88}
+								sizes="160px"
+							/>
+						</div>
+						<div className="coach-card-copy">
+							<p className="coach-card-name">Christophe Jacques</p>
+							<p className="hero-context">Coach professionnel à Bordeaux</p>
+							<p>
+								Mon rôle est de vous aider à voir autrement votre situation et à trouver vos propres
+								réponses.
+							</p>
+							<p>
+								Plus de dix ans dans l’enseignement et plusieurs reconversions nourrissent ma manière
+								d’accompagner : avec écoute, bienveillance et sans direction imposée.
+							</p>
+							<ButtonLink href="/qui-suis-je" variant="text">
+								Découvrir mon parcours
+							</ButtonLink>
+						</div>
+					</aside>
 				</div>
 			</Section>
 
@@ -219,7 +237,10 @@ export default function Home() {
 			>
 				<Testimonies />
 			</Section>
-			<ContactBand />
+			<ContactBand
+				title="Si vous avez des questions, n’hésitez pas !"
+				text="Prenons le temps d’échanger, lors d’un entretien téléphonique, afin de faire connaissance et de mieux comprendre mon approche."
+			/>
 		</>
 	);
 }

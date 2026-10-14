@@ -2463,3 +2463,707 @@ p {
 		border-left: 1.6px dotted var(--ink);
 	}
 }
+
+.mobile-nav-group {
+	display: flex;
+	align-items: center;
+	min-height: 48px;
+	padding: 12px 0 4px;
+	font-size: 17px;
+}
+
+.story-reverse .story-image {
+	order: 2;
+}
+
+.exergue {
+	max-width: 1280px;
+	margin: auto;
+	padding: 72px 64px;
+	text-align: center;
+}
+.exergue blockquote {
+	font-family: 'Yeseva One', serif;
+	font-size: clamp(26px, 3vw, 42px);
+	line-height: 1.3;
+	letter-spacing: -0.02em;
+	color: var(--ink);
+	max-width: 30ch;
+	margin: auto;
+	text-wrap: balance;
+}
+.exergue blockquote::before {
+	content: '« ';
+	color: #ffba08;
+}
+.exergue blockquote::after {
+	content: ' »';
+	color: #ffba08;
+}
+.exergue figcaption {
+	margin-top: 14px;
+	font-family: 'Caveat', cursive;
+	font-size: 24px;
+}
+.reading-copy .exergue {
+	padding: 8px 0 8px 24px;
+	margin: 0;
+	border-left: 3px solid #ffba08;
+	text-align: left;
+}
+.reading-copy .exergue blockquote {
+	font-size: 21px;
+	margin: 0;
+}
+.reading-copy .exergue figcaption {
+	font-size: 21px;
+}
+
+.why-metaphore {
+	display: grid;
+	grid-template-columns: minmax(0, 1.55fr) minmax(0, 1fr);
+	gap: 72px;
+	align-items: center;
+}
+.why-copy {
+	display: flex;
+	flex-direction: column;
+	gap: 22px;
+	align-items: flex-start;
+}
+.why-copy h2 {
+	font-family: 'Yeseva One', serif;
+	font-size: clamp(30px, 3.2vw, 48px);
+	line-height: 1.18;
+	letter-spacing: -0.025em;
+}
+.why-copy > p:not(.scribble) {
+	max-width: 58ch;
+	font-size: 17px;
+	line-height: 1.85;
+	color: #0d0630cc;
+}
+.coach-card {
+	display: grid;
+	grid-template-columns: 120px minmax(0, 1fr);
+	gap: 24px;
+	padding: 30px 28px;
+	background: var(--sand);
+	box-shadow: 14px 14px 0 #ffba08;
+}
+.coach-card-photo img {
+	width: 120px;
+	height: 160px;
+	object-fit: cover;
+	object-position: 50% 15%;
+}
+.coach-card-copy {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	align-items: flex-start;
+	font-size: 14px;
+	line-height: 1.7;
+	color: #0d0630cc;
+}
+.coach-card-copy .hero-context {
+	margin-top: -8px;
+	color: #0d0630a6;
+}
+.coach-card-name {
+	font-family: 'Yeseva One', serif;
+	font-size: 21px;
+	color: var(--ink);
+}
+
+.formula-cards {
+	display: grid;
+	grid-template-columns: repeat(2, minmax(0, 1fr));
+	gap: 36px;
+}
+.formula-card {
+	display: flex;
+	flex-direction: column;
+	gap: 14px;
+	align-items: flex-start;
+	padding: 36px 34px;
+	background: var(--paper);
+	border-top: 6px solid #ffba08;
+}
+.formula-card:nth-child(2) {
+	border-top-color: #b4d6e6;
+}
+.formula-subtitle {
+	font-family: 'Caveat', cursive;
+	font-size: 24px;
+	line-height: 1;
+}
+.formula-card h3 {
+	font-family: 'Yeseva One', serif;
+	font-size: 28px;
+	line-height: 1.2;
+}
+.formula-tagline {
+	font-style: italic;
+	color: #0d0630b8;
+	line-height: 1.7;
+}
+.formula-card ul,
+.walk-list,
+.price-card ul {
+	display: flex;
+	flex-direction: column;
+	gap: 12px;
+	font-size: 15px;
+	line-height: 1.65;
+}
+.formula-card li,
+.walk-list li,
+.price-card li {
+	display: flex;
+	gap: 12px;
+}
+.formula-card li svg,
+.walk-list li svg,
+.price-card li svg {
+	flex-shrink: 0;
+	margin-top: 5px;
+	color: #c28e00;
+}
+.walk-format {
+	font-size: 16px;
+}
+.walk-list strong {
+	display: block;
+	color: var(--ink);
+}
+.walk-list span {
+	color: #0d0630c7;
+}
+.walk-story .story-copy {
+	gap: 18px;
+}
+
+.reading {
+	display: flex;
+	flex-direction: column;
+	gap: 64px;
+}
+.reading-block {
+	display: grid;
+	grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.6fr);
+	gap: 56px;
+	align-items: start;
+}
+.reading-block-reverse {
+	grid-template-columns: minmax(0, 1.6fr) minmax(0, 0.8fr);
+}
+.reading-block-reverse .reading-image {
+	order: 2;
+}
+.reading-image {
+	position: sticky;
+	top: 110px;
+}
+.reading-image img {
+	width: 100%;
+	height: auto;
+	max-height: 520px;
+	object-fit: cover;
+	box-shadow: 14px 14px 0 #b4d6e6;
+}
+.reading-copy {
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+	max-width: 68ch;
+	font-size: 16px;
+	line-height: 1.85;
+	color: #0d0630cc;
+}
+.reading-copy h3 {
+	font-family: 'Yeseva One', serif;
+	font-size: 26px;
+	line-height: 1.2;
+	color: var(--ink);
+}
+.reading-copy strong {
+	color: var(--ink);
+}
+.reading-highlight {
+	font-family: 'Yeseva One', serif;
+	font-size: 20px;
+	line-height: 1.45;
+	color: var(--ink);
+}
+.reading-label {
+	font-weight: 600;
+	color: var(--ink);
+}
+.reading-list {
+	display: flex;
+	flex-direction: column;
+	gap: 12px;
+}
+.reading-list li {
+	position: relative;
+	padding-left: 26px;
+}
+.reading-list li::before {
+	content: '';
+	position: absolute;
+	left: 2px;
+	top: 0.7em;
+	width: 10px;
+	height: 10px;
+	border: 1.5px dashed var(--ink);
+	border-radius: 50%;
+}
+.reading-toc {
+	padding: 22px 26px;
+	background: var(--sand);
+	border-left: 4px solid #ffba08;
+}
+.reading-toc > p {
+	font-family: 'Caveat', cursive;
+	font-size: 24px;
+	color: var(--ink);
+	margin-bottom: 8px;
+}
+.reading-toc ol {
+	display: flex;
+	flex-direction: column;
+	gap: 6px;
+	list-style: decimal;
+	padding-left: 20px;
+	font-size: 15px;
+}
+.reading-toc a {
+	text-decoration: underline;
+	text-decoration-color: #c28e00;
+	text-underline-offset: 4px;
+}
+.reading-toc a:hover {
+	text-decoration-color: var(--ink);
+}
+
+.parent-focus {
+	display: flex;
+	gap: 22px;
+	padding: 30px 32px;
+	background: var(--sand);
+	border-left: 4px solid #ffba08;
+	font-size: 16px;
+	line-height: 1.85;
+	color: #0d0630d9;
+}
+.parent-focus svg {
+	flex-shrink: 0;
+	color: #c28e00;
+}
+
+.format-cards {
+	display: grid;
+	grid-template-columns: repeat(2, minmax(0, 1fr));
+	gap: 40px;
+}
+.format-card {
+	display: flex;
+	flex-direction: column;
+	background: var(--paper);
+	box-shadow: 0 1px 0 var(--line);
+}
+.format-card-image {
+	aspect-ratio: 16 / 9;
+	overflow: hidden;
+}
+.format-card-image img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	transition: scale 0.7s cubic-bezier(0.2, 0.7, 0.2, 1);
+}
+.format-card:hover .format-card-image img {
+	scale: 1.03;
+}
+.format-card-body {
+	display: flex;
+	flex-direction: column;
+	gap: 14px;
+	padding: 28px 30px 32px;
+}
+.format-card h3 {
+	display: flex;
+	align-items: center;
+	gap: 14px;
+	font-family: 'Yeseva One', serif;
+	font-size: 25px;
+	line-height: 1.2;
+}
+.format-card h3 span {
+	background: linear-gradient(transparent 58%, #ffba0899 58%);
+}
+.format-card h3 svg {
+	flex-shrink: 0;
+	color: #c28e00;
+}
+.format-card-body > p {
+	font-size: 15px;
+	line-height: 1.75;
+	color: #0d0630bf;
+}
+.format-card ul {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	font-size: 14px;
+}
+.format-card li {
+	display: flex;
+	align-items: center;
+	gap: 12px;
+}
+
+.benefits {
+	display: grid;
+	grid-template-columns: repeat(2, minmax(0, 1fr));
+	gap: 40px 64px;
+}
+.benefits li {
+	display: flex;
+	gap: 26px;
+	align-items: center;
+	font-size: 16px;
+	line-height: 1.8;
+	color: #0d0630cc;
+}
+.benefits img {
+	flex-shrink: 0;
+	width: 64px;
+	height: 64px;
+}
+.benefits strong {
+	color: var(--ink);
+}
+.subsection {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+
+.hello {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+	gap: 48px;
+}
+.hello-copy {
+	display: flex;
+	flex-direction: column;
+	gap: 18px;
+}
+.hello-copy h2 {
+	font-family: 'Yeseva One', serif;
+	font-size: clamp(30px, 2.8vw, 42px);
+	line-height: 1.2;
+}
+.hello-signature {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	gap: 4px;
+	text-align: right;
+}
+.hello-signature strong {
+	font-family: 'Yeseva One', serif;
+	font-weight: 400;
+	font-size: 20px;
+}
+.hello-signature span {
+	font-family: 'Caveat', cursive;
+	font-size: 24px;
+}
+.path-grid {
+	display: grid;
+	grid-template-columns: minmax(0, 1.3fr) minmax(0, 1fr);
+	gap: 64px;
+	align-items: center;
+}
+.path-copy {
+	display: flex;
+	flex-direction: column;
+	gap: 24px;
+}
+.path-list li {
+	padding: 14px 0;
+	font-size: 15px;
+}
+.path-image img {
+	width: 100%;
+	height: auto;
+}
+
+.vision-cards {
+	display: grid;
+	grid-template-columns: repeat(3, minmax(0, 1fr));
+	gap: 28px;
+}
+.vision-cards > li {
+	display: flex;
+	flex-direction: column;
+	gap: 14px;
+	padding: 30px 28px 34px;
+	background: var(--paper);
+	border-top: 5px solid #ffba08;
+	transition:
+		translate 0.3s cubic-bezier(0.2, 0.7, 0.2, 1),
+		box-shadow 0.3s cubic-bezier(0.2, 0.7, 0.2, 1);
+}
+.vision-cards > li:nth-child(even) {
+	border-top-color: #b4d6e6;
+}
+.vision-cards > li:hover {
+	translate: -4px -4px;
+	box-shadow: 10px 10px 0 #ffba0866;
+}
+.vision-cards h2 {
+	font-family: 'Caveat', cursive;
+	font-size: 32px;
+	font-weight: 600;
+	line-height: 1.1;
+}
+.vision-card-head {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	min-height: 70px;
+}
+.vision-number {
+	font-family: 'Yeseva One', serif;
+	font-size: 34px;
+	color: #c28e00;
+}
+.vision-icon {
+	width: auto;
+	max-width: 90px;
+	max-height: 60px;
+}
+.vision-cards .editorial-prose {
+	font-size: 15px;
+}
+
+.emcc-stage {
+	position: absolute;
+	inset: 0;
+	display: grid;
+	place-items: center;
+}
+.emcc-stage img {
+	width: min(300px, 60%);
+	height: auto;
+}
+.pillars {
+	display: grid;
+	grid-template-columns: repeat(2, minmax(0, 1fr));
+	gap: 36px 56px;
+}
+.pillars li {
+	display: flex;
+	gap: 22px;
+	align-items: flex-start;
+}
+.pillars img {
+	flex-shrink: 0;
+	width: 44px;
+	height: 44px;
+}
+.pillars h3 {
+	font-family: 'Yeseva One', serif;
+	font-size: 22px;
+	margin-bottom: 8px;
+}
+.pillars p {
+	font-size: 15px;
+	line-height: 1.8;
+	color: #0d0630c7;
+}
+.pillars-image {
+	width: min(360px, 100%);
+	height: auto;
+	align-self: center;
+	border-radius: 4px;
+}
+
+.price-cards {
+	display: grid;
+	grid-template-columns: 1.15fr 1fr 1fr;
+	gap: 28px;
+	align-items: stretch;
+}
+.price-card {
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+	align-items: flex-start;
+	padding: 34px 30px;
+	background: var(--paper);
+	font-size: 15px;
+	line-height: 1.75;
+	color: #0d0630c7;
+}
+.price-card .action {
+	margin-top: auto;
+}
+.price-card h2 {
+	font-family: 'Yeseva One', serif;
+	font-size: 24px;
+	line-height: 1.25;
+	color: var(--ink);
+}
+.price-amount {
+	font-family: 'Yeseva One', serif;
+	font-size: 40px;
+	line-height: 1.1;
+	color: var(--ink);
+}
+.price-amount span {
+	font-family: 'Inter', sans-serif;
+	font-size: 15px;
+	color: #0d0630b3;
+}
+.price-card-main {
+	box-shadow: 14px 14px 0 #ffba08;
+}
+.price-card-bubble {
+	background: var(--ink);
+	color: #fffdf9d9;
+}
+.price-card-bubble h2,
+.price-card-bubble .price-amount {
+	color: var(--paper);
+}
+.price-card-bubble .price-amount span {
+	color: #fffdf9b3;
+}
+.price-card-bubble li svg {
+	color: #ffba08;
+}
+.price-card-bubble .action-outline {
+	border-color: var(--paper);
+	color: var(--paper);
+}
+.price-card-bubble .action-outline:hover {
+	background: #ffba08;
+	border-color: #ffba08;
+	color: var(--ink);
+}
+
+@media (max-width: 1100px) {
+	.why-metaphore {
+		gap: 48px;
+	}
+	.price-cards {
+		grid-template-columns: 1fr 1fr;
+	}
+	.price-card-main {
+		grid-column: 1 / -1;
+	}
+	.vision-cards {
+		grid-template-columns: repeat(2, minmax(0, 1fr));
+	}
+}
+@media (max-width: 899px) {
+	.why-metaphore,
+	.path-grid {
+		grid-template-columns: 1fr;
+		gap: 40px;
+	}
+	.formula-cards,
+	.format-cards,
+	.benefits,
+	.pillars {
+		grid-template-columns: 1fr;
+	}
+	.reading-block,
+	.reading-block-reverse {
+		grid-template-columns: 1fr;
+		gap: 28px;
+	}
+	.reading-block-reverse .reading-image {
+		order: 0;
+	}
+	.reading-image {
+		position: static;
+		max-width: 420px;
+	}
+	.exergue {
+		padding: 56px 40px;
+	}
+	.hello {
+		flex-direction: column;
+		align-items: flex-start;
+		gap: 24px;
+	}
+	.hello-signature {
+		align-items: flex-start;
+		text-align: left;
+	}
+	.path-image {
+		max-width: 420px;
+	}
+}
+@media (max-width: 599px) {
+	.story-reverse .story-image {
+		order: 0;
+	}
+	.coach-card {
+		grid-template-columns: 1fr;
+		box-shadow: 10px 10px 0 #ffba08;
+	}
+	.price-cards,
+	.vision-cards {
+		grid-template-columns: 1fr;
+	}
+	.exergue {
+		padding: 44px 24px;
+	}
+	.formula-card,
+	.format-card-body,
+	.price-card {
+		padding: 28px 22px;
+	}
+	.parent-focus {
+		flex-direction: column;
+		padding: 24px 22px;
+	}
+	.benefits li {
+		align-items: flex-start;
+		gap: 18px;
+	}
+	.benefits img {
+		width: 48px;
+		height: 48px;
+	}
+}
+.editorial-prose a,
+.reading-copy a {
+	text-decoration: underline;
+	text-decoration-color: #c28e00;
+	text-underline-offset: 4px;
+}
+.story-image img[style*='object-position'] {
+	animation: none;
+}
+.path-image img {
+	mix-blend-mode: multiply;
+}
+@media (min-width: 1101px) {
+	.vision-cards > li:last-child:nth-child(3n + 1) {
+		grid-column: 2;
+	}
+}
+@media (max-width: 599px) {
+	.editorial-section > .deco-orbit {
+		display: none;
+	}
+}

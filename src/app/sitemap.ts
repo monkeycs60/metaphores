@@ -17,6 +17,7 @@ const PATHS = [
 	'/deontologie',
 	'/tarifs',
 	'/coaching/origines',
+	'/coaching/vision',
 	'/coaching/psy',
 ];
 

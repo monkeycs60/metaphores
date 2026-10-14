@@ -18,8 +18,9 @@ export default function ContactPage() {
 			<div className="contact-copy">
 				<h1>Commençons par votre situation.</h1>
 				<p>
-					Quelques mots sur ce qui vous amène suffisent. Nous verrons ensemble quel accompagnement peut vous
-					convenir.
+					Vous souhaitez en savoir plus avant de prendre rendez-vous ou obtenir un devis pour une entreprise ?
+					N’hésitez pas à poser vos questions ou à m’expliquer un peu votre situation. Vous pouvez aussi me
+					contacter directement par téléphone.
 				</p>
 				<div className="contact-methods">
 					<a href={CONTACT.phoneHref}>
@@ -33,18 +34,15 @@ export default function ContactPage() {
 				</div>
 				<div className="contact-atmosphere">
 					<Image
-						src="/photos/conversation.webp"
-						alt="Deux personnes échangent face à face, dans un cadre calme"
+						src="/photos/coaching-echange.webp"
+						alt="Deux hommes échangent autour d’une table, dans une lumière chaude"
 						width={800}
 						height={400}
 						sizes="(min-width: 900px) 40vw, 100vw"
 					/>
 				</div>
 				<div>
-					<p className="text-sm leading-relaxed">
-						Vous préférez choisir un créneau ?<br />
-						Premier échange gratuit de 30 minutes, par téléphone ou en visio.
-					</p>
+					<p className="text-sm leading-relaxed">Vous souhaitez réserver une séance ?</p>
 					<ButtonLink href="/rendez-vous" variant="text">
 						Prendre rendez-vous
 					</ButtonLink>

@@ -26,32 +26,60 @@ export const COACHING_SUBNAV: NavItem[] = [
 	{
 		label: 'Coaching professionnel',
 		href: '/coaching-professionnel',
-		image: '/photos/escalier-ciel.webp',
+		image: '/photos/carte-coaching-professionnel.webp',
 		description: 'Retrouver du sens et de la capacité d’action au travail.',
 	},
 	{
 		label: 'Coaching personnel',
 		href: '/coaching-personnel',
-		image: '/photos/bateau-papier.webp',
+		image: '/photos/carte-coaching-personnel.webp',
 		description: 'Prendre du recul sur une situation de vie.',
 	},
 	{
 		label: 'Bilan de carrière',
 		href: '/bilan-carriere',
-		image: '/photos/boussole-mer.webp',
+		image: '/photos/carte-bilan-carriere.webp',
 		description: 'Faire le point avant de décider de la suite.',
 	},
 	{
 		label: 'Transition professionnelle',
 		href: '/transition-professionnelle',
-		image: '/photos/transition-professionnelle.webp',
+		image: '/photos/carte-transition.webp',
 		description: 'Construire un changement sans le précipiter.',
+	},
+];
+
+export const READING_NAV: NavItem[] = [
+	{
+		label: 'C’est quoi le coaching ?',
+		href: '/coaching/origines',
+		image: '/socrate.webp',
+		description: 'Origines, déroulement, étapes et durée.',
+	},
+	{
+		label: 'Ma vision du coaching',
+		href: '/coaching/vision',
+		image: '/falaise.jpg',
+		description: 'Les sept principes de mon accompagnement.',
+	},
+	{
+		label: 'Coach ou psy ?',
+		href: '/coaching/psy',
+		image: '/psycoach.png',
+		description: 'Ce qui distingue le coach du psychologue.',
+	},
+	{
+		label: 'Déontologie',
+		href: '/deontologie',
+		image: '/handshake.png',
+		description: 'Le cadre éthique de chaque accompagnement.',
 	},
 ];
 
 export const MAIN_NAV: NavItem[] = [
 	{ label: 'Accueil', href: '/' },
 	{ label: 'Coaching', href: '/coaching' },
+	{ label: 'Le coaching', href: '/coaching/origines' },
 	{ label: 'Jeunes & Parents', href: '/jeunes-parents' },
 	{ label: 'Enseignants', href: '/coaching-enseignants' },
 	{ label: 'Entreprises', href: '/entreprises-rps-qvct' },

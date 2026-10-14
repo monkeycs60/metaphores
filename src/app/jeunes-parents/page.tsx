@@ -1,7 +1,8 @@
 import type { Metadata } from 'next';
 import { ContactBand, HeroActions } from '@/components/v2/blocks';
 import { Scribble } from '@/components/v2/deco';
-import { CheckList, PageHero, Quotes, RelatedLinks, Section, Steps, Story } from '@/components/v2/ui';
+import { HeartHandshake } from 'lucide-react';
+import { CheckList, Exergue, PageHero, Quotes, RelatedLinks, Section, Steps, Story } from '@/components/v2/ui';
 import { services } from '@/lib/accompagnements';
 
 export const metadata: Metadata = {
@@ -15,27 +16,23 @@ const service = services['jeunes-parents'];
 
 const YOUTH_SITUATIONS = [
 	'Perte de motivation ou de sens',
-	'Difficultés à se projeter',
-	'Orientation scolaire ou professionnelle',
+	'Difficultés à se projeter, orientation scolaire ou professionnelle',
 	'Manque de confiance, difficulté à faire des choix',
-	'Besoin d’autonomie et d’organisation',
-	'Difficultés d’intégration ou de relation',
+	'Besoin d’autonomie, difficultés d’intégration ou de relation',
 ];
 
 const FAMILY_SITUATIONS = [
 	'Tensions ou incompréhensions entre parents et enfant',
-	'Des conseils qui ne passent plus',
-	'Des discussions qui tournent vite au conflit',
+	'Des conseils qui ne passent plus, des discussions qui tournent vite au conflit',
 	'Des attentes différentes sur l’avenir',
-	'Le sentiment de ne plus savoir comment l’aider',
-	'La difficulté à trouver la bonne distance',
+	'Le sentiment de ne plus savoir comment l’aider ni trouver la bonne distance',
 ];
 
 const TRIO = [
 	{
-		who: 'Le jeune',
+		who: 'Votre enfant',
 		title: 'Un espace à lui',
-		text: 'Un lieu neutre, différent de la famille et de l’école, pour dire ce qu’il vit, comprendre ce qui le freine et reprendre progressivement la responsabilité de ses choix.',
+		text: 'Un lieu neutre, différent de la famille et de l’école, pour dire ce qu’il vit, comprendre ce qui le freine et trouver petit à petit ses solutions.',
 	},
 	{
 		who: 'Entre vous',
@@ -98,7 +95,7 @@ export default function Page() {
 	return (
 		<>
 			<PageHero
-				title="Un jeune qui doute, c’est toute une famille qui cherche."
+				title="Aider votre enfant à retrouver du sens, de la confiance et une direction."
 				subtitle={service.context}
 				image={service.image}
 				imageAlt={service.imageAlt}
@@ -112,10 +109,15 @@ export default function Page() {
 			>
 				<p>
 					Quand un enfant ou un adolescent se démotive, doute de lui ou ne sait plus pourquoi il travaille, les
-					conseils supplémentaires ne suffisent pas toujours. Le coaching offre au jeune un espace neutre pour
-					parler librement, et aux parents un appui pour retrouver leur juste place à ses côtés.
+					conseils supplémentaires ne suffisent pas toujours.
+				</p>
+				<p>
+					Le coaching lui offre un espace neutre, différent de la famille et de l’école, pour parler librement,
+					mieux comprendre ce qu’il vit et retrouver du sens et une capacité d’action.
 				</p>
 			</PageHero>
+
+			<Exergue>Un enfant qui doute, c’est souvent toute une famille qui est déstabilisée.</Exergue>
 
 			<Section title="Pour quelles situations ?">
 				<div className="situation-groups">
@@ -134,11 +136,7 @@ export default function Page() {
 				tone="blue"
 				title="Une dynamique à trois."
 				intro={
-					<p>
-						Une difficulté ne concerne jamais seulement le jeune. Elle s’installe dans les échanges du quotidien,
-						les inquiétudes des parents et les attentes de chacun. L’accompagnement tient compte de ces trois
-						dimensions.
-					</p>
+					<p>Les difficultés d’un enfant concernent souvent son entourage familial ou l’école.</p>
 				}
 			>
 				<ol className="trio">
@@ -159,11 +157,6 @@ export default function Page() {
 						devenir. Nous cherchons plutôt à comprendre ce qui compte pour lui, ce qui le freine, ce qui le met en
 						mouvement et comment il peut reprendre progressivement la responsabilité de ses choix.
 					</p>
-					<p>
-						Plus de dix ans dans l’enseignement de la technologie m’ont appris à écouter ce qui se joue derrière
-						une difficulté apparente. Le coaching apporte un autre cadre : moins centré sur les résultats
-						scolaires, davantage sur la personne, ses ressources et sa capacité à choisir.
-					</p>
 				</Story>
 			</Section>
 
@@ -176,8 +169,8 @@ export default function Page() {
 				}
 				intro={
 					<p>
-						Les parents sont souvent directement concernés par les difficultés de leur enfant. Vous avez votre
-						place dans l’accompagnement, sans prendre la sienne.
+						En tant que parent, vous êtes souvent directement concerné par les difficultés rencontrées par
+						votre enfant.
 					</p>
 				}
 			>
@@ -189,13 +182,48 @@ export default function Page() {
 						</li>
 					))}
 				</ul>
+				<aside className="parent-focus">
+					<HeartHandshake size={30} strokeWidth={1.3} aria-hidden />
+					<p>
+						Consciemment ou inconsciemment, notre façon d’être en tant que parents peut participer aux
+						difficultés rencontrées par notre enfant. Selon la situation, des temps spécifiques peuvent
+						permettre de clarifier des choses que l’on n’est pas toujours en capacité de voir. L’accompagnement
+						peut permettre d’améliorer la communication et de soutenir l’autonomie du jeune sans se désengager
+						de son rôle de parent.
+					</p>
+				</aside>
 				<div className="parent-questions">
 					<h3 className="situation-title">Des questions que se posent souvent les parents</h3>
 					<Quotes items={PARENT_QUESTIONS} />
 				</div>
 			</Section>
 
-			<Section tone="cream" title="Comment se déroule l’accompagnement ?">
+			<Section tone="cream">
+				<Story
+					title="Pourquoi mon parcours est utile."
+					image="/photos/christophe-sourire.webp"
+					imageAlt="Christophe Jacques, en veste grise, sourit dans une cour arborée"
+					imagePosition="50% 20%"
+					reverse
+				>
+					<p>
+						J’ai passé un master en sciences de l’éducation afin de comprendre les mécanismes qui sont à l’œuvre
+						dans la relation parents-enfants.
+					</p>
+					<p>
+						En parallèle, j’ai été 5 ans CPE en collège et une dizaine d’années dans l’enseignement ; j’ai eu
+						affaire à de nombreuses problématiques et travaillé souvent en relation avec l’élève et les parents
+						pour faire évoluer des situations complexes. C’est ce qui me pousse aujourd’hui à en faire mon
+						métier.
+					</p>
+					<p>
+						Le coaching apporte un autre cadre : moins centré sur les résultats scolaires, davantage sur la
+						personne, ses représentations, ses ressources et sa capacité à trouver ses solutions.
+					</p>
+				</Story>
+			</Section>
+
+			<Section title="Comment se déroule l’accompagnement ?">
 				<Steps steps={STEPS} />
 			</Section>
 

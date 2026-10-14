@@ -37,6 +37,7 @@ export default function Footer() {
 					<p>Pour mieux se connaître</p>
 					<Link href="/qui-suis-je">Christophe Jacques</Link>
 					<Link href="/coaching/origines">C’est quoi le coaching ?</Link>
+					<Link href="/coaching/vision">Ma vision du coaching</Link>
 					<Link href="/coaching/psy">Coach ou psy ?</Link>
 					<Link href="/deontologie">Déontologie</Link>
 					<Link href="/tarifs">Tarifs</Link>

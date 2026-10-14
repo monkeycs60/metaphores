@@ -1,117 +1,184 @@
 import Image from 'next/image';
 import type { Metadata } from 'next';
-import { ButtonLink, CheckList, PageHero, Section } from '@/components/v2/ui';
+import {
+	Book,
+	Briefcase,
+	Drama,
+	Globe,
+	GraduationCap,
+	Palette,
+	School,
+	Trophy,
+	Wrench,
+} from 'lucide-react';
+import { ButtonLink, CheckList, PageHero, Prose, Section, Story } from '@/components/v2/ui';
 import { ContactBand, HeroActions } from '@/components/v2/blocks';
 import { Scribble } from '@/components/v2/deco';
 
 export const metadata: Metadata = {
 	title: { absolute: 'Christophe Jacques | Coach professionnel à Bordeaux | Métaphore Coaching' },
 	description:
-		'Découvrez le parcours et l’approche de Christophe Jacques, coach professionnel à Bordeaux : enseignement, reconversions et accompagnement du changement.',
+		'Découvrez le parcours et l’approche de Christophe Jacques, coach professionnel à Bordeaux : enseignement, sciences de l’éducation, reconversions et accompagnement du changement.',
 	alternates: { canonical: '/qui-suis-je' },
 };
-const PATH: {
-	when: string;
-	title: string;
-	text: string;
-	contribution: string;
-	image: string;
-	alt: string;
-	position?: string;
-}[] = [
+
+const EXPERIENCES = [
+	{ icon: Wrench, text: 'Formation en ingénierie et mécanique.' },
+	{ icon: Globe, text: 'Vie à l’étranger : Angleterre, Australie, Inde, et plus.' },
+	{ icon: Briefcase, text: 'Multiples métiers : commercial, ingénieur, commerçant…' },
+	{ icon: Book, text: 'Enseignant depuis une dizaine d’années.' },
+	{ icon: School, text: '5 ans CPE en collège.' },
+	{ icon: Palette, text: 'Artiste de toiles (collage et peinture) avec des expositions à Bordeaux.' },
+	{ icon: Drama, text: 'Comédien professionnel ayant écrit et mis en scène plusieurs pièces.' },
+	{ icon: Trophy, text: 'Sportif ayant fait de la compétition en football, handball, et beach-volley.' },
 	{
-		when: 'D’abord',
-		title: 'Changer de voie',
-		text: 'Dans l’immobilier puis l’aéronautique, j’ai vécu plusieurs reconversions : changer de repères, m’adapter et faire le lien entre mes compétences et un nouveau métier.',
-		contribution: 'Cette expérience nourrit le travail sur vos transitions : repérer ce que vous pouvez réutiliser, ce qui reste à explorer et les contraintes à prendre en compte.',
-		image: '/photos/aile-avion.webp',
-		alt: 'L’aile d’un avion au-dessus des nuages, dans un ciel bleu',
-	},
-	{
-		when: 'Plus de dix ans',
-		title: 'Transmettre',
-		text: 'Enseigner la technologie pendant plus de dix ans m’a appris à accompagner des jeunes, à animer des groupes et à écouter ce qui se joue derrière une difficulté.',
-		contribution: 'Avec un jeune, un parent ou un enseignant, cette connaissance du terrain aide à regarder au-delà des résultats : motivation, confiance, attentes et relations.',
-		image: '/photos/avion-papier.webp',
-		alt: 'Une main s’apprête à lancer un avion en papier vers le ciel',
-	},
-	{
-		when: 'Aujourd’hui',
-		title: 'Accompagner',
-		text: 'Ma formation au coaching et au développement professionnel a donné un autre cadre à ce parcours : vous aider à réfléchir et à agir, en vous laissant décider.',
-		contribution: 'En séance, nous clarifions ce qui compte, explorons les possibilités et définissons une prochaine étape concrète, à votre rythme.',
-		image: '/photos/christophe-veste-jaune-mur.webp',
-		alt: 'Christophe Jacques, veste jaune, sourit devant un mur bleu nuit',
-		position: '50% 4%',
+		icon: GraduationCap,
+		text: 'Reprise d’études en sciences de l’éducation et en coaching : un master en sciences de l’éducation, qui m’a permis d’acquérir de solides connaissances des concepts de psychologie et de sociologie.',
 	},
 ];
+
+const WAYS = [
+	'Partir de votre réalité plutôt que d’un modèle préconçu',
+	'Créer un cadre de confiance et de confidentialité',
+	'Questionner avec précision sans imposer de réponse',
+	'Prendre en compte les contraintes concrètes',
+	'Chercher l’autonomie plutôt que la dépendance',
+	'Savoir reconnaître les limites du coaching et orienter vers d’autres professionnels lorsque nécessaire',
+];
+
 export default function QuiSuisJePage() {
 	return (
 		<>
 			<PageHero
-				title="Un parcours qui n’a pas suivi une ligne droite."
+				title="Un parcours fait d’apprentissage, de transmission et de changement."
 				subtitle="Christophe Jacques · Coach professionnel à Bordeaux"
 				media={
 					<div className="portrait-stage">
 						<Image
-							src="/photos/christophe-sourire.webp"
-							alt="Christophe Jacques, en veste grise, sourit dans une cour arborée"
-							width={1066}
-							height={1600}
+							src="/chris-profile-light.webp"
+							alt="Christophe Jacques, en chemise à carreaux, sourit un carnet à la main"
+							width={365}
+							height={500}
 							priority
-							quality={88}
+							quality={90}
 							sizes="340px"
 						/>
 						<Scribble tone="ink" className="portrait-note">
-							Un chemin fait de <mark>détours</mark>
+							Celui qui sait demander est <mark>libre</mark>
 						</Scribble>
 					</div>
 				}
 				actions={<HeroActions />}
 			>
 				<p>
-					Des expériences, des reconversions, dix ans dans l’enseignement. Ce chemin nourrit aujourd’hui ma
-					façon de vous accompagner.
+					Mon parcours professionnel ne s’est pas construit en ligne droite. Il s’est construit par expériences,
+					questionnements, réussites, doutes, réajustements et une reprise d’études.
 				</p>
 			</PageHero>
-			<Section tone="cream" title="Ce que mon parcours apporte à votre accompagnement." className="journey-section">
-				<ol className="journey">
-					{PATH.map((step) => (
-						<li key={step.title}>
-							<div className="journey-photo">
-								<Image
-									src={step.image}
-									alt={step.alt}
-									width={720}
-									height={400}
-									quality={88}
-									sizes="(min-width: 1200px) 360px, (min-width: 900px) 30vw, 96px"
-									style={step.position ? { objectPosition: step.position } : undefined}
-								/>
-							</div>
-							<div className="journey-copy">
-								<Scribble tone="sky">{step.when}</Scribble>
-								<h3>{step.title}</h3>
-							</div>
-							<div className="journey-detail">
-								<p>{step.text}</p>
-								<p>{step.contribution}</p>
-							</div>
-						</li>
-					))}
-				</ol>
+
+			<Section>
+				<div className="hello">
+					<div className="hello-copy">
+						<h2>Enchanté, moi c’est Christophe !</h2>
+						<Prose>
+							<p>
+								Bien choisir son accompagnant.e, c’est important. Voici mon portrait, pour apprendre à me
+								connaître un peu plus.
+							</p>
+							<p>Vous trouverez ce qui m’a conduit à l’accompagnement, et à créer Métaphore coaching.</p>
+						</Prose>
+					</div>
+					<p className="hello-signature">
+						<strong>Christophe JACQUES</strong>
+						<span>Coach professionnel diplômé</span>
+					</p>
+				</div>
 			</Section>
+
+			<Section tone="cream" title="Mon parcours.">
+				<div className="path-grid">
+					<div className="path-copy">
+						<Prose>
+							<p>
+								J’ai évolué dans diverses sphères privées (aéronautique, immobilier, théâtre…), avant de
+								m’orienter vers l’enseignement depuis quelques années.
+							</p>
+							<p>
+								La vie, pour moi, est une spirale faite de différents cycles, avec le coaching comme dernier
+								virage. Mon expérience est riche et variée :
+							</p>
+						</Prose>
+						<ul className="topic-list topic-single path-list">
+							{EXPERIENCES.map((item) => (
+								<li key={item.text}>
+									<item.icon size={26} strokeWidth={1.35} aria-hidden />
+									<span>{item.text}</span>
+								</li>
+							))}
+						</ul>
+					</div>
+					<div className="path-image">
+						<Image
+							src="/spiral.png"
+							alt="Un chemin en spirale relie les étapes du parcours de Christophe : Safran, Foncia, l’Éducation nationale, le théâtre, le sport"
+							width={1069}
+							height={1090}
+							sizes="(min-width: 900px) 35vw, 80vw"
+						/>
+					</div>
+				</div>
+			</Section>
+
+			<Section>
+				<Story
+					title="Ma découverte du coaching."
+					image="/chess-miror.png"
+					imageAlt="Un pion d’échecs se reflète en roi dans un miroir"
+				>
+					<p>
+						L’accompagnement est plus qu’un métier, c’est un sacerdoce pour moi. Bien que j’aie mis du temps à le
+						mettre en œuvre officiellement, il a toujours été omniprésent dans mes activités professionnelles et
+						personnelles.
+					</p>
+					<p>
+						À l’écoute et accueillant, je m’efforce avec délicatesse, humour et dynamisme d’être efficace dans mes
+						accompagnements.
+					</p>
+					<p>
+						Les métaphores sont des outils que j’utilise fréquemment pour aider mes clients à{' '}
+						<strong>changer d’univers</strong> et à visualiser leurs idéaux. À l’image d’un metteur en scène, je
+						vous aiderai à reprendre le contrôle <strong>du rôle principal de votre vie,</strong> vous assurant
+						d’être au centre de cette transformation.
+					</p>
+				</Story>
+			</Section>
+
+			<Section tone="blue">
+				<Story
+					title="La métaphore dans le coaching."
+					image="/photos/christophe-veste-jaune-mur.webp"
+					imageAlt="Christophe Jacques, veste jaune, sourit devant un mur bleu nuit"
+					imagePosition="50% 20%"
+					reverse
+				>
+					<p>
+						Notre cerveau fonctionne par images, et les métaphores que nous utilisons reflètent{' '}
+						<strong>notre perception du monde.</strong> J’ai découvert la puissance des métaphores pendant ma
+						formation et j’ai vu leurs effets positifs sur ceux que j’accompagne. Cet outil est au cœur de mon
+						approche.
+					</p>
+					<p>
+						<strong>Mon grand-père,</strong> un éminent professeur de grec ancien qui chérissait{' '}
+						<strong>« Le Petit Prince »,</strong> m’a transmis cette passion. Je crois que les choses
+						essentielles ne sont pas toujours évidentes. À travers le coaching, je souhaite{' '}
+						<strong>vous aider à voir au-delà du visible,</strong> à découvrir le sens profond dans votre
+						parcours de vie, et à contribuer positivement au monde.
+					</p>
+				</Story>
+			</Section>
+
 			<Section title="Ma manière de travailler.">
-				<CheckList
-					items={[
-						'Partir de votre réalité',
-						'Créer un cadre de confiance',
-						'Questionner sans imposer de réponse',
-						'Tenir compte de vos contraintes',
-						'Chercher votre autonomie',
-						'Reconnaître les limites du coaching',
-					]}
-				/>
+				<CheckList items={WAYS} />
 				<ButtonLink href="/deontologie" variant="text">
 					Découvrir ma déontologie
 				</ButtonLink>

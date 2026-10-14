@@ -177,8 +177,9 @@ export type Offer = {
 
 const OFFER_IMAGES: Record<string, { src: string; alt: string; note?: ReactNode; position?: string }> = {
 	'/coaching-professionnel': {
-		src: '/photos/escalier-ciel.webp',
-		alt: 'Une personne gravit un escalier aux rampes jaunes qui s’ouvre sur le ciel bleu',
+		src: '/photos/carte-coaching-professionnel.webp',
+		alt: 'Une personne travaille sur son ordinateur près d’une fenêtre baignée de soleil',
+		position: '30% center',
 		note: (
 			<>
 				Prendre de la <mark>hauteur</mark>
@@ -186,9 +187,8 @@ const OFFER_IMAGES: Record<string, { src: string; alt: string; note?: ReactNode;
 		),
 	},
 	'/coaching-personnel': {
-		src: '/photos/bateau-papier.webp',
-		alt: 'Un bateau en papier jaune flotte sur une eau bleue et calme',
-		position: '96% center',
+		src: '/photos/carte-coaching-personnel.webp',
+		alt: 'Une femme écrit dans un carnet, une tasse à la main, à une table en bois',
 		note: (
 			<>
 				Se laisser <mark>porter</mark>
@@ -196,8 +196,8 @@ const OFFER_IMAGES: Record<string, { src: string; alt: string; note?: ReactNode;
 		),
 	},
 	'/bilan-carriere': {
-		src: '/photos/boussole-mer.webp',
-		alt: 'Une main tient une boussole face à la mer',
+		src: '/photos/carte-bilan-carriere.webp',
+		alt: 'Un homme prend des notes dans un carnet, assis à une table en bois',
 		note: (
 			<>
 				Garder le <mark>cap</mark>
@@ -205,8 +205,8 @@ const OFFER_IMAGES: Record<string, { src: string; alt: string; note?: ReactNode;
 		),
 	},
 	'/transition-professionnelle': {
-		src: '/photos/transition-professionnelle.webp',
-		alt: 'Une longue passerelle en bois à travers un marais',
+		src: '/photos/carte-transition.webp',
+		alt: 'Un homme marche sur un chemin de terre vers le soleil couchant',
 		note: (
 			<>
 				Rejoindre l’autre <mark>rive</mark>
@@ -219,8 +219,8 @@ const OFFER_IMAGES: Record<string, { src: string; alt: string; note?: ReactNode;
 		alt: 'Une salle de classe vide dans la lumière du soir',
 	},
 	'/entreprises-rps-qvct': {
-		src: '/photos/entreprises.webp',
-		alt: 'Une équipe échange en cercle, dans un espace de travail',
+		src: '/photos/entreprises-equipe.webp',
+		alt: 'Quatre collègues sourient autour d’un ordinateur portable',
 	},
 };
 
@@ -272,14 +272,14 @@ export function OfferList({ offers, variant = 'portrait' }: { offers: Offer[]; v
 	);
 }
 
-export function Steps({ steps }: { steps: { title: string; text: string }[] }) {
+export function Steps({ steps }: { steps: { title?: string; text: string }[] }) {
 	const icons = [MessageCircle, Compass, Footprints, Flag];
 	return (
 		<ol className="steps" style={{ '--steps': steps.length } as CSSProperties}>
 			{steps.map((step, i) => {
 				const Icon = icons[i % icons.length];
 				return (
-					<li key={step.title} style={{ '--i': i } as CSSProperties}>
+					<li key={step.title ?? step.text} style={{ '--i': i } as CSSProperties}>
 						<div className="step-mark">
 							<Icon size={24} strokeWidth={1.4} aria-hidden />
 						</div>
@@ -289,7 +289,7 @@ export function Steps({ steps }: { steps: { title: string; text: string }[] }) {
 							</svg>
 						)}
 						<p className="step-index">Étape {i + 1}</p>
-						<h3>{step.title}</h3>
+						{step.title && <h3>{step.title}</h3>}
 						<p>{step.text}</p>
 					</li>
 				);
@@ -394,14 +394,18 @@ export function Story({
 	children,
 	image,
 	imageAlt,
+	reverse = false,
+	imagePosition,
 }: {
 	title: string;
 	children: ReactNode;
 	image: string;
 	imageAlt: string;
+	reverse?: boolean;
+	imagePosition?: string;
 }) {
 	return (
-		<div className="story">
+		<div className={cn('story', reverse && 'story-reverse')}>
 			<div className="story-image">
 				<Image
 					src={image}
@@ -410,6 +414,7 @@ export function Story({
 					height={650}
 					quality={88}
 					sizes="(min-width: 900px) 45vw, 100vw"
+					style={imagePosition ? { objectPosition: imagePosition } : undefined}
 				/>
 			</div>
 			<div className="story-copy">
@@ -417,5 +422,57 @@ export function Story({
 				<Prose>{children}</Prose>
 			</div>
 		</div>
+	);
+}
+
+export function ReadingBlock({
+	title,
+	image,
+	imageAlt,
+	imageWidth,
+	imageHeight,
+	reverse = false,
+	children,
+}: {
+	title?: string;
+	image: string;
+	imageAlt: string;
+	imageWidth: number;
+	imageHeight: number;
+	reverse?: boolean;
+	children: ReactNode;
+}) {
+	return (
+		<div className={cn('reading-block', reverse && 'reading-block-reverse')}>
+			<div className="reading-image">
+				<Image src={image} alt={imageAlt} width={imageWidth} height={imageHeight} sizes="(min-width: 900px) 30vw, 80vw" />
+			</div>
+			<div className="reading-copy">
+				{title && <h3>{title}</h3>}
+				{children}
+			</div>
+		</div>
+	);
+}
+
+export function Exergue({ children, author }: { children: ReactNode; author?: string }) {
+	return (
+		<figure className="exergue">
+			<blockquote>{children}</blockquote>
+			{author && <figcaption>{author}</figcaption>}
+		</figure>
+	);
+}
+
+export function NumberedList({ items }: { items: { title: string; text: ReactNode }[] }) {
+	return (
+		<ul className="parent-grid">
+			{items.map((item) => (
+				<li key={item.title}>
+					<h3>{item.title}</h3>
+					<p>{item.text}</p>
+				</li>
+			))}
+		</ul>
 	);
 }
