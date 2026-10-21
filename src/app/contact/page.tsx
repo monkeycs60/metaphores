@@ -9,14 +9,14 @@ import { CONTACT, LOCATIONS } from '@/lib/site';
 export const metadata: Metadata = {
 	title: { absolute: 'Contact | Métaphore Coaching Bordeaux' },
 	description:
-		'Contactez Métaphore Coaching pour un premier échange : coaching à Bordeaux, en région bordelaise ou à distance.',
+		'Contactez Christophe Jacques, coach à Bordeaux : séances à l’Espace Beaulieu, coaching en marchant en forêt ou à distance.',
 	alternates: { canonical: '/contact' },
 };
 export default function ContactPage() {
 	return (
 		<div className="contact-layout">
 			<div className="contact-copy">
-				<h1>Commençons par votre situation.</h1>
+				<h1>Dites-m’en plus !</h1>
 				<p>
 					Vous souhaitez en savoir plus avant de prendre rendez-vous ou obtenir un devis pour une entreprise ?
 					N’hésitez pas à poser vos questions ou à m’expliquer un peu votre situation. Vous pouvez aussi me
@@ -34,18 +34,16 @@ export default function ContactPage() {
 				</div>
 				<div className="contact-atmosphere">
 					<Image
-						src="/photos/coaching-echange.webp"
-						alt="Deux hommes échangent autour d’une table, dans une lumière chaude"
-						width={800}
-						height={400}
+						src="/photos/christophe-bras-croises.webp"
+						alt="Christophe Jacques sourit, en veste grise, devant des bureaux"
+						width={1066}
+						height={1600}
 						sizes="(min-width: 900px) 40vw, 100vw"
 					/>
 				</div>
-				<div>
-					<p className="text-sm leading-relaxed">Vous souhaitez réserver une séance ?</p>
-					<ButtonLink href="/rendez-vous" variant="text">
-						Prendre rendez-vous
-					</ButtonLink>
+				<div className="contact-booking">
+					<p>Vous souhaitez réserver une séance ?</p>
+					<ButtonLink href="/rendez-vous">Prendre rendez-vous</ButtonLink>
 				</div>
 				<div className="contact-locations">
 					<h2>Lieux de rendez-vous</h2>

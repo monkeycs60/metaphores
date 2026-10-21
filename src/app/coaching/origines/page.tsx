@@ -61,8 +61,9 @@ export default function CoachingDefinitionPage() {
 			<PageHero
 				title="Qu’est-ce que le coaching ?"
 				subtitle="Le coaching · Origines, déroulement, durée"
-				image="/photos/chemin.webp"
-				imageAlt="Un sentier de sable entre les dunes"
+				image="/photos/coaching-questionnement.webp"
+				imageAlt="Une jeune femme, la main sous le menton, lève les yeux en souriant, pensive"
+				imagePosition="center 30%"
 			>
 				<nav aria-label="Table des matières" className="reading-toc">
 					<p>Table des matières</p>
@@ -76,7 +77,7 @@ export default function CoachingDefinitionPage() {
 				</nav>
 			</PageHero>
 
-			<Section id="origine" title="Origine.">
+			<Section id="origine" title="Origine">
 				<div className="reading">
 					<ReadingBlock title="Socrate" image="/socrate.webp" imageAlt="Statue de Socrate" imageWidth={1245} imageHeight={700}>
 						<p>L’origine du coaching ne date pas d’hier car Socrate est souvent considéré comme le précurseur du coaching.</p>
@@ -118,7 +119,13 @@ export default function CoachingDefinitionPage() {
 							ou moins proche, la durée étant relativement courte.
 						</p>
 					</ReadingBlock>
-					<ReadingBlock title="De nos jours" image="/library.jpg" imageAlt="Une bibliothèque" imageWidth={640} imageHeight={427}>
+					<ReadingBlock
+						title="De nos jours"
+						image="/photos/origines-chrysalide.webp"
+						imageAlt="Un papillon sort de sa chrysalide, suspendu à une branche"
+						imageWidth={767}
+						imageHeight={1200}
+					>
 						<p>
 							En résumé, le coach accompagne, comme Socrate le caractérisait, il est « l’éveilleur de la
 							conscience » en laissant le coaché découvrir, dans ses propres réponses, ses freins, ses
@@ -164,8 +171,14 @@ export default function CoachingDefinitionPage() {
 				</ReadingBlock>
 			</Section>
 
-			<Section id="steps" tone="cream" title="Les étapes d’un coaching.">
-				<ReadingBlock image="/steps.jpg" imageAlt="Des pas sur un chemin" imageWidth={640} imageHeight={853} reverse>
+			<Section id="steps" tone="cream" title="Les étapes d’un coaching">
+				<ReadingBlock
+					image="/photos/origines-marches.webp"
+					imageAlt="Un homme en veste rouge gravit un escalier en courant, vers le ciel"
+					imageWidth={955}
+					imageHeight={1200}
+					reverse
+				>
 					<p>
 						Un coaching se passe en plusieurs étapes. C’est une sorte de <strong>cycle</strong>. Ce cycle a lieu
 						dans la séance et pour un ensemble de séances.
@@ -202,13 +215,19 @@ export default function CoachingDefinitionPage() {
 					<p className="reading-highlight">En moyenne un accompagnement dure six séances.</p>
 					<p>
 						Cela peut des fois se régler en une séance. C’est pour cette raison que je propose un format de
-						coaching assez original, Les Bulles, une nouvelle forme d’accompagnement éclair qui dure 30 minutes.
+						coaching assez original, Les Bulles, une nouvelle forme d’accompagnement éclair qui dure 25 minutes.
 					</p>
 				</ReadingBlock>
 			</Section>
 
-			<Section id="equilibre" tone="cream" title="Notre souci, votre équilibre.">
-				<ReadingBlock image="/equilibre.jpg" imageAlt="Des galets en équilibre" imageWidth={640} imageHeight={788} reverse>
+			<Section id="equilibre" tone="cream" title="Notre souci, votre équilibre">
+				<ReadingBlock
+					image="/photos/origines-highline.webp"
+					imageAlt="Une personne avance en équilibre sur une corde tendue au-dessus d’une vallée"
+					imageWidth={1400}
+					imageHeight={934}
+					reverse
+				>
 					<p className="reading-highlight">
 						Votre écologie intérieure, c’est-à-dire votre équilibre, est la priorité.
 					</p>

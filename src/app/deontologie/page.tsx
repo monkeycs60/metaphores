@@ -37,25 +37,17 @@ export default function DeontologiePage() {
 	return (
 		<>
 			<PageHero
-				title="Éthique et déontologie."
+				title="Éthique et déontologie"
 				subtitle="Le coaching · Déontologie"
-				media={
-					<div className="emcc-stage">
-						<Image
-							src="/emcc.png"
-							alt="EMCC, association de professionnels de l’accompagnement"
-							width={1181}
-							height={762}
-							priority
-						/>
-					</div>
-				}
+				image="/photos/poignee-de-main.webp"
+				imageAlt="Deux mains se serrent en signe de confiance, l’une en manche jaune, l’autre en pull gris"
+				imagePosition="center 45%"
 			>
 				<p>
 					<em>Métaphore coaching adhère et respecte les chartes déontologiques de la profession (type EMCC).</em>
 				</p>
 			</PageHero>
-			<Section tone="cream" title="Les 4 points suivants sont fondamentaux à nos yeux.">
+			<Section tone="cream" title="Les 4 points suivants sont fondamentaux à nos yeux">
 				<ol className="pillars">
 					{PILLARS.map((pillar, i) => (
 						<li key={pillar.title}>
@@ -70,11 +62,11 @@ export default function DeontologiePage() {
 					))}
 				</ol>
 				<Image
-					src="/handshake.png"
-					alt="Deux mains se serrent en signe de confiance"
-					width={400}
-					height={305}
-					className="pillars-image"
+					src="/emcc.png"
+					alt="EMCC, association de professionnels de l’accompagnement"
+					width={1181}
+					height={762}
+					className="pillars-logo"
 				/>
 			</Section>
 			<ContactBand />

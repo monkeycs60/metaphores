@@ -1,8 +1,9 @@
 import Image from 'next/image';
 import type { Metadata } from 'next';
 import { MapPin, Video } from 'lucide-react';
+import { Bird, Compass, Footprints, MessageCircle } from 'lucide-react';
 import { ButtonLink, OfferList, Section, Steps } from '@/components/v2/ui';
-import { ContactBand, FramePrinciples, Testimonies } from '@/components/v2/blocks';
+import { ContactBand, FramePrinciples, HeroActions, Testimonies } from '@/components/v2/blocks';
 import { Deco, Scribble } from '@/components/v2/deco';
 
 export const metadata: Metadata = {
@@ -44,7 +45,7 @@ const SPECIFIC_OFFERS = [
 	{
 		title: 'Jeunes & Parents',
 		tagline:
-			'Un espace neutre pour aider le jeune à mieux se comprendre, retrouver du sens, avancer dans son orientation et, lorsque c’est utile, travailler la relation avec ses parents.',
+			'Un espace neutre pour aider votre enfant à mieux se comprendre, retrouver du sens, avancer dans son orientation et, lorsque c’est utile, travailler la relation avec ses parents.',
 		text: '',
 		href: '/jeunes-parents',
 	},
@@ -64,10 +65,10 @@ const SPECIFIC_OFFERS = [
 	},
 ];
 const STEPS = [
-	{ title: 'Se rencontrer', text: 'Faire connaissance et parler de votre situation.' },
-	{ title: 'Clarifier', text: 'Définir ce que vous souhaitez faire évoluer.' },
-	{ title: 'Avancer', text: 'Explorer, expérimenter et trouver vos solutions.' },
-	{ title: 'Prendre son envol', text: 'Repartir avec des repères et de l’autonomie.' },
+	{ title: 'Se rencontrer', text: 'Faire connaissance et parler de votre situation.', icon: MessageCircle },
+	{ title: 'Clarifier', text: 'Définir ce que vous souhaitez faire évoluer.', icon: Compass },
+	{ title: 'Avancer', text: 'Explorer, expérimenter et trouver vos solutions.', icon: Footprints },
+	{ title: 'Prendre son envol', text: 'Repartir avec des repères et de l’autonomie.', icon: Bird },
 ];
 
 export default function Home() {
@@ -82,18 +83,15 @@ export default function Home() {
 							<mark>Développer</mark> votre potentiel
 						</Scribble>
 						<h1>
-							Redonner du sens.
+							Retrouver du sens
 							<br />
-							Dessiner votre <span>chemin.</span>
+							Construire son&nbsp;<span>chemin</span>
 						</h1>
 						<p className="home-hero-description">
-							Prendre du recul, retrouver de la clarté et construire votre propre chemin.
+							Un espace pour prendre du recul, faire le point et se (re)mettre en mouvement.
 						</p>
 						<div className="hero-actions">
-							<ButtonLink href="/rendez-vous">Prenons le temps d’échanger</ButtonLink>
-							<ButtonLink href="#accompagnements" variant="text">
-								Découvrir les accompagnements
-							</ButtonLink>
+							<HeroActions />
 						</div>
 						<p className="hero-practical">
 							<span>
@@ -103,16 +101,15 @@ export default function Home() {
 							<span>
 								<Video size={17} aria-hidden />À distance
 							</span>
-							<span>Premier échange gratuit · 30 min</span>
 						</p>
 					</div>
 					<figure className="home-hero-media">
 						<Deco shape="sun" size={250} className="hero-media-deco" />
 						<Image
-							src="/photos/accueil-chemin.webp"
-							alt="Une personne marche sur un chemin de terre ensoleillé, bordé d’arbres"
-							width={1800}
-							height={1200}
+							src="/photos/accueil-horizon.webp"
+							alt="Un chemin de sable traverse les dunes jusqu’à l’océan"
+							width={1536}
+							height={1024}
 							priority
 							sizes="(min-width: 900px) 52vw, 100vw"
 							className="home-hero-photo polyptych"
@@ -126,7 +123,7 @@ export default function Home() {
 
 			<Section
 				id="accompagnements"
-				title="Un espace pour faire le point."
+				title="Un espace pour faire le point"
 				note={
 					<Scribble>
 						Changer les <mark>possibles</mark>
@@ -144,14 +141,14 @@ export default function Home() {
 
 			<Section
 				tone="blue"
-				title="Votre situation est singulière."
+				title="Votre situation est singulière"
 				note={
 					<Scribble tone="ink">
 						Qui mieux que <mark>vous</mark> connaît vos solutions ?
 					</Scribble>
 				}
 				deco={<Deco shape="ring-gold" size={240} style={{ top: -60, right: -110 }} />}
-				intro={<p>Certains parcours méritent une attention particulière.</p>}
+				intro={<p className="intro-emphasis">Certains parcours méritent une attention particulière.</p>}
 			>
 				<OfferList offers={SPECIFIC_OFFERS} variant="split" />
 			</Section>
@@ -207,7 +204,7 @@ export default function Home() {
 
 			<Section
 				tone="cream"
-				title="À votre rythme, avec un cap."
+				title="À votre rythme, avec un cap"
 				deco={<Deco shape="dots" size={120} style={{ bottom: 60, left: -36 }} />}
 				intro={<p>Un accompagnement pour avancer, puis retrouver votre autonomie.</p>}
 			>
@@ -227,7 +224,7 @@ export default function Home() {
 			</Section>
 
 			<Section
-				title="Ils ont trouvé leurs propres réponses."
+				title="Ils ont trouvé leurs propres réponses"
 				note={
 					<Scribble tone="sky">
 						Trouver du <mark>sens</mark> et en donner
@@ -239,7 +236,8 @@ export default function Home() {
 			</Section>
 			<ContactBand
 				title="Si vous avez des questions, n’hésitez pas !"
-				text="Prenons le temps d’échanger, lors d’un entretien téléphonique, afin de faire connaissance et de mieux comprendre mon approche."
+				text="Prenons le temps d’échanger, lors d’un entretien téléphonique, afin de faire connaissance."
+				contact={{ label: 'Contactez-moi', href: '/contact' }}
 			/>
 		</>
 	);

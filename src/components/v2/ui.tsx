@@ -6,15 +6,16 @@ import {
 	Compass,
 	Flag,
 	Footprints,
-	HeartHandshake,
 	MessageCircle,
-	Route,
 	ShieldCheck,
-	Sprout,
-	Target,
+	type LucideIcon,
 } from 'lucide-react';
 import { cn } from '@/lib/utils';
 import { Deco, Scribble } from './deco';
+
+export function lines(text: string) {
+	return text.split('\n').flatMap((line, i) => (i ? [<br key={i} />, line] : [line]));
+}
 
 export function ButtonLink({
 	href,
@@ -135,30 +136,39 @@ export function Section({
 	);
 }
 
-export function CheckList({ items, columns = 2 }: { items: string[]; columns?: 1 | 2 }) {
-	const icons = [Compass, Target, Sprout, HeartHandshake, Route, Flag];
+export type ListItem = { text: string; icon: LucideIcon };
+
+export function CheckList({ items, columns = 2 }: { items: ListItem[]; columns?: 1 | 2 }) {
 	return (
 		<ul className={cn('topic-list', columns === 1 && 'topic-single')}>
-			{items.map((item, i) => {
-				const Icon = icons[i % icons.length];
-				return (
-					<li key={item}>
-						<Icon size={28} strokeWidth={1.35} aria-hidden />
-						<span>{item}</span>
-					</li>
-				);
-			})}
+			{items.map(({ text, icon: Icon }) => (
+				<li key={text}>
+					<Icon size={28} strokeWidth={1.35} aria-hidden />
+					<span>{text}</span>
+				</li>
+			))}
 		</ul>
 	);
 }
 
-export function Quotes({ items }: { items: string[] }) {
+export function Quotes({ items, variant = 'list' }: { items: string[]; variant?: 'list' | 'bubbles' }) {
+	if (variant === 'bubbles') {
+		return (
+			<ul className="bubble-list">
+				{items.map((item) => (
+					<li key={item}>
+						<p>{item}</p>
+					</li>
+				))}
+			</ul>
+		);
+	}
 	return (
 		<ul className="question-list">
 			{items.map((item) => (
 				<li key={item}>
 					<MessageCircle size={23} strokeWidth={1.3} aria-hidden />
-					<p>« {item} »</p>
+					<p>«&nbsp;{item}&nbsp;»</p>
 				</li>
 			))}
 		</ul>
@@ -167,53 +177,59 @@ export function Quotes({ items }: { items: string[] }) {
 
 export type Offer = {
 	title: string;
-	tagline: string;
-	text: string;
+	tagline?: string;
+	text: ReactNode;
 	href: string;
 	linkLabel?: string;
 	image?: string;
 	imageAlt?: string;
 };
 
-const OFFER_IMAGES: Record<string, { src: string; alt: string; note?: ReactNode; position?: string }> = {
+export const OFFER_IMAGES: Record<string, { src: string; alt: string; note?: ReactNode; position?: string }> = {
 	'/coaching-professionnel': {
-		src: '/photos/carte-coaching-professionnel.webp',
-		alt: 'Une personne travaille sur son ordinateur près d’une fenêtre baignée de soleil',
-		position: '30% center',
-		note: (
-			<>
-				Prendre de la <mark>hauteur</mark>
-			</>
-		),
-	},
-	'/coaching-personnel': {
-		src: '/photos/carte-coaching-personnel.webp',
-		alt: 'Une femme écrit dans un carnet, une tasse à la main, à une table en bois',
-		note: (
-			<>
-				Se laisser <mark>porter</mark>
-			</>
-		),
-	},
-	'/bilan-carriere': {
-		src: '/photos/carte-bilan-carriere.webp',
-		alt: 'Un homme prend des notes dans un carnet, assis à une table en bois',
+		src: '/photos/carte-pro-echange.webp',
+		alt: 'Deux collègues en veste échangent en souriant à leur bureau',
+		position: '42% center',
 		note: (
 			<>
 				Garder le <mark>cap</mark>
 			</>
 		),
 	},
+	'/coaching-personnel': {
+		src: '/photos/carte-perso-canape.webp',
+		alt: 'Deux personnes discutent, assises sur un canapé dans un intérieur clair',
+		position: 'center 62%',
+		note: (
+			<>
+				Prendre de la <mark>hauteur</mark>
+			</>
+		),
+	},
+	'/bilan-carriere': {
+		src: '/photos/carte-bilan-serein.webp',
+		alt: 'Un homme aux cheveux blancs sourit, détendu, dans la lumière du soir',
+		position: '45% center',
+		note: (
+			<>
+				Se laisser <mark>porter</mark>
+			</>
+		),
+	},
 	'/transition-professionnelle': {
-		src: '/photos/carte-transition.webp',
-		alt: 'Un homme marche sur un chemin de terre vers le soleil couchant',
+		src: '/photos/carte-transition-elan.webp',
+		alt: 'Un homme saute d’un rocher à l’autre, face aux montagnes',
+		position: '55% center',
 		note: (
 			<>
 				Rejoindre l’autre <mark>rive</mark>
 			</>
 		),
 	},
-	'/jeunes-parents': { src: '/photos/jeunes-parents.webp', alt: 'Un père et son fils marchent côte à côte' },
+	'/jeunes-parents': {
+		src: '/photos/jeunes-parents-rire.webp',
+		alt: 'Un père et son fils rient, assis dans l’herbe d’un parc ensoleillé',
+	},
 	'/coaching-enseignants': {
 		src: '/photos/classe.webp',
 		alt: 'Une salle de classe vide dans la lumière du soir',
@@ -261,7 +277,7 @@ export function OfferList({ offers, variant = 'portrait' }: { offers: Offer[]; v
 									<h3>{offer.title}</h3>
 									<ArrowRight size={22} strokeWidth={1.5} aria-hidden />
 								</div>
-								<p>{offer.tagline}</p>
+								{offer.tagline && <p>{offer.tagline}</p>}
 							</div>
 						</Link>
 						{offer.text && <p className="offer-detail">{offer.text}</p>}
@@ -272,12 +288,12 @@ export function OfferList({ offers, variant = 'portrait' }: { offers: Offer[]; v
 	);
 }
 
-export function Steps({ steps }: { steps: { title?: string; text: string }[] }) {
+export function Steps({ steps }: { steps: { title?: string; text: string; icon?: LucideIcon }[] }) {
 	const icons = [MessageCircle, Compass, Footprints, Flag];
 	return (
 		<ol className="steps" style={{ '--steps': steps.length } as CSSProperties}>
 			{steps.map((step, i) => {
-				const Icon = icons[i % icons.length];
+				const Icon = step.icon ?? icons[i % icons.length];
 				return (
 					<li key={step.title ?? step.text} style={{ '--i': i } as CSSProperties}>
 						<div className="step-mark">
@@ -391,21 +407,27 @@ export function Notice({ title, children }: { title: string; children: ReactNode
 
 export function Story({
 	title,
+	note,
+	lead,
 	children,
 	image,
 	imageAlt,
 	reverse = false,
+	compact = false,
 	imagePosition,
 }: {
-	title: string;
+	title?: ReactNode;
+	note?: ReactNode;
+	lead?: ReactNode;
 	children: ReactNode;
 	image: string;
 	imageAlt: string;
 	reverse?: boolean;
+	compact?: boolean;
 	imagePosition?: string;
 }) {
 	return (
-		<div className={cn('story', reverse && 'story-reverse')}>
+		<div className={cn('story', reverse && 'story-reverse', compact && 'story-compact')}>
 			<div className="story-image">
 				<Image
 					src={image}
@@ -413,14 +435,53 @@ export function Story({
 					width={800}
 					height={650}
 					quality={88}
-					sizes="(min-width: 900px) 45vw, 100vw"
+					sizes={compact ? '(min-width: 900px) 30vw, 100vw' : '(min-width: 900px) 45vw, 100vw'}
 					style={imagePosition ? { objectPosition: imagePosition } : undefined}
 				/>
 			</div>
 			<div className="story-copy">
-				<h2>{title}</h2>
+				{note}
+				{lead && <p className="story-lead">{lead}</p>}
+				{title && <h2>{title}</h2>}
 				<Prose>{children}</Prose>
 			</div>
+		</div>
+	);
+}
+
+export function ListFrame({
+	note,
+	title,
+	intro,
+	lead,
+	items,
+	image,
+}: {
+	note?: ReactNode;
+	title: string;
+	intro?: string;
+	lead?: string;
+	items: ListItem[];
+	image?: { src: string; alt: string };
+}) {
+	const frame = (
+		<article className="list-frame">
+			<header className="list-frame-head">
+				{note}
+				<h2>{title}</h2>
+				{intro && <p className="list-frame-intro">{intro}</p>}
+			</header>
+			{lead && <p className="list-frame-lead">{lead}</p>}
+			<CheckList items={items} columns={image ? 1 : 2} />
+		</article>
+	);
+	if (!image) return frame;
+	return (
+		<div className="list-frame-split">
+			<div className="list-frame-photo">
+				<Image src={image.src} alt={image.alt} width={900} height={1100} sizes="(min-width: 900px) 38vw, 100vw" />
+			</div>
+			{frame}
 		</div>
 	);
 }
@@ -455,6 +516,36 @@ export function ReadingBlock({
 	);
 }
 
+export function PhotoQuote({
+	image,
+	imageAlt,
+	imagePosition,
+	reverse = false,
+	children,
+}: {
+	image: string;
+	imageAlt: string;
+	imagePosition?: string;
+	reverse?: boolean;
+	children: ReactNode;
+}) {
+	return (
+		<figure className={cn('photo-quote', reverse && 'photo-quote-reverse')}>
+			<div className="photo-quote-image">
+				<Image
+					src={image}
+					alt={imageAlt}
+					width={1200}
+					height={900}
+					sizes="(min-width: 900px) 40vw, 100vw"
+					style={imagePosition ? { objectPosition: imagePosition } : undefined}
+				/>
+			</div>
+			<blockquote>{children}</blockquote>
+		</figure>
+	);
+}
+
 export function Exergue({ children, author }: { children: ReactNode; author?: string }) {
 	return (
 		<figure className="exergue">
@@ -464,15 +555,22 @@ export function Exergue({ children, author }: { children: ReactNode; author?: st
 	);
 }
 
-export function NumberedList({ items }: { items: { title: string; text: ReactNode }[] }) {
+export function NumberedList({
+	items,
+	aside,
+}: {
+	items: { title?: string; text: ReactNode }[];
+	aside?: ReactNode;
+}) {
 	return (
-		<ul className="parent-grid">
-			{items.map((item) => (
-				<li key={item.title}>
-					<h3>{item.title}</h3>
+		<ul className={cn('parent-grid', !items.some((item) => item.title) && 'parent-grid-plain')}>
+			{items.map((item, i) => (
+				<li key={item.title ?? i}>
+					{item.title && <h3>{item.title}</h3>}
 					<p>{item.text}</p>
 				</li>
 			))}
+			{aside && <li className="parent-grid-aside">{aside}</li>}
 		</ul>
 	);
 }

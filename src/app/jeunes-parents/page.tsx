@@ -1,9 +1,28 @@
 import type { Metadata } from 'next';
+import {
+	BatteryLow,
+	HeartHandshake,
+	MessagesSquare,
+	Scale,
+	Signpost,
+	Sprout,
+	Users,
+	Zap,
+} from 'lucide-react';
 import { ContactBand, HeroActions } from '@/components/v2/blocks';
 import { Scribble } from '@/components/v2/deco';
-import { HeartHandshake } from 'lucide-react';
-import { CheckList, Exergue, PageHero, Quotes, RelatedLinks, Section, Steps, Story } from '@/components/v2/ui';
-import { services } from '@/lib/accompagnements';
+import {
+	CheckList,
+	Exergue,
+	PageHero,
+	PhotoQuote,
+	Quotes,
+	RelatedLinks,
+	Section,
+	Steps,
+	Story,
+} from '@/components/v2/ui';
+import { contactFor } from '@/lib/site';
 
 export const metadata: Metadata = {
 	title: { absolute: 'Coach adolescent & parents à Bordeaux | Orientation & motivation | Métaphore Coaching' },
@@ -12,20 +31,20 @@ export const metadata: Metadata = {
 	alternates: { canonical: '/jeunes-parents' },
 };
 
-const service = services['jeunes-parents'];
+const contact = contactFor('jeunes-parents');
 
 const YOUTH_SITUATIONS = [
-	'Perte de motivation ou de sens',
-	'Difficultés à se projeter, orientation scolaire ou professionnelle',
-	'Manque de confiance, difficulté à faire des choix',
-	'Besoin d’autonomie, difficultés d’intégration ou de relation',
+	{ icon: BatteryLow, text: 'Perte de motivation ou de sens' },
+	{ icon: Signpost, text: 'Difficultés à se projeter, orientation scolaire ou professionnelle' },
+	{ icon: Sprout, text: 'Manque de confiance, difficulté à faire des choix' },
+	{ icon: Users, text: 'Besoin d’autonomie, difficultés d’intégration ou de relation' },
 ];
 
 const FAMILY_SITUATIONS = [
-	'Tensions ou incompréhensions entre parents et enfant',
-	'Des conseils qui ne passent plus, des discussions qui tournent vite au conflit',
-	'Des attentes différentes sur l’avenir',
-	'Le sentiment de ne plus savoir comment l’aider ni trouver la bonne distance',
+	{ icon: Zap, text: 'Tensions ou incompréhensions entre parents et enfant' },
+	{ icon: MessagesSquare, text: 'Des conseils qui ne passent plus, des discussions qui tournent vite au conflit' },
+	{ icon: Scale, text: 'Des attentes différentes sur l’avenir' },
+	{ icon: HeartHandshake, text: 'Le sentiment de ne plus savoir comment l’aider ni trouver la bonne distance' },
 ];
 
 const TRIO = [
@@ -49,7 +68,7 @@ const TRIO = [
 const PARENT_NEEDS = [
 	{
 		title: 'Comprendre ce qui se joue',
-		text: 'Prendre du recul sur la situation : ce qui relève de votre enfant, de la famille, de l’école, et ce qui peut évoluer.',
+		text: 'Prendre du recul sur la situation : ce qui relève de votre enfant, de vous, de la famille, de l’école, et ce qui peut évoluer.',
 	},
 	{
 		title: 'Trouver votre juste place',
@@ -75,11 +94,11 @@ const PARENT_QUESTIONS = [
 const STEPS = [
 	{
 		title: 'Un premier échange avec vous',
-		text: '30 minutes offertes pour comprendre la situation, vos inquiétudes et vos attentes.',
+		text: 'Pour comprendre la situation, vos inquiétudes et vos attentes.',
 	},
 	{
 		title: 'Une rencontre avec votre enfant',
-		text: 'Pour vérifier qu’il est partie prenante : le coaching avance quand le jeune le choisit.',
+		text: 'Pour vérifier qu’il est partie prenante : le coaching avance quand votre enfant est acteur et en a la volonté.',
 	},
 	{
 		title: 'Des séances à son rythme',
@@ -95,17 +114,18 @@ export default function Page() {
 	return (
 		<>
 			<PageHero
-				title="Aider votre enfant à retrouver du sens, de la confiance et une direction."
-				subtitle={service.context}
-				image={service.image}
-				imageAlt={service.imageAlt}
+				title="Et si le problème n’était pas de faire plus, mais de faire autrement !"
+				subtitle="Accompagnements jeunes & parents · Bordeaux"
+				image="/photos/jeunes-parents-rire.webp"
+				imageAlt="Un père et son fils rient, assis dans l’herbe d’un parc ensoleillé"
+				imagePosition="18% center"
 				split
 				note={
 					<Scribble tone="sky" className="hero-scribble">
 						<mark>Grandir</mark> à son rythme
 					</Scribble>
 				}
-				actions={<HeroActions primary={service.primary} />}
+				actions={<HeroActions contact={contact} />}
 			>
 				<p>
 					Quand un enfant ou un adolescent se démotive, doute de lui ou ne sait plus pourquoi il travaille, les
@@ -122,22 +142,27 @@ export default function Page() {
 			<Section title="Pour quelles situations ?">
 				<div className="situation-groups">
 					<div>
-						<h3 className="situation-title">Chez le jeune</h3>
+						<h3 className="situation-title">Pour votre enfant</h3>
 						<CheckList items={YOUTH_SITUATIONS} columns={1} />
 					</div>
 					<div>
-						<h3 className="situation-title">Dans la relation parents-enfant</h3>
+						<h3 className="situation-title">Pour les parents</h3>
 						<CheckList items={FAMILY_SITUATIONS} columns={1} />
 					</div>
 				</div>
+				<PhotoQuote
+					image="/photos/jp-famille-canape.webp"
+					imageAlt="Deux parents et leur fils discutent, installés sur le canapé du salon"
+					imagePosition="center 58%"
+				>
+					Quand on ne sait plus vraiment où aller, il est bon de se poser et d’en parler.
+				</PhotoQuote>
 			</Section>
 
 			<Section
 				tone="blue"
-				title="Une dynamique à trois."
-				intro={
-					<p>Les difficultés d’un enfant concernent souvent son entourage familial ou l’école.</p>
-				}
+				title="Une dynamique à trois"
+				intro={<p>Les difficultés d’un enfant concernent souvent son entourage familial ou l’école.</p>}
 			>
 				<ol className="trio">
 					{TRIO.map((item) => (
@@ -148,14 +173,30 @@ export default function Page() {
 						</li>
 					))}
 				</ol>
+				<PhotoQuote
+					image="/photos/jp-avenir.webp"
+					imageAlt="Un adolescent sourit, le regard tourné vers l’avenir"
+					imagePosition="center 35%"
+					reverse
+				>
+					Un enfant n’est pas un bulletin scolaire ou une orientation.
+				</PhotoQuote>
 			</Section>
 
 			<Section tone="cream">
-				<Story title="Un accompagnement qui ne décide pas à sa place." image={service.storyImage} imageAlt={service.storyImageAlt}>
+				<Story
+					title="Un accompagnement qui ne décide pas à sa place"
+					image="/photos/jp-dialogue.webp"
+					imageAlt="Une adolescente parle avec entrain à une accompagnante, dans une pièce claire"
+					imagePosition="40% center"
+				>
 					<p>
 						L’objectif n’est pas de dire au jeune quelle filière choisir, comment travailler ou ce qu’il devrait
 						devenir. Nous cherchons plutôt à comprendre ce qui compte pour lui, ce qui le freine, ce qui le met en
 						mouvement et comment il peut reprendre progressivement la responsabilité de ses choix.
+					</p>
+					<p className="prose-highlight">
+						Chaque enfant est unique, avec son histoire, ses forces et ses possibilités.
 					</p>
 				</Story>
 			</Section>
@@ -167,13 +208,11 @@ export default function Page() {
 						Une place pour <mark>chacun</mark>
 					</Scribble>
 				}
-				intro={
-					<p>
-						En tant que parent, vous êtes souvent directement concerné par les difficultés rencontrées par
-						votre enfant.
-					</p>
-				}
 			>
+				<div className="parent-questions">
+					<h3 className="situation-title">Des questions que se posent souvent les parents</h3>
+					<Quotes items={PARENT_QUESTIONS} variant="bubbles" />
+				</div>
 				<ul className="parent-grid">
 					{PARENT_NEEDS.map((need) => (
 						<li key={need.title}>
@@ -182,29 +221,42 @@ export default function Page() {
 						</li>
 					))}
 				</ul>
+				<PhotoQuote
+					image="/photos/jp-reflet.webp"
+					imageAlt="Un père et son enfant se reflètent dans l’eau, au coucher du soleil"
+					imagePosition="center 60%"
+				>
+					On dit souvent que les enfants sont les reflets de leurs parents. Quand votre enfant est en difficulté,
+					s’interroger et se remettre en question peut être une manière de l’aider.
+				</PhotoQuote>
 				<aside className="parent-focus">
 					<HeartHandshake size={30} strokeWidth={1.3} aria-hidden />
 					<p>
 						Consciemment ou inconsciemment, notre façon d’être en tant que parents peut participer aux
 						difficultés rencontrées par notre enfant. Selon la situation, des temps spécifiques peuvent
 						permettre de clarifier des choses que l’on n’est pas toujours en capacité de voir. L’accompagnement
-						peut permettre d’améliorer la communication et de soutenir l’autonomie du jeune sans se désengager
-						de son rôle de parent.
+						peut permettre d’améliorer la communication et de soutenir son autonomie sans se désengager de son
+						rôle de parent.
 					</p>
 				</aside>
-				<div className="parent-questions">
-					<h3 className="situation-title">Des questions que se posent souvent les parents</h3>
-					<Quotes items={PARENT_QUESTIONS} />
-				</div>
+				<PhotoQuote
+					image="/photos/jp-famille-plage.webp"
+					imageAlt="Deux parents et leur fille marchent main dans la main dans les vagues, en riant"
+					imagePosition="center 60%"
+					reverse
+				>
+					Parce que tout le monde mérite un soutien, même vous.
+				</PhotoQuote>
 			</Section>
 
 			<Section tone="cream">
 				<Story
-					title="Pourquoi mon parcours est utile."
-					image="/photos/christophe-sourire.webp"
-					imageAlt="Christophe Jacques, en veste grise, sourit dans une cour arborée"
-					imagePosition="50% 20%"
+					title="Pourquoi mon parcours est utile"
+					image="/photos/jp-educatrice.webp"
+					imageAlt="Une éducatrice souriante échange avec deux parents et leur fille autour d’une table"
+					imagePosition="35% center"
 					reverse
+					compact
 				>
 					<p>
 						J’ai passé un master en sciences de l’éducation afin de comprendre les mécanismes qui sont à l’œuvre
@@ -227,8 +279,14 @@ export default function Page() {
 				<Steps steps={STEPS} />
 			</Section>
 
-			<ContactBand primary={service.primary} />
-			<RelatedLinks links={service.related} />
+			<ContactBand contact={contact} />
+			<RelatedLinks
+				links={[
+					{ label: 'Mon parcours', href: '/qui-suis-je' },
+					{ label: 'Coaching personnel', href: '/coaching-personnel' },
+					{ label: 'Déontologie', href: '/deontologie' },
+				]}
+			/>
 		</>
 	);
 }

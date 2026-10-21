@@ -13,7 +13,7 @@ type Menu = { id: string; trigger: string; title: string; intro: string; hub?: s
 const MENUS: Record<string, Menu> = {
 	'/coaching': {
 		id: 'coaching-menu',
-		trigger: 'Coaching',
+		trigger: 'Accompagnements',
 		title: 'Coaching individuel',
 		intro: 'À Bordeaux ou à distance, pour avancer sur ce qui compte pour vous.',
 		hub: '/coaching',
@@ -21,7 +21,7 @@ const MENUS: Record<string, Menu> = {
 	},
 	'/coaching/origines': {
 		id: 'reading-menu',
-		trigger: 'Le coaching',
+		trigger: 'C’est quoi le coaching ?',
 		title: 'Le coaching',
 		intro: 'Comprendre ce qu’est le coaching, ce qu’il n’est pas et le cadre qui l’entoure.',
 		items: READING_NAV,
@@ -100,7 +100,7 @@ export default function NavBar() {
 										className={cn('nav-link nav-trigger', active(item.href) && 'nav-active')}
 									>
 										{MENUS[item.href].trigger}
-										<ChevronDown size={16} strokeWidth={2} aria-hidden className='nav-chevron' />
+										<ChevronDown size={15} strokeWidth={2} aria-hidden className='nav-chevron' />
 									</button>
 									{openMenu === item.href && (
 										<div id={MENUS[item.href].id} className='mega-menu'>
@@ -130,7 +130,14 @@ export default function NavBar() {
 																className='mega-item'
 															>
 																{sub.image && (
-																	<Image src={sub.image} alt='' width={240} height={160} sizes='200px' />
+																	<Image
+																		src={sub.image}
+																		alt=''
+																		width={240}
+																		height={160}
+																		sizes='200px'
+																		style={sub.imagePosition ? { objectPosition: sub.imagePosition } : undefined}
+																	/>
 																)}
 																<span className='mega-item-label'>{sub.label}</span>
 																<span className='mega-item-text'>{sub.description}</span>

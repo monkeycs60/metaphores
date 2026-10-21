@@ -52,10 +52,11 @@ export default function VisionPage() {
 	return (
 		<>
 			<PageHero
-				title="Ma vision."
+				title="Ma vision"
 				subtitle="Le coaching · Sept principes"
-				image="/photos/pierres-gue.webp"
-				imageAlt="Des pierres de gué tracent un passage à travers l’eau"
+				image="/photos/vision-lever-soleil.webp"
+				imageAlt="Un homme, de dos, ouvre les bras face au lever du soleil sur une vallée profonde"
+				imagePosition="30% center"
 			>
 				<p>
 					Ma vision du coaching se nourrit à la fois de ma formation comme coach professionnel diplômé, de mes

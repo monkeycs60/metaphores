@@ -40,3 +40,55 @@ Licence Unsplash : usage commercial libre, attribution non requise.
 | `format-prevention.webp` | Sable Flow (@sableflow) | https://unsplash.com/photos/reunion-de-personnes-dans-un-espace-de-travail-de-bureau-ensoleille-KHpjeuaWOec |
 | `format-parole.webp` | The Jopwell Collection (@jopwell) | https://unsplash.com/photos/un-groupe-de-personnes-assises-autour-dun-salon-KqcKFgbtgZ4 |
 | `carte-transition.webp` | Adam Thomas (@adamthomas48) | https://unsplash.com/photos/homme-en-chemise-blanche-et-short-marron-marchant-sur-un-chemin-de-terre-pendant-la-journee-Co5yMxDxvEQ |
+
+## Photos ajoutées le 21 octobre 2026 (retours de Christophe du 16 octobre)
+
+Licence Pexels : usage commercial libre, attribution non requise.
+
+| Fichier | Auteur | Source |
+|---|---|---|
+| `carte-pro-echange.webp` | Mikhail Nilov | https://www.pexels.com/photo/photo-of-women-in-blazers-smiling-9304654/ |
+| `carte-perso-canape.webp` | Polina Zimmerman | https://www.pexels.com/photo/couple-talking-on-couch-3958829/ |
+| `carte-bilan-serein.webp` | dawbek | https://www.pexels.com/photo/elderly-man-smiling-warmly-in-outdoor-sunlight-31750468/ |
+| `carte-transition-elan.webp` | Stephen Leonardi | https://www.pexels.com/photo/man-jumping-over-the-rocks-in-mountains-18353887/ |
+| `jeunes-parents-rire.webp` | Murugan Ettiyan | https://www.pexels.com/photo/a-man-and-a-boy-laughing-while-sitting-on-the-gree-grass-5402588/ |
+| `vision-lever-soleil.webp` | Jorge Rodriguez | https://www.pexels.com/photo/man-standing-facing-mountains-2112361/ |
+| `coaching-questionnement.webp` | Vitaliy Nomad | https://www.pexels.com/photo/a-woman-with-her-hand-on-her-chin-12029976/ |
+| `coaching-echange-lumineux.webp` | Monstera Production | https://www.pexels.com/photo/cheerful-black-man-with-colleague-at-table-5273656/ |
+| `montgolfieres.webp` | Timur Kozmenko | https://www.pexels.com/photo/sunlight-behind-balloons-under-clear-sky-3102820/ |
+| `pro-atelier.webp` | Andrea Piacquadio | https://www.pexels.com/photo/cheerful-man-sitting-at-table-in-workshop-3844524/ |
+| `perso-marche.webp` | Vitaly Gariev | https://www.pexels.com/photo/friends-enjoying-a-walk-in-the-park-during-autumn-36763383/ |
+| `bilan-transmission.webp` | Andrea Piacquadio | https://www.pexels.com/photo/cheerful-senior-gray-haired-mentor-supporting-young-black-colleague-in-office-3861566/ |
+| `transition-foule.webp` | Alejandro JV (retouche : seule la personne au centre reste en couleur) | https://www.pexels.com/photo/man-standing-on-stairway-surrounded-by-blurred-crowd-36842145/ |
+| `transition-bienvenue.webp` | Alena Darmel | https://www.pexels.com/photo/photo-of-a-man-and-a-woman-doing-a-handshake-while-smiling-7710075/ |
+| `entreprise-avancer.webp` | Yan Krukau | https://www.pexels.com/photo/women-having-a-conversation-while-walking-on-a-path-8837149/ |
+| `entreprise-tech.webp` | Andrea Piacquadio | https://www.pexels.com/photo/excited-diverse-colleagues-of-different-ages-working-on-laptop-during-startup-project-3865817/ |
+| `entreprise-dirigeant.webp` | Kampus Production | https://www.pexels.com/photo/man-wearing-suit-smiling-8353804/ |
+| `entreprise-rugby.webp` | Ollie Craig | https://www.pexels.com/photo/rugby-team-huddle-under-night-sky-33879960/ |
+| `entreprise-victoire.webp` | César O'neill | https://www.pexels.com/photo/victorious-sports-team-celebrating-with-trophy-31825810/ |
+| `entreprise-debrief.webp` | Anastasia Shuraeva | https://www.pexels.com/photo/athletes-sitting-on-grass-9519506/ |
+| `enseignant-questionne.webp` | Katerina Holmes | https://www.pexels.com/photo/pensive-black-woman-in-classroom-5905844/ |
+| `jp-famille-canape.webp` | Mizuno K | https://www.pexels.com/photo/parents-and-son-sitting-on-a-sofa-12788362/ |
+| `jp-avenir.webp` | Sarfaraz Ahmad | https://www.pexels.com/photo/smiling-teen-in-outdoor-setting-close-up-33351102/ |
+| `jp-dialogue.webp` | Vitaly Gariev | https://www.pexels.com/photo/therapist-and-teen-in-counseling-session-36729377/ |
+| `jp-reflet.webp` | Poppy Martinez | https://www.pexels.com/photo/father-with-son-in-lake-at-golden-hour-17087727/ |
+| `jp-famille-plage.webp` | Võ Văn Tiến | https://www.pexels.com/photo/happy-family-strolling-on-h-i-an-beach-34133894/ |
+| `jp-educatrice.webp` | Pavel Danilyuk | https://www.pexels.com/photo/applied-parents-talking-with-social-workers-8205410/ |
+| `origines-chrysalide.webp` | Nandhu Kumar | https://www.pexels.com/photo/macro-photography-of-green-butterfly-on-yellow-cocoon-1464733/ |
+| `origines-highline.webp` | Elisa Triviño | https://www.pexels.com/photo/13775522/ |
+| `origines-marches.webp` | Carlos Jairo | https://www.pexels.com/photo/man-in-red-hooded-jacket-running-on-concrete-stairs-6971680/ |
+| `psy-connivence.webp` | Caleb Oquendo | https://www.pexels.com/photo/two-men-in-casual-wear-sitting-together-on-a-bench-talking-and-smiling-3042623/ |
+| `psy-carte.webp` | Vitaly Gariev | https://www.pexels.com/photo/young-couple-navigating-forest-with-map-36729389/ |
+| `tarifs-tournesols.webp` | Dih Andréa | https://www.pexels.com/photo/cheerful-happy-woman-with-hands-up-in-sunflowers-4889478/ |
+
+Photos sans licence de banque d'images :
+
+| Fichier | Origine |
+|---|---|
+| `accueil-horizon.webp` | photo d'accueil de la première V2 (`git show c171048:public/v3/horizon.webp`) |
+| `christophe-carnet.webp` | portrait de Christophe, version haute définition de `chris-profile-light.webp` (`git show d448da5:public/chris-profile.png`) |
+| `christophe-bras-croises.webp` | portrait de Christophe envoyé le 7 octobre 2026 (WhatsApp) |
+| `psy-coach-craie.webp` | `psycoach.png` de l'ancien site, version haute définition (`git show 3385e62:public/psycoach.png`) |
+| `poignee-de-main.webp` | `handshake.png` de l'ancien site, version haute définition (`git show 0450cd8:public/handshake.png`) |
+| `../parcours/yoga.webp` | cours de yoga de Christophe, photo de son site Équilibre en mouvement |
+| `../parcours/*.svg`, `../parcours/*.webp` | logos des employeurs et institutions du parcours ; sources dans `assets-src/logos-parcours.md` |

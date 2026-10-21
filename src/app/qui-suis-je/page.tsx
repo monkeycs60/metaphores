@@ -3,16 +3,23 @@ import type { Metadata } from 'next';
 import {
 	Book,
 	Briefcase,
+	Compass,
 	Drama,
+	Flag,
 	Globe,
 	GraduationCap,
-	Palette,
+	Image as Painting,
+	PersonStanding,
+	Pyramid,
 	School,
+	Sprout,
+	Target,
 	Trophy,
 	Wrench,
 } from 'lucide-react';
 import { ButtonLink, CheckList, PageHero, Prose, Section, Story } from '@/components/v2/ui';
 import { ContactBand, HeroActions } from '@/components/v2/blocks';
+import ParcoursMap from '@/components/v2/ParcoursMap';
 import { Scribble } from '@/components/v2/deco';
 
 export const metadata: Metadata = {
@@ -28,7 +35,7 @@ const EXPERIENCES = [
 	{ icon: Briefcase, text: 'Multiples métiers : commercial, ingénieur, commerçant…' },
 	{ icon: Book, text: 'Enseignant depuis une dizaine d’années.' },
 	{ icon: School, text: '5 ans CPE en collège.' },
-	{ icon: Palette, text: 'Artiste de toiles (collage et peinture) avec des expositions à Bordeaux.' },
+	{ icon: PersonStanding, text: 'Professeur de yoga.' },
 	{ icon: Drama, text: 'Comédien professionnel ayant écrit et mis en scène plusieurs pièces.' },
 	{ icon: Trophy, text: 'Sportif ayant fait de la compétition en football, handball, et beach-volley.' },
 	{
@@ -38,27 +45,30 @@ const EXPERIENCES = [
 ];
 
 const WAYS = [
-	'Partir de votre réalité plutôt que d’un modèle préconçu',
-	'Créer un cadre de confiance et de confidentialité',
-	'Questionner avec précision sans imposer de réponse',
-	'Prendre en compte les contraintes concrètes',
-	'Chercher l’autonomie plutôt que la dépendance',
-	'Savoir reconnaître les limites du coaching et orienter vers d’autres professionnels lorsque nécessaire',
+	{ icon: Compass, text: 'Partir de votre réalité plutôt que d’un modèle préconçu' },
+	{ icon: Painting, text: 'Créer un cadre accueillant et de confiance' },
+	{ icon: Target, text: 'Questionner avec précision sans imposer de réponse' },
+	{ icon: Pyramid, text: 'Prendre en compte vos particularités et besoins' },
+	{ icon: Sprout, text: 'Chercher l’autonomie plutôt que la dépendance' },
+	{
+		icon: Flag,
+		text: 'Savoir reconnaître les limites de mon accompagnement et orienter vers d’autres professionnels lorsque nécessaire',
+	},
 ];
 
 export default function QuiSuisJePage() {
 	return (
 		<>
 			<PageHero
-				title="Un parcours fait d’apprentissage, de transmission et de changement."
+				title="Un parcours fait d’apprentissage, de transmission et de changement"
 				subtitle="Christophe Jacques · Coach professionnel à Bordeaux"
 				media={
 					<div className="portrait-stage">
 						<Image
-							src="/chris-profile-light.webp"
-							alt="Christophe Jacques, en chemise à carreaux, sourit un carnet à la main"
-							width={365}
-							height={500}
+							src="/photos/christophe-veste-jaune-mur.webp"
+							alt="Christophe Jacques, de face, veste jaune, sourit devant un mur bleu nuit"
+							width={1066}
+							height={1600}
 							priority
 							quality={90}
 							sizes="340px"
@@ -72,7 +82,9 @@ export default function QuiSuisJePage() {
 			>
 				<p>
 					Mon parcours professionnel ne s’est pas construit en ligne droite. Il s’est construit par expériences,
-					questionnements, réussites, doutes, réajustements et une reprise d’études.
+					questionnements, réussites, échecs, reprise d’études, doutes, réajustements et évolution. Cela me
+					permet aujourd’hui de faire des choses que j’aime vraiment et de vous accompagner au mieux dans vos
+					besoins.
 				</p>
 			</PageHero>
 
@@ -90,12 +102,13 @@ export default function QuiSuisJePage() {
 					</div>
 					<p className="hello-signature">
 						<strong>Christophe JACQUES</strong>
-						<span>Coach professionnel diplômé</span>
+						<span>Master en coaching et développement professionnel</span>
+						<span>Master en sciences de l’éducation</span>
 					</p>
 				</div>
 			</Section>
 
-			<Section tone="cream" title="Mon parcours.">
+			<Section tone="cream" title="Mon parcours">
 				<div className="path-grid">
 					<div className="path-copy">
 						<Prose>
@@ -118,20 +131,14 @@ export default function QuiSuisJePage() {
 						</ul>
 					</div>
 					<div className="path-image">
-						<Image
-							src="/spiral.png"
-							alt="Un chemin en spirale relie les étapes du parcours de Christophe : Safran, Foncia, l’Éducation nationale, le théâtre, le sport"
-							width={1069}
-							height={1090}
-							sizes="(min-width: 900px) 35vw, 80vw"
-						/>
+						<ParcoursMap />
 					</div>
 				</div>
 			</Section>
 
 			<Section>
 				<Story
-					title="Ma découverte du coaching."
+					title="Ma découverte du coaching"
 					image="/chess-miror.png"
 					imageAlt="Un pion d’échecs se reflète en roi dans un miroir"
 				>
@@ -155,10 +162,10 @@ export default function QuiSuisJePage() {
 
 			<Section tone="blue">
 				<Story
-					title="La métaphore dans le coaching."
-					image="/photos/christophe-veste-jaune-mur.webp"
-					imageAlt="Christophe Jacques, veste jaune, sourit devant un mur bleu nuit"
-					imagePosition="50% 20%"
+					title="La métaphore dans le coaching"
+					image="/photos/montgolfieres.webp"
+					imageAlt="Des montgolfières s’élèvent dans la lumière dorée d’un lever de soleil"
+					imagePosition="55% center"
 					reverse
 				>
 					<p>
@@ -170,14 +177,14 @@ export default function QuiSuisJePage() {
 					<p>
 						<strong>Mon grand-père,</strong> un éminent professeur de grec ancien qui chérissait{' '}
 						<strong>« Le Petit Prince »,</strong> m’a transmis cette passion. Je crois que les choses
-						essentielles ne sont pas toujours évidentes. À travers le coaching, je souhaite{' '}
-						<strong>vous aider à voir au-delà du visible,</strong> à découvrir le sens profond dans votre
-						parcours de vie, et à contribuer positivement au monde.
+						essentielles ne sont pas toujours évidentes à mettre en évidence. À travers le coaching, je
+						souhaite <strong>vous aider à voir au-delà du visible,</strong> à découvrir le sens profond dans
+						votre parcours de vie pour vous permettre de vous révéler pleinement.
 					</p>
 				</Story>
 			</Section>
 
-			<Section title="Ma manière de travailler.">
+			<Section title="Ma manière de travailler">
 				<CheckList items={WAYS} />
 				<ButtonLink href="/deontologie" variant="text">
 					Découvrir ma déontologie

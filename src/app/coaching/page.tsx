@@ -1,10 +1,8 @@
-import Image from 'next/image';
 import Link from 'next/link';
 import type { Metadata } from 'next';
-import { Check } from 'lucide-react';
+import { Bird, Compass, Footprints, MessageCircle, RefreshCw } from 'lucide-react';
 import { OfferList, PageHero, Principles, Prose, Section, Steps } from '@/components/v2/ui';
-import { ContactBand, HeroActions } from '@/components/v2/blocks';
-import { Scribble } from '@/components/v2/deco';
+import { ContactBand, HeroActions, WalkCoaching } from '@/components/v2/blocks';
 
 export const metadata: Metadata = {
 	title: { absolute: 'Coaching professionnel & personnel Bordeaux | Métaphore Coaching' },
@@ -16,64 +14,52 @@ export const metadata: Metadata = {
 const OFFERS = [
 	{
 		title: 'Coaching professionnel',
-		tagline: 'Retrouver du sens et de la capacité d’action',
-		text: 'Retrouver du sens et de la capacité d’action dans sa vie professionnelle : évolution, positionnement, relations, décisions, équilibre, prise de responsabilités ou transition.',
+		text: (
+			<>
+				<strong>Retrouver du sens et de la capacité d’action</strong> dans sa vie professionnelle : évolution,
+				positionnement, relations, décisions, équilibre, prise de responsabilités ou transition.
+			</>
+		),
 		href: '/coaching-professionnel',
 	},
 	{
 		title: 'Coaching personnel',
-		tagline: 'Prendre du recul sur une situation',
-		text: 'Prendre du recul sur une situation personnelle, travailler la confiance, les choix, les changements, les priorités, les limites et la recherche de sens.',
+		text: (
+			<>
+				<strong>Prendre du recul sur une situation</strong> personnelle, travailler la confiance, les choix, les
+				changements, les priorités, les limites et la recherche de sens.
+			</>
+		),
 		href: '/coaching-personnel',
 	},
 	{
 		title: 'Bilan de carrière',
-		tagline: 'Faire le point avant de décider',
-		text: 'Faire le point sur son parcours, ses compétences, ses motivations et ses possibilités avant de décider de la suite.',
+		text: (
+			<>
+				<strong>Faire le point</strong> sur son parcours, ses compétences, ses motivations et ses possibilités{' '}
+				<strong>avant de décider</strong> de la suite.
+			</>
+		),
 		href: '/bilan-carriere',
 	},
 	{
 		title: 'Transition professionnelle',
-		tagline: 'Construire un changement choisi',
-		text: 'Explorer et construire un changement de métier, de secteur, de fonction ou de manière de travailler, sans idéaliser ni précipiter la décision.',
+		text: (
+			<>
+				Explorer et <strong>construire un changement</strong> de métier, de secteur, de fonction ou de manière de
+				travailler, sans idéaliser ni précipiter la décision.
+			</>
+		),
 		href: '/transition-professionnelle',
 	},
 ];
 
-const FORMULAS = [
-	{
-		title: 'Coaching Pro',
-		subtitle: 'Accompagnement professionnel',
-		tagline: 'Cultivez votre potentiel professionnel avec un accompagnement respectueux et attentif.',
-		href: '/coaching-professionnel',
-		items: [
-			'Clarification des objectifs de carrière et exploration de nouvelles avenues.',
-			'Renforcement des aptitudes de communication dans le respect de votre style personnel.',
-			'Stratégies personnalisées pour la gestion du stress et la résolution de conflits.',
-			'Soutien dans la transition vers des rôles professionnels plus épanouissants.',
-			'Appréhender des bouleversements professionnels : reconversion, changement de poste…',
-		],
-	},
-	{
-		title: 'Coaching de Vie',
-		subtitle: 'Accompagnement personnel',
-		tagline: 'Avancez vers une meilleure compréhension de vous-même et de ce qui compte vraiment pour vous.',
-		href: '/coaching-personnel',
-		items: [
-			'Identification et mise en œuvre de projets de vie significatifs.',
-			'Renforcement de la confiance en soi et valorisation de votre parcours unique.',
-			'Accompagnement dans les transitions de vie et les décisions importantes.',
-			'Écoute et outils pour mieux gérer les émotions et les périodes de deuil.',
-			'Aide à la préparation et à l’adaptation aux changements de vie, comme la retraite.',
-		],
-	},
-];
-
 const STEPS = [
-	{ title: 'Comprendre', text: 'Regarder votre situation sous un autre angle.' },
-	{ title: 'Clarifier', text: 'Identifier vos ressources et ce qui compte pour vous.' },
-	{ title: 'Expérimenter', text: 'Explorer des possibilités et questionner les freins.' },
-	{ title: 'Agir', text: 'Construire vos prochaines étapes.' },
+	{ title: 'Comprendre', text: 'Regarder votre situation sous un autre angle.', icon: MessageCircle },
+	{ title: 'Clarifier', text: 'Identifier vos ressources et ce qui compte pour vous.', icon: Compass },
+	{ title: 'Expérimenter', text: 'Explorer des possibilités et questionner les freins.', icon: Footprints },
+	{ title: 'Consolider', text: 'Revenir sur vos actions, réajuster, consolider.', icon: RefreshCw },
+	{ title: 'S’envoler', text: 'Reprendre les rênes et votre autonomie.', icon: Bird },
 ];
 
 const WHY = [
@@ -99,30 +85,21 @@ const WHY = [
 	},
 ];
 
-const WALK = [
-	{
-		title: 'Déambuler au rythme de ses pensées.',
-		text: 'Le fait de voir les choses bouger aide l’esprit à changer.',
-	},
-	{
-		title: 'Retrouver son équilibre',
-		text: 'Le déséquilibre permanent de la marche aide l’esprit à sortir de ses blocages.',
-	},
-	{
-		title: 'Trouver un nouveau chemin',
-		text: 'La profondeur de vue permet de découvrir de nouveaux horizons.',
-	},
-];
-
 export default function CoachingPage() {
 	return (
 		<>
 			<PageHero
-				title="Prendre du recul. Comprendre ce qui se joue. Choisir comment avancer."
+				title={
+					<>
+						<span className="title-line">Prendre du recul</span>
+						<span className="title-line">Comprendre ce qui se joue</span>
+						<span className="title-line">Choisir comment avancer</span>
+					</>
+				}
 				subtitle="Coaching individuel · Bordeaux & à distance"
-				image="/photos/coaching-echange.webp"
-				imageAlt="Deux hommes échangent autour d’une table, dans une lumière chaude"
-				imagePosition="35% center"
+				image="/photos/coaching-echange-lumineux.webp"
+				imageAlt="Deux hommes échangent en souriant autour d’une table, près d’une grande fenêtre"
+				imagePosition="45% center"
 				actions={<HeroActions />}
 			>
 				<p>
@@ -141,41 +118,8 @@ export default function CoachingPage() {
 			</Section>
 
 			<Section
-				tone="cream"
-				title="Coaching individuel."
-				intro={
-					<p>
-						Explorez nos formules de coaching <strong>individuel</strong>, conçues pour vous soutenir dans la
-						découverte de vos propres solutions. Nous sommes ici pour vous accompagner, à chaque pas, sur le
-						chemin de l’autonomie et de la compréhension personnelle.
-					</p>
-				}
-			>
-				<div className="formula-cards">
-					{FORMULAS.map((formula) => (
-						<article key={formula.title} className="formula-card">
-							<p className="formula-subtitle">{formula.subtitle}</p>
-							<h3>{formula.title}</h3>
-							<p className="formula-tagline">{formula.tagline}</p>
-							<ul>
-								{formula.items.map((item) => (
-									<li key={item}>
-										<Check size={16} aria-hidden />
-										{item}
-									</li>
-								))}
-							</ul>
-							<Link href={formula.href} className="action action-text">
-								En savoir plus
-							</Link>
-						</article>
-					))}
-				</div>
-			</Section>
-
-			<Section
 				tone="blue"
-				title="Une même approche, quelle que soit votre situation."
+				title="Une même approche, quelle que soit votre situation"
 				intro={
 					<p>
 						Je ne décide pas à votre place. Je ne vous explique pas ce que vous devriez devenir. Je vous aide à
@@ -192,41 +136,10 @@ export default function CoachingPage() {
 			</Section>
 
 			<Section tone="cream">
-				<div className="story walk-story">
-					<div className="story-image">
-						<Image
-							src="/forest.jpg"
-							alt="Des chaussures de marche avancent sur un sentier couvert de feuilles d’automne"
-							width={1920}
-							height={1280}
-							quality={85}
-							sizes="(min-width: 900px) 45vw, 100vw"
-						/>
-					</div>
-					<div className="story-copy">
-						<Scribble tone="sky">
-							Mettre son esprit en <mark>mouvement</mark>
-						</Scribble>
-						<h2>Coaching en marchant.</h2>
-						<p className="walk-format">
-							<strong>Le cheminement</strong> · 60 minutes
-						</p>
-						<ul className="walk-list">
-							{WALK.map((item) => (
-								<li key={item.title}>
-									<Check size={16} aria-hidden />
-									<span>
-										<strong>{item.title}</strong>
-										{item.text}
-									</span>
-								</li>
-							))}
-						</ul>
-					</div>
-				</div>
+				<WalkCoaching />
 			</Section>
 
-			<Section title="Modalités et questions fréquentes.">
+			<Section title="Modalités et questions fréquentes">
 				<Prose>
 					<p>
 						Le coaching individuel se déroule habituellement en sessions de 60 minutes. Les séances se déroulent

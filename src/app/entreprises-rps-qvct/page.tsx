@@ -1,20 +1,28 @@
 import Image from 'next/image';
 import type { Metadata } from 'next';
-import { Check, MessageCircle, ShieldCheck, UserCheck, Users } from 'lucide-react';
+import {
+	Check,
+	ClipboardList,
+	Flag,
+	MessageCircle,
+	RefreshCw,
+	ScanSearch,
+	ShieldCheck,
+	UserCheck,
+	Users,
+} from 'lucide-react';
 import {
 	ButtonLink,
-	CheckList,
 	CtaBand,
 	Notice,
 	NumberedList,
 	PageHero,
-	Prose,
 	RelatedLinks,
 	Section,
 	Steps,
 	Story,
 } from '@/components/v2/ui';
-import { HeroActions } from '@/components/v2/blocks';
+import { ContactPrompt } from '@/components/v2/blocks';
 import { Scribble } from '@/components/v2/deco';
 import { CTA } from '@/lib/site';
 
@@ -24,8 +32,6 @@ export const metadata: Metadata = {
 		'Coaching de managers et d’équipes à Bordeaux : tensions, changements, prévention RPS, QVCT, espaces de dialogue et accompagnement des collectifs.',
 	alternates: { canonical: '/entreprises-rps-qvct' },
 };
-
-const QUOTE = { label: 'Demander un devis', href: '/contact?motif=entreprise' };
 
 const FORMATS = [
 	{
@@ -47,7 +53,7 @@ const FORMATS = [
 		image: '/photos/format-cooperation.webp',
 		imageAlt: 'Trois collègues rient ensemble autour d’une table de travail',
 		items: [
-			'Cadrage et entretiens exploratoires si nécessaire',
+			'Cadrage et entretiens exploratoires',
 			'1 à 3 ateliers collectifs',
 			'Restitution et pistes d’action',
 		],
@@ -61,7 +67,7 @@ const FORMATS = [
 		items: [
 			'Charge de travail et signaux de fragilisation',
 			'Perte de sens et désengagement',
-			'Relations difficiles et management sans épuisement',
+			'Relations difficiles et tensions managériales',
 		],
 	},
 	{
@@ -141,19 +147,19 @@ const BENEFITS = [
 ];
 
 const LEADER_POINTS = [
-	{ title: 'Renforcement du leadership', text: 'Cultiver une capacité de leadership efficace et inspirante.' },
+	{ title: 'Renforcement du leadership', text: 'Cultiver sa place de manager efficace et inspirant.' },
 	{
 		title: 'Accompagnement dans les nouvelles responsabilités',
-		text: 'Soutien lors de la prise de nouvelles responsabilités.',
+		text: 'Soutien lors de la prise de poste.',
 	},
 	{
 		title: 'Gestion des conflits et management',
 		text: 'Stratégies pour surmonter les situations conflictuelles en management.',
 	},
-	{ title: 'Confiance et estime de soi', text: 'La confiance en soi pour prendre des décisions affirmées.' },
+	{ title: 'Confiance et estime de soi', text: 'Développer la confiance en soi pour prendre des décisions affirmées.' },
 	{
 		title: 'Prise de recul sur les situations complexes',
-		text: 'Aide à la réflexion et à l’analyse pour des décisions difficiles.',
+		text: 'Aide à la réflexion et à l’analyse.',
 	},
 	{
 		title: 'Gestion des priorités et du stress',
@@ -170,52 +176,69 @@ const LEADER_POINTS = [
 ];
 
 const TEAM_GOALS = [
-	'Développer le fonctionnement d’une équipe par l’intelligence collective pour lui permettre de donner toute son efficacité.',
-	'Favoriser la communication et la coopération au sein de l’équipe : concourir ensemble à l’atteinte des objectifs, désamorcer les situations de conflits et de crises.',
-	'Mobiliser les compétences collectives et améliorer les performances : une équipe est porteuse de compétences collectives dans lesquelles réside sa force.',
-	'Transformer la diversité et la complémentarité des profils des équipiers en talent d’équipe.',
-	'Accompagner les transformations et les équipes qui les vivent et les mettre en œuvre.',
-	'Réussir la mise en œuvre des projets de changement et de transformation : nouvelle organisation, fusion, intégration d’un nouveau membre dans une équipe, démarrage d’un projet multidisciplinaire.',
+	{
+		text: 'Renforcer la communication et la coopération pour atteindre les objectifs communs et désamorcer les conflits et les crises.',
+	},
+	{
+		text: 'Faire de la diversité des profils et de la complémentarité des compétences une force collective au service de la performance.',
+	},
+	{
+		text: 'Accompagner les équipes dans les transformations et faciliter leur mise en œuvre : réorganisation, fusion, intégration d’un nouveau membre ou lancement d’un projet multidisciplinaire.',
+	},
 ];
 
 const TEAM_STEPS = [
-	{ text: 'Apprendre à se connaître et travailler ensemble.' },
+	{ text: 'Apprendre à se connaître et travailler ensemble.', icon: Users },
 	{
 		text: 'Exprimer une vision partagée de la réalité (état des lieux), découverte de l’équipe afin de définir les objectifs, besoins et enjeux. Les objectifs sont définis en collaboration avec le responsable de l’équipe et l’équipe elle-même.',
+		icon: ScanSearch,
 	},
 	{
 		text: 'Restitution des besoins et demandes de l’équipe et du manager destinés à calibrer les objectifs et modalités de l’accompagnement. Construire la vision d’un avenir commun avec son plan d’action.',
+		icon: ClipboardList,
 	},
-	{ text: 'Mettre en œuvre le plan, itérer et adapter en fonction des résultats constatés.' },
-	{ text: 'Séance de bilan à l’issue de l’accompagnement.' },
+	{ text: 'Mettre en œuvre le plan, itérer et adapter en fonction des résultats constatés.', icon: RefreshCw },
+	{ text: 'Séance de bilan à l’issue de l’accompagnement.', icon: Flag },
 ];
+
+function QuoteActions() {
+	return (
+		<>
+			<ButtonLink href={CTA.quote.href}>{CTA.quote.label}</ButtonLink>
+			<ContactPrompt {...CTA.business} />
+		</>
+	);
+}
 
 export default function EntreprisesPage() {
 	return (
 		<>
 			<PageHero
-				title="Remettre du dialogue dans le travail."
+				title="Remettre du dialogue dans le travail"
 				subtitle="Entreprises & organisations · Bordeaux et région"
 				split
 				image="/photos/entreprises-equipe.webp"
 				imageAlt="Quatre collègues sourient autour d’un ordinateur portable, dans un bureau lumineux"
 				imagePosition="45% center"
-				actions={<HeroActions primary={CTA.business} />}
+				actions={<QuoteActions />}
 			>
 				<p>
 					Prévenir les tensions, soutenir les managers et créer des espaces de recul, de dialogue et d’action.
 				</p>
 			</PageHero>
 
-			<Section
-				title="Coaching en entreprise."
-				note={
-					<Scribble tone="sky">
-						Besoin de faire évoluer une personne ou un <mark>groupe</mark> ?
-					</Scribble>
-				}
-			>
-				<Prose>
+			<Section>
+				<Story
+					note={
+						<Scribble tone="sky">
+							Besoin de faire évoluer une personne ou un <mark>groupe</mark> ?
+						</Scribble>
+					}
+					title="Coaching en entreprise"
+					image="/photos/entreprise-avancer.webp"
+					imageAlt="Trois collègues avancent ensemble en riant, sur une allée ensoleillée"
+					imagePosition="55% center"
+				>
 					<p>
 						Le coaching en entreprise sert de catalyseur pour débloquer le potentiel des équipes et des
 						dirigeants, transformant les défis en opportunités. Ce processus enrichissant contribue à forger des
@@ -223,12 +246,12 @@ export default function EntreprisesPage() {
 						naviguer dans les eaux turbulentes du marché actuel. Le coaching en entreprise peut donc être vu
 						comme une des pierres angulaires d’une organisation aspirant à l’excellence et à l’innovation.
 					</p>
-				</Prose>
+				</Story>
 			</Section>
 
 			<Section
 				tone="cream"
-				title="Quatre formats, un cadre sur mesure."
+				title="Quatre formats, un cadre sur mesure"
 				intro={<p>Chaque intervention est construite avec vous.</p>}
 			>
 				<div className="format-cards">
@@ -264,11 +287,22 @@ export default function EntreprisesPage() {
 				</div>
 			</Section>
 
-			<Section title="Identifier les besoins de votre entreprise.">
-				<NumberedList items={NEEDS} />
+			<Section title="Identifier les besoins de votre entreprise">
+				<NumberedList
+					items={NEEDS}
+					aside={
+						<Image
+							src="/photos/entreprise-tech.webp"
+							alt="Une équipe de plusieurs générations sourit autour d’un ordinateur, dans un bureau lumineux"
+							width={1600}
+							height={1067}
+							sizes="(min-width: 760px) 40vw, 100vw"
+						/>
+					}
+				/>
 			</Section>
 
-			<Section tone="blue" title="Les apports du coaching d’entreprise.">
+			<Section tone="blue" title="Les apports du coaching d’entreprise">
 				<ul className="benefits">
 					{BENEFITS.map((benefit) => (
 						<li key={benefit.icon}>
@@ -281,30 +315,31 @@ export default function EntreprisesPage() {
 
 			<Section>
 				<Story
-					title="Coaching de dirigeant."
-					image="/photos/conversation.webp"
-					imageAlt="Deux hommes échangent face à face, dans la lumière d’une baie vitrée"
+					title="Coaching de dirigeant"
+					image="/photos/entreprise-dirigeant.webp"
+					imageAlt="Un dirigeant en costume sourit dans son bureau, devant un écran de pilotage"
+					imagePosition="30% center"
 				>
 					<p>
 						Le rôle d’un <strong>dirigeant d’entreprise</strong> est souvent comparé à celui d’un chef
-						d’orchestre, orchestrant les talents et compétences au sein de son organisation. Cependant, malgré
+						d’orchestre, guidant les talents et compétences au sein de son organisation. Cependant, malgré
 						l’entourage et le soutien des collaborateurs, le dirigeant peut <strong>se sentir isolé</strong> face
 						aux défis stratégiques, aux pressions et aux incertitudes.
 					</p>
 					<p>
-						Que ce soit dans le cadre d’une nouvelle nomination, la gestion de situations complexes, ou la prise
-						de décisions critiques, il est essentiel pour un dirigeant de{' '}
+						Que ce soit dans le cadre d’une nouvelle nomination, de la gestion de situations complexes ou de la
+						prise de décisions critiques, il est essentiel pour un dirigeant de{' '}
 						<strong>disposer des ressources nécessaires pour surmonter ces défis</strong>.
 					</p>
 					<p>
-						Un coach professionnel spécialisé dans l’accompagnement et le développement peut jouer un rôle clé en
-						offrant un <strong>soutien sur mesure</strong> pour atteindre les objectifs fixés tout en gérant les
-						problématiques opérationnelles quotidiennes.
+						Un accompagnement spécifique peut jouer un rôle clé en offrant un <strong>soutien sur mesure</strong>{' '}
+						et lui permettre de développer de nouvelles compétences pour atteindre les objectifs fixés tout en
+						gérant les problématiques opérationnelles quotidiennes.
 					</p>
 					<p>
 						Chez Métaphore Coaching, nous nous engageons à établir un{' '}
-						<strong>climat de confiance et de sérénité,</strong> pour vous guider vers des résultats efficaces et
-						personnalisés.
+						<strong>climat de confiance et de sérénité,</strong> pour vous accompagner vers des résultats
+						efficaces et personnalisés.
 					</p>
 				</Story>
 				<div className="subsection">
@@ -315,7 +350,7 @@ export default function EntreprisesPage() {
 
 			<Section
 				tone="cream"
-				title="Coaching collectif."
+				title="Coaching collectif"
 				note={
 					<Scribble tone="sky">
 						Envie de créer de la <mark>cohésion</mark> ou d’en retrouver ?
@@ -328,68 +363,84 @@ export default function EntreprisesPage() {
 					</p>
 				}
 			>
-				<Prose>
+				<Story
+					image="/photos/entreprise-rugby.webp"
+					imageAlt="Une équipe de rugby réunie en cercle, bras dessus bras dessous, sur le terrain"
+					imagePosition="45% center"
+					reverse
+				>
 					<p>
 						L’efficacité d’une équipe dépend de la synergie entre les talents individuels de ses membres et de
 						leur capacité collective à opérer de manière efficiente et coordonnée. Le coaching d’équipe, à
 						l’instar du coaching individuel, joue un rôle crucial en intégrant la préparation mentale pour
 						renforcer l’unité du groupe et réaliser les objectifs fixés.
 					</p>
-				</Prose>
-				<div className="subsection">
+				</Story>
+				<div className="team-goals">
 					<Scribble>
 						Augmentez les performances de votre équipe grâce à des individus <mark>épanouis</mark>
 					</Scribble>
-					<h3 className="situation-title">Les objectifs d’un coaching d’équipe</h3>
-					<CheckList items={TEAM_GOALS} />
+					<div className="team-goals-body">
+						<h3>Les objectifs d’un coaching d’équipe</h3>
+						<p className="team-goals-lead">
+							Développer l’intelligence collective pour renforcer l’efficacité de l’équipe autour de trois
+							objectifs :
+						</p>
+						<NumberedList items={TEAM_GOALS} />
+					</div>
 				</div>
-				<Prose>
-					<p>
+				<Story
+					image="/photos/entreprise-victoire.webp"
+					imageAlt="Des joueurs brandissent un trophée en riant, en plein soleil"
+					imagePosition="45% center"
+				>
+					<p className="prose-lead">
 						Un vrai travail d’équipe repose sur la volonté de ses membres de mettre en commun leurs talents
-						individuels au profit du collectif. L’accompagnement est bien sûr adapté à la situation, aux enjeux
-						et aux objectifs. C’est pourquoi un coaching d’équipe s’inscrit dans la durée et se déroule en
-						plusieurs phases de montée en puissance.
+						individuels au profit du collectif.
 					</p>
-				</Prose>
+					<p>
+						L’accompagnement est bien sûr adapté à la situation, aux enjeux et aux objectifs. C’est pourquoi un
+						coaching d’équipe s’inscrit dans la durée et se déroule en plusieurs phases de montée en puissance.
+					</p>
+				</Story>
 				<div className="subsection">
 					<h3 className="situation-title">Déroulement d’un coaching d’équipe</h3>
 					<Steps steps={TEAM_STEPS} />
 				</div>
-				<Prose>
+				<Story
+					image="/photos/entreprise-debrief.webp"
+					imageAlt="Des joueuses assises en cercle sur la pelouse échangent après le match, au coucher du soleil"
+					imagePosition="40% center"
+					reverse
+				>
+					<p className="prose-lead">Les entretiens de débriefing sont une part essentielle de la réussite !</p>
 					<p>
-						Les entretiens de débriefing sont une part essentielle de la réussite ! Ils entretiennent la
-						motivation. C’est en revenant à ces objectifs régulièrement que l’on arrive à garder la motivation et
-						à les atteindre.
+						Ils entretiennent la motivation. C’est en revenant à ces objectifs régulièrement que l’on arrive à
+						garder la motivation et à les atteindre.
 					</p>
-				</Prose>
+				</Story>
 			</Section>
 
-			<Section
-				title="Une approche centrée sur le travail réel."
-				intro={
-					<p>
-						L’objectif n’est pas de faire porter aux individus la responsabilité de difficultés qui peuvent
-						aussi être organisationnelles.
-					</p>
-				}
-			>
+			<Section title="Une approche centrée sur le travail réel" className="section-centered">
 				<Story
-					title="Partir du travail réel."
 					image="/photos/christophe-portrait-entreprise.webp"
 					imageAlt="Portrait de Christophe Jacques en veste grise devant un immeuble de bureaux"
+					imagePosition="50% 30%"
+					compact
 				>
 					<p>
-						Les difficultés peuvent aussi être organisationnelles. L’accompagnement tient compte du contexte et
-						des contraintes du collectif.
+						L’objectif n’est pas de faire porter aux individus la responsabilité des difficultés qui peuvent
+						aussi être organisationnelles, sans toutefois éluder la responsabilité de chacun. L’accompagnement
+						tient compte du contexte et des contraintes individuelles et collectives.
 					</p>
 					<p>
 						Plus de dix ans d’expérience dans l’enseignement et l’animation de groupes nourrissent mon écoute et
 						ma manière de soutenir la coopération.
 					</p>
 					<p>
-						Mon master en sciences de l’éducation m’a aussi permis d’acquérir une connaissance sociologique
-						solide, notamment en dynamique de groupe, que mon parcours de metteur en scène m’a permis de
-						développer.
+						Mon <strong>master en sciences de l’éducation</strong> m’a aussi permis d’acquérir une connaissance
+						sociologique solide, notamment en <strong>dynamique de groupe</strong>, que mon parcours de metteur
+						en scène m’a permis de développer.
 					</p>
 				</Story>
 				<Notice title="Les limites de l’intervention">
@@ -403,17 +454,7 @@ export default function EntreprisesPage() {
 				</Notice>
 			</Section>
 
-			<CtaBand
-				title="Demander un devis."
-				actions={
-					<>
-						<ButtonLink href={QUOTE.href}>{QUOTE.label}</ButtonLink>
-						<ButtonLink href={CTA.booking.href} variant="text">
-							{CTA.booking.label}
-						</ButtonLink>
-					</>
-				}
-			>
+			<CtaBand title="Demandez un devis" actions={<QuoteActions />}>
 				<p>
 					Vous souhaitez organiser un accompagnement collectif, un atelier ou une intervention au sein de votre
 					organisation ? Nous échangeons sur vos besoins, vos objectifs et le public concerné afin de construire

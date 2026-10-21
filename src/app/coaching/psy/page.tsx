@@ -13,11 +13,11 @@ export default function CoachOuPsyPage() {
 	return (
 		<>
 			<PageHero
-				title="Coach ou psychologue : clarifications."
+				title="Coach ou psychologue : clarifications"
 				subtitle="Le coaching · Coach ou psy ?"
-				image="/photos/coaching-echange.webp"
-				imageAlt="Deux hommes échangent autour d’une table, dans une lumière chaude"
-				imagePosition="35% center"
+				image="/photos/psy-coach-craie.webp"
+				imageAlt="Deux flèches dessinées à la craie, « psy ? » et « coach », partent d’une paire de chaussures"
+				imagePosition="center 40%"
 			>
 				<p>
 					Il est de plus en plus dur de trouver des personnes qui écoutent vraiment. Écouter dans le sens être avec
@@ -28,7 +28,12 @@ export default function CoachOuPsyPage() {
 
 			<Section>
 				<div className="reading">
-					<ReadingBlock image="/psycoach.png" imageAlt="Une flèche « psy » et une flèche « coach » dessinées à la craie devant une paire de chaussures" imageWidth={600} imageHeight={335}>
+					<ReadingBlock
+						image="/photos/psy-connivence.webp"
+						imageAlt="Deux hommes assis sur un banc échangent en souriant, penchés l’un vers l’autre"
+						imageWidth={800}
+						imageHeight={1200}
+					>
 						<p>
 							<strong>Le coach n’est pas un psychologue !</strong> Il n’a pas de formation pour intervenir sur le
 							passé du client et doit donc y faire attention.
@@ -44,7 +49,13 @@ export default function CoachOuPsyPage() {
 							pensées.
 						</p>
 					</ReadingBlock>
-					<ReadingBlock image="/times.jpg" imageAlt="Une horloge" imageWidth={640} imageHeight={852} reverse>
+					<ReadingBlock
+						image="/photos/accueil-chemin.webp"
+						imageAlt="Une personne avance sur une allée ensoleillée, vers la lumière"
+						imageWidth={1800}
+						imageHeight={1200}
+						reverse
+					>
 						<p>
 							Le coach accompagne en vous ramenant{' '}
 							<strong>dans le présent afin de vous projeter vers votre avenir</strong> et agir dans votre vie.
@@ -84,7 +95,13 @@ export default function CoachOuPsyPage() {
 							Il n’est donc <strong>pas non plus un guide ou un conseiller.</strong>
 						</p>
 					</ReadingBlock>
-					<ReadingBlock image="/blocnotes.jpg" imageAlt="Un bloc-notes et un stylo" imageWidth={640} imageHeight={427} reverse>
+					<ReadingBlock
+						image="/photos/psy-carte.webp"
+						imageAlt="Deux randonneurs lisent une carte ensemble, en forêt"
+						imageWidth={1400}
+						imageHeight={788}
+						reverse
+					>
 						<p>
 							Ce qui vous amène c’est une envie de changement, un problème, une frustration, une envie de
 							progresser, un changement de vie… La clarification va donc vous permettre de trouver des solutions
