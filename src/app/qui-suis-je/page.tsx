@@ -163,9 +163,9 @@ export default function QuiSuisJePage() {
 			<Section tone="blue">
 				<Story
 					title="La métaphore dans le coaching"
-					image="/photos/eclipse.webp"
-					imageAlt="Une éclipse totale de soleil : la couronne solaire apparaît autour de la lune, photographiée par Christophe"
-					imagePosition="center 40%"
+					image="/photos/montgolfieres.webp"
+					imageAlt="Des montgolfières s’élèvent dans la lumière dorée d’un lever de soleil"
+					imagePosition="55% center"
 					reverse
 				>
 					<p>

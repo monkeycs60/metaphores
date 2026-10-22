@@ -49,6 +49,7 @@ Licence Pexels : usage commercial libre, attribution non requise.
 |---|---|---|
 | `carte-pro-echange.webp` | Mikhail Nilov | https://www.pexels.com/photo/photo-of-women-in-blazers-smiling-9304654/ |
 | `carte-perso-canape.webp` | Polina Zimmerman | https://www.pexels.com/photo/couple-talking-on-couch-3958829/ |
+| `montgolfieres.webp` | Timur Kozmenko | https://www.pexels.com/photo/sunlight-behind-balloons-under-clear-sky-3102820/ |
 | `carte-bilan-serein.webp` | dawbek | https://www.pexels.com/photo/elderly-man-smiling-warmly-in-outdoor-sunlight-31750468/ |
 | `carte-transition-elan.webp` | Stephen Leonardi | https://www.pexels.com/photo/man-jumping-over-the-rocks-in-mountains-18353887/ |
 | `jeunes-parents-rire.webp` | Murugan Ettiyan | https://www.pexels.com/photo/a-man-and-a-boy-laughing-while-sitting-on-the-gree-grass-5402588/ |
@@ -99,5 +100,4 @@ Photos envoyées par Christophe sur WhatsApp le 15 octobre 2026 (séances de coa
 | `christophe-parle.webp` | Christophe face à l'objectif, la main au menton, avec un client de dos | `/contact` |
 | `christophe-seance-canape.webp` | Christophe prend des notes, une cliente lui parle depuis un canapé | cadre « Coaching de vie », `/coaching-personnel` |
 | `tournesols.webp` | champ de tournesols | haut de page `/tarifs` |
-| `eclipse.webp` | éclipse totale de soleil | « La métaphore dans le coaching », `/qui-suis-je` |
 
