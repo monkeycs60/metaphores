@@ -5,7 +5,7 @@ import { ArrowDown, Clock, Euro, MapPin } from 'lucide-react';
 import CalBooking from '@/components/booking/CalBooking';
 import { ButtonLink, PageHero } from '@/components/v2/ui';
 import { Scribble } from '@/components/v2/deco';
-import { CAL_LINK, CONTACT } from '@/lib/site';
+import { CAL_BULLE_LINK, CAL_LINK, CONTACT } from '@/lib/site';
 
 export const metadata: Metadata = {
 	title: 'Prendre rendez-vous',
@@ -14,7 +14,9 @@ export const metadata: Metadata = {
 	alternates: { canonical: '/rendez-vous' },
 };
 
-export default function RendezVousPage() {
+export default function RendezVousPage({ searchParams }: { searchParams: { formule?: string } }) {
+	const bulle = searchParams.formule === 'bulle';
+
 	return (
 		<>
 			<PageHero
@@ -59,8 +61,14 @@ export default function RendezVousPage() {
 				<div className="booking-facts">
 					<span>
 						<Clock size={19} aria-hidden />
-						Une séance dure environ 1&nbsp;h. La première séance peut aller jusqu’à 1&nbsp;h&nbsp;30 pour mieux
-						faire connaissance.
+						{bulle ? (
+							<>La bulle de coaching dure 25&nbsp;minutes.</>
+						) : (
+							<>
+								Une séance dure environ 1&nbsp;h. La première séance peut aller jusqu’à 1&nbsp;h&nbsp;30 pour
+								mieux faire connaissance.
+							</>
+						)}
 					</span>
 					<span>
 						<Euro size={19} aria-hidden />
@@ -73,7 +81,7 @@ export default function RendezVousPage() {
 				</div>
 			</PageHero>
 			<section className="booking-options" aria-label="Réserver un créneau">
-				<CalBooking calLink={CAL_LINK} />
+				<CalBooking calLink={bulle ? CAL_BULLE_LINK : CAL_LINK} />
 				<p className="booking-fallback-line">
 					Aucun créneau ne vous convient ? Appelez-moi au <a href={CONTACT.phoneHref}>{CONTACT.phone}</a> ou{' '}
 					<Link href="/contact">écrivez-moi</Link>.

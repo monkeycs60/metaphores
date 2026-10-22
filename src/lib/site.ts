@@ -9,6 +9,7 @@ export const CONTACT = {
 };
 
 export const CAL_LINK = 'metaphore-coaching/seance-coaching';
+export const CAL_BULLE_LINK = 'metaphore-coaching/bulle-de-coaching';
 
 export const CTA = {
 	contact: {
@@ -17,6 +18,7 @@ export const CTA = {
 		href: '/contact',
 	},
 	booking: { label: 'Prendre rendez-vous', href: '/rendez-vous' },
+	bulle: { label: 'Prendre rendez-vous', href: '/rendez-vous?formule=bulle#calendrier' },
 	quote: { label: 'Demandez un devis', href: '/contact?motif=entreprise' },
 	business: {
 		question: 'Besoin d’en parler de vive voix ?',
@@ -46,7 +48,7 @@ export const COACHING_SUBNAV: NavItem[] = [
 	{
 		label: 'Bilan de carrière',
 		href: '/bilan-carriere',
-		image: '/photos/carte-bilan-serein.webp',
+		image: '/photos/carte-bilan-elan.webp',
 		description: 'Faire le point avant de décider de la suite.',
 	},
 	{

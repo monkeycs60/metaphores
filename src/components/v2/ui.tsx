@@ -207,9 +207,9 @@ export const OFFER_IMAGES: Record<string, { src: string; alt: string; note?: Rea
 		),
 	},
 	'/bilan-carriere': {
-		src: '/photos/carte-bilan-serein.webp',
-		alt: 'Un homme aux cheveux blancs sourit, détendu, dans la lumière du soir',
-		position: '45% center',
+		src: '/photos/carte-bilan-elan.webp',
+		alt: 'Un homme à lunettes et écharpe rouge sourit dans une rue de ville',
+		position: 'center 30%',
 		note: (
 			<>
 				Se laisser <mark>porter</mark>

@@ -87,8 +87,8 @@ export default function TarifsPage() {
 									</li>
 								))}
 							</ul>
-							<ButtonLink href={CTA.booking.href} variant="outline">
-								{CTA.booking.label}
+							<ButtonLink href={CTA.bulle.href} variant="outline">
+								{CTA.bulle.label}
 							</ButtonLink>
 						</div>
 						<div className="price-bubble-deco" aria-hidden>

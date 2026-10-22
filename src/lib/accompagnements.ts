@@ -143,9 +143,9 @@ export const services: Record<string, Service> = {
 			'Le bilan de carrière permet de prendre de la hauteur sur votre parcours pour identifier ce que vous avez construit, ce que vous savez faire, ce qui vous motive encore, ce qui ne vous convient plus et ce que vous souhaitez désormais privilégier.',
 			'Vous êtes vers la fin de carrière et vous devez préparer l’après. Cela vous inquiète et vous avez peur de ce vide. Nous pouvons en parler et l’anticiper. La retraite peut être un nouveau départ.',
 		],
-		image: '/photos/carte-bilan-serein.webp',
-		imageAlt: 'Un homme aux cheveux blancs sourit, détendu, dans la lumière du soir',
-		imagePosition: '42% center',
+		image: '/photos/carte-bilan-elan.webp',
+		imageAlt: 'Un homme à lunettes et écharpe rouge sourit dans une rue de ville',
+		imagePosition: 'center 30%',
 		topicsTitle: 'Ce que nous explorons',
 		topics: [
 			{ icon: Route, text: 'Votre parcours et les étapes qui l’ont construit' },

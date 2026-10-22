@@ -6,7 +6,7 @@ export default function CalBooking({ calLink }: { calLink: string }) {
 	return (
 		<div id="calendrier" className="calendar-container">
 			<Cal
-				namespace="seance-coaching"
+				namespace={calLink.split('/')[1]}
 				calLink={calLink}
 				calOrigin="https://cal.com"
 				embedJsUrl="https://cal.com/embed/embed.js"
