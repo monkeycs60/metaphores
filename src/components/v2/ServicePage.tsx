@@ -24,7 +24,7 @@ export type Service = {
 		lead?: string;
 		items: ListItem[];
 		frame?: boolean;
-		image?: { src: string; alt: string };
+		image?: { src: string; alt: string; position?: string };
 	}[];
 	storyLead?: string;
 	storyTitle: string;

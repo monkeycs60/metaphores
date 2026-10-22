@@ -29,10 +29,10 @@ export default function CoachOuPsyPage() {
 			<Section>
 				<div className="reading">
 					<ReadingBlock
-						image="/photos/psy-connivence.webp"
-						imageAlt="Deux hommes assis sur un banc échangent en souriant, penchés l’un vers l’autre"
-						imageWidth={800}
-						imageHeight={1200}
+						image="/photos/christophe-seance-connivence.webp"
+						imageAlt="Christophe Jacques prend des notes face à un client qui lui sourit, près d’une baie vitrée"
+						imageWidth={768}
+						imageHeight={1024}
 					>
 						<p>
 							<strong>Le coach n’est pas un psychologue !</strong> Il n’a pas de formation pour intervenir sur le

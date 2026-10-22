@@ -114,7 +114,7 @@ export default function Page() {
 	return (
 		<>
 			<PageHero
-				title="Et si le problème n’était pas de faire plus, mais de faire autrement !"
+				title="Et si le problème n’était pas de faire plus, mais de faire autrement !"
 				subtitle="Accompagnements jeunes & parents · Bordeaux"
 				image="/photos/jeunes-parents-rire.webp"
 				imageAlt="Un père et son fils rient, assis dans l’herbe d’un parc ensoleillé"

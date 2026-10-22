@@ -34,10 +34,10 @@ export default function ContactPage() {
 				</div>
 				<div className="contact-atmosphere">
 					<Image
-						src="/photos/christophe-bras-croises.webp"
-						alt="Christophe Jacques sourit, en veste grise, devant des bureaux"
-						width={1066}
-						height={1600}
+						src="/photos/christophe-parle.webp"
+						alt="Christophe Jacques, la main au menton et un carnet sur les genoux, échange avec un client"
+						width={768}
+						height={1024}
 						sizes="(min-width: 900px) 40vw, 100vw"
 					/>
 				</div>

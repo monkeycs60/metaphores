@@ -19,9 +19,9 @@ export default function TarifsPage() {
 			<PageHero
 				title="Tarifs"
 				subtitle="Bordeaux & à distance"
-				image="/photos/tarifs-tournesols.webp"
-				imageAlt="Une femme lève les bras en riant au milieu d’un champ de tournesols"
-				imagePosition="center 44%"
+				image="/photos/tournesols.webp"
+				imageAlt="Un champ de tournesols en plein soleil, sous un ciel bleu"
+				imagePosition="center 60%"
 			>
 				<ul className="hero-places">
 					<li>

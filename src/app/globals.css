@@ -969,7 +969,7 @@ p {
 		gap: 44px;
 	}
 	.contact-atmosphere {
-		display: none;
+		max-width: 420px;
 	}
 	.contact-locations {
 		order: 1;
@@ -3320,7 +3320,6 @@ p {
 	height: auto;
 	aspect-ratio: 4 / 5;
 	object-fit: cover;
-	object-position: 74% center;
 	box-shadow: 14px 14px 0 #ffba08;
 }
 
@@ -3636,7 +3635,7 @@ p {
 	aspect-ratio: 4 / 3;
 }
 .contact-atmosphere img {
-	object-position: 50% 22%;
+	object-position: 50% 8%;
 }
 
 .portrait-stage-small img {

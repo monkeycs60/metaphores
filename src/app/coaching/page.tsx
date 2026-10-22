@@ -97,9 +97,9 @@ export default function CoachingPage() {
 					</>
 				}
 				subtitle="Coaching individuel · Bordeaux & à distance"
-				image="/photos/coaching-echange-lumineux.webp"
-				imageAlt="Deux hommes échangent en souriant autour d’une table, près d’une grande fenêtre"
-				imagePosition="45% center"
+				image="/photos/christophe-seance-duo.webp"
+				imageAlt="Christophe Jacques, carnet en main, en séance face à une cliente qui lui sourit"
+				imagePosition="center 30%"
 				actions={<HeroActions />}
 			>
 				<p>

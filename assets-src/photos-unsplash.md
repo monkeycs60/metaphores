@@ -54,8 +54,6 @@ Licence Pexels : usage commercial libre, attribution non requise.
 | `jeunes-parents-rire.webp` | Murugan Ettiyan | https://www.pexels.com/photo/a-man-and-a-boy-laughing-while-sitting-on-the-gree-grass-5402588/ |
 | `vision-lever-soleil.webp` | Jorge Rodriguez | https://www.pexels.com/photo/man-standing-facing-mountains-2112361/ |
 | `coaching-questionnement.webp` | Vitaliy Nomad | https://www.pexels.com/photo/a-woman-with-her-hand-on-her-chin-12029976/ |
-| `coaching-echange-lumineux.webp` | Monstera Production | https://www.pexels.com/photo/cheerful-black-man-with-colleague-at-table-5273656/ |
-| `montgolfieres.webp` | Timur Kozmenko | https://www.pexels.com/photo/sunlight-behind-balloons-under-clear-sky-3102820/ |
 | `pro-atelier.webp` | Andrea Piacquadio | https://www.pexels.com/photo/cheerful-man-sitting-at-table-in-workshop-3844524/ |
 | `perso-marche.webp` | Vitaly Gariev | https://www.pexels.com/photo/friends-enjoying-a-walk-in-the-park-during-autumn-36763383/ |
 | `bilan-transmission.webp` | Andrea Piacquadio | https://www.pexels.com/photo/cheerful-senior-gray-haired-mentor-supporting-young-black-colleague-in-office-3861566/ |
@@ -77,9 +75,7 @@ Licence Pexels : usage commercial libre, attribution non requise.
 | `origines-chrysalide.webp` | Nandhu Kumar | https://www.pexels.com/photo/macro-photography-of-green-butterfly-on-yellow-cocoon-1464733/ |
 | `origines-highline.webp` | Elisa Triviño | https://www.pexels.com/photo/13775522/ |
 | `origines-marches.webp` | Carlos Jairo | https://www.pexels.com/photo/man-in-red-hooded-jacket-running-on-concrete-stairs-6971680/ |
-| `psy-connivence.webp` | Caleb Oquendo | https://www.pexels.com/photo/two-men-in-casual-wear-sitting-together-on-a-bench-talking-and-smiling-3042623/ |
 | `psy-carte.webp` | Vitaly Gariev | https://www.pexels.com/photo/young-couple-navigating-forest-with-map-36729389/ |
-| `tarifs-tournesols.webp` | Dih Andréa | https://www.pexels.com/photo/cheerful-happy-woman-with-hands-up-in-sunflowers-4889478/ |
 
 Photos sans licence de banque d'images :
 
@@ -87,8 +83,21 @@ Photos sans licence de banque d'images :
 |---|---|
 | `accueil-horizon.webp` | photo d'accueil de la première V2 (`git show c171048:public/v3/horizon.webp`) |
 | `christophe-carnet.webp` | portrait de Christophe, version haute définition de `chris-profile-light.webp` (`git show d448da5:public/chris-profile.png`) |
-| `christophe-bras-croises.webp` | portrait de Christophe envoyé le 7 octobre 2026 (WhatsApp) |
 | `psy-coach-craie.webp` | `psycoach.png` de l'ancien site, version haute définition (`git show 3385e62:public/psycoach.png`) |
 | `poignee-de-main.webp` | `handshake.png` de l'ancien site, version haute définition (`git show 0450cd8:public/handshake.png`) |
 | `../parcours/yoga.webp` | cours de yoga de Christophe, photo de son site Équilibre en mouvement |
 | `../parcours/*.svg`, `../parcours/*.webp` | logos des employeurs et institutions du parcours ; sources dans `assets-src/logos-parcours.md` |
+
+## Photos de Christophe ajoutées le 22 octobre 2026
+
+Photos envoyées par Christophe sur WhatsApp le 15 octobre 2026 (séances de coaching mises en scène et photos personnelles).
+
+| Fichier | Contenu | Page |
+|---|---|---|
+| `christophe-seance-duo.webp` | séance face à face avec une cliente, mur bleu | haut de page `/coaching` |
+| `christophe-seance-connivence.webp` | séance avec un client souriant ; arrière-plan flouté pour masquer le logo du coworking sur la vitre | `/coaching/psy` |
+| `christophe-parle.webp` | Christophe face à l'objectif, la main au menton, avec un client de dos | `/contact` |
+| `christophe-seance-canape.webp` | Christophe prend des notes, une cliente lui parle depuis un canapé | cadre « Coaching de vie », `/coaching-personnel` |
+| `tournesols.webp` | champ de tournesols | haut de page `/tarifs` |
+| `eclipse.webp` | éclipse totale de soleil | « La métaphore dans le coaching », `/qui-suis-je` |
+

@@ -44,6 +44,7 @@ export const services: Record<string, Service> = {
 				image: {
 					src: '/photos/conversation.webp',
 					alt: 'Deux hommes échangent face à face, dans la lumière d’une baie vitrée',
+					position: '74% center',
 				},
 				items: [
 					{ icon: Target, text: 'Clarifier vos objectifs, vos priorités et vos décisions.' },
@@ -77,7 +78,7 @@ export const services: Record<string, Service> = {
 		],
 	},
 	'coaching-personnel': {
-		title: 'Et si c’était le bon moment pour vous ?',
+		title: 'Et si c’était le bon moment pour vous ?',
 		context: 'Coaching personnel · Bordeaux & à distance',
 		scribble: { text: 'Qui mieux que vous connaît vos solutions ?', mark: 'vous' },
 		description: [
@@ -94,6 +95,11 @@ export const services: Record<string, Service> = {
 				note: { text: 'Accompagnement personnel', mark: 'personnel' },
 				intro: 'Mieux vous connaître, clarifier vos priorités et avancer vers une vie en accord avec vos aspirations.',
 				lead: 'Le coaching vous accompagne pour :',
+				image: {
+					src: '/photos/christophe-seance-canape.webp',
+					alt: 'Christophe Jacques prend des notes pendant qu’une cliente, installée sur un canapé, lui parle',
+					position: 'center 40%',
+				},
 				items: [
 					{ icon: Sparkles, text: 'Renforcer votre confiance en vous et valoriser votre parcours.' },
 					{ icon: Signpost, text: 'Clarifier vos choix, prendre des décisions et passer à l’action.' },

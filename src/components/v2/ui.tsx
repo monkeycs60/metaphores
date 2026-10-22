@@ -462,7 +462,7 @@ export function ListFrame({
 	intro?: string;
 	lead?: string;
 	items: ListItem[];
-	image?: { src: string; alt: string };
+	image?: { src: string; alt: string; position?: string };
 }) {
 	const frame = (
 		<article className="list-frame">
@@ -479,7 +479,14 @@ export function ListFrame({
 	return (
 		<div className="list-frame-split">
 			<div className="list-frame-photo">
-				<Image src={image.src} alt={image.alt} width={900} height={1100} sizes="(min-width: 900px) 38vw, 100vw" />
+				<Image
+					src={image.src}
+					alt={image.alt}
+					width={900}
+					height={1100}
+					sizes="(min-width: 900px) 38vw, 100vw"
+					style={image.position ? { objectPosition: image.position } : undefined}
+				/>
 			</div>
 			{frame}
 		</div>
