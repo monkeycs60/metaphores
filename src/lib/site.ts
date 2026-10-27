@@ -6,6 +6,7 @@ export const CONTACT = {
 	email: 'metaphorecoaching@gmail.com',
 	linkedin: 'https://www.linkedin.com/in/christophe-jacques-2a690523/',
 	instagram: 'https://www.instagram.com/metaphore.coaching/',
+	facebook: 'https://www.facebook.com/profile.php?id=61594907352121',
 };
 
 export const CAL_LINK = 'metaphore-coaching/seance-coaching';

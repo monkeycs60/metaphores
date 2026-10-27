@@ -67,6 +67,14 @@ export default function Footer() {
 						>
 							<Image src="/insta.svg" alt="" width={22} height={22} />
 						</a>
+						<a
+							href={CONTACT.facebook}
+							target="_blank"
+							rel="noopener noreferrer"
+							aria-label="Facebook de Métaphore Coaching"
+						>
+							<Image src="/facebook.svg" alt="" width={22} height={22} />
+						</a>
 					</div>
 				</div>
 			</div>

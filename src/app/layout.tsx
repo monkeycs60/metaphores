@@ -44,7 +44,7 @@ const jsonLd = {
 		addressCountry: 'FR',
 	},
 	areaServed: ['Bordeaux', 'Gironde', 'France (à distance)'],
-	sameAs: [CONTACT.linkedin, CONTACT.instagram],
+	sameAs: [CONTACT.linkedin, CONTACT.instagram, CONTACT.facebook],
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
